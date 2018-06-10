@@ -14,4 +14,4 @@ description: "This is the book describing theoretical and practical approaches i
 
 # Preface {-}
 
-This book is dedicated to describing theoretical and practical approaches in the analysis of genome data.
+This book is dedicated to describing theoretical and practical approaches in the analysis of genome data.I
