@@ -14,4 +14,5 @@ description: "This is the book describing theoretical and practical approaches i
 
 # Preface {-}
 
-This book is dedicated to describing theoretical and practical approaches in the analysis of genome data.I
+This book is aimed at summarizing theoretical and practical concepts in the analysis of genetic data.
+First 15 chapters consider approaches used in quantitative genetics.  
