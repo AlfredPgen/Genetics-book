@@ -1,0 +1,37 @@
+# Genome-wide association analysis
+
+## Genotype calling algorithms
+
+## DNA processing quality control
+
+## Sample quality control
+
+## Marker quality control
+
+## X-chromosome quality control
+
+## Single marker regression tests
+
+## Gene-based GWAS
+
+## Gene-set GWAS
+
+## Extensions to binary and categorical phenotypes
+
+## Analysis of rare variants
+
+## Analysis of X, Y and mt
+
+## Extensions to multi-ethnic samples
+
+## Analysis of indirect genetic effects
+
+## GWAS vs whole-genome association
+
+## Analysis of multiple traits
+
+## Mixed-model association analysis
+
+## Penalized regression GWAS
+
+## Bayesian GWAS
