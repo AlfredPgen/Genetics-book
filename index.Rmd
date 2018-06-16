@@ -15,4 +15,5 @@ description: "This is the book describing theoretical and practical approaches i
 # Preface {-}
 
 This book is aimed at summarizing theoretical and practical concepts in the analysis of genetic data.
-First 15 chapters consider approaches used in quantitative genetics.  
+First 15 chapters consider approaches used in quantitative genetics. 
+Next X chapters focus on population genetics.
