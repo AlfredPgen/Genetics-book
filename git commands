@@ -1,3 +1,14 @@
+# Add to existing directory
+
 git add .
 git commit -m "example"
+git push origin master
+
+############################
+
+# Add to a new directory
+
+git add .
+git commit -m "example"
+git remote add origin <url>
 git push origin master
