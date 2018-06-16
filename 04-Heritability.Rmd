@@ -1,7 +1,1 @@
-# Applications
-
-Some significant applications are demonstrated in this chapter.
-
-## Example one
-
-## Example two
+# Basics
