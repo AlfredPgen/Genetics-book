@@ -9,7 +9,7 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-dem
-description: "This is the book describing theoretical and practical approaches in analysis of genome data"
+description: "This is the book describing theoretical and practical approaches in analysis of genome data."
 ---
 
 # Preface {-}
