@@ -1,0 +1,29 @@
+## Kinship matrix
+
+## Genetic relationship matrix
+
+## Animal models
+
+## Phasing
+
+## Haplotyping
+
+## Statistical power
+
+## Multiple comparisons
+
+### Effective number of independant variants
+
+## Biases
+
+### Ascertainment
+
+### Attenuation
+
+### Selection
+
+## Family studies
+
+## Twin studies
+
+## Adoption studies

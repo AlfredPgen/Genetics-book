@@ -22,6 +22,12 @@
 
 ## Analysis of X, Y and mt
 
+## Analysis of copy number variants
+
+### Common variation
+
+### Rare variation
+
 ## Extensions to multi-ethnic samples
 
 ## Analysis of indirect genetic effects
