@@ -1,3 +1,5 @@
 # Theoretical and practical aspects of computation genetics
 
-The book contains a detailed description on genome analysis.
+This book is aimed at summarizing theoretical and practical concepts in the analysis of genetic data.
+First 15 chapters consider approaches used in quantitative genetics. 
+Next X chapters focus on population genetics.
