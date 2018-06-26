@@ -1,11 +1,13 @@
 # Theoretical and practical aspects of computation genetics
 
-This book is aimed at providing a comprehensive summary of theoretical and practical concepts in computational genetic research.
-First 15 chapters focus on approaches used in quantitative genetics. The focus is on genetic variant discovery and
-downstream analyses.
+The scope of this book is to provide an outline of computational methods available for the analysis of genetic data.
+
+First chapter introduces methods to infer population parameters. 
 
 Next X chapters focus on population genetics.
 
+In this book, the amount of mathematics and statistics is kept to a minimum. Only methods designed specifically to address issues in genetics are shown. I have produced another book [insert link here], which is intended to familiarise the reader with commonly used approaches and develop some intuition behind them. By no means the list is comprehensive and only serves as a quick guide. The internet provides much more information regarding this topic.
 
+Rather than providing references at the end of each chapter, I decided to combine them into supplementary text [insert link here]. References are arranged according to different topics discussed in this book. I tried to do my best to cause as little confusion as possible.
 
-Feel free to contact me if you have any feedback or suggestions. My email is apozarickij@gmail.com
+Finally, don't hesitate to contact me if I have not included your favorite method (apozarickij@gmail.com). I would be more than happy to hear about it.
