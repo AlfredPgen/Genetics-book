@@ -14,8 +14,18 @@ description: "This is the book describing theoretical and practical approaches i
 
 # Preface {-}
 
-This book is aimed at summarizing theoretical and practical concepts in the analysis of genetic data.
-First 15 chapters consider approaches used in quantitative genetics. The focus is on genetic variant discovery and
+The scope of this book is to provide an outline of computational methods available for the analysis of genetic data.
+
+First X chapters consider approaches used in quantitative genetics. The focus is on genetic variant discovery and
 downstream analyses.
 
 Next X chapters focus on population genetics.
+
+In this book, the amount of mathematics and statistics is kept at a minimum. Only methods designed specifically to address issues in genetics are shown. I have produced another book [insert link here], which is intended to familiarise the reader with commonly used approaches and develop some intuition behind them. By no means the list is comprehensive and only serves as a quick guide. The internet provides much more information regarding this topic.
+
+Rather than providing references at the end of each chapter, I decided to combine them into supplementary text [insert link here]. References are arranged according to different topics discussed in this book. I tried to do my best to cause as little confusion as possible.
+
+Finally, don't hesitate to contact me if I have not included your favorite method. I would be more than happy to hear about it.
+
+
+
