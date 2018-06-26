@@ -1,3 +1,7 @@
-# Introduction
+# Gene-gene interaction
 
-## Gene-gene interaction
+## Single step methods
+
+## Multi stage methods
+
+## Machine learning methods

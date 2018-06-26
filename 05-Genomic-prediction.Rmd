@@ -1,1 +1,11 @@
-# Basics
+# Genomic prediction
+
+## Polygenic risk scores
+
+## LD adjusted PRS
+
+## BLUP
+
+## Bayesian Zoo
+
+## Machine learning

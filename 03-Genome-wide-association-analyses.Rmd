@@ -20,7 +20,7 @@
 
 ## Analysis of rare variants
 
-## Analysis of X, Y and mt
+## Analysis of X, Y and mitochondrial chromosomes
 
 ## Analysis of copy number variants
 
@@ -28,7 +28,7 @@
 
 ### Rare variation
 
-## Extensions to multi-ethnic samples
+## Analysis of multi-ethnic samples
 
 ## Analysis of indirect genetic effects
 
@@ -41,3 +41,6 @@
 ## Penalized regression GWAS
 
 ## Bayesian GWAS
+
+## Machine learning for GWAS
+

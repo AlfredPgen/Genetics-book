@@ -1,4 +1,4 @@
-# Descriptives
+# Population parameters
 
 ## Mean
 

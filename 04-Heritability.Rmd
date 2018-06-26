@@ -1,1 +1,7 @@
-# Basics
+# Heritability
+
+## Twin studies
+
+## GCTA
+
+## LDAK

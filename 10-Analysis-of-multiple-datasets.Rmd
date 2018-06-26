@@ -1,4 +1,4 @@
-# Introduction
+# Combining multiple datasets
 
 ## Meta-analysis
 

@@ -1,3 +1,31 @@
-# Introduction
+# Gene-environment interaction
 
-## Gene-environment interaction
+## Single step methods
+
+### Case-control
+
+### Case-only
+
+### Empirical Bayes and Bayesian Model Averaging
+
+## Multi stage methods
+
+## Joint tests
+
+## Gene-based interaction tests
+
+## Combining multiple environments
+
+## Variance heterogeneity
+
+### Levene's test
+
+### Two-step screening on residual variance heterogeneity
+
+## Conditional quantile regression 
+
+## RELIEF and other machine learning tools
+
+### Multidimensionality reduction
+
+## Meta-analytic GxE approaches
