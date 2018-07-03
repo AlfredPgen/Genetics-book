@@ -1,7 +1,15 @@
 # Heritability
 
+## Realized heritability
+
+### Evolvability
+
+### Reliability
+
 ## Twin studies
 
 ## GCTA
+
+## LD-score regression
 
 ## LDAK

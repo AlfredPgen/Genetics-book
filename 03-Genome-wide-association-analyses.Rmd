@@ -6,17 +6,47 @@
 
 ## Sample quality control
 
+### Cryptic relatedness
+
+### Population stratification
+
+### Heterozygosity and missingness outliers
+
+### Differential missingness
+
+### Sex chromosome anomalies
+
 ## Marker quality control
+
+### Genotyping concordance
+
+### Switch rate
+
+### Genotype call rate
+
+### Minor allele frequency
+
+### Hardy-Weinberg equilibrium outliers
+
+### Additional QC for regions like MHC
 
 ## X-chromosome quality control
 
-## Single marker regression tests
+## Single marker regression
+
+### Trend test
+
+### Alleles test
+
+### Genomic control
 
 ## Gene-based GWAS
 
 ## Gene-set GWAS
 
 ## Extensions to binary and categorical phenotypes
+
+### Threshold model
 
 ## Analysis of rare variants
 

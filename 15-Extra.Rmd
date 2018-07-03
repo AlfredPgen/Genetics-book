@@ -2,6 +2,8 @@
 
 ## Kinship matrix
 
+### Path coefficients
+
 ## Genetic relationship matrix
 
 ## Animal models
@@ -11,6 +13,10 @@
 ## Haplotyping
 
 ## Statistical power
+
+### When marker is a disease susceptibility locus
+
+### When marker is not disease susceptability locus
 
 ## Multiple comparisons
 
@@ -26,6 +32,37 @@
 
 ## Family studies
 
+### Transmission disequilibrium tests
+
 ## Twin studies
 
 ## Adoption studies
+
+## Equifinality (many genes give same trait)
+
+## Gene dosage
+
+### Allelic dosage
+
+## Allelic heterogeneity
+
+## Genetic heterogeneity
+
+## Genomic imprinting
+
+## Penetrance/phenocopy
+
+## Endophenotypes
+
+## Ploidy
+
+## Exended phenotype
+
+## Genome sizes
+
+
+
+
+
+
+

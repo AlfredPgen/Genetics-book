@@ -8,4 +8,7 @@
 
 ## Bayesian Zoo
 
-## Machine learning
+## Reproducing kernel Hilbert space
+
+## Machine learning methods
+

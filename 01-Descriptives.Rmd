@@ -1,3 +1,5 @@
+# (PART) Quantitative Genetics {-}
+
 # Population parameters
 
 ## Mean
@@ -7,3 +9,9 @@
 ## Covariance
 
 ## Genetic correlation
+
+## Additivity
+
+## Dominance/Recesivness
+
+## Codominance

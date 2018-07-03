@@ -2,6 +2,12 @@
 
 ## Transcriptome-wide association studies
 
+### cis eQTLs
+
+### trans eQTLs
+
+### 3-D structure of the genome
+
 ## Phenome-wide association studies
 
 ## Metabolomics
