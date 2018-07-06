@@ -38,6 +38,10 @@
 
 ### Alleles test
 
+## Two-stage approach
+
+## Haplotype GWAs design
+
 ### Genomic control
 
 ## Gene-based GWAS

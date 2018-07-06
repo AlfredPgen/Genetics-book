@@ -2,6 +2,10 @@
 
 ## Polygenic risk scores
 
+## Gene-based polygenic score (POLARIS)
+
+## Pathway-based polygenic risk score
+
 ## LD adjusted PRS
 
 ## BLUP
