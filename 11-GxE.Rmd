@@ -29,6 +29,8 @@ Their simulations suggest that the power of GESAT seems fairly robust to the dep
 
 The same approach can be applied to investigating various other biological problems. For example, we can test for the interactions between gene expressions in a pathway or network and an environmental variable by simply replacing G by gene expressions in a gene-set.
 
+Similar idea from GESAT was later extended and applied to rare variant set-based GxE analysis. The proposed test iSKAT is optimal in a class of variance component tests and is powerful and robust to the proportion of variants in a gene that interact with environment and the signs of the effects. This test properly controls for the main effects of the rare variants using weighted ridge regression while adjusting for covariates.
+
 ## Combining multiple environments
 
 ## Variance heterogeneity
