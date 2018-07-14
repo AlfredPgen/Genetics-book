@@ -1,5 +1,7 @@
 # Gene-environment interaction
 
+Identification of gene-environment interactions has important implications for understanding underlying disease etiology and developing disease prevention and intervention strategies.
+
 ## Single step methods
 
 ### Case-control
@@ -13,6 +15,13 @@
 ## Joint tests
 
 ## Gene-based interaction tests
+
+There are multiple reasons for using set-based gene-environment interaction tests. 
+1. Multiple comparison adjustments for a large number of markers across the genome could result in power loss.
+2. Closely located SNPs are correlated because of linkage disequilibrium. Furthermore, multiple tests for GE interactions in these single-marker-based GE interaction models are even more dependent, as interaction terms in these models share the same environmental variable. Dependence among multiple tests can result in incorrect Type 1 error rates and causes bias in standard multiple comparison adjustments, such as the Bonferroni method, and this bias is often difficult to correct.
+3. The single-marker GE test does not interrogate the joint effects of multiple SNPs that have similar biological functions.When the main effects of multiple SNPs in a set are  associated with a disease/trait, the classical single marker regression interaction test can be biased.
+
+Lin et al. (2013) developed a method to analyse GxE for a set of markers using generalized linear models. The method tests for SNP-set by environment interactions using a variance component test, and estimates the main SNP effects under the null hypothesis using ridge regression. The software is called GESAT.
 
 ## Combining multiple environments
 
