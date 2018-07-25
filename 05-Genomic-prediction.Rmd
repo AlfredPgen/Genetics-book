@@ -12,6 +12,8 @@
 
 ## Annopred
 
+## Pleiopred
+
 ## BLUP
 
 ## Bayesian Zoo
