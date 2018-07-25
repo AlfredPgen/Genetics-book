@@ -8,6 +8,8 @@
 
 ## LD adjusted PRS
 
+### LDpred with functional annotation
+
 ## BLUP
 
 ## Bayesian Zoo
