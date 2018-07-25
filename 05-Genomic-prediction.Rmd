@@ -10,6 +10,8 @@
 
 ### LDpred with functional annotation
 
+## Annopred
+
 ## BLUP
 
 ## Bayesian Zoo
