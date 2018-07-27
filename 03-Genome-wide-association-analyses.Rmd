@@ -30,6 +30,10 @@
 
 ### Additional QC for regions like MHC
 
+### Ambigious nucleotides
+
+### Non-matching nucleotides
+
 ## X-chromosome quality control
 
 ## Single marker regression
