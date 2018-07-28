@@ -48,9 +48,11 @@
 
 ### Genomic control
 
-## Multimarker gene-set based approaches
+## Multimarker single gene-based approaches
 
 https://cran.r-project.org/web/packages/aSPU/aSPU.pdf
+
+## Multimarker gene-set approaches (a.k.a. pathway analysis)
 
 ## Extensions to binary and categorical phenotypes
 
@@ -64,7 +66,7 @@ Due to the low frequencies of rare variants, classical single marker tests commo
 In view of the lack of power of single marker analysis of rare variants, methods investigating rare variation are typically region-based tests where one tests for the cumulative effects of the rare variants in a region. These region-based methods can be broadly classified into three classes: burden tests, non-burden tests and hybrid of the two. The key difference between burden and non-burden tests is how the cumulative effects of the rare variants are combined for association testing. For the commonly used simple burden tests, one summarizes the rare variants within a region as a single summary genetic burden variable, e.g. the total number of rare variants in a region, and tests its association with a trait. Burden tests implicitly assume all the rare variants in the region under consideration are causal and are associated with the phenotype in the same direction and magnitude. Hence, they all share the limitation of substantial power loss when there are many non-causal genetic variants in a region and/or when there are both protective and harmful variants.
 Several region-based non-burden tests have been proposed by aggregating marginal test statistics (Neale et al., 2011; Basu and Pan, 2011; Lin and Tang, 2011). One such test is the sequence kernel association test (SKAT) (Wu et al., 2011), where one summarizes the rare variants in the region using a kernel function, and then test for association with the trait of interest using a variance component score test. SKAT is robust to the signs and magnitudes of the associations of rare variants with a trait. It is more powerful than the burden tests when the effects are in different directions or the majority of variants in a region are null, but is less powerful than burden tests when most variants in a region are causal and the effects are in the same direction. Several hybrids of the two methods have been proposed to improve test power and robustness (Lee et al., 2012; Derkach et al., 2013; Sun et al., 2013).
 
-### Collapsing methods based on pooling multiple rare variants
+### Collapsing methods based on pooling multiple rare variants (burden or adaptive burden tests)
 
 #### Sum test
 
@@ -74,7 +76,7 @@ The most powerful multi-marker test when there are no causal variants with effec
 
 #### Combined Multivariate Collapsing (CMC)
 
-#### Weighted Sum test (W-Sum)
+#### Weighted Sum test (WSS)
 
 #### Kernel Based Adaptive Cluster (KBAC)
 
@@ -84,11 +86,11 @@ The most powerful multi-marker test when there are no causal variants with effec
 
 #### The EREC test
 
-### Methods treating rare variant effects as random
+### Methods treating rare variant effects as random (Variance-component tests)
 
 #### The SSU approach
 
-Has good power in the presence of opposite association directions and non-causal RVs.
+Has good power in the presence of opposite association directions and small fraction of causal RVs.
 
 #### C-alpha test
 
@@ -126,6 +128,10 @@ According to Basu and Pan (2011), the model selection methods, especially Seq-aS
 #### Fisher method
 
 #### MiST
+
+### EC test
+
+Exponentially combines score statistics. Powerful when a very small proportion of variants are causal.
 
 ## Analysis of X, Y and mitochondrial chromosomes
 
