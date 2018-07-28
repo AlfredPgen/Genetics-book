@@ -68,7 +68,7 @@ Summary statistics can be obtained using one of the following tests: Correlation
 
 #### λ<sub>1000<sub>
 
-Since λ scales with sample size, some have found it informative to report λ<sub>1000<sub>. This is equivalent to a study of 1000 cases and 1000 controls and can be calculated by rescaling λ.
+Since λ scales with sample size, some have found it informative to report λ<sub>1000<sub> . This is equivalent to a study of 1000 cases and 1000 controls and can be calculated by rescaling λ.
 
 1 + (λ - 1) x (1 / case + 1 / control) x 500
 
