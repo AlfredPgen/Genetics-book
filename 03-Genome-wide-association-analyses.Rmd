@@ -48,9 +48,9 @@
 
 ### Genomic control
 
-## Gene-based GWAS
+## Multimarker gene-set based approaches
 
-## Gene-set GWAS
+https://cran.r-project.org/web/packages/aSPU/aSPU.pdf
 
 ## Extensions to binary and categorical phenotypes
 
