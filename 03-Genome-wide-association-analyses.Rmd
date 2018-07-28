@@ -95,6 +95,7 @@ Has good power in the presence of opposite association directions and non-causal
 #### SKAT
 
 Has good power in the presence of opposite association directions and non-causal RVs.
+It was recently suggested that using SKAT in the presence of RVs and common variants (CVs) may be less optimal because RVs are weighted to have much more importance than CVs (Ionita-Laza et al., 2013). 
 
 ### Methods based on model selection
 
@@ -104,6 +105,8 @@ The model-selection approaches perform in the middle of random eﬀect and colla
 
 #### Seq-aSum-VS
 
+The Seq-aSum-VS approach classiﬁes RVs based on the direction of association (‘+1’ for positive association, ‘-1’ for negative association and ‘0’ for no association) and implements a sequential variable selection scheme to select the best model for association between the SNP-set and the disease. The only diﬀerence between the Seq-aSum approach and the Seq-aSum-VS approach is that the variable selection (‘0’ allocation for a variant) is not implemented in the former. The Seq-aSum-VS approach starts with putting all the RVs in the ‘+1’ group and proceeds by moving each RV sequentially to the other two groups and ﬁnally chooses the allocation (‘+1’,‘-1’, or ‘0’ ) with highest likelihood to the RV. The process of choosing the best model in Basu and Pan (2011)’s method can be compared to a stepwise regression, where one may not always ﬁnd the best model due to this selection scheme. This is especially true if a particular allocation results in a slightly higher likelihood than the other two allocations. In this case, choosing the allocation with highest likelihood for a SNP might not be optimal, rather it might be more eﬃcient to allow multiple allocations for a RV and construct a test that takes into account multiple plausible models for the disease-RV association. Moreover, the performance of the sequential search often depends on the ordering of the variants in this search mechanism. A model-averaging approach could potentially reduce the dependency on the ordering of the variants in this sequential search.
+
 #### Variable Threshold Test (VT)
 
 #### RARECOVER
@@ -111,6 +114,18 @@ The model-selection approaches perform in the middle of random eﬀect and colla
 #### Selective grouping method
 
 #### Step-Up
+
+### Combination of collapsing and random effects methods
+
+According to Basu and Pan (2011), the model selection methods, especially Seq-aSum-VS approach, performed very well when there were both protective and deleterious causal RVs and very few non-causal RVs, but the performance of the Seq-aSum-VS approach was not very impressive in the presence of a moderate or large number of non-causal RVs. These and other ﬁndings (Basu and Pan, 2011) have led to combining the strengths of collapsing and random eﬀect methods.
+
+#### SKAT-O
+
+#### SKAT-C
+
+#### Fisher method
+
+#### MiST
 
 ## Analysis of X, Y and mitochondrial chromosomes
 
