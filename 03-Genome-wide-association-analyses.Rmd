@@ -4,11 +4,21 @@
 
 ## DNA processing quality control
 
+### Batch effects
+
+It is noted in [Price, 2006] that there is evidence that variations in test equipment can easily introduce bias into studies.
+
 ## Sample quality control
 
 ### Cryptic relatedness
 
 ### Population stratification
+
+Sometimes finding an association can be confounded by population stratification. This is because a condition may be more prevalent in one group of people than in a different group, resulting in a spurious association between the condition or trait being tested for and any genetic characteristics which vary between the two different groups of people.
+
+While it is good practice for studies to be based on as homogeneous a group of test subjects as possible, it has been noted in [Price, 2006] that even the mild variation in genetic characteristics among those who classify themselves as belonging to one ethnic group or another can be problematic enough to confound a study done over thousands of genetic markers.
+
+Hidden population stratification may be thought of as a non-zero F_{st} between unknown groupings of samples.
 
 ### Heterozygosity and missingness outliers
 
@@ -21,6 +31,8 @@
 ### Genotyping concordance
 
 ### Switch rate
+
+### Mendelian errors
 
 ### Genotype call rate
 
@@ -150,6 +162,14 @@ Exponentially combines score statistics. Powerful when a very small proportion o
 ## Analysis of multiple traits
 
 ## Mixed-model association analysis
+
+### EMMAX
+
+### Fast-LMM
+
+### GEMMA
+
+### BOLT-LMM
 
 ## Penalized regression GWAS
 

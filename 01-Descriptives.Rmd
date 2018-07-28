@@ -15,3 +15,7 @@
 ## Dominance/Recesivness
 
 ## Codominance
+
+## Infinitesimal model
+
+### Omnigenic model
