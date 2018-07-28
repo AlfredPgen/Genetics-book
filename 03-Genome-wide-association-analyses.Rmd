@@ -20,6 +20,8 @@ The missing call rate by batch is calculated to check that there are no batches 
 ### Testing for allele frequency differences in batches
 
 In this step, the chi-square test for diﬀerences in allelic frequency is performed between each batch individually and a pool of all the other batches in the study. We then look at the mean χ<sup>2</sup> statistic over all SNPs for each batch as a function of the ethnic composition of samples in a batch.
+Next we test for association between batches and population groups, using a χ<sup>2</sup> contingency test. Then we look at the relationship between the ethnic composition of each batch and the previously calculated χ<sup>2</sup> test of allelic frequency between each batch and a pool of the other batches. The point is to look for batches that diﬀer from others of similar ethnic composition, which might indicate a batch eﬀect due to genotyping artifact. In this experiment, there are only a few batches and wide variations in race among batches, so it is diﬃcult to interpret the results. In larger GWAS experiments, we generally observe a U-shaped curve of allelic frequency test statistic as a function of ethnic composition.
+The χ<sup>2</sup> test is not suitable when the 2×2 tables for each SNP have very small values. For arrays in which many SNPs have very low minor allele frequency, Fisher’s exact test is more appropriate. 
 
 ## Sample quality control
 
