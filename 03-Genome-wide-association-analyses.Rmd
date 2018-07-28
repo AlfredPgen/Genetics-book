@@ -99,7 +99,7 @@ It was recently suggested that using SKAT in the presence of RVs and common vari
 
 ### Methods based on model selection
 
-The model-selection approaches perform in the middle of random eﬀect and collapsing methods.
+The model-selection approaches perform in the middle of random eﬀect and collapsing methods. One issue common to model-selection methods is that  model selection approaches use dimension-reduction strategies to substantially reduce the number of parameters one would require to ﬁt these large number of RVs. Hence, any model we can construct will never be the true model that generated the data we observe. In other words, the set of models is clearly misspeciﬁed, and model selection is best seen as a way of approximating, rather than identifying, full reality (Burnham and Anderson (2002), pp. 20-23).
 
 #### Seq-aSum
 
