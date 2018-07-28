@@ -28,6 +28,8 @@ Hidden population stratification may be thought of as a non-zero F<sub>st</sub> 
 
 ### Genotyping concordance
 
+In genotyping studies where DNA is directly assayed for positions of variance, concordance is a measure of the percentage of SNPs that are measured as identical. Samples from the same individual or identical twins theoretically have a concordance of 100%, but due to assaying errors and somatic mutations, they are usually found in the range of 99% to 99.95%. Concordance can therefore be used as a method of assessing the accuracy of a genotyping assay platform.
+
 ### Switch rate
 
 ### Mendelian errors
