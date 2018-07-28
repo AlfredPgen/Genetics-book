@@ -1,17 +1,5 @@
 # Genome-wide association analysis
 
-## Genotype calling algorithms
-
-### Sequence alignment
-
-Sequence alignment is a method of arranging sequences of DNA, RNA, or protein to identify regions of similarity. The similarity being identified, may be a result of functional, structural, or evolutionary relationships between the sequences.
-
-If we compare two sequences, it is known as pairwise sequence alignment. If we compare more than two sequences, it is known as multiple sequence alignment.
-
-### Sequence assembly
-
-### Gene prediction
-
 ## DNA processing quality control
 
 ### Batch effects
