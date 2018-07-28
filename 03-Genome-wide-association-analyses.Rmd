@@ -50,9 +50,17 @@ Hidden population stratification may be thought of as a non-zero F<sub>st</sub> 
 
 ## Single marker regression
 
-### Trend test
+Summary statistics can be obtained using one of the following tests: Correlation/Trend Test, Armitage Trend Test, Exact Form of Armitage Test, (Pearson) Chi-Squared Test, (Pearson) Chi-Squared Test with Yates’ Correction, Fisher’s Exact Test, Odds Ratio with Confidence Limits, Analysis of Deviance (e.g. different variance heterogeneity tests), F-Test, Logistic Regression, Linear Regression.
 
-### Alleles test
+### Allelic test
+
+### Genotypic test
+
+### Additive model
+
+### Dominant model
+
+### Recessive model
 
 ## Two-stage approach
 
