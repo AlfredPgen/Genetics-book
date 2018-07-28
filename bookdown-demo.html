@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>A handbook for Computational Genetics</title>
+  <meta name="description" content="This is the book describing theoretical and practical approaches in analysis of genome data.">
+  <meta name="generator" content="bookdown <!--bookdown:version--> and GitBook 2.6.7">
+
+  <meta property="og:title" content="A handbook for Computational Genetics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is the book describing theoretical and practical approaches in analysis of genome data." />
+  <meta name="github-repo" content="rstudio/bookdown-dem" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A handbook for Computational Genetics" />
+  
+  <meta name="twitter:description" content="This is the book describing theoretical and practical approaches in analysis of genome data." />
+  
+
+<meta name="author" content="Alfred Pozarickij">
+
+
+<meta name="date" content="2018-07-28">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<!--bookdown:link_prev-->
+<!--bookdown:link_next-->
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+<!--bookdown:title:start-->
+<div id="header">
+<h1 class="title">A handbook for Computational Genetics</h1>
+<h4 class="author"><em>Alfred Pozarickij</em></h4>
+<h4 class="date"><em>2018-07-28</em></h4>
+</div>
+<!--bookdown:title:end-->
+
+<!--bookdown:toc:start-->
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+<!--bookdown:toc2:start-->
+<ul>
+<li><a href="#preface">Preface</a></li>
+<li><a href="#part-quantitative-genetics">(PART) Quantitative Genetics</a></li>
+<li><a href="#population-parameters"><span class="toc-section-number">1</span> Population parameters</a><ul>
+<li><a href="#mean"><span class="toc-section-number">1.1</span> Mean</a></li>
+<li><a href="#variance"><span class="toc-section-number">1.2</span> Variance</a></li>
+<li><a href="#covariance"><span class="toc-section-number">1.3</span> Covariance</a></li>
+<li><a href="#genetic-correlation"><span class="toc-section-number">1.4</span> Genetic correlation</a></li>
+<li><a href="#additivity"><span class="toc-section-number">1.5</span> Additivity</a></li>
+<li><a href="#dominancerecesivness"><span class="toc-section-number">1.6</span> Dominance/Recesivness</a></li>
+<li><a href="#codominance"><span class="toc-section-number">1.7</span> Codominance</a></li>
+</ul></li>
+<li><a href="#sequencing-technologies"><span class="toc-section-number">2</span> Sequencing technologies</a></li>
+<li><a href="#genome-wide-association-analysis"><span class="toc-section-number">3</span> Genome-wide association analysis</a><ul>
+<li><a href="#genotype-calling-algorithms"><span class="toc-section-number">3.1</span> Genotype calling algorithms</a></li>
+<li><a href="#dna-processing-quality-control"><span class="toc-section-number">3.2</span> DNA processing quality control</a></li>
+<li><a href="#sample-quality-control"><span class="toc-section-number">3.3</span> Sample quality control</a><ul>
+<li><a href="#cryptic-relatedness"><span class="toc-section-number">3.3.1</span> Cryptic relatedness</a></li>
+<li><a href="#population-stratification"><span class="toc-section-number">3.3.2</span> Population stratification</a></li>
+<li><a href="#heterozygosity-and-missingness-outliers"><span class="toc-section-number">3.3.3</span> Heterozygosity and missingness outliers</a></li>
+<li><a href="#differential-missingness"><span class="toc-section-number">3.3.4</span> Differential missingness</a></li>
+<li><a href="#sex-chromosome-anomalies"><span class="toc-section-number">3.3.5</span> Sex chromosome anomalies</a></li>
+</ul></li>
+<li><a href="#marker-quality-control"><span class="toc-section-number">3.4</span> Marker quality control</a><ul>
+<li><a href="#genotyping-concordance"><span class="toc-section-number">3.4.1</span> Genotyping concordance</a></li>
+<li><a href="#switch-rate"><span class="toc-section-number">3.4.2</span> Switch rate</a></li>
+<li><a href="#genotype-call-rate"><span class="toc-section-number">3.4.3</span> Genotype call rate</a></li>
+<li><a href="#minor-allele-frequency"><span class="toc-section-number">3.4.4</span> Minor allele frequency</a></li>
+<li><a href="#hardy-weinberg-equilibrium-outliers"><span class="toc-section-number">3.4.5</span> Hardy-Weinberg equilibrium outliers</a></li>
+<li><a href="#additional-qc-for-regions-like-mhc"><span class="toc-section-number">3.4.6</span> Additional QC for regions like MHC</a></li>
+<li><a href="#ambigious-nucleotides"><span class="toc-section-number">3.4.7</span> Ambigious nucleotides</a></li>
+<li><a href="#non-matching-nucleotides"><span class="toc-section-number">3.4.8</span> Non-matching nucleotides</a></li>
+</ul></li>
+<li><a href="#x-chromosome-quality-control"><span class="toc-section-number">3.5</span> X-chromosome quality control</a></li>
+<li><a href="#single-marker-regression"><span class="toc-section-number">3.6</span> Single marker regression</a><ul>
+<li><a href="#trend-test"><span class="toc-section-number">3.6.1</span> Trend test</a></li>
+<li><a href="#alleles-test"><span class="toc-section-number">3.6.2</span> Alleles test</a></li>
+</ul></li>
+<li><a href="#two-stage-approach"><span class="toc-section-number">3.7</span> Two-stage approach</a></li>
+<li><a href="#haplotype-gwas-design"><span class="toc-section-number">3.8</span> Haplotype GWAs design</a><ul>
+<li><a href="#genomic-control"><span class="toc-section-number">3.8.1</span> Genomic control</a></li>
+</ul></li>
+<li><a href="#multimarker-gene-set-based-approaches"><span class="toc-section-number">3.9</span> Multimarker gene-set based approaches</a></li>
+<li><a href="#extensions-to-binary-and-categorical-phenotypes"><span class="toc-section-number">3.10</span> Extensions to binary and categorical phenotypes</a><ul>
+<li><a href="#threshold-model"><span class="toc-section-number">3.10.1</span> Threshold model</a></li>
+</ul></li>
+<li><a href="#analysis-of-rare-variants"><span class="toc-section-number">3.11</span> Analysis of rare variants</a><ul>
+<li><a href="#collapsing-methods-based-on-pooling-multiple-rare-variants"><span class="toc-section-number">3.11.1</span> Collapsing methods based on pooling multiple rare variants</a></li>
+<li><a href="#methods-treating-rare-variant-effects-as-random"><span class="toc-section-number">3.11.2</span> Methods treating rare variant effects as random</a></li>
+<li><a href="#methods-based-on-model-selection"><span class="toc-section-number">3.11.3</span> Methods based on model selection</a></li>
+<li><a href="#combination-of-collapsing-and-random-effects-methods"><span class="toc-section-number">3.11.4</span> Combination of collapsing and random effects methods</a></li>
+</ul></li>
+<li><a href="#analysis-of-x-y-and-mitochondrial-chromosomes"><span class="toc-section-number">3.12</span> Analysis of X, Y and mitochondrial chromosomes</a></li>
+<li><a href="#analysis-of-copy-number-variants"><span class="toc-section-number">3.13</span> Analysis of copy number variants</a><ul>
+<li><a href="#common-variation"><span class="toc-section-number">3.13.1</span> Common variation</a></li>
+<li><a href="#analysis-of-rare-variants-1"><span class="toc-section-number">3.13.2</span> Analysis of rare variants</a></li>
+</ul></li>
+<li><a href="#analysis-of-multi-ethnic-samples"><span class="toc-section-number">3.14</span> Analysis of multi-ethnic samples</a></li>
+<li><a href="#analysis-of-indirect-genetic-effects"><span class="toc-section-number">3.15</span> Analysis of indirect genetic effects</a></li>
+<li><a href="#gwas-vs-whole-genome-association"><span class="toc-section-number">3.16</span> GWAS vs whole-genome association</a></li>
+<li><a href="#analysis-of-multiple-traits"><span class="toc-section-number">3.17</span> Analysis of multiple traits</a></li>
+<li><a href="#mixed-model-association-analysis"><span class="toc-section-number">3.18</span> Mixed-model association analysis</a></li>
+<li><a href="#penalized-regression-gwas"><span class="toc-section-number">3.19</span> Penalized regression GWAS</a></li>
+<li><a href="#bayesian-gwas"><span class="toc-section-number">3.20</span> Bayesian GWAS</a></li>
+<li><a href="#machine-learning-for-gwas"><span class="toc-section-number">3.21</span> Machine learning for GWAS</a></li>
+</ul></li>
+<li><a href="#heritability"><span class="toc-section-number">4</span> Heritability</a><ul>
+<li><a href="#realized-heritability"><span class="toc-section-number">4.1</span> Realized heritability</a><ul>
+<li><a href="#evolvability"><span class="toc-section-number">4.1.1</span> Evolvability</a></li>
+<li><a href="#reliability"><span class="toc-section-number">4.1.2</span> Reliability</a></li>
+</ul></li>
+<li><a href="#twin-studies"><span class="toc-section-number">4.2</span> Twin studies</a></li>
+<li><a href="#gcta"><span class="toc-section-number">4.3</span> GCTA</a></li>
+<li><a href="#ld-score-regression"><span class="toc-section-number">4.4</span> LD-score regression</a></li>
+<li><a href="#ldak"><span class="toc-section-number">4.5</span> LDAK</a></li>
+</ul></li>
+<li><a href="#genomic-prediction"><span class="toc-section-number">5</span> Genomic prediction</a><ul>
+<li><a href="#polygenic-risk-scores"><span class="toc-section-number">5.1</span> Polygenic risk scores</a></li>
+<li><a href="#gene-based-polygenic-score-polaris"><span class="toc-section-number">5.2</span> Gene-based polygenic score (POLARIS)</a></li>
+<li><a href="#pathway-based-polygenic-risk-score"><span class="toc-section-number">5.3</span> Pathway-based polygenic risk score</a></li>
+<li><a href="#ld-adjusted-prs"><span class="toc-section-number">5.4</span> LD adjusted PRS</a><ul>
+<li><a href="#ldpred-with-functional-annotation"><span class="toc-section-number">5.4.1</span> LDpred with functional annotation</a></li>
+</ul></li>
+<li><a href="#annopred"><span class="toc-section-number">5.5</span> Annopred</a></li>
+<li><a href="#pleiopred"><span class="toc-section-number">5.6</span> Pleiopred</a></li>
+<li><a href="#blup"><span class="toc-section-number">5.7</span> BLUP</a></li>
+<li><a href="#bayesian-zoo"><span class="toc-section-number">5.8</span> Bayesian Zoo</a></li>
+<li><a href="#reproducing-kernel-hilbert-space"><span class="toc-section-number">5.9</span> Reproducing kernel Hilbert space</a></li>
+<li><a href="#machine-learning-methods"><span class="toc-section-number">5.10</span> Machine learning methods</a></li>
+</ul></li>
+<li><a href="#pleiotropy"><span class="toc-section-number">6</span> Pleiotropy</a><ul>
+<li><a href="#direct"><span class="toc-section-number">6.1</span> Direct</a></li>
+<li><a href="#indirect"><span class="toc-section-number">6.2</span> Indirect</a></li>
+</ul></li>
+<li><a href="#pathway-analysis"><span class="toc-section-number">7</span> Pathway-analysis</a></li>
+<li><a href="#functional-annotation"><span class="toc-section-number">8</span> Functional annotation</a></li>
+<li><a href="#causal-inference"><span class="toc-section-number">9</span> Causal inference</a><ul>
+<li><a href="#gene-knockout"><span class="toc-section-number">9.1</span> Gene-knockout</a></li>
+<li><a href="#conditioning"><span class="toc-section-number">9.2</span> Conditioning</a></li>
+<li><a href="#finemapping"><span class="toc-section-number">9.3</span> Finemapping</a></li>
+<li><a href="#mendelian-randomization"><span class="toc-section-number">9.4</span> Mendelian Randomization</a></li>
+</ul></li>
+<li><a href="#combining-multiple-datasets"><span class="toc-section-number">10</span> Combining multiple datasets</a><ul>
+<li><a href="#meta-analysis"><span class="toc-section-number">10.1</span> Meta-analysis</a></li>
+<li><a href="#mega-analysis"><span class="toc-section-number">10.2</span> Mega-analysis</a></li>
+</ul></li>
+<li><a href="#gene-environment-interaction"><span class="toc-section-number">11</span> Gene-environment interaction</a><ul>
+<li><a href="#single-step-methods"><span class="toc-section-number">11.1</span> Single step methods</a><ul>
+<li><a href="#case-control"><span class="toc-section-number">11.1.1</span> Case-control</a></li>
+<li><a href="#case-only"><span class="toc-section-number">11.1.2</span> Case-only</a></li>
+<li><a href="#empirical-bayes-and-bayesian-model-averaging"><span class="toc-section-number">11.1.3</span> Empirical Bayes and Bayesian Model Averaging</a></li>
+</ul></li>
+<li><a href="#multi-stage-methods"><span class="toc-section-number">11.2</span> Multi stage methods</a></li>
+<li><a href="#joint-tests"><span class="toc-section-number">11.3</span> Joint tests</a></li>
+<li><a href="#set-based-interaction-tests"><span class="toc-section-number">11.4</span> Set-based interaction tests</a></li>
+<li><a href="#combining-multiple-environments"><span class="toc-section-number">11.5</span> Combining multiple environments</a></li>
+<li><a href="#variance-heterogeneity"><span class="toc-section-number">11.6</span> Variance heterogeneity</a><ul>
+<li><a href="#levenes-test"><span class="toc-section-number">11.6.1</span> Levene’s test</a></li>
+<li><a href="#two-step-screening-on-residual-variance-heterogeneity"><span class="toc-section-number">11.6.2</span> Two-step screening on residual variance heterogeneity</a></li>
+</ul></li>
+<li><a href="#conditional-quantile-regression"><span class="toc-section-number">11.7</span> Conditional quantile regression</a></li>
+<li><a href="#relief-and-other-machine-learning-tools"><span class="toc-section-number">11.8</span> RELIEF and other machine learning tools</a><ul>
+<li><a href="#multidimensionality-reduction"><span class="toc-section-number">11.8.1</span> Multidimensionality reduction</a></li>
+</ul></li>
+<li><a href="#meta-analytic-gxe-approaches"><span class="toc-section-number">11.9</span> Meta-analytic GxE approaches</a></li>
+</ul></li>
+<li><a href="#gene-gene-interaction"><span class="toc-section-number">12</span> Gene-gene interaction</a><ul>
+<li><a href="#single-step-methods-1"><span class="toc-section-number">12.1</span> Single step methods</a></li>
+<li><a href="#multi-stage-methods-1"><span class="toc-section-number">12.2</span> Multi stage methods</a></li>
+<li><a href="#machine-learning-methods-1"><span class="toc-section-number">12.3</span> Machine learning methods</a></li>
+</ul></li>
+<li><a href="#other-omics"><span class="toc-section-number">13</span> Other omics</a><ul>
+<li><a href="#transcriptome-wide-association-studies"><span class="toc-section-number">13.1</span> Transcriptome-wide association studies</a><ul>
+<li><a href="#cis-eqtls"><span class="toc-section-number">13.1.1</span> cis eQTLs</a></li>
+<li><a href="#trans-eqtls"><span class="toc-section-number">13.1.2</span> trans eQTLs</a></li>
+<li><a href="#d-structure-of-the-genome"><span class="toc-section-number">13.1.3</span> 3-D structure of the genome</a></li>
+</ul></li>
+<li><a href="#phenome-wide-association-studies"><span class="toc-section-number">13.2</span> Phenome-wide association studies</a></li>
+<li><a href="#metabolomics"><span class="toc-section-number">13.3</span> Metabolomics</a></li>
+<li><a href="#epigenomics"><span class="toc-section-number">13.4</span> Epigenomics</a></li>
+</ul></li>
+<li><a href="#quantitative-trait-loci-mapping"><span class="toc-section-number">14</span> Quantitative trait loci mapping</a></li>
+<li><a href="#additional-points-to-consider"><span class="toc-section-number">15</span> Additional points to consider</a><ul>
+<li><a href="#kinship-matrix"><span class="toc-section-number">15.1</span> Kinship matrix</a><ul>
+<li><a href="#path-coefficients"><span class="toc-section-number">15.1.1</span> Path coefficients</a></li>
+</ul></li>
+<li><a href="#genetic-relationship-matrix"><span class="toc-section-number">15.2</span> Genetic relationship matrix</a></li>
+<li><a href="#animal-models"><span class="toc-section-number">15.3</span> Animal models</a></li>
+<li><a href="#phasing"><span class="toc-section-number">15.4</span> Phasing</a></li>
+<li><a href="#haplotyping"><span class="toc-section-number">15.5</span> Haplotyping</a></li>
+<li><a href="#statistical-power"><span class="toc-section-number">15.6</span> Statistical power</a><ul>
+<li><a href="#when-marker-is-a-disease-susceptibility-locus"><span class="toc-section-number">15.6.1</span> When marker is a disease susceptibility locus</a></li>
+<li><a href="#when-marker-is-not-disease-susceptability-locus"><span class="toc-section-number">15.6.2</span> When marker is not disease susceptability locus</a></li>
+</ul></li>
+<li><a href="#multiple-comparisons"><span class="toc-section-number">15.7</span> Multiple comparisons</a><ul>
+<li><a href="#effective-number-of-independant-variants"><span class="toc-section-number">15.7.1</span> Effective number of independant variants</a></li>
+</ul></li>
+<li><a href="#biases"><span class="toc-section-number">15.8</span> Biases</a><ul>
+<li><a href="#ascertainment"><span class="toc-section-number">15.8.1</span> Ascertainment</a></li>
+<li><a href="#attenuation"><span class="toc-section-number">15.8.2</span> Attenuation</a></li>
+<li><a href="#selection"><span class="toc-section-number">15.8.3</span> Selection</a></li>
+</ul></li>
+<li><a href="#family-studies"><span class="toc-section-number">15.9</span> Family studies</a><ul>
+<li><a href="#transmission-disequilibrium-tests"><span class="toc-section-number">15.9.1</span> Transmission disequilibrium tests</a></li>
+</ul></li>
+<li><a href="#twin-studies-1"><span class="toc-section-number">15.10</span> Twin studies</a></li>
+<li><a href="#adoption-studies"><span class="toc-section-number">15.11</span> Adoption studies</a></li>
+<li><a href="#equifinality-many-genes-give-same-trait"><span class="toc-section-number">15.12</span> Equifinality (many genes give same trait)</a></li>
+<li><a href="#gene-dosage"><span class="toc-section-number">15.13</span> Gene dosage</a><ul>
+<li><a href="#allelic-dosage"><span class="toc-section-number">15.13.1</span> Allelic dosage</a></li>
+</ul></li>
+<li><a href="#allelic-heterogeneity"><span class="toc-section-number">15.14</span> Allelic heterogeneity</a></li>
+<li><a href="#genetic-heterogeneity"><span class="toc-section-number">15.15</span> Genetic heterogeneity</a></li>
+<li><a href="#genomic-imprinting"><span class="toc-section-number">15.16</span> Genomic imprinting</a></li>
+<li><a href="#penetrancephenocopy"><span class="toc-section-number">15.17</span> Penetrance/phenocopy</a></li>
+<li><a href="#endophenotypes"><span class="toc-section-number">15.18</span> Endophenotypes</a></li>
+<li><a href="#ploidy"><span class="toc-section-number">15.19</span> Ploidy</a></li>
+<li><a href="#exended-phenotype"><span class="toc-section-number">15.20</span> Exended phenotype</a></li>
+<li><a href="#genome-sizes"><span class="toc-section-number">15.21</span> Genome sizes</a></li>
+</ul></li>
+<li><a href="#part-population-genetics">(PART) Population Genetics</a></li>
+<li><a href="#genetic-drift"><span class="toc-section-number">16</span> Genetic drift</a></li>
+<li><a href="#mutation"><span class="toc-section-number">17</span> Mutation</a><ul>
+<li><a href="#mutation-age"><span class="toc-section-number">17.1</span> Mutation age</a></li>
+</ul></li>
+<li><a href="#selection-1"><span class="toc-section-number">18</span> Selection</a><ul>
+<li><a href="#directional"><span class="toc-section-number">18.1</span> Directional</a></li>
+<li><a href="#balancing"><span class="toc-section-number">18.2</span> Balancing</a><ul>
+<li><a href="#frequency-dependent-selection-1"><span class="toc-section-number">18.2.1</span> Frequency-dependent selection 1</a></li>
+<li><a href="#frequency-dependent-selection-2"><span class="toc-section-number">18.2.2</span> Frequency dependent selection 2</a></li>
+</ul></li>
+<li><a href="#background-selection"><span class="toc-section-number">18.3</span> Background selection</a></li>
+</ul></li>
+<li><a href="#migration"><span class="toc-section-number">19</span> Migration</a></li>
+<li><a href="#diversity"><span class="toc-section-number">20</span> Diversity</a></li>
+<li><a href="#admixture"><span class="toc-section-number">21</span> Admixture</a></li>
+<li><a href="#linkage-disequilibrium"><span class="toc-section-number">22</span> Linkage disequilibrium</a></li>
+<li><a href="#in-breeding-and-heterosis"><span class="toc-section-number">23</span> In breeding and heterosis</a></li>
+<li><a href="#assortative-mating"><span class="toc-section-number">24</span> Assortative mating</a></li>
+<li><a href="#identity"><span class="toc-section-number">25</span> Identity</a><ul>
+<li><a href="#ibs"><span class="toc-section-number">25.1</span> IBS</a><ul>
+<li><a href="#long-runs-of-ibt"><span class="toc-section-number">25.1.1</span> Long runs of IBT</a></li>
+</ul></li>
+<li><a href="#ibd"><span class="toc-section-number">25.2</span> IBD</a></li>
+<li><a href="#ibt"><span class="toc-section-number">25.3</span> IBT</a></li>
+</ul></li>
+<li><a href="#neutral-theory-of-molecular-evolution"><span class="toc-section-number">26</span> Neutral theory of molecular evolution</a><ul>
+<li><a href="#nearly-neutral-theory-of-molecular-evolution"><span class="toc-section-number">26.1</span> Nearly neutral theory of molecular evolution</a></li>
+</ul></li>
+</ul>
+<!--bookdown:toc2:end-->
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A handbook for Computational Genetics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!--bookdown:toc:end-->
+<!--bookdown:body:start-->
+<div id="preface" class="section level1 unnumbered">
+<h1>Preface</h1>
+<p>The scope of this book is to provide an outline of computational methods available for the analysis of genetic data.</p>
+<p>First chapter introduces methods to infer population parameters.</p>
+<p>Next X chapters focus on population genetics.</p>
+<p>In this book, the amount of mathematics and statistics is kept to a minimum. Only methods designed specifically to address issues in genetics are shown. I have produced another book [insert link here], which is intended to familiarise the reader with commonly used approaches and develop some intuition behind them. By no means the list is comprehensive and only serves as a quick guide. The internet provides much more information regarding this topic.</p>
+<p>Rather than providing references at the end of each chapter, I decided to combine them into supplementary text [insert link here]. References are arranged according to different topics discussed in this book. I tried to do my best to cause as little confusion as possible.</p>
+<p>Finally, don’t hesitate to contact me if I have not included your favorite method (<a href="mailto:apozarickij@gmail.com">apozarickij@gmail.com</a>). I would be more than happy to hear about it.</p>
+<!--chapter:end:index.Rmd-->
+</div>
+<div id="part-quantitative-genetics" class="section level1 unnumbered">
+<h1>(PART) Quantitative Genetics</h1>
+</div>
+<div id="population-parameters" class="section level1">
+<h1><span class="header-section-number">1</span> Population parameters</h1>
+<div id="mean" class="section level2">
+<h2><span class="header-section-number">1.1</span> Mean</h2>
+</div>
+<div id="variance" class="section level2">
+<h2><span class="header-section-number">1.2</span> Variance</h2>
+</div>
+<div id="covariance" class="section level2">
+<h2><span class="header-section-number">1.3</span> Covariance</h2>
+</div>
+<div id="genetic-correlation" class="section level2">
+<h2><span class="header-section-number">1.4</span> Genetic correlation</h2>
+</div>
+<div id="additivity" class="section level2">
+<h2><span class="header-section-number">1.5</span> Additivity</h2>
+</div>
+<div id="dominancerecesivness" class="section level2">
+<h2><span class="header-section-number">1.6</span> Dominance/Recesivness</h2>
+</div>
+<div id="codominance" class="section level2">
+<h2><span class="header-section-number">1.7</span> Codominance</h2>
+<!--chapter:end:01-Descriptives.Rmd-->
+</div>
+</div>
+<div id="sequencing-technologies" class="section level1">
+<h1><span class="header-section-number">2</span> Sequencing technologies</h1>
+<!--chapter:end:02-Sequencing-technologies.Rmd-->
+</div>
+<div id="genome-wide-association-analysis" class="section level1">
+<h1><span class="header-section-number">3</span> Genome-wide association analysis</h1>
+<div id="genotype-calling-algorithms" class="section level2">
+<h2><span class="header-section-number">3.1</span> Genotype calling algorithms</h2>
+</div>
+<div id="dna-processing-quality-control" class="section level2">
+<h2><span class="header-section-number">3.2</span> DNA processing quality control</h2>
+</div>
+<div id="sample-quality-control" class="section level2">
+<h2><span class="header-section-number">3.3</span> Sample quality control</h2>
+<div id="cryptic-relatedness" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> Cryptic relatedness</h3>
+</div>
+<div id="population-stratification" class="section level3">
+<h3><span class="header-section-number">3.3.2</span> Population stratification</h3>
+</div>
+<div id="heterozygosity-and-missingness-outliers" class="section level3">
+<h3><span class="header-section-number">3.3.3</span> Heterozygosity and missingness outliers</h3>
+</div>
+<div id="differential-missingness" class="section level3">
+<h3><span class="header-section-number">3.3.4</span> Differential missingness</h3>
+</div>
+<div id="sex-chromosome-anomalies" class="section level3">
+<h3><span class="header-section-number">3.3.5</span> Sex chromosome anomalies</h3>
+</div>
+</div>
+<div id="marker-quality-control" class="section level2">
+<h2><span class="header-section-number">3.4</span> Marker quality control</h2>
+<div id="genotyping-concordance" class="section level3">
+<h3><span class="header-section-number">3.4.1</span> Genotyping concordance</h3>
+</div>
+<div id="switch-rate" class="section level3">
+<h3><span class="header-section-number">3.4.2</span> Switch rate</h3>
+</div>
+<div id="genotype-call-rate" class="section level3">
+<h3><span class="header-section-number">3.4.3</span> Genotype call rate</h3>
+</div>
+<div id="minor-allele-frequency" class="section level3">
+<h3><span class="header-section-number">3.4.4</span> Minor allele frequency</h3>
+</div>
+<div id="hardy-weinberg-equilibrium-outliers" class="section level3">
+<h3><span class="header-section-number">3.4.5</span> Hardy-Weinberg equilibrium outliers</h3>
+</div>
+<div id="additional-qc-for-regions-like-mhc" class="section level3">
+<h3><span class="header-section-number">3.4.6</span> Additional QC for regions like MHC</h3>
+</div>
+<div id="ambigious-nucleotides" class="section level3">
+<h3><span class="header-section-number">3.4.7</span> Ambigious nucleotides</h3>
+</div>
+<div id="non-matching-nucleotides" class="section level3">
+<h3><span class="header-section-number">3.4.8</span> Non-matching nucleotides</h3>
+</div>
+</div>
+<div id="x-chromosome-quality-control" class="section level2">
+<h2><span class="header-section-number">3.5</span> X-chromosome quality control</h2>
+</div>
+<div id="single-marker-regression" class="section level2">
+<h2><span class="header-section-number">3.6</span> Single marker regression</h2>
+<div id="trend-test" class="section level3">
+<h3><span class="header-section-number">3.6.1</span> Trend test</h3>
+</div>
+<div id="alleles-test" class="section level3">
+<h3><span class="header-section-number">3.6.2</span> Alleles test</h3>
+</div>
+</div>
+<div id="two-stage-approach" class="section level2">
+<h2><span class="header-section-number">3.7</span> Two-stage approach</h2>
+</div>
+<div id="haplotype-gwas-design" class="section level2">
+<h2><span class="header-section-number">3.8</span> Haplotype GWAs design</h2>
+<div id="genomic-control" class="section level3">
+<h3><span class="header-section-number">3.8.1</span> Genomic control</h3>
+</div>
+</div>
+<div id="multimarker-gene-set-based-approaches" class="section level2">
+<h2><span class="header-section-number">3.9</span> Multimarker gene-set based approaches</h2>
+<p><a href="https://cran.r-project.org/web/packages/aSPU/aSPU.pdf" class="uri">https://cran.r-project.org/web/packages/aSPU/aSPU.pdf</a></p>
+</div>
+<div id="extensions-to-binary-and-categorical-phenotypes" class="section level2">
+<h2><span class="header-section-number">3.10</span> Extensions to binary and categorical phenotypes</h2>
+<div id="threshold-model" class="section level3">
+<h3><span class="header-section-number">3.10.1</span> Threshold model</h3>
+</div>
+</div>
+<div id="analysis-of-rare-variants" class="section level2">
+<h2><span class="header-section-number">3.11</span> Analysis of rare variants</h2>
+<p>Check Lee et al (2014) for a review</p>
+<p>Due to the low frequencies of rare variants, classical single marker tests commonly used in genome-wide association studies (GWAS) for studying common variants effects are not applicable. In view of the lack of power of single marker analysis of rare variants, methods investigating rare variation are typically region-based tests where one tests for the cumulative effects of the rare variants in a region. These region-based methods can be broadly classified into three classes: burden tests, non-burden tests and hybrid of the two. The key difference between burden and non-burden tests is how the cumulative effects of the rare variants are combined for association testing. For the commonly used simple burden tests, one summarizes the rare variants within a region as a single summary genetic burden variable, e.g. the total number of rare variants in a region, and tests its association with a trait. Burden tests implicitly assume all the rare variants in the region under consideration are causal and are associated with the phenotype in the same direction and magnitude. Hence, they all share the limitation of substantial power loss when there are many non-causal genetic variants in a region and/or when there are both protective and harmful variants. Several region-based non-burden tests have been proposed by aggregating marginal test statistics (Neale et al., 2011; Basu and Pan, 2011; Lin and Tang, 2011). One such test is the sequence kernel association test (SKAT) (Wu et al., 2011), where one summarizes the rare variants in the region using a kernel function, and then test for association with the trait of interest using a variance component score test. SKAT is robust to the signs and magnitudes of the associations of rare variants with a trait. It is more powerful than the burden tests when the effects are in different directions or the majority of variants in a region are null, but is less powerful than burden tests when most variants in a region are causal and the effects are in the same direction. Several hybrids of the two methods have been proposed to improve test power and robustness (Lee et al., 2012; Derkach et al., 2013; Sun et al., 2013).</p>
+<div id="collapsing-methods-based-on-pooling-multiple-rare-variants" class="section level3">
+<h3><span class="header-section-number">3.11.1</span> Collapsing methods based on pooling multiple rare variants</h3>
+<div id="sum-test" class="section level4">
+<h4><span class="header-section-number">3.11.1.1</span> Sum test</h4>
+<p>The most powerful multi-marker test when there are no causal variants with effects in opposite directions and when there are few or no non-causal RVs. Otherwise, it suffers from substantial loss of power.</p>
+</div>
+<div id="cohort-allelic-sums-test-cast" class="section level4">
+<h4><span class="header-section-number">3.11.1.2</span> Cohort Allelic Sums test (CAST)</h4>
+</div>
+<div id="combined-multivariate-collapsing-cmc" class="section level4">
+<h4><span class="header-section-number">3.11.1.3</span> Combined Multivariate Collapsing (CMC)</h4>
+</div>
+<div id="weighted-sum-test-w-sum" class="section level4">
+<h4><span class="header-section-number">3.11.1.4</span> Weighted Sum test (W-Sum)</h4>
+</div>
+<div id="kernel-based-adaptive-cluster-kbac" class="section level4">
+<h4><span class="header-section-number">3.11.1.5</span> Kernel Based Adaptive Cluster (KBAC)</h4>
+</div>
+<div id="replication-based-test-rbt" class="section level4">
+<h4><span class="header-section-number">3.11.1.6</span> Replication Based Test (RBT)</h4>
+</div>
+<div id="ariel-test" class="section level4">
+<h4><span class="header-section-number">3.11.1.7</span> ARIEL test</h4>
+</div>
+<div id="the-erec-test" class="section level4">
+<h4><span class="header-section-number">3.11.1.8</span> The EREC test</h4>
+</div>
+</div>
+<div id="methods-treating-rare-variant-effects-as-random" class="section level3">
+<h3><span class="header-section-number">3.11.2</span> Methods treating rare variant effects as random</h3>
+<div id="the-ssu-approach" class="section level4">
+<h4><span class="header-section-number">3.11.2.1</span> The SSU approach</h4>
+<p>Has good power in the presence of opposite association directions and non-causal RVs.</p>
+</div>
+<div id="c-alpha-test" class="section level4">
+<h4><span class="header-section-number">3.11.2.2</span> C-alpha test</h4>
+</div>
+<div id="skat" class="section level4">
+<h4><span class="header-section-number">3.11.2.3</span> SKAT</h4>
+<p>Has good power in the presence of opposite association directions and non-causal RVs. It was recently suggested that using SKAT in the presence of RVs and common variants (CVs) may be less optimal because RVs are weighted to have much more importance than CVs (Ionita-Laza et al., 2013).</p>
+</div>
+</div>
+<div id="methods-based-on-model-selection" class="section level3">
+<h3><span class="header-section-number">3.11.3</span> Methods based on model selection</h3>
+<p>The model-selection approaches perform in the middle of random eﬀect and collapsing methods. One issue common to model-selection methods is that model selection approaches use dimension-reduction strategies to substantially reduce the number of parameters one would require to ﬁt these large number of RVs. Hence, any model we can construct will never be the true model that generated the data we observe. In other words, the set of models is clearly misspeciﬁed, and model selection is best seen as a way of approximating, rather than identifying, full reality (Burnham and Anderson (2002), pp. 20-23).</p>
+<div id="seq-asum" class="section level4">
+<h4><span class="header-section-number">3.11.3.1</span> Seq-aSum</h4>
+</div>
+<div id="seq-asum-vs" class="section level4">
+<h4><span class="header-section-number">3.11.3.2</span> Seq-aSum-VS</h4>
+<p>The Seq-aSum-VS approach classiﬁes RVs based on the direction of association (‘+1’ for positive association, ‘-1’ for negative association and ‘0’ for no association) and implements a sequential variable selection scheme to select the best model for association between the SNP-set and the disease. The only diﬀerence between the Seq-aSum approach and the Seq-aSum-VS approach is that the variable selection (‘0’ allocation for a variant) is not implemented in the former. The Seq-aSum-VS approach starts with putting all the RVs in the ‘+1’ group and proceeds by moving each RV sequentially to the other two groups and ﬁnally chooses the allocation (‘+1’,‘-1’, or ‘0’ ) with highest likelihood to the RV. The process of choosing the best model in Basu and Pan (2011)’s method can be compared to a stepwise regression, where one may not always ﬁnd the best model due to this selection scheme. This is especially true if a particular allocation results in a slightly higher likelihood than the other two allocations. In this case, choosing the allocation with highest likelihood for a SNP might not be optimal, rather it might be more eﬃcient to allow multiple allocations for a RV and construct a test that takes into account multiple plausible models for the disease-RV association. Moreover, the performance of the sequential search often depends on the ordering of the variants in this search mechanism. A model-averaging approach could potentially reduce the dependency on the ordering of the variants in this sequential search.</p>
+</div>
+<div id="variable-threshold-test-vt" class="section level4">
+<h4><span class="header-section-number">3.11.3.3</span> Variable Threshold Test (VT)</h4>
+</div>
+<div id="rarecover" class="section level4">
+<h4><span class="header-section-number">3.11.3.4</span> RARECOVER</h4>
+</div>
+<div id="selective-grouping-method" class="section level4">
+<h4><span class="header-section-number">3.11.3.5</span> Selective grouping method</h4>
+</div>
+<div id="step-up" class="section level4">
+<h4><span class="header-section-number">3.11.3.6</span> Step-Up</h4>
+</div>
+</div>
+<div id="combination-of-collapsing-and-random-effects-methods" class="section level3">
+<h3><span class="header-section-number">3.11.4</span> Combination of collapsing and random effects methods</h3>
+<p>According to Basu and Pan (2011), the model selection methods, especially Seq-aSum-VS approach, performed very well when there were both protective and deleterious causal RVs and very few non-causal RVs, but the performance of the Seq-aSum-VS approach was not very impressive in the presence of a moderate or large number of non-causal RVs. These and other ﬁndings (Basu and Pan, 2011) have led to combining the strengths of collapsing and random eﬀect methods.</p>
+<div id="skat-o" class="section level4">
+<h4><span class="header-section-number">3.11.4.1</span> SKAT-O</h4>
+</div>
+<div id="skat-c" class="section level4">
+<h4><span class="header-section-number">3.11.4.2</span> SKAT-C</h4>
+</div>
+<div id="fisher-method" class="section level4">
+<h4><span class="header-section-number">3.11.4.3</span> Fisher method</h4>
+</div>
+<div id="mist" class="section level4">
+<h4><span class="header-section-number">3.11.4.4</span> MiST</h4>
+</div>
+</div>
+</div>
+<div id="analysis-of-x-y-and-mitochondrial-chromosomes" class="section level2">
+<h2><span class="header-section-number">3.12</span> Analysis of X, Y and mitochondrial chromosomes</h2>
+</div>
+<div id="analysis-of-copy-number-variants" class="section level2">
+<h2><span class="header-section-number">3.13</span> Analysis of copy number variants</h2>
+<div id="common-variation" class="section level3">
+<h3><span class="header-section-number">3.13.1</span> Common variation</h3>
+</div>
+<div id="analysis-of-rare-variants-1" class="section level3">
+<h3><span class="header-section-number">3.13.2</span> Analysis of rare variants</h3>
+</div>
+</div>
+<div id="analysis-of-multi-ethnic-samples" class="section level2">
+<h2><span class="header-section-number">3.14</span> Analysis of multi-ethnic samples</h2>
+</div>
+<div id="analysis-of-indirect-genetic-effects" class="section level2">
+<h2><span class="header-section-number">3.15</span> Analysis of indirect genetic effects</h2>
+</div>
+<div id="gwas-vs-whole-genome-association" class="section level2">
+<h2><span class="header-section-number">3.16</span> GWAS vs whole-genome association</h2>
+</div>
+<div id="analysis-of-multiple-traits" class="section level2">
+<h2><span class="header-section-number">3.17</span> Analysis of multiple traits</h2>
+</div>
+<div id="mixed-model-association-analysis" class="section level2">
+<h2><span class="header-section-number">3.18</span> Mixed-model association analysis</h2>
+</div>
+<div id="penalized-regression-gwas" class="section level2">
+<h2><span class="header-section-number">3.19</span> Penalized regression GWAS</h2>
+</div>
+<div id="bayesian-gwas" class="section level2">
+<h2><span class="header-section-number">3.20</span> Bayesian GWAS</h2>
+</div>
+<div id="machine-learning-for-gwas" class="section level2">
+<h2><span class="header-section-number">3.21</span> Machine learning for GWAS</h2>
+<!--chapter:end:03-Genome-wide-association-analyses.Rmd-->
+</div>
+</div>
+<div id="heritability" class="section level1">
+<h1><span class="header-section-number">4</span> Heritability</h1>
+<div id="realized-heritability" class="section level2">
+<h2><span class="header-section-number">4.1</span> Realized heritability</h2>
+<div id="evolvability" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Evolvability</h3>
+</div>
+<div id="reliability" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> Reliability</h3>
+</div>
+</div>
+<div id="twin-studies" class="section level2">
+<h2><span class="header-section-number">4.2</span> Twin studies</h2>
+</div>
+<div id="gcta" class="section level2">
+<h2><span class="header-section-number">4.3</span> GCTA</h2>
+</div>
+<div id="ld-score-regression" class="section level2">
+<h2><span class="header-section-number">4.4</span> LD-score regression</h2>
+</div>
+<div id="ldak" class="section level2">
+<h2><span class="header-section-number">4.5</span> LDAK</h2>
+<!--chapter:end:04-Heritability.Rmd-->
+</div>
+</div>
+<div id="genomic-prediction" class="section level1">
+<h1><span class="header-section-number">5</span> Genomic prediction</h1>
+<div id="polygenic-risk-scores" class="section level2">
+<h2><span class="header-section-number">5.1</span> Polygenic risk scores</h2>
+</div>
+<div id="gene-based-polygenic-score-polaris" class="section level2">
+<h2><span class="header-section-number">5.2</span> Gene-based polygenic score (POLARIS)</h2>
+</div>
+<div id="pathway-based-polygenic-risk-score" class="section level2">
+<h2><span class="header-section-number">5.3</span> Pathway-based polygenic risk score</h2>
+</div>
+<div id="ld-adjusted-prs" class="section level2">
+<h2><span class="header-section-number">5.4</span> LD adjusted PRS</h2>
+<div id="ldpred-with-functional-annotation" class="section level3">
+<h3><span class="header-section-number">5.4.1</span> LDpred with functional annotation</h3>
+</div>
+</div>
+<div id="annopred" class="section level2">
+<h2><span class="header-section-number">5.5</span> Annopred</h2>
+</div>
+<div id="pleiopred" class="section level2">
+<h2><span class="header-section-number">5.6</span> Pleiopred</h2>
+</div>
+<div id="blup" class="section level2">
+<h2><span class="header-section-number">5.7</span> BLUP</h2>
+</div>
+<div id="bayesian-zoo" class="section level2">
+<h2><span class="header-section-number">5.8</span> Bayesian Zoo</h2>
+</div>
+<div id="reproducing-kernel-hilbert-space" class="section level2">
+<h2><span class="header-section-number">5.9</span> Reproducing kernel Hilbert space</h2>
+</div>
+<div id="machine-learning-methods" class="section level2">
+<h2><span class="header-section-number">5.10</span> Machine learning methods</h2>
+<!--chapter:end:05-Genomic-prediction.Rmd-->
+</div>
+</div>
+<div id="pleiotropy" class="section level1">
+<h1><span class="header-section-number">6</span> Pleiotropy</h1>
+<div id="direct" class="section level2">
+<h2><span class="header-section-number">6.1</span> Direct</h2>
+</div>
+<div id="indirect" class="section level2">
+<h2><span class="header-section-number">6.2</span> Indirect</h2>
+<!--chapter:end:06-Pleiotropy.Rmd-->
+</div>
+</div>
+<div id="pathway-analysis" class="section level1">
+<h1><span class="header-section-number">7</span> Pathway-analysis</h1>
+<!--chapter:end:07-Pathway-analysis.Rmd-->
+</div>
+<div id="functional-annotation" class="section level1">
+<h1><span class="header-section-number">8</span> Functional annotation</h1>
+<!--chapter:end:08-Functional-annotation.Rmd-->
+</div>
+<div id="causal-inference" class="section level1">
+<h1><span class="header-section-number">9</span> Causal inference</h1>
+<div id="gene-knockout" class="section level2">
+<h2><span class="header-section-number">9.1</span> Gene-knockout</h2>
+</div>
+<div id="conditioning" class="section level2">
+<h2><span class="header-section-number">9.2</span> Conditioning</h2>
+</div>
+<div id="finemapping" class="section level2">
+<h2><span class="header-section-number">9.3</span> Finemapping</h2>
+</div>
+<div id="mendelian-randomization" class="section level2">
+<h2><span class="header-section-number">9.4</span> Mendelian Randomization</h2>
+<!--chapter:end:09-Inferring-causality.Rmd-->
+</div>
+</div>
+<div id="combining-multiple-datasets" class="section level1">
+<h1><span class="header-section-number">10</span> Combining multiple datasets</h1>
+<div id="meta-analysis" class="section level2">
+<h2><span class="header-section-number">10.1</span> Meta-analysis</h2>
+</div>
+<div id="mega-analysis" class="section level2">
+<h2><span class="header-section-number">10.2</span> Mega-analysis</h2>
+<!--chapter:end:10-Analysis-of-multiple-datasets.Rmd-->
+</div>
+</div>
+<div id="gene-environment-interaction" class="section level1">
+<h1><span class="header-section-number">11</span> Gene-environment interaction</h1>
+<p>Identification of gene-environment interactions has important implications for understanding underlying disease etiology and developing disease prevention and intervention strategies.</p>
+<div id="single-step-methods" class="section level2">
+<h2><span class="header-section-number">11.1</span> Single step methods</h2>
+<div id="case-control" class="section level3">
+<h3><span class="header-section-number">11.1.1</span> Case-control</h3>
+</div>
+<div id="case-only" class="section level3">
+<h3><span class="header-section-number">11.1.2</span> Case-only</h3>
+</div>
+<div id="empirical-bayes-and-bayesian-model-averaging" class="section level3">
+<h3><span class="header-section-number">11.1.3</span> Empirical Bayes and Bayesian Model Averaging</h3>
+</div>
+</div>
+<div id="multi-stage-methods" class="section level2">
+<h2><span class="header-section-number">11.2</span> Multi stage methods</h2>
+</div>
+<div id="joint-tests" class="section level2">
+<h2><span class="header-section-number">11.3</span> Joint tests</h2>
+</div>
+<div id="set-based-interaction-tests" class="section level2">
+<h2><span class="header-section-number">11.4</span> Set-based interaction tests</h2>
+<p>There are multiple reasons for using set-based gene-environment interaction tests.</p>
+<ol style="list-style-type: decimal">
+<li>Multiple comparison adjustments for a large number of markers across the genome could result in power loss.</li>
+<li>Closely located SNPs are correlated because of linkage disequilibrium. Multiple tests for GxE in these single-marker-based GxE models are even more dependent, as interaction terms in these models share the same environmental variable. Dependence among multiple tests can result in incorrect Type 1 error rates and causes bias in standard multiple comparison adjustments and this bias is often difficult to correct.</li>
+<li>The single-marker GxE test does not interrogate the joint effects of multiple SNPs that have similar biological functions. When the main effects of multiple SNPs in a set are associated with a disease/trait, the classical single marker regression interaction test can be biased.</li>
+</ol>
+<p>Lin et al. (2013) developed a method to analyse GxE for a set of markers using generalized linear mixed models. The method tests for SNP-set by environment interactions using a variance component test, and because a set of variants will likely be correlated, the main SNP effect estimates under the null hypothesis are obtained using ridge regression. Their software is called GESAT. Here, they model GxE effects as random, as opposed to the classical approach of treating <em>BETAj</em>’s as fixed effects followed by a test with <em>p</em> degrees of freedom. The latter approach can suffer from power loss when <em>p</em> is moderate/large, and numerical difficulties when some genetic markers in the set are in high LD. The model allows to adjust for the main effects of all SNPs while simultaneously testing for the interactions between the SNPs in the region and environmental variable. For unbalanced designs when a binary environmental exposure has a low frequency in one category, GESAT is most advantageous over single marker regression GxE test. Such unbalanced designs can occur due to case–control sampling and the strong association of an environmental factor with disease. When the effect size is modest, GESAT performs better that single marker regression GxE test, but when the effect size is strong, the opposite is true. Their simulations suggest that the power of GESAT seems fairly robust to the dependence between G and E.</p>
+<p>The same approach can be applied to investigating various other biological problems. For example, we can test for the interactions between gene expressions in a pathway or network and an environmental variable by simply replacing G by gene expressions in a gene-set.</p>
+<p>Existing methods for assessing common variants by environment interactions such as Gene-Environment Set Association Test (GESAT) (Lin et al., 2013) have several limitations when applied for rare variants. GESAT estimates the main effects of the common variants by applying a L2 penalty on the genotypes scaled to unit variance; this assumes that the main effects of the scaled genotypes are comparable in magnitudes, which may not hold in the case of rare variants. GESAT also assumes that the regression coefficients of the rare variants by environment interactions are independent of each other, and suffers from power loss when most rare variants in a gene interact with the environmental factor and the interaction effects have the same direction.</p>
+<p>Similar idea from GESAT was later extended and applied to analyse rare variants. GESAT have several limitations when applied for rare variants. GESAT estimates the main effects of the common variants by applying a L2 penalty on the genotypes scaled to unit variance; this assumes that the main effects of the scaled genotypes are comparable in magnitudes, which may not hold in the case of rare variants. GESAT also assumes that the regression coefficients of the rare variants by environment interactions are independent of each other, and suffers from power loss when most rare variants in a gene interact with the environmental factor and the interaction effects have the same direction. The new proposed test iSKAT is optimal in a class of variance component tests and is powerful and robust to the proportion of variants in a gene that interact with environment and the signs of the effects. This test properly controls for the main effects of the rare variants using weighted ridge regression while adjusting for covariates.</p>
+<p>A naive approach to assess rare variants by environment interactions is to extend the burden test by fitting a model with both the summary genetic burden variable, environment, and their interaction, and performing a one degree of freedom test for the interaction. However, when there are multiple causal variants with their main effects having different magnitudes and/or signs, such a burden rare variant by environment test fails, and may lead to inflated Type 1 error rates. This is because adjusting for the main effects of the multiple causal variants using a single summary genetic burden variable is inappropriate. Likewise, a naive approach to assess rare variants by environment interactions using SKAT by including the main effects of rare variants as part of covariates and applying SKAT to the interaction terms is problematic. This is because SKAT only allows adjustment of a small number of covariates and cannot handle the presence of a large number of rare variants in a region. Furthermore since the rare variants are observed in low frequency, a model with all the rare variants as main effects will be highly unstable and may not even converge.</p>
+<p>Both GESAT and iSKAT are able to incorporate multiple environmental variables.</p>
+<p>No gene-based GxE test exists for the analysis of the sex chromosomes as of writing this text.</p>
+</div>
+<div id="combining-multiple-environments" class="section level2">
+<h2><span class="header-section-number">11.5</span> Combining multiple environments</h2>
+</div>
+<div id="variance-heterogeneity" class="section level2">
+<h2><span class="header-section-number">11.6</span> Variance heterogeneity</h2>
+<div id="levenes-test" class="section level3">
+<h3><span class="header-section-number">11.6.1</span> Levene’s test</h3>
+</div>
+<div id="two-step-screening-on-residual-variance-heterogeneity" class="section level3">
+<h3><span class="header-section-number">11.6.2</span> Two-step screening on residual variance heterogeneity</h3>
+</div>
+</div>
+<div id="conditional-quantile-regression" class="section level2">
+<h2><span class="header-section-number">11.7</span> Conditional quantile regression</h2>
+</div>
+<div id="relief-and-other-machine-learning-tools" class="section level2">
+<h2><span class="header-section-number">11.8</span> RELIEF and other machine learning tools</h2>
+<div id="multidimensionality-reduction" class="section level3">
+<h3><span class="header-section-number">11.8.1</span> Multidimensionality reduction</h3>
+</div>
+</div>
+<div id="meta-analytic-gxe-approaches" class="section level2">
+<h2><span class="header-section-number">11.9</span> Meta-analytic GxE approaches</h2>
+<!--chapter:end:11-GxE.Rmd-->
+</div>
+</div>
+<div id="gene-gene-interaction" class="section level1">
+<h1><span class="header-section-number">12</span> Gene-gene interaction</h1>
+<div id="single-step-methods-1" class="section level2">
+<h2><span class="header-section-number">12.1</span> Single step methods</h2>
+</div>
+<div id="multi-stage-methods-1" class="section level2">
+<h2><span class="header-section-number">12.2</span> Multi stage methods</h2>
+</div>
+<div id="machine-learning-methods-1" class="section level2">
+<h2><span class="header-section-number">12.3</span> Machine learning methods</h2>
+<!--chapter:end:12-GxG.Rmd-->
+</div>
+</div>
+<div id="other-omics" class="section level1">
+<h1><span class="header-section-number">13</span> Other omics</h1>
+<div id="transcriptome-wide-association-studies" class="section level2">
+<h2><span class="header-section-number">13.1</span> Transcriptome-wide association studies</h2>
+<div id="cis-eqtls" class="section level3">
+<h3><span class="header-section-number">13.1.1</span> cis eQTLs</h3>
+</div>
+<div id="trans-eqtls" class="section level3">
+<h3><span class="header-section-number">13.1.2</span> trans eQTLs</h3>
+</div>
+<div id="d-structure-of-the-genome" class="section level3">
+<h3><span class="header-section-number">13.1.3</span> 3-D structure of the genome</h3>
+</div>
+</div>
+<div id="phenome-wide-association-studies" class="section level2">
+<h2><span class="header-section-number">13.2</span> Phenome-wide association studies</h2>
+</div>
+<div id="metabolomics" class="section level2">
+<h2><span class="header-section-number">13.3</span> Metabolomics</h2>
+</div>
+<div id="epigenomics" class="section level2">
+<h2><span class="header-section-number">13.4</span> Epigenomics</h2>
+<!--chapter:end:13-Multi-omics.Rmd-->
+</div>
+</div>
+<div id="quantitative-trait-loci-mapping" class="section level1">
+<h1><span class="header-section-number">14</span> Quantitative trait loci mapping</h1>
+<!--chapter:end:14-QTL-mapping.Rmd-->
+</div>
+<div id="additional-points-to-consider" class="section level1">
+<h1><span class="header-section-number">15</span> Additional points to consider</h1>
+<div id="kinship-matrix" class="section level2">
+<h2><span class="header-section-number">15.1</span> Kinship matrix</h2>
+<div id="path-coefficients" class="section level3">
+<h3><span class="header-section-number">15.1.1</span> Path coefficients</h3>
+</div>
+</div>
+<div id="genetic-relationship-matrix" class="section level2">
+<h2><span class="header-section-number">15.2</span> Genetic relationship matrix</h2>
+</div>
+<div id="animal-models" class="section level2">
+<h2><span class="header-section-number">15.3</span> Animal models</h2>
+</div>
+<div id="phasing" class="section level2">
+<h2><span class="header-section-number">15.4</span> Phasing</h2>
+</div>
+<div id="haplotyping" class="section level2">
+<h2><span class="header-section-number">15.5</span> Haplotyping</h2>
+</div>
+<div id="statistical-power" class="section level2">
+<h2><span class="header-section-number">15.6</span> Statistical power</h2>
+<div id="when-marker-is-a-disease-susceptibility-locus" class="section level3">
+<h3><span class="header-section-number">15.6.1</span> When marker is a disease susceptibility locus</h3>
+</div>
+<div id="when-marker-is-not-disease-susceptability-locus" class="section level3">
+<h3><span class="header-section-number">15.6.2</span> When marker is not disease susceptability locus</h3>
+</div>
+</div>
+<div id="multiple-comparisons" class="section level2">
+<h2><span class="header-section-number">15.7</span> Multiple comparisons</h2>
+<div id="effective-number-of-independant-variants" class="section level3">
+<h3><span class="header-section-number">15.7.1</span> Effective number of independant variants</h3>
+</div>
+</div>
+<div id="biases" class="section level2">
+<h2><span class="header-section-number">15.8</span> Biases</h2>
+<div id="ascertainment" class="section level3">
+<h3><span class="header-section-number">15.8.1</span> Ascertainment</h3>
+</div>
+<div id="attenuation" class="section level3">
+<h3><span class="header-section-number">15.8.2</span> Attenuation</h3>
+</div>
+<div id="selection" class="section level3">
+<h3><span class="header-section-number">15.8.3</span> Selection</h3>
+</div>
+</div>
+<div id="family-studies" class="section level2">
+<h2><span class="header-section-number">15.9</span> Family studies</h2>
+<div id="transmission-disequilibrium-tests" class="section level3">
+<h3><span class="header-section-number">15.9.1</span> Transmission disequilibrium tests</h3>
+</div>
+</div>
+<div id="twin-studies-1" class="section level2">
+<h2><span class="header-section-number">15.10</span> Twin studies</h2>
+</div>
+<div id="adoption-studies" class="section level2">
+<h2><span class="header-section-number">15.11</span> Adoption studies</h2>
+</div>
+<div id="equifinality-many-genes-give-same-trait" class="section level2">
+<h2><span class="header-section-number">15.12</span> Equifinality (many genes give same trait)</h2>
+</div>
+<div id="gene-dosage" class="section level2">
+<h2><span class="header-section-number">15.13</span> Gene dosage</h2>
+<div id="allelic-dosage" class="section level3">
+<h3><span class="header-section-number">15.13.1</span> Allelic dosage</h3>
+</div>
+</div>
+<div id="allelic-heterogeneity" class="section level2">
+<h2><span class="header-section-number">15.14</span> Allelic heterogeneity</h2>
+</div>
+<div id="genetic-heterogeneity" class="section level2">
+<h2><span class="header-section-number">15.15</span> Genetic heterogeneity</h2>
+</div>
+<div id="genomic-imprinting" class="section level2">
+<h2><span class="header-section-number">15.16</span> Genomic imprinting</h2>
+</div>
+<div id="penetrancephenocopy" class="section level2">
+<h2><span class="header-section-number">15.17</span> Penetrance/phenocopy</h2>
+</div>
+<div id="endophenotypes" class="section level2">
+<h2><span class="header-section-number">15.18</span> Endophenotypes</h2>
+</div>
+<div id="ploidy" class="section level2">
+<h2><span class="header-section-number">15.19</span> Ploidy</h2>
+</div>
+<div id="exended-phenotype" class="section level2">
+<h2><span class="header-section-number">15.20</span> Exended phenotype</h2>
+</div>
+<div id="genome-sizes" class="section level2">
+<h2><span class="header-section-number">15.21</span> Genome sizes</h2>
+<!--chapter:end:15-Extra.Rmd-->
+</div>
+</div>
+<div id="part-population-genetics" class="section level1 unnumbered">
+<h1>(PART) Population Genetics</h1>
+</div>
+<div id="genetic-drift" class="section level1">
+<h1><span class="header-section-number">16</span> Genetic drift</h1>
+<!--chapter:end:16-Genetic-drift.Rmd-->
+</div>
+<div id="mutation" class="section level1">
+<h1><span class="header-section-number">17</span> Mutation</h1>
+<div id="mutation-age" class="section level2">
+<h2><span class="header-section-number">17.1</span> Mutation age</h2>
+<!--chapter:end:17-Mutation.Rmd-->
+</div>
+</div>
+<div id="selection-1" class="section level1">
+<h1><span class="header-section-number">18</span> Selection</h1>
+<div id="directional" class="section level2">
+<h2><span class="header-section-number">18.1</span> Directional</h2>
+</div>
+<div id="balancing" class="section level2">
+<h2><span class="header-section-number">18.2</span> Balancing</h2>
+<div id="frequency-dependent-selection-1" class="section level3">
+<h3><span class="header-section-number">18.2.1</span> Frequency-dependent selection 1</h3>
+</div>
+<div id="frequency-dependent-selection-2" class="section level3">
+<h3><span class="header-section-number">18.2.2</span> Frequency dependent selection 2</h3>
+</div>
+</div>
+<div id="background-selection" class="section level2">
+<h2><span class="header-section-number">18.3</span> Background selection</h2>
+<!--chapter:end:18-Selection.Rmd-->
+</div>
+</div>
+<div id="migration" class="section level1">
+<h1><span class="header-section-number">19</span> Migration</h1>
+<!--chapter:end:19-Migration.Rmd-->
+</div>
+<div id="diversity" class="section level1">
+<h1><span class="header-section-number">20</span> Diversity</h1>
+<!--chapter:end:20-Diversity.Rmd-->
+</div>
+<div id="admixture" class="section level1">
+<h1><span class="header-section-number">21</span> Admixture</h1>
+<!--chapter:end:21-Admixture.Rmd-->
+</div>
+<div id="linkage-disequilibrium" class="section level1">
+<h1><span class="header-section-number">22</span> Linkage disequilibrium</h1>
+<!--chapter:end:22-LD.Rmd-->
+</div>
+<div id="in-breeding-and-heterosis" class="section level1">
+<h1><span class="header-section-number">23</span> In breeding and heterosis</h1>
+<!--chapter:end:23-Inbreeding-and-heterosis.Rmd-->
+</div>
+<div id="assortative-mating" class="section level1">
+<h1><span class="header-section-number">24</span> Assortative mating</h1>
+<!--chapter:end:24-Assortative-mating.Rmd-->
+</div>
+<div id="identity" class="section level1">
+<h1><span class="header-section-number">25</span> Identity</h1>
+<div id="ibs" class="section level2">
+<h2><span class="header-section-number">25.1</span> IBS</h2>
+<div id="long-runs-of-ibt" class="section level3">
+<h3><span class="header-section-number">25.1.1</span> Long runs of IBT</h3>
+</div>
+</div>
+<div id="ibd" class="section level2">
+<h2><span class="header-section-number">25.2</span> IBD</h2>
+</div>
+<div id="ibt" class="section level2">
+<h2><span class="header-section-number">25.3</span> IBT</h2>
+<!--chapter:end:25-Identity.Rmd-->
+</div>
+</div>
+<div id="neutral-theory-of-molecular-evolution" class="section level1">
+<h1><span class="header-section-number">26</span> Neutral theory of molecular evolution</h1>
+<div id="nearly-neutral-theory-of-molecular-evolution" class="section level2">
+<h2><span class="header-section-number">26.1</span> Nearly neutral theory of molecular evolution</h2>
+<!--chapter:end:26-Neutral-theory.Rmd-->
+</div>
+</div>
+<!--bookdown:body:end-->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<!--bookdown:link_prev-->
+<!--bookdown:link_next-->
+    </div>
+  </div>
+<!--bookdown:config-->
+
+</body>
+
+</html>
