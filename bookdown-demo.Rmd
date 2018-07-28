@@ -111,7 +111,7 @@ Finally, don't hesitate to contact me if I have not included your favorite metho
 
 ## Multimarker gene-set based approaches
 
-https://cran.r-project.org/web/packages/aSPU/aSPU.pdf
+"https://cran.r-project.org/web/packages/aSPU/aSPU.pdf"
 
 ## Extensions to binary and categorical phenotypes
 
