@@ -78,7 +78,7 @@ Summary statistics can be obtained using one of the following tests: Correlation
 
 ### Genomic control
 
-#### \lambda <sub>1000<sub>
+#### λ<sub>1000<sub>
 
 ## Multimarker single gene-based approaches
 
