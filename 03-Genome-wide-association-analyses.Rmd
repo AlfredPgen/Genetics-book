@@ -18,7 +18,7 @@ Sometimes finding an association can be confounded by population stratification.
 
 While it is good practice for studies to be based on as homogeneous a group of test subjects as possible, it has been noted in [Price, 2006] that even the mild variation in genetic characteristics among those who classify themselves as belonging to one ethnic group or another can be problematic enough to confound a study done over thousands of genetic markers.
 
-Hidden population stratification may be thought of as a non-zero F_{st} between unknown groupings of samples.
+Hidden population stratification may be thought of as a non-zero F<sub>st</sub> between unknown groupings of samples.
 
 ### Heterozygosity and missingness outliers
 
