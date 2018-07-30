@@ -1,5 +1,11 @@
 # Sequencing technologies
 
+The first step in any genetic analysis is to map sequence reads, callibrate base qualities, and call variants. 
+
+Prior to mapping, evaluate base composition along reads. Calculate the proportion of A, C, G, T bases along each read. Flag runs with evidence of unusual patterns of base composition compared to the target genome.
+Evaluate machine quality scores along reads. Calculate average quality scores per position. Flag runs with evidence of unusual quality score distributions.
+Calculate the input number of reads and number of bases for each sequenced sample
+
 ## Genotype calling algorithms
 
 ## Sequence alignment

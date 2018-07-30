@@ -188,7 +188,20 @@ https://www.omicsonline.org/open-access/literature-reviews-on-methods-for-rare-v
 
 ## Analysis of indirect genetic effects
 
-## GWAS vs whole-genome association
+## Exome analysis
+
+## Whole-genome analysis
+
+### Deep whole genome sequencing
+
+Can only be applied to limited numbers of samples
+Most complete ascertainment of variation
+
+### Low coverage whole genome sequencing
+
+Can be applied to moderate numbers of samples
+Very complete ascertainment of shared variation
+Less complete ascertainment of rare variants
 
 ## Analysis of multiple traits
 
