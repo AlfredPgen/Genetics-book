@@ -2,8 +2,10 @@
 
 ## Meta-analysis
 
-### Meta-analysis of gene-level associations
+### Meta-analysis of gene-level associations (common)?
 
-RAREMETAL
+### Meta-analysis of rare variants
+
+RAREMETAL and RAREMETALWORKER
 
 ## Mega-analysis

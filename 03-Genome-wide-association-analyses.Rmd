@@ -172,6 +172,10 @@ According to Basu and Pan (2011), the model selection methods, especially Seq-aS
 
 Exponentially combines score statistics. Powerful when a very small proportion of variants are causal.
 
+### Family-based tests
+
+https://www.omicsonline.org/open-access/literature-reviews-on-methods-for-rare-variant-association-studies-2161-0436-1000133.pdf
+
 ## Analysis of X, Y and mitochondrial chromosomes
 
 ## Analysis of copy number variants
