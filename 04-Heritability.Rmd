@@ -12,6 +12,10 @@
 
 ## GREML
 
+## GREML in family data
+
+## GREML in WGS or imputed data
+
 ### GREMLd
 
 ### Bivariate GREML

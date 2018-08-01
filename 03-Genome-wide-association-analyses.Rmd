@@ -81,6 +81,8 @@ Summary statistics can be obtained using one of the following tests: Correlation
 
 ## Haplotype GWAs design
 
+## Joint analysis (all independent markers)
+
 ### Genomic control
 
 #### λ<sub>1000<sub>
