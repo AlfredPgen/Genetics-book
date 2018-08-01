@@ -178,6 +178,8 @@ https://www.omicsonline.org/open-access/literature-reviews-on-methods-for-rare-v
 
 ## Analysis of X, Y and mitochondrial chromosomes
 
+### Dosage compensation
+
 ## Analysis of copy number variants
 
 ### Common variation
