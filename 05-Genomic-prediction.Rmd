@@ -20,7 +20,23 @@
 
 ## BLUP
 
+### GBLUP
+
+### sBLUP
+
 ## Bayesian Zoo
+
+### B
+
+### C
+
+### S
+
+### N
+
+### NS
+
+### R
 
 ## Reproducing kernel Hilbert space
 

@@ -16,6 +16,14 @@
 
 ## Statistical power
 
+### Quanto
+
+### GCTA-GREML
+
+### Mendelian Randomisation
+
+### Twin design
+
 ### When marker is a disease susceptibility locus
 
 ### When marker is not disease susceptability locus

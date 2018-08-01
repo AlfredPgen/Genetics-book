@@ -4,6 +4,16 @@
 
 ## Conditioning
 
+Adding additional SNPs as covariates
+
+## COJO
+
+## mtCOJO
+
 ## Finemapping
 
 ## Mendelian Randomization
+
+### SMR and HEIDI
+
+### Generalised summary-data-based MR

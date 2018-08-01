@@ -8,8 +8,17 @@
 
 ## Twin studies
 
-## GCTA
+## Haseman-Elston regression
+
+## GREML
+
+### GREMLd
+
+### Bivariate GREML
 
 ## LD-score regression
 
 ## LDAK
+
+## Heritability by chromosome, MAF bin, or functional category
+

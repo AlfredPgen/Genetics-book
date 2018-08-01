@@ -91,7 +91,15 @@ Since λ scales with sample size, some have found it informative to report λ<su
 
 https://cran.r-project.org/web/packages/aSPU/aSPU.pdf
 
+## VEGAS
+
 ## Multimarker gene-set approaches (a.k.a. pathway analysis)
+
+## fastBAT
+
+## MAGMA
+
+## VEGA
 
 ## Extensions to binary and categorical phenotypes
 
