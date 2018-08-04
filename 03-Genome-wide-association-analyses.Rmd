@@ -77,6 +77,8 @@ Summary statistics can be obtained using one of the following tests: Correlation
 
 ### Recessive model
 
+### Categorical phenotype
+
 ## Two-stage approach
 
 ## Haplotype GWAs design

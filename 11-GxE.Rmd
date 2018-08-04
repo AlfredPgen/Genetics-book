@@ -10,6 +10,8 @@ Identification of gene-environment interactions has important implications for u
 
 ### Empirical Bayes and Bayesian Model Averaging
 
+### Additive scale
+
 ## Multi stage methods
 
 ## Joint tests
@@ -56,3 +58,6 @@ No gene-based GxE test exists for the analysis of the sex chromosomes as of writ
 ### Multidimensionality reduction
 
 ## Meta-analytic GxE approaches
+
+## Gene-environment correlation
+
