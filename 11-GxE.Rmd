@@ -1,16 +1,31 @@
 # Gene-environment interaction
 
+It is generally accepted that complex diseases are caused by an interplay of genetic and environmental factors, creating a challenge for understanding the disease mechanisms. Understanding the interplay between genes and environmental factors is important, as genes do not operate in isolation but rather in complex networks and pathways influenced by environmental factors.
 Identification of gene-environment interactions has important implications for understanding underlying disease etiology and developing disease prevention and intervention strategies.
+In addition to providing insights into disease etiology, exploiting gene-environment (G-E) interaction can help discover novel susceptibility loci for complex diseases, where genetic effects are modified and masked by the effects of environmental factors.
+From a public health perspective, G-E interaction is useful because findings based on interactions can help develop strategies for targeted intervention; conducting an intervention focusing on a subset of the population identified by G-E interactions can provide efficiency in disease prevention.
+There are several challenges of G-E interaction analysis that include replication issues. While more powerful statistical methods for detecting interactions are helpful, ultimately studies with larger sample sizes are needed to identify interactions through consortium-based studies to achieve adequate power for G-E analysis.
+
+This chapter aims to describe methods that extend single marker regression by taking into consideration the effect of gene-environment interaction.
 
 ## Single step methods
 
+There are several disease risk models for the joint effects of G and E, and interpretations of G-E interactions depend on the underlying disease risk models.
+
 ### Case-control
+
+#### Multiplicative scale
+
+A multiplicative model is one of the most commonly used models via logistic regression: logit(Pr(*D* = 1|*G*,*E*) = \beta*<sub>j</sub>*)
+
+#### Additive scale
 
 ### Case-only
 
 ### Empirical Bayes and Bayesian Model Averaging
 
-### Additive scale
+
+## GxE in the context of family studies
 
 ## Multi stage methods
 
