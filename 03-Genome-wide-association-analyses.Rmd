@@ -73,9 +73,15 @@ Summary statistics can be obtained using one of the following tests: Correlation
 
 ### Additive model
 
+Here, the genotype is coded in terms of the number of specific allele at a given locus.
+
 ### Dominant model
 
+Here, the genotype with at least 1 copy of a specific allele at a given locus is coded as 1 and other genotypes as 0.
+
 ### Recessive model
+
+Here, the genotype with at least 2 copies of a specific allele at a given locus is coded as 1 and other genotypes as 0.
 
 ### Categorical phenotype
 
