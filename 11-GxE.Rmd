@@ -16,7 +16,7 @@ There are several disease risk models for the joint effects of G and E, and inte
 
 #### Multiplicative scale
 
-A multiplicative model is one of the most commonly used models via logistic regression: logit(Pr(*D* = 1|*G*,*E*) = *β* *<sub>j</sub>*)
+A multiplicative model is one of the most commonly used models via logistic regression: logit(Pr(*D* = 1|*G*,*E*) = *β<sub>o</sub>* + *β<sub>g</sub>G*+ *β<sub>e</sub>E*)
 
 #### Additive scale
 
