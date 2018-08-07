@@ -14,6 +14,12 @@ There are several disease risk models for the joint effects of G and E, and inte
 
 ### Case-control
 
+### Prospective likelihood-based approach
+
+### Retrospective likelihood approach
+
+To address the limitations of case-only approaches that can only test for multiplicative interactions (not for the main effects of G and E), Umbach and Weinberg (1997) generalized the case-only design idea to use a log-linear model based on case-control data. They showed the maximum-likelihood estimates for all parameters of a logistic regression model can be obtained using a log-linear model. Along the same line, Chatterjee and Carroll developed a general method using a retrospective likelihood that exploits the G-E independence assumption to test for multiplicative interaction, but can use both cases and controls to estimate all of the parameters in a general logistic regression model. Basically, this method employs a retrospective likelihood that explicitly models the conditional probability of G given E mediated by an association parameter θ that can be constrained to be zero when the G-E independence assumption holds. This likelihood can be used for testing both multiplicative and additive interactions; recently, Han et al. developed a likelihood ratio test that exploits the G-E independence assumption using a retrospective likelihood. Their numerical investigation of power suggests that the incorporation of the independence assumption can enhance the efficiency of the test for additive interaction by 2- to 2.5-fold.
+
 #### Multiplicative scale
 
 A multiplicative model incorporating GxE effects is one of the most commonly used models via logistic regression: logit(Pr(*D* = 1|*G*,*E*)) = *β<sub>o</sub>* + *β<sub>g</sub>G* + *β<sub>e</sub>E* + *β<sub>ge</sub>GE*, where *G* is a genotype of a SNP, *E* is an environmental risk factor, and *D* is the disease status. 
@@ -26,6 +32,8 @@ An additive model is shown as logit(Pr(*D* = 1|*G*,*E*)) = *b<sub>o</sub>* + *b<
 
 ### Case-only
 
+This design depends on an assumption of G–E independence in the underlying population. Under the assumption of G-E independence in the underlying population (i.e., controls), a multiplicative interaction test statistic becomes equivalent to testing the association between G and E among cases. One major limitation of the case-only design is that while the case-only method has improved power over the traditional methods when G and E are independent in the underlying population, this method has an increased type I error if the independence assumption is violated. In addition, the regression parameters for the main effects of G and E cannot be estimated using this method because the case-only test is only for evaluating a multiplicative interaction.
+
 ### Empirical Bayes and Bayesian Model Averaging
 
 
@@ -33,7 +41,13 @@ An additive model is shown as logit(Pr(*D* = 1|*G*,*E*)) = *b<sub>o</sub>* + *b<
 
 ## Multi stage methods
 
+Several approaches exist. In general, these methods suggest selecting a subset of SNPs based on the marginal effects of SNPs or G-E correlation tests in the first stage and conducting standard G-E interaction tests in the second stage, where the independence between the test statistics used in the two stages is required to provide a valid screening procedure.
+
+For calculating power for G-E interactions, the powerGWASinteraction R package is available (https://cran.r-project.org/web/packages/powerGWASinteraction/index.html), which includes a power calculation tool for four two-stage screening and testing procedures.
+
 ## Joint tests
+
+### Gene-based
 
 ## Set-based interaction tests
 
@@ -60,6 +74,13 @@ Both GESAT and iSKAT are able to incorporate multiple environmental variables.
 
 No gene-based GxE test exists for the analysis of the sex chromosomes as of writing this text.
 
+The rareGE R package (https://www.hsph.harvard.edu/han-chen/software/) provides various functions for detecting G-E interaction as well as for testing the joint effect of a gene and G-E interaction under a set-based framework. 
+The SIMreg R package (http://www4.stat.ncsu.edu/~jytzeng/software_simreg.php) offers functions for testing a set-based G-E interaction by using genetic similarity to aggregate information across SNPs, and incorporating adaptive weights depending on allele frequencies to accommodate rare and common variants.
+
+https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.12428
+
+https://academic.oup.com/biostatistics/article-abstract/18/1/119/2555344?redirectedFrom=fulltext
+
 ## Combining multiple environments
 
 ### Multi-trait multi-GxE tests
@@ -79,4 +100,9 @@ No gene-based GxE test exists for the analysis of the sex chromosomes as of writ
 ## Meta-analytic GxE approaches
 
 ## Gene-environment correlation
+
+## Other challanges
+
+There are several challenges of G-E interaction analysis. One main challenge is replication issues. While various GWAS findings of the main effects of SNPs have been replicated by independent studies for many complex diseases (http://www.ebi.ac.uk/gwas/), relatively few interactions have been reproduced. It is likely that the sample sizes of GWAS that have required measurements on environmental exposures are not yet adequate to reliably identify G-E interactions of modest magnitude. In addition, differences in the underlying distribution of environmental exposures across various studies as well as difficulties in accurately measuring environmental exposures can also lead to reduced power of detecting G-E interactions. While more powerful statistical methods for detecting interactions are helpful, ultimately studies with larger sample sizes are needed to identify interactions (e.g., through consortium-based studies) to achieve adequate power for G-E analysis. A reasonable goal for the future will be to at least identify parsimonious models that adequately describe the risks of diseases associated with a combination of genetic and environmental risk factors. The lack of reporting of interaction in current studies so far indicates that linear logistic models, i.e., multiplicative models, in general may be a good starting point for building models for evaluating the joint effects of genetic and environmental factors.
+
 
