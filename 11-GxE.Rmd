@@ -91,7 +91,7 @@ https://academic.oup.com/biostatistics/article-abstract/18/1/119/2555344?redirec
 
 ### Generalized Levene's scale test
 
-The Levene's test for variance heterogeneity was later expanded to include ample correlation and group membership uncertainty. Following a two-stage regression framework, it was shown that the least absolute deviation regression must be used in the stage 1 analysis to ensure a correct asymptotic χ<sup>2</sup><k−1>sub</k-1>/(k−1) distributionof the generalized scale (gS) test statistic. 
+The Levene's test for variance heterogeneity was later expanded to include ample correlation and group membership uncertainty. Following a two-stage regression framework, it was shown that the least absolute deviation regression must be used in the stage 1 analysis to ensure a correct asymptotic χ<sup>2</sup><sub>k−1</sub>/(k−1) distributionof the generalized scale (gS) test statistic. 
 
 ### Two-step screening on residual variance heterogeneity
 
