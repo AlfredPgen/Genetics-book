@@ -109,13 +109,13 @@ Several improvements including adjustment for covariates could be further explor
 
 #### YGVH
 
-## Conditional quantile regression 
+### Conditional quantile regression 
 
-## Sliced inverse regression
+### Sliced inverse regression
 
 Jiang and Liu, 2014
 
-## Variance heterogeneity for related individuals
+### Variance heterogeneity for related individuals
 
 ## RELIEF and other machine learning tools
 
