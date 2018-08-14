@@ -111,7 +111,7 @@ Several improvements including adjustment for covariates could be further explor
 
 ### Conditional quantile regression 
 
-In contrast to OLS regression, quantile regression tests for the effect differences across the range of quantiles. MOre specifically, conditional quantile regression (CQR), can be used to model effect size changes across the sample distribution. This method is similar to other varaince heterogeneity methods in a way that does not require interacting effects to be known and hence included in the model. The downside of this is that further investigation is required to identify environmental factors causing statistical interactions.
+In contrast to OLS regression, quantile regression tests for the effect differences across the range of quantiles. More specifically, conditional quantile regression (CQR), can be used to model effect size changes across the sample distribution. This method is similar to other varaince heterogeneity methods in a way that does not require interacting effects to be known and hence included in the model. The downside of this is that further investigation is required to identify environmental factors causing statistical interactions.
 
 ### Sliced inverse regression
 
