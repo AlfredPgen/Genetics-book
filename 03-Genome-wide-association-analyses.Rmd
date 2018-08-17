@@ -241,3 +241,8 @@ Less complete ascertainment of rare variants
 
 ## Machine learning for GWAS
 
+## Expected increase in GWAS loci with sample size
+
+## The joint effect of genotypes over all traits
+
+
