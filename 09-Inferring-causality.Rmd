@@ -14,6 +14,45 @@ Adding additional SNPs as covariates
 
 ## Mendelian Randomization
 
-### SMR and HEIDI
+Mendelian Randomization relies on three assumptions about the instruments:
 
-### Generalised summary-data-based MR
+1) They must be sufficiently strongly associated with the exposure.
+2) They should not be associated with any confounder of the exposure-outcome relationship.
+3) They should be associated with the outcome only through the exposure.
+
+Violation of any ofthese assumptions often through pleiotropy  would lead to biased estimates of the causal effect and potential false positives. The second assumption is the most difficult to verify because confounding factors are often unknown, whereas the last assumption can only be partially verified at best if SNPs, exposures and outcome data are available from the same (large) sample, a condition not fulfilled for two-sample MR.
+
+These assumptions imply that the genetic variants (IVs) have a causal effect on the outcome only via the risk factor. While the first assumption can be easily verified, the second one is impossible to confirm as not all confounders are known, and the third requires instrument-exposure-outcome data measured in the same sample and is often violated by pleiotropy. One (ideal) way to guard against the violation of the third assumption is to use as many IVs possible, as the pleiotropic effect of each marker will cancel each other out under the INSIDE assumption (instrument strength independent of the strength of the pleiotropy).
+
+Cochran’s Q test can be used in order to test for the presence of pleiotropy.
+
+### Summary data-based MR (SMR)
+
+SMR can be used to test whether the effects of genetic variants on a phenotype are mediated by gene expression. The method is based on a single genetic variant.
+
+### Generalised summary-data-based MR (GSMR) and HEIDI
+
+GSMR was developed to overcome the issue of unaccounted pleiotropy in SMR method. This method performs a MR analysis with multiple independent SNPs as instrumental variables. 
+
+### Joint analysis of GWAS and eQTL data
+
+It is common in GWAS studies to identify variants that are located in genomic regions thought to be involved in regulation of gene expression. In order to improve power from GWAS studies, a method involving joint analysis of GWAS and eQTL data was proposed. This approach superceeds previous TWAS methods by allowing to account for pleiotropy in a Mendelian Randomization framework.
+
+Two things are needed in order to carry out this test: summary-level data and pair-wise SNP LD information.
+
+The method was developed after realisation that many pleiotropic effects are mediated through the expression levels of neighbouring genes; hence including other genes as exposures should reduce MR assumption violation, while improving power. Furthermore, such approach might be able to better distinguish the causal effects of genes with correlated expression levels.
+
+As any other method, this approach suffers from several limitations:
+
+1) The putative causal associations reported in this study are not definitive. They provide a prioritized list of candidate genes for future follow-up studies and also shed light on possible biological mechanisms of complex traits.
+
+2) Currently, eQTL data is available for 15K egenes, which substantially decreases power to detect enrichment of prioritized gene-set in relevant pathways and regulatory networks.
+
+3) Violations of MR assumptions. In particular, horizontal pleiotropy and indirect effects of the instruments on the exposures can substantially bias causal effect estimates.
+
+Because the study requires summary statistics and LD pattern, it is possible to extend the method to include other omics information.
+
+### Tissue-specific MR
+
+Since many traits manifest themselves only in certain tissues, it is important to integrate data from the tissue of interest for the studied phenotype when trying to interpret GWAS results using gene expression as an intermediate phenotype. 
+

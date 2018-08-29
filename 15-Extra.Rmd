@@ -70,7 +70,9 @@
 
 ## Genome sizes
 
+## cis-eQTL vs trans-eQTL
 
+Compared to cis-eQTLs, trans-eQTLs typically have weaker effect size and less direct effect. As a result, they are more prone to violate assumptions in MR studies.
 
 
 
