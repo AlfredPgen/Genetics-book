@@ -98,7 +98,7 @@ Levene’s test (Levene, 1960) is known for its simplicity and robustness to mod
 
 ### Bartlett's test
 
-$T<sup>2</sup> = (N-k) \sum_{j=0}^k-1 n<sub>j</sub>(Z<sub>j.</sub>-Z<sub>..</sub>)<sup>2</sup>$
+$T<sup>2</sup> = \frac{(N-k) \sum_{j=0}^{k-1} n<sub>j</sub>(Z<sub>j.</sub>-Z<sub>..</sub>)<sup>2</sup>}{(k-1)\sum_{i=1}^{N}(Z<sub>i</sub>-Z<sub>gi.</sub>)}$
 
 
 ### Bartlett's test with prior rank transformation to normality
