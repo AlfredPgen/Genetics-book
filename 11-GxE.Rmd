@@ -36,7 +36,6 @@ This design depends on an assumption of G–E independence in the underlying pop
 
 ### Empirical Bayes and Bayesian Model Averaging
 
-
 ## GxE in the context of family studies
 
 ## Multi stage methods
