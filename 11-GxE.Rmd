@@ -92,14 +92,31 @@ Presence of interaction between a genotype and certain factor is expected to alt
 
 Can the shift in variance be caused by multi-allelic loci?
 
+Yang et al. (2012) noticed that the mapping of variance-controlling loci is prone to inflated test statistics when the minor allele frequency (MAF) is small.
+
+GWAS analyses to detect variance heterogeneity is inherently sensitive to unbalanced data. The major reason for this is that the distribution of the variance often deviates from normality as it: 
+1) is bounded at zero 
+2) has a distribution skewed to the right 
+3) has a variance depending on its mean 
+
+Such deviations lead to violations of, e.g., the Gauss–Markov assumptions in a regression model.
+
+### Regression using the squared Z-score
+
+### Gamma regression models
+
 ### Levene's test
 
 Levene’s test (Levene, 1960) is known for its simplicity and robustness to modeling assumptions, and it is perhaps the most popular method for evaluating variance heterogeneity between k groups. More recently it has been employed as an indirect test for interaction effects.
 
+### Brown-Forsythe test
+
+$$\LARGE T^2 = \frac{(N-k) \sum_{j=0}^{k-1} n_j(Z_j.-Z_..)^2}{(k-1)\sum_{i=1}^{N}(Z_i-Z_gi.)}$$
+
 ### Bartlett's test
 
-$T^2 = \frac{(N-k) \sum_{j=0}^{k-1} n_j(Z_j.-Z_..)^2}{(k-1)\sum_{i=1}^{N}(Z_i-Z_gi.)}$
-
+$$\LARGE T^2 = \frac{(N-k)ln(\sigma_P^2)- \sum_{j=0}^{k-1} (n_j-1)ln(\sigma_j^2)}{1+\frac{1}{3(k-1)}(\sum_{j=0}^{k-1}(\frac{1}{n_j-1}-\frac{1}{N-k}))}$$
+where *k* is the number of genotypes tested,
 
 ### Bartlett's test with prior rank transformation to normality
 
@@ -121,6 +138,8 @@ Several improvements including adjustment for covariates could be further explor
 
 
 One caviet involving VH tests is that the absence of VH for a SNP can not be interpreted as the absence of the SNP involvment of the SNP in the interaction network.
+
+When there are only two genotype classes, the type I error rate can be very large if the number of minor genotypes contains fewer than 100 observations when using regression on the squared Z-score, and this cannot be overcome by increasing the total sample-size. The Levene and Brown–Forsythe tests also show such an inflation of false positives, but use of a Gamma regression model, which accounts for the fact that the squared Z-score follows a chi-square distribution, overcomes this problem. Populations with three genotypes will, in practice, be more robust when the allele substitution model implemented in most GWAS-software is used (i.e., when regression on all three genotypes is used to estimate the additive effect). Inflated type I error rates are then observed only when the intermediate-size genotype class (i.e., in practice most often the heterozygotes) contains fewer than 100 individuals.
 
 ### Conditional quantile regression 
 
