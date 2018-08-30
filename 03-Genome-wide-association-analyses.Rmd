@@ -85,6 +85,8 @@ Here, the genotype with at least 2 copies of a specific allele at a given locus 
 
 ### Categorical phenotype
 
+### Multi-allelic GWAS
+
 ## Two-stage approach
 
 ## Haplotype GWAs design

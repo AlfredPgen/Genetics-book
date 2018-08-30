@@ -86,11 +86,21 @@ https://academic.oup.com/biostatistics/article-abstract/18/1/119/2555344?redirec
 
 ## Variance heterogeneity
 
-All methods described in this chapter so far conduct a location (mean) based test. Testing for scale (variance) heterogeneity, prior to the main inference of location parameters, is additional method to evaluate the assumption of homoscedasticity in linear regression. This is true when the interacting variable was not collected and the interaction term may not be directly modeled or when a phenotype was transformed.
+All methods described in this chapter so far conduct a location (mean) based test. In other words, the main concern is whether there is a difference in mean effect between different genotypes. Testing for scale (variance) heterogeneity, prior to the main inference of location parameters, is additional method to evaluate the assumption of homoscedasticity in linear regression. This is true when the interacting variable was not collected and the interaction term may not be directly modeled or when a phenotype was transformed. Therefore, the analysis of variances of the trait is based on SNP information only.
+
+Presence of interaction between a genotype and certain factor is expected to alter the trait's variance in the group of subjects carrying such genotype.
+
+Can the shift in variance be caused by multi-allelic loci?
 
 ### Levene's test
 
 Levene’s test (Levene, 1960) is known for its simplicity and robustness to modeling assumptions, and it is perhaps the most popular method for evaluating variance heterogeneity between k groups. More recently it has been employed as an indirect test for interaction effects.
+
+### Bartlett's test
+
+T^2^ = (N-k)\sum_{j=0}^k-1 n<sub>j</sub>(Z<sub>j.</sub>-Z<sub>..</sub>)^2^$
+
+### Bartlett's test with prior rank transformation to normality
 
 ### Generalized Levene's scale tests
 
@@ -107,6 +117,9 @@ Several improvements including adjustment for covariates could be further explor
 #### VH
 
 #### YGVH
+
+
+One caviet involving VH tests is that the absence of VH for a SNP can not be interpreted as the absence of the SNP involvment of the SNP in the interaction network.
 
 ### Conditional quantile regression 
 

@@ -1,9 +1,19 @@
 # Gene-gene interaction
 
-When the combined phenotypic effect of alleles at two or more loci deviates from the sum of their individual effects, this is referred to as a genetic interaction, or epistasis.There are some situations where data and theory have suggested that it might be particularly important to account for genetic interactions. One is when the aim is to predict the phenotypes of individuals on the basis of their genotype. If interactions lead to extreme phenotypes for some genotypes, these phenotypes are unlikely to be captured by additive models, particularly if they are rare.
+When the combined phenotypic effect of alleles at two or more loci deviates from the sum of their individual effects, this is referred to as a genetic interaction, or epistasis. 
+There are some situations where data and theory have suggested that it might be particularly important to account for genetic interactions. One is when the aim is to predict the phenotypes of individuals on the basis of their genotype. If interactions lead to extreme phenotypes for some genotypes, these phenotypes are unlikely to be captured by additive models, particularly if they are rare. Another case is the prediction of long-term selection response. Under an additive model, both the additive variance and the response are expected to be nearly constant over the first few generations. As generations proceed, allele frequencies change to alter the additive variance and, consequently, the response to selection. This change is more rapid for traits regulated by fewer loci with larger effects than for traits regulated by many loci with smaller effects. It is known that genetic interactions can contribute to the additive genetic variance in a population. The contribution, however, varies depending on the joint allele frequencies across all the interacting loci as well as on the types and strengths of the genetic interactions. The changes in the additive variance, and hence the response, during ongoing selection are therefore more complex in the presence of genetic interactions.
+
+Most genetic variance in a population is expected to be additive even in the presence of extensive epistasis. The lack of empirical knowledge about the pervasiveness and strength of epistasis in the genetic architectures of complex traits makes it largely unknown how much of the observed additive genetic variance in quantitative genetics studies is due to genetic interactions.
 
 ## Single step methods
 
 ## Multi stage methods
 
 ## Machine learning methods
+
+## Variance heterogeneity
+
+The details for this method have been described in the previous chapter.
+
+To identify an individual locus that makes direct contributions to the trait variance, a statistical test is used to identify significant differences in the phenotypic variance between the groups of individuals that carry alternative alleles at the locus. When such a variance difference exists between the genotypes at a locus, the locus displays a genetic variance-heterogeneity. 
+
