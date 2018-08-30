@@ -159,8 +159,34 @@ Jiang and Liu, 2014
 
 ## Gene-environment correlation
 
-## Other challanges
+## Other challenges
 
 There are several challenges of G-E interaction analysis. One main challenge is replication issues. While various GWAS findings of the main effects of SNPs have been replicated by independent studies for many complex diseases (http://www.ebi.ac.uk/gwas/), relatively few interactions have been reproduced. It is likely that the sample sizes of GWAS that have required measurements on environmental exposures are not yet adequate to reliably identify G-E interactions of modest magnitude. In addition, differences in the underlying distribution of environmental exposures across various studies as well as difficulties in accurately measuring environmental exposures can also lead to reduced power of detecting G-E interactions. While more powerful statistical methods for detecting interactions are helpful, ultimately studies with larger sample sizes are needed to identify interactions (e.g., through consortium-based studies) to achieve adequate power for G-E analysis. A reasonable goal for the future will be to at least identify parsimonious models that adequately describe the risks of diseases associated with a combination of genetic and environmental risk factors. The lack of reporting of interaction in current studies so far indicates that linear logistic models, i.e., multiplicative models, in general may be a good starting point for building models for evaluating the joint effects of genetic and environmental factors.
+
+### Controlling for covariate interactions
+
+In order to eliminate potential confounders, it is common to add covariates such as sex and ethnicity in the model. While this provides control for their potentially confounding influences on the main effects of the genotype and the environment, in the case of GxE studies, this practice does not control for the effects these variables might have on the G×E interaction. Rather, to properly control for confounders, researchers need to enter the covariate-by-environment and the covariate-by-gene interaction terms in the same model that tests the G×E term.
+
+The GxE interaction will be biased in the model without the covariate-by-environment and the covariate-by-gene interaction terms if:
+
+1) The covariate is related to the genetic variable and the covariate-by-environment interaction coefficient is nonzero.
+2) The covariate is related to emvironmental variable and the covariate-by-gene interaction coefficient is nonzero.
+
+Finally, it should be noted that even if a G×E result ‘disappears’ after properly controlling for covariates, this does not necessarily mean that the original G×E hypothesis was wrong. For example, the genetic polymorphism might cause changes in the covariate which in turn moderates the environmental variable, in which case the covariate is a mediating mechanism by which the gene moderates the environmental variable. That said, this possibility applies to all models that statistically control for covariates in regression, and the traditional interpretation of ‘disappearing’ effects after controlling for a covariate is that the true causal pathway is ambiguous and alternative (confounding) explanations cannot be ruled out. That said, in some cases, a particular causal pathway can be discarded as impossible or unlikely. In such cases, investigators can be more definitive about ruling out certain hypotheses. For example, changes at a genetic polymorphism will not lead to changes in ethnicity, and so a G×E hypothesis can be safely discarded if it is mediated by an ethnicity-by-environment interaction.
+
+## Candidate gene-by-environment interaction studies
+
+This research area has been a hot topic in genetics, with hundreds of publications reporting positive G×E discoveries over the last 15 years, but there has been increasing skepticism about the validity of many of these findings. This skepticism is based on a number of substantive and statistical concerns:
+
+1) A low replication rate among attempted direct replications of GxE findings.
+2) The possibility that GxE findings capitalized on chance from among many unreported analyses.
+3) A publication bias toward positive findings.
+4) Small sample sizes that exacerbate the already low statistical power for detecting interactions.
+5) The low prior probability that a specified environmental variable interacts with a specified candidate gene polymorphism.
+
+## Higher order interactions
+
+It is difficult  and potentially misleading to interpret two-way interactions in the presence of three-way interactions. In such a model, the lower-order two-way interactions become conditional interactions, and the regression betas and p-values are interpreted as the predicted two-way interactions when the other (omitted) variable is coded as 0.
+
 
 
