@@ -1,5 +1,7 @@
 # Gene-gene interaction
 
+When the combined phenotypic effect of alleles at two or more loci deviates from the sum of their individual effects, this is referred to as a genetic interaction, or epistasis.
+
 ## Single step methods
 
 ## Multi stage methods
