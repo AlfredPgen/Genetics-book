@@ -231,6 +231,13 @@ Less complete ascertainment of rare variants
 
 ## Mixed-model association analysis
 
+GWAS using mixed models is appealing for several reasons:
+1) More powerful in very large GWAS
+2) Reduces the need for sample exclusion
+3) Amplifies effective sample sizes via conditioning on polygenic predictions from genome-wide SNPs.
+
+When using mixed models for association analysis, care must be taken to consider non-additive effects when retaining related individuals.
+
 ### EMMAX
 
 ### Fast-LMM
@@ -238,6 +245,16 @@ Less complete ascertainment of rare variants
 ### GEMMA
 
 ### BOLT-LMM
+
+When BOLT-LMM was used on very large sample sizes, analyses revealed subtleties in the interpretation of LD score regression intercepts as a means of differentiating polygenicity from confounding; the attenuation ratio was proposed to be possibly a more suitable metric as sample sizes increase.
+
+### Caveats
+
+First, chi-squared-based tests (such as BOLT-LMM) can incur inflated type I error rates when used to analyze highly unbalanced case–control traits (case fractions <10%). There are two solutions for this.
+1) Increase MAF.
+2) Use saddlepoint approximation (SAIGE software).
+
+Second, conditioning on genome-wide signal can produce loss of power under case–control ascertainment.
 
 ## Penalized regression GWAS
 
