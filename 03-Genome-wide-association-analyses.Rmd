@@ -63,6 +63,8 @@ In genotyping studies where DNA is directly assayed for positions of variance, c
 
 ## X-chromosome quality control
 
+The X chromosome plays an important role in complex human traits and diseases, especially those with sexually dimorphic characteristics. Special attention needs to be given to the analysis of X due to its unique inheritance pattern and X-inactivation. These analytical complications have resulted in exclusion or mishandling of the X chromosome in the majority of genome-wide association studies (GWAS) to date.
+
 ## Single marker regression
 
 Summary statistics can be obtained using one of the following tests: Correlation/Trend Test, Armitage Trend Test, Exact Form of Armitage Test, (Pearson) Chi-Squared Test, (Pearson) Chi-Squared Test with Yates’ Correction, Fisher’s Exact Test, Odds Ratio with Confidence Limits, Analysis of Deviance (e.g. different variance heterogeneity tests), F-Test, Logistic Regression, Linear Regression.
