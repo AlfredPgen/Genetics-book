@@ -145,6 +145,10 @@ When there are only two genotype classes, the type I error rate can be very larg
 
 In contrast to OLS regression, quantile regression tests for the effect differences across the range of quantiles. More specifically, conditional quantile regression (CQR), can be used to model effect size changes across the sample distribution. This method is similar to other varaince heterogeneity methods in a way that does not require interacting effects to be known and hence included in the model. The downside of this is that further investigation is required to identify environmental factors causing statistical interactions.
 
+If the marginal and interaction effects are in opposite directions, then the power to detect potential interactions is reduced. Hence, failure to identify differences in variance by genotype effects does not rule out interactions effects.
+
+Tests for variance heterogeneity detect variance inconsistency rather than variance structure (i.e. direction of change). Therefore, variance heterogeneity is not specific to interaction signals, but includes conditions where no consistent direction for increasing or decreasing variance per genotype is observed. Modeling relationship between variance and genotypes assuming a structure (i.e. linear trend) could help improve power to detect variants with potential interactions if the assumtions are met.
+
 ### Sliced inverse regression
 
 Jiang and Liu, 2014
