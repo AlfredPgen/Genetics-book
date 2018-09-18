@@ -113,7 +113,7 @@ Since λ scales with sample size, some have found it informative to report λ<su
 
 ##### Stratified λ<sub>GC<sub>
 
-Because the strength of λ<sub>GC</sub> deviation depends on allele frequency and very large sample sizes become available, it could be useful to report λ<sub>GC<sub> values based on certain MAF bins.
+Because the strength of λ<sub>GC</sub> deviation depends on allele frequency and very large sample sizes become available, it could be useful to report λ<sub>GC</sub> values based on certain MAF bins.
 
 ## Multimarker single gene-based approaches
 
