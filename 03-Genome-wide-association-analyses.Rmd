@@ -280,4 +280,14 @@ Second, conditioning on genome-wide signal can produce loss of power under caseâ
 
 ## The joint effect of genotypes over all traits
 
+## Adjustment for winner's curse
+
+One type of adjustment for winer's curse (using empirical Bayes), depends on the assumption that SNP effects are drawn randomly from the following mixture distribution 
+
+
+
+## Adjustment for assortative mating
+
+## Adjustment for attenuation bias
+
 
