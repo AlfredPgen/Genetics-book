@@ -111,6 +111,10 @@ Here, the genotype with at least 2 copies of a specific allele at a given locus 
 
 Since λ scales with sample size, some have found it informative to report λ<sub>1000</sub>. This is equivalent to a study of 1000 cases and 1000 controls and can be calculated by rescaling λ with 1 + (λ - 1) x (1/case + 1/control) x 500, where case and control refers to the number of cases and controls respectively.
 
+##### Stratified λ<sub>GC<sub>
+
+Because the strength of λ<sub>GC<sub> deviation depends on allele frequency and very large sample sizes become available, it could be useful to report λ<sub>GC<sub> values based on certain MAF bins.
+
 ## Multimarker single gene-based approaches
 
 https://cran.r-project.org/web/packages/aSPU/aSPU.pdf
