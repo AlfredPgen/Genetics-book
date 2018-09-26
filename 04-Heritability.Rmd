@@ -1,5 +1,11 @@
 # Heritability
 
+If you have an outcome that is the sum of effects from independent sources (like, say, genes and environment) the variance of the effects from each source add up to the variance of the outcome.
+
+Talking about variance implicitly means we’re talking about a group or population of individuals.
+
+When we say "the proportion of variation in a trait explained by", by explained we refer to the variance that could be predicted based on genetic data if we had perfect information about the effects of all genetic variants.
+
 ## Realized heritability
 
 ### Evolvability
