@@ -8,6 +8,8 @@ When we say "the proportion of variation in a trait explained by", by explained 
 
 ## Realized heritability
 
+## Liability vs observed scale
+
 ### Evolvability
 
 ### Reliability
@@ -28,8 +30,7 @@ When we say "the proportion of variation in a trait explained by", by explained 
 
 ## LD-score regression (LDSC)
 
-Attenuation bias in LDSC analyses is essentially a measure of model misspecification: the basic assumption of LD score regression is that association chisquare statistics should (on average) increase linearly with the extent to which a SNP tags other potentially causal SNPs—i.e., the LD score of the SNP. If this model holds perfectly, then the regression has an intercept of 1 and an attenuation ratio of 0; on the other extreme, if LD scores are completely non-informative, the regression becomes flat with an intercept equal to the mean
-chi-square statistic and an attenuation ratio of 1. In general, most LDSC analyses exhibit modest nonzero attenuation ratios.
+Attenuation bias in LDSC analyses is essentially a measure of model misspecification: the basic assumption of LD score regression is that association chisquare statistics should (on average) increase linearly with the extent to which a SNP tags other potentially causal SNPs—i.e., the LD score of the SNP. If this model holds perfectly, then the regression has an intercept of 1 and an attenuation ratio of 0; on the other extreme, if LD scores are completely non-informative, the regression becomes flat with an intercept equal to the mean chi-square statistic and an attenuation ratio of 1. In general, most LDSC analyses exhibit modest nonzero attenuation ratios.
 
 Attenuation ratios vary among traits (as expected, given that different traits have genetic architectures with different levels of agreement to the LDSC model); however, for a given trait, attenuation ratios are largely consistent between analyses of N=337K unrelated individuals vs. N=459K related individuals (also as expected, given that increasing sample size or relatedness does not affect the underlying genetic architecture of a trait). We also observe that attenuation ratios under the original LDSC model are generally larger than attenuation ratios under the baselineLD model, consistent with improved model fit upon augmenting the LDSC model with information about genomic annotations.
 
