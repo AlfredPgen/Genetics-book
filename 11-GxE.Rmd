@@ -36,6 +36,12 @@ This design depends on an assumption of G–E independence in the underlying pop
 
 ### Empirical Bayes and Bayesian Model Averaging
 
+### Other Bayesian approaches
+
+#### Interactions using haplotypes
+
+First, haplotypes are biologically relevant. There is strong evidence that several mutations within a gene may interact ( cis-interaction) to cause a disease. Second, the power of single-marker-based methods in association studies depends on LD between the tested marker and the disease susceptibility locus. LD information contained in flanking markers is generally not incorporated, which can result in a reduction in power. 
+
 ## GxE in the context of family studies
 
 ## Multi stage methods
