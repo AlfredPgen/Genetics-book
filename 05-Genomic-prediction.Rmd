@@ -4,6 +4,14 @@
 
 ## Polygenic risk scores
 
+Among a range of applications, PRS are exploited to assess shared aetiology between phenotypes, to evaluate the predictive power of genetic data for use in clinical settings, and as part of experimental studies in which, for example, experiments are performed on individuals, or their biological samples (eg. tissues, cells), at the tails of the PRS distribution and contrasted.
+As well as identifying shared aetiology among traits, PRS have been used to test for genome-wide GxE and GxG interactions, to perform Mendelian Randomization studies to infer causal relationships, and for patient stratification and sub-phenotyping.
+
+If the population-level effects of the SNPs were estimated from the GWAS without error, then the PRS could predict the phenotype of individuals in the target data with variance explained equal to the “chip-heritability” (h2) of the trait (i.e. PRS provides an upper bound estimate of heritability). However, due to error in the effect size estimates and inevitable differences in the base and target samples, the predictive power of PRS are typically substantially lower than h2 but tend towards h2 as GWAS sample sizes increase.
+
+Important challenges in the construction of PRS are the selection of SNPs for inclusion in the score and what, if any, shrinkage to apply to the GWAS effect size estimates.
+
+
 ## Gene-based polygenic score (POLARIS)
 
 ## Pathway-based polygenic risk score
