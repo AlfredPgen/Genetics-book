@@ -59,7 +59,11 @@ In genotyping studies where DNA is directly assayed for positions of variance, c
 
 ### Ambigious nucleotides
 
+If the base and target data were generated using different genotyping chips and the chromosome strand (+/-) for either is unknown, then it is not possible to match ambiguous SNPs (i.e. those with complementary alleles, either C/G or A/T) across the data sets, because it will be unknown whether the base and target data are referring to the same allele or not. While allele frequencies can be used to infer which alleles match, it is recommended to remove all ambiguous SNPs since the allele frequencies provided in base GWAS are often those from resources such as the 1000G project, and so aligning alleles according to their frequency could lead to systematic biases. 
+
 ### Non-matching nucleotides
+
+When there is a non-ambiguous mismatch in allele coding between the data sets, such as A/C in the base and G/T in the target data, then this can be resolved by ‘flipping’ the alleles in the target data to their complementary alleles. 
 
 ### Quality control prior to meta-analysis
 
@@ -69,7 +73,6 @@ individual cohort.
 Quantile-Quantile Plots (QQ Plots): looking for the cohort-level QQ plots to look for evidence of unaccounted-for stratification.
 Predicted vs Reported Standard-Error Plots (PRS Plots): maaking sure that the standard errors reported in individuals cohorts are approximately consistent with the reported sample size, allele frequency, and phenotype distribution. 
 Use of bivariate LD score regression to verify that the estimated genetic correlations between all large cohorts (defined as N > 10,000) are large and positive.
-
 
 ## X-chromosome quality control
 
