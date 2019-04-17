@@ -114,7 +114,7 @@ Such deviations lead to violations of, e.g., the Gauss–Markov assumptions in a
 
 ### Mean-variance QTL (joint test)
 
-The use of double generalized linear model allows to model effects of the mean and variance simultaneously, thus enhacing the power to detect variants associated with the trait. This approach is able to not only incorporate genetic and covariate effects for the mean but also set of such effects for the residual variance
+The use of double generalized linear model allows to model effects of the mean and variance simultaneously, thus enhacing the power to detect variants associated with the trait. This approach is able to not only incorporate genetic and covariate effects for the mean but also set of such effects for the residual variance.
 
 ### Regression using the squared Z-score
 
