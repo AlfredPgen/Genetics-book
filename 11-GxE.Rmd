@@ -97,9 +97,9 @@ https://academic.oup.com/biostatistics/article-abstract/18/1/119/2555344?redirec
 
 ## Variance heterogeneity
 
-All methods described in this chapter so far conduct a location (mean) based test. In other words, the main concern is whether there is a difference in mean effect between different genotypes. Testing for scale (variance) heterogeneity, prior to the main inference of location parameters, is additional method to evaluate the assumption of homoscedasticity in linear regression. This is true when the interacting variable was not collected and the interaction term may not be directly modeled or when a phenotype was transformed. Therefore, the analysis of variances of the trait is based on SNP information only.
+All methods described in this chapter so far conduct a location (mean) based test. In other words, the main concern is whether there is a difference in the mean effect across genotypes. Testing for scale (variance) heterogeneity, prior to the main inference of location parameters, is additional method to evaluate the assumption of homoscedasticity in linear regression. This is advantageous when the interacting variable was not collected and the interaction term may not be directly modeled or when a phenotype was transformed. Therefore, the analysis of variances of the trait is based on SNP information only.
 
-Presence of interaction between a genotype and certain factor is expected to alter the trait's variance in the group of subjects carrying such genotype.
+The presence of interaction between a genotype and certain factor is expected to alter the trait's variance in the group of subjects carrying such genotype.
 
 Can the shift in variance be caused by multi-allelic loci?
 
