@@ -151,6 +151,10 @@ Same study showed that the least absolute deviation (LAD) regression approach to
 
 Several improvements including adjustment for covariates could be further explored (check original paper)
 
+### The Lepage test
+
+### The D-test
+
 ### Two-step screening on residual variance heterogeneity
 
 #### VH
@@ -173,6 +177,10 @@ Tests for variance heterogeneity detect variance inconsistency rather than varia
 ### Sliced inverse regression
 
 Jiang and Liu, 2014
+
+### Semiparametric model for vQTL mapping
+
+
 
 ### Variance heterogeneity for related individuals
 
