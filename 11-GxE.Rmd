@@ -180,7 +180,7 @@ Jiang and Liu, 2014
 
 ### Semiparametric model for vQTL mapping
 
-
+The semiparametric model is designed to identify the combined differences in higher moments among genotypic groups. The pairwise likelihood is constructed based on conditioning procedure, where the unknown reference distribution is eliminated.
 
 ### Variance heterogeneity for related individuals
 
