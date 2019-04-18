@@ -112,6 +112,10 @@ GWAS analyses to detect variance heterogeneity is inherently sensitive to unbala
 
 Such deviations lead to violations of, e.g., the Gauss–Markov assumptions in a regression model.
 
+One way of interpreting an increase in variability is as a decrease in stability. Waddington (1942) described the concept of canalization, whereby natural selection favors the relative constancy of some attributes, for example, well-formed organs and limbs, and thereby leads to the evolution of heritable architectures that buffer the impact of environmental or background genetic variation that would otherwise cause development to go astray. These architectures create virtual “canals”
+down which developmental programs flow. For a canalized phenotype, which modern usage expands to include
+nondevelopmental traits, the “zone of canalization” is the range of underlying liability over which potentially disruptive variation may be absorbed without serious consequence to the expressed trait value (Lynch and Walsh 1998). A well-studied example of a stabilizing architecture is that provided by heat-shock protein 90 (Hsp90), which buffers genetic and stochastic variation in the development of plants and flies (Rutherford and Lindquist 1998; Queitsch et al. 2002; Sangster et al. 2008).
+
 ### Mean-variance QTL (joint test)
 
 The use of double generalized linear model allows to model effects of the mean and variance simultaneously, thus enhacing the power to detect variants associated with the trait. This approach is able to not only incorporate genetic and covariate effects for the mean but also set of such effects for the residual variance.
