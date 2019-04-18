@@ -158,7 +158,11 @@ Several improvements including adjustment for covariates could be further explor
 
 ### The Lepage test
 
-### The D-test
+The Lepage test is a rank-based non-parametric test for either mean or variance difference, which combines the Kruskal–Wallis test statistic for mean difference and the Fligner–Killeen test statistics for variance difference, and has been shown to be powerful and robust when the locus has both mean and variance effects (Lepage, 1971; Hollander and Wolfe, 1999).
+
+### The *D*-test
+
+Aschard et al. (2013) introduced a general distribution-based test or *D*-test, which can be thought as an extension of the classical Kolmogorov–Smirnov test (Brittain, 1987). There are two versions of *D*-test, namely, the constrained *D*-test (*D*<sub>c</sub>) and the unconstrained *D*-test (*D*<sub>u</sub>). The *D*<sub>c</sub> test is designed for the situation when the effect of the variant is monotonic, while the *D*<sub>u</sub> test has the ability to detect genetic effects in a broader range of situations (Aschard et al., 2013).
 
 ### Two-step screening on residual variance heterogeneity
 
