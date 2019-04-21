@@ -91,11 +91,11 @@ https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.12428
 
 https://academic.oup.com/biostatistics/article-abstract/18/1/119/2555344?redirectedFrom=fulltext
 
-## Combining multiple environments
+### Combining multiple environmental factors
 
 ### Multi-trait multi-GxE tests
 
-## Variance heterogeneity
+### Variance heterogeneity
 
 All methods described in this chapter so far conduct a location (mean) based test. In other words, the main concern is whether there is a difference in the mean effect between genotypes. Testing for scale (variance) heterogeneity could be used to identify novel variants involved in the control of the phenotype possibly through interactions with other genetic variants or environmental factors. This is advantageous when the interacting variable was not collected and the interaction term may not be directly modeled or when a phenotype was transformed. Therefore, the analysis of variances of the trait is based on SNP information only. The presence of interaction between a genotype and certain factor is expected to alter the trait's variance in the group of subjects carrying such genotype.
 
@@ -106,17 +106,6 @@ One way of interpreting an increase in variability is as a decrease in stability
 But in absorbing variation, such stabilizing architectures also hide it from view, and a sensitizing change in the stabilizer that shifts liability outside the zone of canalization can have a dramatic effect on the phenotype. Such shifts release the combined effects of previously “cryptic” genetic variation: now decanalized, the phenotype is more sensitive to internal (including genetic) and external environment, and as a result varies more greatly between individuals (Dworkin 2005; Hornstein and Shomron 2006). In this vein, decanalization has been proposed to explain why the genetic architectures of some diseases in human populations seem more amenable than others to genetic dissection through genome-wide association (Gibson and Goldstein 2007). Specifically, whereas some disease phenotypes in homogeneous populations may be heavily canalized and thereby harder to dissect, others may have been decanalized by modern living conditions (e.g., inflammatory diseases) or modern admixture, while yet others are simply too recent in evolutionary history for buffering networks to have evolved (e.g., response to HIV). Increased variability can also be adaptive. In natural populations disruptive selection favors diversity, with increased “capacitance” (Rice 2008) or “bet-hedging” (Beaumont et al. 2009) spreading risk over a variable fitness landscape. Feinberg and Irizarry (2010) recently proposed a heritable and selectable mechanism for this based on stochastic epigenetic variation. In controlled populations, variability can be increased through directional selection. For example, in a Drosophila selection experiment Clayton and Robertson (1957) reported increased bristle number variance, which is consistent with the idea that genotypes associated with higher environmental variance have a greater chance of being selected under directional selection (Hill and Zhang 2004). Moreover, genetic differences have been observed for phenotypic variability in body weight for chickens (Rowe et al. 2006) and snails (Ros et al. 2004) and litter size in rabbits (Ibanez-Escriche et al. 2008), sheep (Sancristobal-Gaudy et al. 1998), and pigs (Sorensen and Waagepetersen 2003). In natural populations with stabilizing selection we should expect to find alleles minimizing variance for fitness traits (Lande 1980; Houle 1992), whereas directional selection during domestication will favor alleles that increase variance. One may therefore expect to find vQTL in experimental crosses between wild and domestic animals (see Andersson 2001). Nonetheless, genetic buffering that leads to phenotypic robustness need not require an evolutionary explanation to be observed, nor to be useful in medicine and agriculture. Plainly, detecting vQTL and inferring how they arose are separate questions; here we concentrate on the first.
 
 Given that a genotypic effect at one locus may be affected by the genotype at an adjunct locus or some environmental factor, the genotypic effect at that locus is a composite of multiple distributions with different means, resulting in an inflated variance for that genotype (Struchalin et al., 2010; Deng and Par´e, 2011). In addition, it has been shown that vQTL can be induced by linkage disequilibrium with nearby functional locus with mean effects only (Cao et al., 2014).
-
-### Mean-variance QTL (joint test)
-
-It has been suggested that many loci have both mean and variance effects, while some of the mean or variance effects alone would not be strong enough to be detected (Shen et al., 2012; Cao et al., 2014).
-
-One approach to detect both mean and variance effects include double generalized linar model (DGLM).
-The use of DGLM allows to model effects of the mean and variance simultaneously, thus enhacing the power to detect variants associated with the trait. This approach is able to not only incorporate genetic and covariate effects for the mean but also set of such effects for the residual variance.
-
-### Regression using the squared Z-score
-
-### Gamma regression models
 
 ### Levene's test
 
@@ -151,6 +140,10 @@ The Lepage test is a rank-based non-parametric test for either mean or variance 
 
 Aschard et al. (2013) introduced a general distribution-based test or *D*-test, which can be thought as an extension of the classical Kolmogorov–Smirnov test (Brittain, 1987). There are two versions of *D*-test, namely, the constrained *D*-test (*D*<sub>c</sub>) and the unconstrained *D*-test (*D*<sub>u</sub>). The *D*<sub>c</sub> test is designed for the situation when the effect of the variant is monotonic, while the *D*<sub>u</sub> test has the ability to detect genetic effects in a broader range of situations (Aschard et al., 2013).
 
+### Regression using the squared Z-score
+
+### Gamma regression models
+
 ### Two-step screening on residual variance heterogeneity
 
 #### VH
@@ -160,6 +153,13 @@ Aschard et al. (2013) introduced a general distribution-based test or *D*-test, 
 One caviet involving VH tests is that the absence of VH for a SNP can not be interpreted as the absence of the SNP involvment of the SNP in the interaction network.
 
 When there are only two genotype classes, the type I error rate can be very large if the number of minor genotypes contains fewer than 100 observations when using regression on the squared Z-score, and this cannot be overcome by increasing the total sample-size. The Levene and Brown–Forsythe tests also show such an inflation of false positives, but use of a Gamma regression model, which accounts for the fact that the squared Z-score follows a chi-square distribution, overcomes this problem. Populations with three genotypes will, in practice, be more robust when the allele substitution model implemented in most GWAS-software is used (i.e., when regression on all three genotypes is used to estimate the additive effect). Inflated type I error rates are then observed only when the intermediate-size genotype class (i.e., in practice most often the heterozygotes) contains fewer than 100 individuals.
+
+## Mean-variance QTL (joint test)
+
+It has been suggested that many loci have both mean and variance effects, while some of the mean or variance effects alone would not be strong enough to be detected (Shen et al., 2012; Cao et al., 2014).
+
+One approach to detect both mean and variance effects include double generalized linar model (DGLM).
+The use of DGLM allows to model effects of the mean and variance simultaneously, thus enhacing the power to detect variants associated with the trait. This approach is able to not only incorporate genetic and covariate effects for the mean but also set of such effects for the residual variance.
 
 ### Conditional quantile regression 
 
