@@ -128,7 +128,6 @@ where *k* is the number of genotypes tested,
 ### Generalized Levene's scale tests
 
 The Levene's test for variance heterogeneity was later expanded to include sample correlation and group membership uncertainty (genotype imputation probabilities). Following a two-stage regression framework, it was shown that the least absolute deviation regression must be used in the stage 1 analysis to ensure a correct asymptotic χ<sup>2</sup><sub>k−1</sub>/(k−1) distribution of the generalized scale (gS) test statistic. 
-
 gS has good type 1 error control in the presence of sample correlation, small samples, unbalanced group sizes, and non-symmetric outcome data.
 
 Same study showed that the least absolute deviation (LAD) regression approach to obtain group-median-adjusted residuals is needed to ensure robust performance of gS (and possibly LAD should be used in all scale dependent tests).
