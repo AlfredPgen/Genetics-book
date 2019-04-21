@@ -1,3 +1,308 @@
+--- 
+title: "A handbook for Computational Genetics"
+author: "Alfred Pozarickij"
+date: "2019-04-21"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-dem
+description: "This is the book describing theoretical and practical approaches in analysis of genome data."
+---
+
+# Preface {-}
+
+Placeholder
+
+
+
+<!--chapter:end:index.Rmd-->
+
+# (PART) Quantitative Genetics {-}
+
+# Population parameters
+
+## Mean
+
+## Variance
+
+## Covariance
+
+## Genetic correlation
+
+## Additivity
+
+## Dominance/Recesivness
+
+## Codominance
+
+## Infinitesimal model
+
+### Omnigenic model
+
+## Henetic relationships by Malecot
+
+
+## Genotype simulations
+
+## Phenotype simulations
+
+<!--chapter:end:01-Descriptives.Rmd-->
+
+# Sequencing technologies
+
+The first step in any genetic analysis is to map sequence reads, callibrate base qualities, and call variants. 
+
+Prior to mapping, evaluate base composition along reads. Calculate the proportion of A, C, G, T bases along each read. Flag runs with evidence of unusual patterns of base composition compared to the target genome.
+Evaluate machine quality scores along reads. Calculate average quality scores per position. Flag runs with evidence of unusual quality score distributions.
+Calculate the input number of reads and number of bases for each sequenced sample
+
+## Genotype calling algorithms
+
+## Sequence alignment
+
+Sequence alignment is a method of arranging sequences of DNA, RNA, or protein to identify regions of similarity. The similarity being identified, may be a result of functional, structural, or evolutionary relationships between the sequences.
+
+If we compare two sequences, it is known as pairwise sequence alignment. If we compare more than two sequences, it is known as multiple sequence alignment.
+
+## Sequence assembly
+
+## SNP annotation
+
+### CNV annotation
+
+## Gene prediction
+
+
+
+<!--chapter:end:02-Sequencing-technologies.Rmd-->
+
+
+# Genome-wide association analysis
+
+Placeholder
+
+
+## DNA processing quality control
+## Batch effects
+### Calculation of missing call rate for samples and SNPs
+### Calculation of missing call rates by batch
+### Testing for allele frequency differences in batches
+## Sample quality control
+### Cryptic relatedness
+### Population stratification
+### Heterozygosity and missingness outliers
+### Differential missingness
+### Sex chromosome anomalies
+## Marker quality control
+### Genotyping concordance
+### Mendelian errors
+### Genotype call rate
+### Minor allele frequency
+### Hardy-Weinberg equilibrium outliers
+### Additional QC for regions like MHC
+### Ambigious nucleotides
+### Non-matching nucleotides
+### Quality control prior to meta-analysis
+## X-chromosome quality control
+## Single marker regression
+### Allelic test
+### Genotypic test
+### Additive model
+### Dominant model
+### Recessive model
+### Categorical phenotype
+### Multi-allelic GWAS
+## Two-stage approach
+## Haplotype GWAs design
+## Joint analysis (all independent markers)
+### Genomic control
+#### λ<sub>1000<sub>
+##### Stratified λ<sub>GC<sub>
+## Multimarker single gene-based approaches
+## VEGAS
+## Multimarker gene-set approaches (a.k.a. pathway analysis)
+## fastBAT
+## MAGMA
+## VEGA
+## Extensions to binary and categorical phenotypes
+### Threshold model
+## Analysis of rare variants
+### Collapsing methods based on pooling multiple rare variants (burden or adaptive burden tests)
+#### Sum test
+#### Cohort Allelic Sums test (CAST)
+#### Combined Multivariate Collapsing (CMC)
+#### Weighted Sum test (WSS)
+#### Kernel Based Adaptive Cluster (KBAC)
+#### Replication Based Test (RBT)
+#### ARIEL test
+#### The EREC test
+### Methods treating rare variant effects as random (Variance-component tests)
+#### The SSU approach
+#### C-alpha test
+#### SKAT
+### Methods based on model selection
+#### Seq-aSum
+#### Seq-aSum-VS
+#### Variable Threshold Test (VT)
+#### RARECOVER
+#### Selective grouping method
+#### Step-Up
+### Combination of collapsing and random effects methods
+#### SKAT-O
+#### SKAT-C
+#### Fisher method
+#### MiST
+### EC test
+### Family-based tests
+## Analysis of X, Y and mitochondrial chromosomes
+### Dosage compensation
+## Analysis of copy number variants
+### Common variation
+### Analysis of rare variants
+## Analysis of multi-ethnic samples
+## Analysis of indirect genetic effects
+## Exome analysis
+## Whole-genome analysis
+### Deep whole genome sequencing
+### Low coverage whole genome sequencing
+## Analysis of multiple traits
+## Mixed-model association analysis
+### EMMAX
+### Fast-LMM
+### GEMMA
+### BOLT-LMM
+### Caveats
+## Penalized regression GWAS
+## Bayesian GWAS
+## Machine learning for GWAS
+## Expected increase in GWAS loci with sample size
+## The joint effect of genotypes over all traits
+## Adjustment for winner's curse
+## Adjustment for assortative mating
+## Adjustment for attenuation bias
+
+<!--chapter:end:03-Genome-wide-association-analyses.Rmd-->
+
+
+# Heritability
+
+Placeholder
+
+
+## Realized heritability
+## Liability vs observed scale
+### Evolvability
+### Reliability
+## Twin studies
+## Haseman-Elston regression
+## GREML
+## GREML in family data
+## GREML in WGS or imputed data
+### GREMLd
+### Bivariate GREML
+## LD-score regression (LDSC)
+## LDAK
+## Heritability by chromosome, MAF bin, or functional category
+
+<!--chapter:end:04-Heritability.Rmd-->
+
+
+# Genomic prediction
+
+Placeholder
+
+
+## Unweighted sum of risk alleles
+## Polygenic risk scores
+## Gene-based polygenic score (POLARIS)
+## Pathway-based polygenic risk score
+## LD adjusted PRS
+### LDpred with functional annotation
+## Annopred
+## Pleiopred
+## Prediction including GxE
+## BLUP
+### GBLUP
+### sBLUP
+## Bayesian Zoo
+### B
+### C
+### S
+### N
+### NS
+### R
+## Reproducing kernel Hilbert space
+## Machine learning methods
+
+<!--chapter:end:05-Genomic-prediction.Rmd-->
+
+# Pleiotropy
+
+## Fisher's geometric model
+
+## Direct
+
+## Indirect
+
+
+<!--chapter:end:06-Pleiotropy.Rmd-->
+
+# Gene-set analysis
+
+## Gene-set conditional analysis
+
+## Gene-set interaction analysis
+
+<!--chapter:end:07-Pathway-analysis.Rmd-->
+
+# Functional annotation
+
+<!--chapter:end:08-Functional-annotation.Rmd-->
+
+
+# Causal inference
+
+Placeholder
+
+
+## Gene-knockout
+## Conditioning
+## COJO
+## mtCOJO
+## Finemapping
+## Mendelian Randomization
+### Summary data-based MR (SMR)
+### Generalised summary-data-based MR (GSMR) and HEIDI
+### Joint analysis of GWAS and eQTL data
+### Tissue-specific MR
+
+<!--chapter:end:09-Inferring-causality.Rmd-->
+
+# Combining multiple datasets
+
+## Meta-analysis
+
+### Meta-analysis of gene-level associations (common)?
+
+### Meta-analysis of rare variants
+
+RAREMETAL and RAREMETALWORKER
+
+## Mega-analysis
+
+
+## Z-statistic to estimated SNP effect
+
+After sample-size-weighted meta-analysis, Z-statistics can be transformed into unstandardized regression coefficinets using the following equation:
+
+$$\LARGE \hat{\beta_j} = Z_j\frac{\hat{\sigma_Y}}{\sqrt{2N_j MAF_j(1-MAF_j)}}$$
+for SNP *j* with minor allele frequency MAF*j*, sample size N*j*, Z-statistic Z*j*𝑍𝑗, and standard deviation of the phenotype $\hat{\sigma_Y}$𝑌. 
+
+<!--chapter:end:10-Analysis-of-multiple-datasets.Rmd-->
+
 # Gene-environment interaction
 
 It is generally accepted that complex diseases are caused by an interplay of genetic and environmental factors, creating a challenge for understanding the disease mechanisms. Understanding the interplay between genes and environmental factors is important, as genes do not operate in isolation but rather in complex networks and pathways influenced by environmental factors.
@@ -227,4 +532,172 @@ This research area has been a hot topic in genetics, with hundreds of publicatio
 It is difficult and potentially misleading to interpret two-way interactions in the presence of three-way interactions. In such a model, the lower-order two-way interactions become conditional interactions, and the regression betas and p-values are interpreted as the predicted two-way interactions when the other (omitted) variable is coded as 0.
 
 
+
+
+<!--chapter:end:11-GxE.Rmd-->
+
+# Gene-gene interaction
+
+When the combined phenotypic effect of alleles at two or more loci deviates from the sum of their individual effects, this is referred to as a genetic interaction, or epistasis. 
+There are some situations where data and theory have suggested that it might be particularly important to account for genetic interactions. One is when the aim is to predict the phenotypes of individuals on the basis of their genotype. If interactions lead to extreme phenotypes for some genotypes, these phenotypes are unlikely to be captured by additive models, particularly if they are rare. Another case is the prediction of long-term selection response. Under an additive model, both the additive variance and the response are expected to be nearly constant over the first few generations. As generations proceed, allele frequencies change to alter the additive variance and, consequently, the response to selection. This change is more rapid for traits regulated by fewer loci with larger effects than for traits regulated by many loci with smaller effects. It is known that genetic interactions can contribute to the additive genetic variance in a population. The contribution, however, varies depending on the joint allele frequencies across all the interacting loci as well as on the types and strengths of the genetic interactions. The changes in the additive variance, and hence the response, during ongoing selection are therefore more complex in the presence of genetic interactions.
+
+Most genetic variance in a population is expected to be additive even in the presence of extensive epistasis. The lack of empirical knowledge about the pervasiveness and strength of epistasis in the genetic architectures of complex traits makes it largely unknown how much of the observed additive genetic variance in quantitative genetics studies is due to genetic interactions.
+
+Epistatic gene action, namely when the effect of an allele at one locus varies depending on the genotype at another locus, is therefore not directly proportional to the level of epistatic variance in a population. This is because it will usually contribute to both the additive and epistatic genetic variances (Goodnight, 1988; Cheverud and Routman, 1995; Mackay, 2014). To what extent epistatic gene action will contribute additive genetic variance is determined by allele frequencies, the type of genetic interactions, and how the genetic models used are parameterized (Cheverud and Routman, 1995; Hill et al., 2008; Huang and Mackay, 2016).
+
+## Single step methods
+
+## Multi stage methods
+
+## Machine learning methods
+
+## Variance heterogeneity
+
+The details for this method have been described in the previous chapter.
+
+To identify an individual locus that makes direct contributions to the trait variance, a statistical test is used to identify significant differences in the phenotypic variance between the groups of individuals that carry alternative alleles at the locus. When such a variance difference exists between the genotypes at a locus, the locus displays a genetic variance-heterogeneity. 
+
+The concept that the trait variability could also be under direct genetic control was introduced already in the 1940s when Waddington presented the idea of canalization, where he suggested that natural selection could act to produce traits that are robust to environmental and genetic perturbations (Waddington, 1942). He partly based his ideas on the observation that natural populations often are less variable than artificial populations of the same species. More recently, Hill and Mulder (2010) proposed that ‘the environmental variation’ can be regarded as a phenotype in its own right. One can then invoke much of the quantitative genetics methodology to search for genetic determinants of this phenotype. They consequently called this phenomenon ‘genetic control of the environmental variation’, a terminology which implies that it is the randomness, or instability, of the trait that is genetically controlled. Several studies have recently mapped individual loci where the different alleles affect not only the mean, but also the variance of traits (Hill and Mulder, 2010; Rönnegård and Valdar, 2012; Shen et al., 2012). These loci can be detected since the variability of the measured trait differs between groups of individuals that carry alternative alleles at the locus. A simple example would be two groups of humans, where the group of individuals homozygote for a certain allele include both very short and very tall individuals, while the second group that is homozygote for the alternative allele include individuals of similar height. This would lead to genetic variance heterogeneity between the two groups of individuals. Note that the mean height does not have to be different between the groups in order for this to occur.
+
+<!--chapter:end:12-GxG.Rmd-->
+
+# Other omics
+
+## Transcriptome-wide association studies
+
+### cis eQTLs
+
+### trans eQTLs
+
+### 3-D structure of the genome
+
+## Phenome-wide association studies
+
+## Metabolomics
+
+## Epigenomics
+
+<!--chapter:end:13-Multi-omics.Rmd-->
+
+# Quantitative trait loci mapping
+
+
+
+<!--chapter:end:14-QTL-mapping.Rmd-->
+
+
+# Additional points of interest
+
+Placeholder
+
+
+## Kinship matrix
+### Path coefficients
+## Genetic relationship matrix
+## Animal models
+## Phasing
+### Switch rate
+## Haplotyping
+## Statistical power
+### Quanto
+### GCTA-GREML
+### Mendelian Randomisation
+### Twin design
+### When marker is a disease susceptibility locus
+### When marker is not disease susceptability locus
+## Multiple comparisons
+### Effective number of independant variants
+## Biases
+### Ascertainment
+### Attenuation
+### Selection
+## Family studies
+### Transmission disequilibrium tests
+## Twin studies
+## Adoption studies
+## Equifinality (many genes give same trait)
+## Gene dosage
+### Allelic dosage
+## Allelic heterogeneity
+## Genetic heterogeneity
+## Genomic imprinting
+## Penetrance/phenocopy
+## Endophenotypes
+## Ploidy
+## Extended phenotype
+## Genome sizes
+## cis-eQTL vs trans-eQTL
+
+<!--chapter:end:15-Extra.Rmd-->
+
+# (PART) Population Genetics {-}
+
+# Genetic drift
+
+<!--chapter:end:16-Genetic-drift.Rmd-->
+
+# Mutation
+
+
+## Mutation age
+
+<!--chapter:end:17-Mutation.Rmd-->
+
+# Selection
+
+## Directional
+
+## Balancing
+
+### Frequency-dependent selection 1
+
+### Frequency dependent selection 2
+
+
+## Background selection
+
+<!--chapter:end:18-Selection.Rmd-->
+
+# Migration
+
+<!--chapter:end:19-Migration.Rmd-->
+
+# Diversity
+
+<!--chapter:end:20-Diversity.Rmd-->
+
+# Admixture
+
+<!--chapter:end:21-Admixture.Rmd-->
+
+# Linkage disequilibrium
+
+<!--chapter:end:22-LD.Rmd-->
+
+# In breeding and heterosis
+
+<!--chapter:end:23-Inbreeding-and-heterosis.Rmd-->
+
+# Assortative mating
+
+<!--chapter:end:24-Assortative-mating.Rmd-->
+
+# Identity
+
+## IBS
+
+### Long runs of IBT
+
+## IBD
+
+## IBT
+
+
+<!--chapter:end:25-Identity.Rmd-->
+
+# Neutral theory of molecular evolution
+
+## Nearly neutral theory of molecular evolution
+
+<!--chapter:end:26-Neutral-theory.Rmd-->
 
