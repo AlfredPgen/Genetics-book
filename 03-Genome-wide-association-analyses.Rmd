@@ -289,10 +289,10 @@ Second, conditioning on genome-wide signal can produce loss of power under caseâ
 
 One type of adjustment for winer's curse (using empirical Bayes), depends on the assumption that SNP effects are drawn randomly from the following mixture distribution 
 
-
-
 ## Adjustment for assortative mating
 
 ## Adjustment for attenuation bias
 
+## Enrichment in candidate genes
 
+Atwell et al. (2010) introduced a method for evaluating the enrichment of strong, but not necessarily genome-wide significant, signals for SNPs in candidate genes. An enrichment of such signals indicates that the analysis identifies true signals rather than random noise.
