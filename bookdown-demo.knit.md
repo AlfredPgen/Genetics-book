@@ -1,7 +1,7 @@
 --- 
 title: "A handbook for Computational Genetics"
 author: "Alfred Pozarickij"
-date: "`r Sys.Date()`"
+date: "2019-04-21"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book

@@ -110,6 +110,8 @@ Here, the genotype with at least 2 copies of a specific allele at a given locus 
 
 ### Genomic control
 
+In an ordinary GWAS, genomic control (GC) is used to shrink any existing inflation of the test scores (-log10 *p*-values). When testing for the single genetic effect in the GWAS, the null distribution of the test statistic for the nominal p-values is χ<sup>2</sup> with 1 degree of freedom. Since most of the SNPs are not expected to be associated with the trait, the sample distribution of the chi-squares across the genome should resemble the null distribution. If there is inflation, the chi-squares are adjusted using λ, i.e. the inflation factor estimated by comparing the distribution of the sample χ<sup>2</sup>’s and χ<sup>2</sup> distribution with 1 degree of freedom.
+
 #### λ<sub>1000<sub>
 
 Since λ scales with sample size, some have found it informative to report λ<sub>1000</sub>. This is equivalent to a study of 1000 cases and 1000 controls and can be calculated by rescaling λ with 1 + (λ - 1) x (1/case + 1/control) x 500, where case and control refers to the number of cases and controls respectively.
