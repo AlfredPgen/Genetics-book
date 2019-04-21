@@ -111,7 +111,7 @@ Given that a genotypic effect at one locus may be affected by the genotype at an
 
 Levene’s test (Levene, 1960) is known for its simplicity and robustness to modeling assumptions, and it is perhaps the most popular method for evaluating variance heterogeneity between *k* groups. It's performance is best when the genetic loci have only variance effects on quantitative traits (Hong et al., 2016). More recently it has been employed as an indirect test for interaction effects.
 
-### Brown-Forsythe test
+### Brown-Forsythe test (also known as Levene's median test)
 
 $$\LARGE T^2 = \frac{(N-k) \sum_{j=0}^{k-1} n_j(Z_j.-Z_..)^2}{(k-1)\sum_{i=1}^{N}(Z_i-Z_gi.)}$$
 
@@ -149,8 +149,6 @@ Aschard et al. (2013) introduced a general distribution-based test or *D*-test, 
 
 ### Two-step screening on residual variance heterogeneity
 
-#### VH
-
 #### YGVH
 
 One caviet involving VH tests is that the absence of VH for a SNP can not be interpreted as the absence of the SNP involvment of the SNP in the interaction network.
@@ -161,8 +159,9 @@ When there are only two genotype classes, the type I error rate can be very larg
 
 It has been suggested that many loci have both mean and variance effects, while some of the mean or variance effects alone would not be strong enough to be detected (Shen et al., 2012; Cao et al., 2014).
 
-One approach to detect both mean and variance effects include double generalized linar model (DGLM).
-The use of DGLM allows to model effects of the mean and variance simultaneously, thus enhacing the power to detect variants associated with the trait. This approach is able to not only incorporate genetic and covariate effects for the mean but also set of such effects for the residual variance.
+One approach to detect both mean and variance effects includes double generalized linear model (DGLM). DGLM can be used to model effects of the mean and variance simultaneously, thus enhacing the power to detect variants associated with the trait. This approach is able to not only incorporate genetic and covariate effects for the mean but also set of such effects for the residual variance.
+
+Extensions to family-based data have been developed (Cao et al., 2014).
 
 ### Conditional quantile regression 
 
