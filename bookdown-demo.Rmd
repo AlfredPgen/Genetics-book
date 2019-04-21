@@ -402,20 +402,9 @@ https://academic.oup.com/biostatistics/article-abstract/18/1/119/2555344?redirec
 
 ## Variance heterogeneity
 
-All methods described in this chapter so far conduct a location (mean) based test. In other words, the main concern is whether there is a difference in the mean effect across genotypes. Testing for scale (variance) heterogeneity, prior to the main inference of location parameters, is additional method to evaluate the assumption of homoscedasticity in linear regression. This is advantageous when the interacting variable was not collected and the interaction term may not be directly modeled or when a phenotype was transformed. Therefore, the analysis of variances of the trait is based on SNP information only.
-
-The presence of interaction between a genotype and certain factor is expected to alter the trait's variance in the group of subjects carrying such genotype.
-
-Can the shift in variance be caused by multi-allelic loci?
+All methods described in this chapter so far conduct a location (mean) based test. In other words, the main concern is whether there is a difference in the mean effect across genotypes. Testing for scale (variance) heterogeneity could be used to identify novel variants involved in the control of the phenotype possibly through interactions with other genetic variants or environmental factors. This is advantageous when the interacting variable was not collected and the interaction term may not be directly modeled or when a phenotype was transformed. Therefore, the analysis of variances of the trait is based on SNP information only. The presence of interaction between a genotype and certain factor is expected to alter the trait's variance in the group of subjects carrying such genotype.
 
 Yang et al. (2012) noticed that the mapping of variance-controlling loci is prone to inflated test statistics when the minor allele frequency (MAF) is small.
-
-GWAS analyses to detect variance heterogeneity is inherently sensitive to unbalanced data. The major reason for this is that the distribution of the variance often deviates from normality as it: 
-1) is bounded at zero 
-2) has a distribution skewed to the right 
-3) has a variance depending on its mean 
-
-Such deviations lead to violations of, e.g., the Gauss–Markov assumptions in a regression model.
 
 One way of interpreting an increase in variability is as a decrease in stability. Waddington (1942) described the concept of canalization, whereby natural selection favors the relative constancy of some attributes, for example, well-formed organs and limbs, and thereby leads to the evolution of heritable architectures that buffer the impact of environmental or background genetic variation that would otherwise cause development to go astray. These architectures create virtual “canals”
 down which developmental programs flow. For a canalized phenotype, which modern usage expands to include
@@ -509,8 +498,13 @@ The semiparametric model is designed to identify the combined differences in hig
 
 There are several challenges of G-E interaction analysis. One main challenge is replication issues. While various GWAS findings of the main effects of SNPs have been replicated by independent studies for many complex diseases (http://www.ebi.ac.uk/gwas/), relatively few interactions have been reproduced. It is likely that the sample sizes of GWAS that have required measurements on environmental exposures are not yet adequate to reliably identify G-E interactions of modest magnitude. In addition, differences in the underlying distribution of environmental exposures across various studies as well as difficulties in accurately measuring environmental exposures can also lead to reduced power of detecting G-E interactions. While more powerful statistical methods for detecting interactions are helpful, ultimately studies with larger sample sizes are needed to identify interactions (e.g., through consortium-based studies) to achieve adequate power for G-E analysis. A reasonable goal for the future will be to at least identify parsimonious models that adequately describe the risks of diseases associated with a combination of genetic and environmental risk factors. The lack of reporting of interaction in current studies so far indicates that linear logistic models, i.e., multiplicative models, in general may be a good starting point for building models for evaluating the joint effects of genetic and environmental factors.
 
-When using a test designed to detect variance heterogeneity, it is of vital importance to ensure that phenotype transformations do not lead to false positive associations. For an autosomal diallelic
-SNP in particular, it is difficult to make valid biological inferences about a quantitative trait on the basis of variance heterogeneity among the genotype-specific distributions unless the locations (in particular, the means) of the three distributions are equal. When the means are not all equal, the variance heterogeneity might in fact be explained by a distribution in which the variance is a function of the mean. There exists a transformation of the data that will tend to make the variances equal and there is a method that will at a minimum decrease the variance heterogeneity.
+When using a test designed to detect variance heterogeneity, it is of vital importance to ensure that phenotype transformations do not lead to false positive associations. For an autosomal diallelic SNP in particular, it is difficult to make valid biological inferences about a quantitative trait on the basis of variance heterogeneity among the genotype-specific distributions unless the locations (in particular, the means) of the three distributions are equal. When the means are not all equal, the variance heterogeneity might in fact be explained by a distribution in which the variance is a function of the mean. There exists a transformation of the data that will tend to make the variances equal and there is a method that will at a minimum decrease the variance heterogeneity.
+
+GWAS analyses to detect variance heterogeneity is inherently sensitive to unbalanced data. The major reason for this is that the distribution of the variance often deviates from normality as it: 
+1) is bounded at zero 
+2) has a distribution skewed to the right 
+3) has a variance depending on its mean 
+Such deviations lead to violations of, e.g., the Gauss–Markov assumptions in a regression model.
 
 ### Controlling for covariate interactions
 
