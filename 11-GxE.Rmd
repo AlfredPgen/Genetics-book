@@ -178,7 +178,9 @@ Jiang and Liu, 2014
 
 The semiparametric model is designed to identify the combined differences in higher moments among genotypic groups. The pairwise likelihood is constructed based on conditioning procedure, where the unknown reference distribution is eliminated.
 
-### Variance heterogeneity for related individuals
+### Squared residual value linear modeling
+
+
 
 ## RELIEF and other machine learning tools
 
