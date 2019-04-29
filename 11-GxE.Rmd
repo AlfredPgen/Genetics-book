@@ -178,9 +178,9 @@ Jiang and Liu, 2014
 
 The semiparametric model is designed to identify the combined differences in higher moments among genotypic groups. The pairwise likelihood is constructed based on conditioning procedure, where the unknown reference distribution is eliminated.
 
-### Squared residual value linear modeling
+### Squared residual value linear modeling (SVLM)
 
-
+SVLM consists of two steps. First, a regression analysis is applied where the trait is adjusted for a possible SNP effect and other covariates. Second, a regression analysis is applied to the squared values of residuals obtained from the first stage, using the SNP as the predictor.
 
 ## RELIEF and other machine learning tools
 
