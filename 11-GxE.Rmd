@@ -218,7 +218,7 @@ Finally, it should be noted that even if a G×E result ‘disappears’ after pr
 ## Candidate gene-by-environment interaction studies
 
 This research area has been a hot topic in genetics, with hundreds of publications reporting positive G×E discoveries over the last 15 years, but there has been increasing skepticism about the validity of many of these findings. This skepticism is based on a number of substantive and statistical concerns:
-
+t
 1) A low replication rate among attempted direct replications of GxE findings.
 2) The possibility that GxE findings capitalized on chance from among many unreported analyses.
 3) A publication bias toward positive findings.
