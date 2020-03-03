@@ -228,4 +228,4 @@ t
 
 It is difficult and potentially misleading to interpret two-way interactions in the presence of three-way interactions. In such a model, the lower-order two-way interactions become conditional interactions, and the regression betas and p-values are interpreted as the predicted two-way interactions when the other (omitted) variable is coded as 0.
 
-
+Add more
