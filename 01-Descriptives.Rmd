@@ -22,7 +22,6 @@
 
 ## Henetic relationships by Malecot
 
-
 ## Genotype simulations
 
 ## Phenotype simulations
