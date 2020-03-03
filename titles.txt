@@ -1,0 +1,910 @@
+﻿The Beavis Effect in Next-Generation Mapping Panels in Drosophila melanogaster
+Characterizing the Relation Between Expression QTLs and Complex Traits: Exploring the Role of Tissue Specificity
+Beyond SNP Heritability: Polygenicity and Discoverability of Phenotypes Estimated with a Univariate Gaussian Mixture Model
+A Bayesian framework for multiple trait colocalization from summary association statistics
+Joint genotype‐ and ancestry‐based genome‐wide association studies in admixed populations
+Fixed‐effect variance and the estimation of repeatabilities and heritabilities: issues and solutions
+Multi-trait analysis of genome-wide association summary statistics using MTAG
+Efficient strategies for screening large-scale genetic interaction networks
+Integrative Genetic and Epigenetic Analysis Uncovers Regulatory Mechanisms of Autoimmune Disease
+The implications of the shared genetics of psychiatric disorders
+Current Challenges and New Opportunities for Gene-Environment Interaction Studies of Complex Diseases
+Incorporation of Biological Knowledge Into the Study of Gene-Environment Interactions
+An information-gain approach to detecting three-way epistatic interactions in genetic association studies
+Redefine Statistical Significance 
+A genetic investigation of sex bias in the prevalence of attention deficit hyperactivity disorder
+DiGeST: Distributed Computing for Scalable Gene and Variant Ranking with Hadoop/Spark
+Discovery and replication of SNP-SNP interactions for quantitative lipid traits in over 60,000 individuals
+Kimura & Crow: Infinite alleles
+Extending the MR-Egger method for multivariable Mendelian randomization to correct for both measured and unmeasured pleiotropy
+Multi-polygenic score approach to trait prediction
+Estimation of complex effect-size distributions using summary-level statistics from genome-wide association studies across 32 complex traits
+Vertebrate sex determination: evolutionary plasticity of a fundamental switch
+Data-driven Advice for Applying Machine Learning to Bioinformatics Problems
+Advances in genome-wide association studies for important traits in sheep and goats
+Accurate Genomic Prediction of Human Height
+Efficient analysis of large-scale genome-wide data with two R packages: bigstatsr and bigsnpr
+Mixed-model association for biobank-scale datasets
+Estimation of Genetic Correlation via Linkage Disequilibrium Score Regression and Genomic Restricted Maximum Likelihood
+Bayesian multiple logistic regression for case-control GWAS
+Proper joint analysis of summary association statistics requires the adjustment of heterogeneity in SNP coverage pattern
+OPATs: Omnibus P-value association tests
+cophesim: a comprehensive phenotype simulator for testing novel association methods
+Current Challenges and New Opportunities for Gene-Environment Interaction Studies of Complex Diseases
+Distinguishing genetic correlation from causation across 52 diseases and complex traits
+Is the Effect of Parental Education on Offspring Biased or Moderated by Genotype?
+Finite-sample genome-wide regression p-values (GWRPV) with a non-normally distributed phenotype
+The dynamics of molecular evolution over 60,000 generations
+Inferring Relevant Cell Types for Complex Traits by Using Single-Cell Gene Expression
+Power, false discovery rate and Winner’s Curse in eQTL studies
+The dynamics of molecular evolution over 60,000 generations
+Equivalence of LD-Score Regression and Individual-Level-Data Methods
+Proteome-wide analysis of phospho-regulated PDZ domain interactions through phosphomimetic proteomic peptide phage display
+Local Genetic Correlation Gives Insights into the Shared Genetic Architecture of Complex Traits
+Statistical methods to detect pleiotropy in human complex traits
+The reproducibility of research and the misinterpretation of p-values
+Comparison of Sociodemographic and Health-Related Characteristics of UK Biobank Participants With Those of the General Population
+Multi-ethnic polygenic risk scores improve risk prediction in diverse populations
+Phenome-wide association studies (PheWAS) across large “real-world data” population cohorts support drug target validation
+PRS-on-Spark (PRSoS): a novel, efficient and flexible approach for generating polygenic risk scores
+Relatedness disequilibrium regression estimates heritability without environmental bias
+Ultrarare variants drive substantial cis heritability of human gene expression
+Supervised Machine Learning for Population Genetics: A New Paradigm
+Using predictive specificity to determine when gene set analysis is biologically meaningful
+Method to estimate the approximate samples size that yield a certain number of significant GWAS signals in polygenic traits
+A map of constrained coding regions in the human genome
+Widespread Genotype-Phenotype Correlations in Intellectual Disability
+Transcriptome‐wide association studies accounting for colocalization using Egger regression
+Epigenome-wide association in adipose tissue from the METSIM cohort
+A Review of Pathway-Based Analysis Tools That Visualize Genetic Variants
+VarExp: estimating variance explained by genome-wide GxE summary statistics
+Five ways to fix statistics
+A Selection Operator for Summary Association Statistics Reveals Allelic Heterogeneity of Complex Traits
+BLINK: a package for the next level of genome-wide association studies with both individuals and markers in the millions
+Family-based association analysis identifies variance-controlling loci without confounding by genotype-environment correlations
+Variable selection in heterogeneous datasets: A truncated-rank sparse linear mixed model with applications to genome-wide association studies
+Multiplex confounding factor correction for genomic association mapping with squared sparse linear mixed model
+Multi-SKAT: General framework to test for rare variant association with multiple phenotypes
+Genetic architecture: the shape of the genetic contribution to human traits and disease
+Genetic Landscapes Reveal How Human Genetic Diversity Aligns with Geography
+On Negative Heritability and Negative Estimates of Heritability
+Bayesian and frequentist analysis of an Austrian genome-wide association study of colorectal cancer and advanced adenomas
+Use and optimization of different sources of information for genomic prediction
+Genomic heritability estimates in sweet cherry reveal non-additive genetic variance is relevant for industry-prioritized traits
+Fixed‐effect variance and the estimation of repeatabilities and heritabilities: issues and solutions
+Efficient pedigree recording for fast population genetics simulation
+Including Phenotypic Causal Networks in Genome-Wide Association Studies Using Mixed Effects Structural Equation Models
+Polygenic scores for UK Biobank scale data
+The genome-wide rate and spectrum of spontaneous mutations differ between haploid and diploid yeast
+Statistical inference in two-sample summary-data Mendelian randomization using robust adjusted profile score
+FastSKAT: Sequence kernel association tests for very large sets of markers
+Beyond Synthetic Lethality: Charting the Landscape of Pairwise Gene Expression States Associated with Survival in Cancer
+Estimating variance components in population scale family trees
+Quantitative genetic methods depending on the nature of the phenotypic trait
+Imputation of posterior linkage probability relations reveals a significant influence of structural 3D constraints on linkage disequilibrium
+LiMMBo: a simple, scalable approach for linear mixed models in high-dimensional genetic association studies
+LFMM 2.0: Latent factor models for confounder adjustment in genome and epigenome-wide association studies
+Reconciling S-LDSC and LDAK models and functional enrichment estimates
+Genome-wide Analysis of Insomnia (N=1,331,010) Identifies Novel Loci and Functional Pathways
+Bayesian model comparison for rare variant association studies of multiple phenotypes
+Pleiotropic mapping and annotation selection in genome-wide association studies with penalized Gaussian mixture models
+ANIMA: Association network integration for multiscale analysis
+Leveraging allele-specific expression to refine fine-mapping for eQTL studies
+SPADIS: An Algorithm for Selecting Predictive and Diverse SNPs in GWAS
+Runs of homozygosity: windows into population history and trait architecture
+Genomic Prediction Accounting for Genotype by Environment Interaction Offers an Effective Framework for Breeding Simultaneously for Adaptation to an Abiotic Stress and Performance Under Normal Cropping Conditions in Rice
+Estimating Heritability and Genetic Correlation in Case Control Studies Directly and with Summary Statistics
+A robust method to estimate regional polygenic correlation identifies heterogeneity in the shared heritability between complex traits
+Improved imputation of summary statistics for admixed populations
+A Meta-Analytic Framework for Detection of Genetic Interactions
+GTFtools: a Python package for analyzing various modes of gene models
+Free will, determinism, and intuitive judgments about the heritability of behavior
+Review of Statistical Methods for Gene-Environment Interaction Analysis
+Formalising recall by genotype as an efficient approach to detailed phenotyping and causal inference
+Multiobjective multifactor dimensionality reduction to detect SNP–SNP interactions
+Principal component based adaptive association test of multiple traits using GWAS summary statistics
+DNAscan: personal computer compatible NGS analysis, annotation and visualisation
+Medical consequences of pathogenic CNVs in adults: analysis of the UK Biobank
+Pleiotropic and Epistatic Network-Based Discovery: Integrated Networks for Target Gene Discovery
+MMARGE: Motif Mutation Analysis for Regulatory Genomic Elements
+ProxECAT: Proxy External Controls Association Test. A new case-control gene region association test using allele frequencies from public controls
+A linear mixed-model approach to study multivariate gene–environment interactions
+The human noncoding genome defined by genetic diversity
+Methods for fine-mapping with chromatin and expression data
+Most regulatory interactions are not in linkage disequilibrium
+Genomic prediction informed by biological processes expands our understanding of the genetic architecture underlying free amino acid traits in dry Arabidopsis seeds
+Comparing deregression methods for genomic prediction of test-day traits in dairy cattle
+Genetic correlations among psychiatric and immune-related phenotypes based on genome-wide association data
+Discovering patterns of pleiotropy in genome-wide association studies
+Large-scale genomic prediction using singular value decomposition of the genotype matrix
+Empirical Bayes Matrix Factorization
+Informatics and machine learning to define the phenotype
+Are whole-exome and whole-genome sequencing approaches cost-effective? A systematic review of the literature
+Statistical power and utility of meta-analysis methods for cross-phenotype genome-wide association studies
+Comparison of GWAS models to identify non-additive genetic control of flowering time in sunflower hybrids
+Meta-analysis of genome-wide association studies for height and body mass index in ∼700000 individuals of European ancestry
+Transcriptome‐wide association studies accounting for colocalization using Egger regression
+MatrixEpistasis: ultrafast, exhaustive epistasis scan for quantitative traits with covariate adjustment
+Heritability informed power optimization (HIPO) leads to enhanced detection of genetic associations across multiple traits
+MetaWRAP—a flexible pipeline for genome-resolved metagenomic data analysis
+The importance of cohort studies in the post-GWAS era
+Meta-analysis and the science of research synthesis
+Quantifying the mapping precision of genome-wide association studies using whole-genome sequencing data
+Shared Polygenicity detection using Elastic Nets: SHARPEN
+A general framework for predicting the transcriptomic consequences of non-coding variation
+Transancestral GWAS of alcohol dependence reveals common genetic underpinnings with psychiatric disorders
+Kernel machine SNP set analysis provides new insight into the association between obesity and polymorphisms located on the chromosomal 16q.12.2 region: Tehran Lipid and Glucose Study
+Multiancestry genome-wide association study of 520,000 subjects identifies 32 loci associated with stroke and stroke subtypes
+Contextualizing selection bias in Mendelian randomization: how bad is it likely to be?
+Inferring the shape of global epistasis
+Exposing flaws in S-LDSC; reply to Gazal et al.
+Transformation of Summary Statistics from Linear Mixed Model Association on All-or-None Traits to Odds Ratio
+Causal associations between risk factors and common diseases inferred from GWAS summary data
+Best Prediction of the Additive Genomic Variance in Random-Effects Models
+Cohort-wide deep whole genome sequencing and the allelic architecture of complex traits
+The impact of genome-wide association studies on biomedical research publications
+Genome-wide gene-environment analyses of major depressive disorder and reported lifetime traumatic experiences in UK Biobank
+QTL Mapping on a Background of Variance Heterogeneity
+A combined analysis of genetically correlated traits identifies 187 loci and a role for neurogenesis and myelination in intelligence
+SumHer better estimates the SNP heritability of complex traits from summary statistics
+A test for gene–environment interaction in the presence of measurement error in the environmental variable
+Multibreed genomic prediction using multitrait genomic residual maximum likelihood and multitask Bayesian variable selection
+Inferring disease risk genes from sequencing data in multiplex pedigrees through sharing of rare variants
+A statistical framework for cross-tissue transcriptome-wide association analysis
+Recovering signals of ghost archaic introgression in African populations
+Continuous-Trait Probabilistic Model for Comparing Multi-species Functional Genomic Data
+Non-additive Effects in Genomic Selection
+The Proposal to Lower P Value Thresholds to .005
+TETyper: a bioinformatic pipeline for classifying variation and genetic contexts of transposable elements from short-read whole-genome sequencing data
+Polygenic risk score for schizophrenia is more strongly associated with ancestry than with schizophrenia
+Human Demographic History Impacts Genetic Risk Prediction across Diverse Populations
+A multi-trait Bayesian method for mapping QTL and genomic prediction
+Population genetics and GWAS: A primer
+A comparison between genotyping-by-sequencing and array-based scoring of SNPs for genomic prediction accuracy in winter wheat
+G2P: Using machine learning to understand and predict genes causing rare neurological disorders
+Genotyping Polyploids from Messy Sequencing Data
+Considering dominance in reduced single-step genomic evaluations
+A Bayesian Genomic Regression Model with Skew Normal Random Errors
+A method combining a random forest-based technique with the modeling of linkage disequilibrium through latent variables, to run multilocus genome-wide association studies
+Feature selection with interactions in logistic regression models using multivariate synergies for a GWAS application
+Modelling the co-evolution of indirect genetic effects and inherited variability
+Development of a joint evolutionary model for the genome and the epigenome
+Polygenic prediction of the phenome, across ancestry, in emerging adulthood
+Integrating predicted transcriptome from multiple tissues improves association detection
+The accuracy of LD Score regression as an estimator of confounding and genetic correlations in genome‐wide association studies
+Comparison of Genotypic and Phenotypic Correlations: Cheverud’s Conjecture in Humans
+Relationships between estimated autozygosity and complex traits in the UK Biobank
+Including gene networks to predict calving difficulty in Holstein, Brown Swiss and Jersey cattle
+Haplotype-aware genotyping from noisy long reads
+Neutral Variation in the Context of Selection
+nQuire: a statistical framework for ploidy estimation using next generation sequencing
+Comparison of phasing strategies for whole human genomes
+What exactly is ‘N’ in cell culture and animal experiments?
+Epigenetic prediction of complex traits and death
+A scalable estimator of SNP heritability for biobank-scale data
+A common genomic code for chromatin architecture and recombination landscape
+Accurate prediction of orthologs in the presence of divergence after duplication
+A unifying framework for joint trait analysis under a non-infinitesimal model
+WASABI: a dynamic iterative framework for gene regulatory network inference
+Effect of selection on bias and accuracy in genomic prediction of breeding values
+Leveraging DNA-Methylation Quantitative-Trait Loci to Characterize the Relationship between Methylomic Variation, Gene Expression, and Complex Traits
+Multidimensional Scaling and Relatedness Research
+Heritability enrichment of specifically expressed genes identifies disease-relevant tissues and cell types
+FakeDrTom: This is a first for me in a lot of different ways! If you have tumor sequence data, especially multiple samples from the samâ€¦,
+zkutalik: Now that you are all staying home to stop the #Covid_19 spread, here is some reading from our lab on estimating the contributâ€¦,
+pop_gen_JED: New #preprint from my group, lead by @TroyNRowan. https://t.co/bHBsLBjp5A\nDescription of powerful scans for polygenic seleâ€¦,
+strnr: Genomic loci susceptible to systematic sequencing bias in clinical whole genomes https://t.co/nDmySEmqKY https://t.co/nxszgiaIrP,
+biorxiv_genetic: A Generalized Robust Allele-based Genetic Association Test  https://t.co/rwiL4YmR23 #biorxiv_genetic,
+ProfSimonFisher: Polygenic scores can be informative for group level analyses, but they don't accurately predict individual educationalâ€¦,
+Mendelian_lit: Empirical comparisons of multiple Mendelian randomization approaches in the presence of assortative mating. https://t.coâ€¦,
+mathiesoniain: New FADS paper: https://t.co/FT4GoXII0S. I use ancient DNA to clarify the evolution of the locus and show that some signâ€¦,
+ShaiCarmi: MSMC-IM: A new tool for demographic inference from @stschiff's group. Computes the migration rates between a pair of populatâ€¦,
+NatureNeuro: A computational tool (#H-MAGMA) for improved prediction of brain-disorder risk genes from #GWAS data by incorporating braiâ€¦,
+biorxiv_genetic: Identification of X-chromosomal genes that drive global X-dosage effects in mammals  https://t.co/c5SLG8UB5n #biorxiv_â€¦,
+mathiesoniain: What is ancestry? @aylwyn_scally and I discuss the difference between genealogical ancestry, genetic ancestry, and genetâ€¦,
+Prof_Lundberg: A new addition to the Human Protein Atlas by @SjostedtEvelina @ProteinAtlas et al. A comparative analysis of regional exâ€¦,
+bxv_genetics: locStra: Fast analysis of regional/global stratification in whole genome sequencing (WGS) studies https://t.co/5IaU0JezWj,
+biorxivpreprint: A fast and efficient smoothing approach to LASSO regression and an application in statistical genetics: polygenic riskâ€¦,
+biorxiv_genetic: A simplified calculation of the correlations between relatives  https://t.co/QHhR5SDYRz #biorxiv_genetic,
+PeyrotWouter: We identified 200 loci distinguishing eight psychiatric disorders with CC-GWAS, our new method to compare cases based onâ€¦,
+genomic_pred: Genome-wide identification of loci associated with growth in rainbow trout. https://t.co/hyYBMghgav,
+genomic_pred: Comparison of the Efficiency of BLUP &amp; GBLUP in Genomic Prediction of Immune Traits in Chickens. https://t.co/pXmPxsp1NF,
+biorxiv_genetic: Novel Bayesian transcriptome-wide association study method leveraging both cis- and trans- eQTL information through suâ€¦,
+MaartenvSmeden: NEW PREPRINT\n\nFour statistical approaches to address missing values, measurement error and confounding. Including exempâ€¦,
+biorxiv_genetic: mrMLM v4.0: An R Platform for Multi-locus Genome-wide Association Studies  https://t.co/akvNhJatOZ #biorxiv_genetic,
+GWAS_lit: A selective inference approach for FDR control using multi-omics covariates yields insights into disease risk https://t.co/KOâ€¦,
+bxv_genetics: Population Stratification at the Phenotypic Variance level and Implication for the Analysis of Whole Genome Sequencing Daâ€¦,
+Twonic: My latest piece\nBeyond GWAS: Tackling the variant-to-function challenge https://t.co/Jfqd66jJp1 Thanks @jengreitz @ceclindgrenâ€¦,
+genomic_pred: Exploring Deep Learning for Complex Trait Genomic Prediction in Polyploid Outcrossing Species. https://t.co/PtsdFQx2Ga,
+biorxiv_genetic: Polygenic adaptation and negative selection across traits, years and environments in a long-lived plant species (Pinusâ€¦,
+mbhufford: GenomeQC: your one-stop shop for contiguity and completeness statistics for genome assemblies. Great collaboration with folkâ€¦,
+PsyEpigenetics: New preprint from the lab - Meta-analysis of epigenome-wide association studies in Alzheimerâ€™s disease highlights 220 dâ€¦,
+seandavis12: pipeComp, a general framework for the evaluation of computational pipelines, reveals performant single-cell RNA-seq preproâ€¦,
+dr_appie: Our new study by @JoellePasman et al investigates the interplay between genes &amp; neighborhood characteristics in alcohol, tobaâ€¦,
+genomic_pred: Using high-throughput phenotypes to enable genomic selection by inferring genotypes https://t.co/HxCakZdwx8,
+biorxiv_genetic: Using high-throughput phenotypes to enable genomic selection by inferring genotypes  https://t.co/CaE2eGcrCF #biorxiv_â€¦,
+biorxiv_genetic: Gene-environment interactions in Multiple Sclerosis: a UK Biobank study  https://t.co/mjVKUjMQNv #biorxiv_genetic,
+biorxivpreprint: Genes and Pathways for Plasma Lipid Traits via Multi-tissue Multi-omics Systems Analysis  https://t.co/vS1WKGXqXw #bioâ€¦,
+Eric_Fauman: In our ProGem paper https://t.co/ygfhEvz3cy we identified \top down\ and \bottom up\ criteria for mapping SNPs to genes.\nUâ€¦,
+robo_gwas: A trans-ethnic two-stage polygenetic scoring analysis detects genetic correlation between osteoporosis and schizophrenia. htâ€¦,
+biorxiv_genetic: Body size and composition and site-specific cancers in UK Biobank: a Mendelian randomisation study  https://t.co/BAkfoâ€¦,
+HennLab: We debut a new paper \A rapid, accurate approach to inferring pedigrees in endogamous populations\ featuring an algorithm deveâ€¦,
+bxv_genetics: Genomic Prediction with Genotype by Environment Interaction Analysis for Kernel Zinc Concentration in Tropical Maize Germâ€¦,
+rlmcelreath: Long thread from last month Andrew Gelman's blog suggests not everyone finds it so obvious. Nice comment from David Rohdeâ€¦,
+3rdreviewer: I never knew where this thought-experiment came from, until now:\nhttps://t.co/e7kDLdfZIz,
+ASNAmNat: Free Access\n\nSimone P. Blomberg, Suren I. Rathnayake, and Cheyenne M. Moreau\n\nNew evolutionary models for continuous traits,â€¦,
+MT_Genetics: We've published quite a bit of MR methodology recently @NatureComms, here's our newest addition, MR-TRYX:\n\nhttps://t.co/BDâ€¦,
+arxiv_org: A Bayes Factor Approach with Informative Prior for Rare Genetic Variant Analysis from Nex... https://t.co/i0xjECtxTl https:/â€¦,
+genomic_pred: Effects of ignoring inbreeding in model-based accuracy for BLUP &amp; SSGBLUP. https://t.co/7JklmwFte3,
+seandavis12: Promoter CpG density predicts downstream gene loss-of-function intolerance https://t.co/HuQVMUqNrM\n#genomics #bioinformatiâ€¦,
+biorxivpreprint: ErrorX: automated error correction for immune repertoire sequencing datasets  https://t.co/vtghWp3NCH #bioRxiv,
+biorxiv_genetic: Learning polygenic scores for human blood cell traits  https://t.co/l94odZmXv8 #biorxiv_genetic,
+biorxiv_genetic: Systematic detection of Mendelian and non-Mendelian variants associated with retinitis pigmentosa by genome-wide assocâ€¦,
+bxv_genomics: Versatile simulations of admixture and accurate local ancestry inference with mixnmatch and ancestryinfer https://t.co/qoâ€¦,
+GWAS_lit: Cascading Epigenomic Model for GWAS https://t.co/FaC1PkbcSI https://t.co/v2DmCgvNtT,
+biorxivpreprint: Hardy-Weinberg Equilibrium in the Large Scale Genomic Sequencing Era  https://t.co/qFN8d8qNxB #bioRxiv,
+biorxivpreprint: BitEpi: A Fast and Accurate Exhaustive Higher-Order Epistasis Search  https://t.co/XDsGLMJpAg #bioRxiv,
+biorxiv_genomic: Localizing components of shared transethnic genetic architecture of complex traits from GWAS summary data  https://t.câ€¦,
+biorxiv_genetic: Testing the effectiveness of principal components in adjusting for relatedness in genetic association studies  https:/â€¦,
+genomic_pred: Adventures in Multi-Omics I: Combining heterogeneous data sets via relationships matrices https://t.co/RAtNkWpTOi,
+Macmoto: Multiple-trait Bayesian Lasso https://t.co/LpuYndAixq,
+biorxiv_genetic: Whole genome sequencing analysis of the cardiometabolic proteome  https://t.co/1FGywHDmo9 #biorxiv_genetic,
+GWAS_lit: PheGWAS: A new dimension to visualize GWAS across multiple phenotypes https://t.co/U8gljgsoe4 https://t.co/QvHhDv4xOa https:/â€¦,
+stevesphd: Guidelines on performing Mendelian randomization investigations written by an all-star line-up of MR researchers are now avaâ€¦,
+biorxiv_genetic: eMAGMA: An eQTL-informed method to identify risk genes using genome-wide association study summary statistics  https:/â€¦,
+GWAS_lit: Cross-trait prediction accuracy of high-dimensional ridge-type estimators in genome-wide association studies https://t.co/2GZâ€¦,
+biorxiv_genetic: CORE GREML: Estimating covariance between random effects in linear mixed models for genomic analyses of complex traitsâ€¦,
+NatureGenet: A resource-efficient tool for mixed model association analysis of large-scale data (Jiang et al.) https://t.co/Asrfk00wszâ€¦,
+NatureComms: Heritability of skewed X-inactivation in female twins is tissue-specific and associated with age | https://t.co/iHohoCYgKOâ€¦,
+Eric_Fauman: In which it is demonstrated that the majority of genes that colocalize with a trait are the genes closest to the biggest sâ€¦,
+LeviWaldron1: @StatGenDan @seandavis12 Independent Hypothesis Weighting is the best improvement in FDR methods since Beniamini-Hochbergâ€¦,
+bxv_genetics: A multiple-trait Bayesian Lasso for genome-enabled analysis and prediction of complex traits https://t.co/ghhKxXnQ68,
+ShaiCarmi: Our manuscript is strictly empirical, and is not intended as an ethical opinion. It is meant to provide an evidence-based foâ€¦,
+ShaiCarmi: Our study utilized mathematical modeling, simulated data, and real data from large nuclear families with up to 20 offspringâ€¦,
+ShaiCarmi: Large-scale GWASs yield increasingly accurate polygenic scores (PS) for various traits. It is now also feasible to calculateâ€¦,
+ShaiCarmi: New paper in @CellCellPress!\n\nWe provide an empirical and theoretical evaluation of the expected outcomes of selecting humanâ€¦,
+GWAS_lit: Can artificial neural networks supplant the polygene risk score for risk prediction of complex disorders given very large samâ€¦,
+BhramarBioStat: Important collaboration @umichsph : methods for fast and scalable G x E analysis at a genome by phenome scale with accoâ€¦,
+AJHGNews: New! Blum &amp; colleagues present clumping and thresholding (SCT), a new approach to improve the  prediction accuracy of polygenâ€¦,
+GWAS_lit: Polygenic hazard score predicts aggressive and fatal prostate cancer in multi-ethnic populations https://t.co/4XvNaN9vDt httpâ€¦,
+GWAS_lit: A principal component approach to improve association testing with polygenic risk scores https://t.co/jFTGHz8trT https://t.coâ€¦,
+GWAS_lit: Estimating genetic inheritance in case-control studies https://t.co/03MsqaScyV https://t.co/pk9LoxEJll,
+genomic_pred: A Multiple-trait Bayesian Variable Selection Regression Method for Integrating Phenotypic Causal Networks in Genome-Wideâ€¦,
+stevesphd: New paper on an approach for performing robust instrumental variable analyses by Andrew Grant and myself: \An efficient andâ€¦,
+CompMedUCLA: Congratulations to @sr_sankararaman @arundurvasula for their latest publication \Recovering signals of ghost archaic introâ€¦,
+robo_gwas: GWAS in cancer: progress and challenges. https://t.co/KeGtZGP5bc,
+Mendelian_lit: Power calculation for the general two-sample Mendelian randomization analysis. https://t.co/QU0GttkbMl,
+strnr: Metagenome SNP Calling via Read Colored de Bruijn Graphs https://t.co/hmEkTfiDcP https://t.co/FoYCgvk770,
+GWAS_lit: Association Study of Over 200,000 Subjects Detects Novel Rare Variants, Functional Elements, and Polygenic Architecture of Prâ€¦,
+Diptavo: We have released the initial code for GAUSS: Gene-set Association analysis Under Sparse Signals in GitHub: https://t.co/J7zemWâ€¦,
+EricTopol: Of all these 9 different approaches to assess human biological age, are any useful?\nhttps://t.co/Hs7FRioEwV @eLife \nMethylatâ€¦,
+biorxiv_genetic: New kinship and FST estimates reveal higher levels of differentiation in the global human population  https://t.co/rQKâ€¦,
+biorxivpreprint: DiADeM: differential analysis via dependency modelling of chromatin interactions with generalized linear models  httpsâ€¦,
+biorxiv_genetic: Making the most of Clumping and Thresholding for polygenic scores  https://t.co/4ky1D4z3k0 #biorxiv_genetic,
+CharlestonCWKC: Inferring the Nature of Missing Heritability in Human Traits Using Data from the GWAS Catalog https://t.co/bF4BG8alE5,
+bloodgenes: Wonderful to have this terrific work led by @neuron81 &amp; Sean McFarland published in its full edition in @eLife - Gene-centrâ€¦,
+GWAS_lit: Multi-resolution localization of causal variants across the genome https://t.co/rwAVj3FZ8D https://t.co/Ziuu6qFEgT,
+biorxivpreprint: GSAn: an alternative to enrichment analysis for annotating gene sets  https://t.co/ksndCrMVpK #bioRxiv,
+biorxivpreprint: epiScanpy: integrated single-cell epigenomic analysis  https://t.co/OGFhFcN2yn #bioRxiv,
+biorxiv_genetic: Transcriptome-wide association study of attention deficit hyperactivity disorder identifies associated genes and phenoâ€¦,
+biorxivpreprint: Genotype Imputation and Reference Panel: A Systematic Evaluation  https://t.co/bfyVIYQRgy #bioRxiv,
+biorxiv_genetic: Association analysis of loci implied in'buffering' epistasis  https://t.co/Enqi6sm7o6 #biorxiv_genetic,
+bxv_bioinf: Bayesian inference of differentially expressed transcripts and their abundance from multi-condition RNA-seq data https://t.â€¦,
+biorxiv_genomic: Bayesian multivariate reanalysis of large genetic studies identifies many new associations  https://t.co/bbYAtXSX7c #bâ€¦,
+strnr: gpart: human genome partitioning and visualization of high-density SNP data by identifying haplotype blocks https://t.co/OQ3tqMMâ€¦,
+AJHGNews: New! It can be difficult to perform multi-omics analyses in admixed populations. Now, Zhong et al. present a computationallyâ€¦,
+GWAS_lit: Polygenic Score of Intelligence is More Predictive of Crystallized than Fluid Performance Among Children https://t.co/6YtS7vuâ€¦,
+SilasTittes: First official day as a postdoc with @jrossibarra! Read this sweet paper by @krstnmlee and @Graham_Coop, attended a telecoâ€¦,
+biorxiv_genetic: Bayesian network analysis complements Mendelian randomization approaches for exploratory analysis of causal relationshâ€¦,
+GWAS_lit: A Modeling Framework for Exploring Sampling and Observation Process Biases in Genome and Phenome-wide Association Studies usiâ€¦,
+strnr: On the value of preprints: An early career researcher perspective https://t.co/QFTl3zYjZr https://t.co/kT0rGe2kMI,
+genomic_pred: Genomic prediction including SNP-specific variance predictors https://t.co/4o80SYUApX,
+oweissb: Are longevity and family size heritable? \n\nCheck out our new paper that answers these questions using historical pedigree recoâ€¦,
+strnr: Accurate filtering of privacy-sensitive information in raw genomic data https://t.co/RhXQVpWnRf https://t.co/9yn7Twwzi7,
+robo_gwas: Complimentary Methods for Multivariate Genome-Wide Association Study Identify New Susceptibility Genes for Blood Cell Traitsâ€¦,
+NatureGenet: Multi-tissue transcriptome analyses identify genetic mechanisms underlying neuropsychiatric traits (Gamazon et al.) https:â€¦,
+GWAS_lit: Efficient Multivariate Analysis Algorithms for Longitudinal Genome-wide Association Studies https://t.co/i0EmdOYc1M https://tâ€¦,
+zkutalik: Our approach to gauge the contribution of GRS - (overall) environment interaction while distinguishing general scale effectsâ€¦,
+cecilejanssens: The predictive ability of polygenic risk scores differs between populations, and their utility depends on what benefitsâ€¦,
+tuuliel: Excited to share a new preprint from my &amp; @Pejminister labs: Quantifying genetic regulatory variation in human populations impâ€¦,
+arbelharpak: In work by @Hakha_Most @molly_przew @daltonconley @jkpritch, we checked whether polygenic scores can be assumed to be portâ€¦,
+genscot: What has GWAS ever done for us? The answers are here in @nature \nhttps://t.co/t9UZmPluhg,
+GWAS_lit: Structural equation modeling for hypertension and type 2 diabetes based on multiple SNPs and multiple phenotypes https://t.coâ€¦,
+biorxiv_bioinfo: A Fast and Flexible Algorithm for Solving the Lasso in Large-scale and Ultrahigh-dimensional Problems  https://t.co/Atâ€¦,
+moorejh: Predictive accuracy of combined genetic and environmental risk scores https://t.co/tEOfnYZELH #GWAS #genomics,
+full_text : Why are education, socioeconomic position and intelligence genetically correlated? https://t.co/r0TBvWqFi2,
+moorejh: Statistical learning approaches in the genetic epidemiology of complex diseases https://t.co/Pmqj8p2Cn3 #genomics #GWAS #machiâ€¦,
+oldz84: Phenome-wide Mendelian randomization mapping the influence of the plasma proteome on complex diseases https://t.co/tS7lt5cnKXâ€¦,
+bxv_bioinf: Machine learning-based detection of insertions and deletions in the human genome https://t.co/aYoTuaIpK3,
+Macmoto: Interesting article (open access) on genetics-science-communism. Written by members of the Russian Academy of Sciences. https:â€¦,
+MarcusMunafo: Is useful research data usually shared? An investigation of genome-wide association study summary statistics | bioRxiv htâ€¦,
+biorxivpreprint: Legacy Data Confounds Genomics Studies  https://t.co/5uYaORackI #bioRxiv,
+wpgilks: Insights about variation in meiosis from 31,228 human sperm genomes https://t.co/T1vwf71dLE https://t.co/bJYQCu9KTV,
+sbmontgom: With continually growing QTL resources, nearly every variant is nominally associated to some molecular trait. We highlight iâ€¦,
+bxv_bioinf: Hierarchical Network Exploration using Gaussian MixtureModels https://t.co/fHjVohWsA3,
+biorxivpreprint: Within-population genome size variation is mediated by multiple genomic elements that segregate independently during mâ€¦,
+Mendelian_lit: Bayesian Weighted Mendelian Randomization for Causal Inference based on Summary Statistics. (arXiv:1811.10223v2 [https:/â€¦,
+biorxivpreprint: FIREcaller: an R package for detecting frequently interacting regions from Hi-C data  https://t.co/MwfpArDlKk #bioRxiv,
+strnr: Spatial Population Genetics: It's About Time https://t.co/3VW4udaz2S https://t.co/lhzLkf74Ni,
+ASNAmNat: Ahead of Print: We review how Felsensteinâ€™s 1985 paper on phylogenies and the comparative method revolutionized evolutionaryâ€¦,
+Mendelian_lit: Mendelian randomization analysis using mixture models for robust and efficient estimation of causal effects. https://t.câ€¦,
+bxv_bioinf: Multi-view Co-training for MicroRNA Prediction https://t.co/KNoWdQsDrr,
+biorxiv_genetic: A Framework for Integrating Directed and Undirected Annotations to Build Explanatory Models of cis-eQTL Data.  https:/â€¦,
+robo_gwas: Weighted False Discovery Rate Control in Large-Scale Multiple Testing. https://t.co/Apk990Exwp,
+ewanbirney: For PRS lovers / skeptics and just the curious here is an excellent review of PRS and breeding value genetics by some of thâ€¦,
+cbazodi: Excited to share a preprint of my work on benchmarking algorithms, from rrBLUP to neural networks, for Genomic Prediction! Thaâ€¦,
+biorxiv_bioinfo: pathwayPCA: an R package for integrative pathway analysis with modern PCA methodology and gene selection  https://t.coâ€¦,
+nresearchnews: A study published in @NatureComms finds that our collective attention span is narrowing, and that this effect occurs â€“ nâ€¦,
+biorxiv_genetic: Benchmarking algorithms for genomic prediction of complex traits  https://t.co/29wP7ilXlW #biorxiv_genetic,
+eQTL_papers: Accuracy of Gene Expression Prediction From Genotype Data With PrediXcan Varies Across and Within Continental Populations.â€¦,
+DataSciFact: A systematic review shows no performance benefit of machine learning over logistic regression for clinical prediction modeâ€¦,
+eLife: Two recent papers independently challenged key conclusions of previous genome-wide association studies of human height, with potâ€¦,
+biorxiv_genetic: Haplotype-based genome wide association study using a novel SNP-set method : RAINBOW  https://t.co/ArtRscxK44 #biorxivâ€¦,
+moorejh: The left-hand side of the Fundamental Theorem of Natural Selection https://t.co/VYsDam1YRK #evolution #genetics,
+strnr: GSEPD: a Bioconductor package for RNA-seq gene set enrichment and projection display https://t.co/6ZLQxUuHOD https://t.co/kXVt8Tâ€¦,
+genomic_pred: A Comparative Study of Single-Trait &amp; Multi-Trait Genomic Selection. https://t.co/VzMhKbBHjr,
+bxv_bioinf: Sparse Project VCF: efficient encoding of population genotype matrices https://t.co/BJxtofCDqX,
+robo_gwas: A nonparametric test for association with multiple loci in the retrospective case-control study. https://t.co/nVDIxYLxx7,
+jo_schacherer: What's the contribution of rare and low-frequency variants to phenotypic variation? Two large-scale genetic studies in yâ€¦,
+strnr: Accurate Prediction of Genome-wide RNA Secondary Structure Profile Based On Extreme Gradient Boosting https://t.co/VxMeTW1MYK htâ€¦,
+BingshanL: From GWAS loci to risk genes in schizophrenia - a new framework led by lab members Quan Wang (@ackson2002) and Rui Chen (@crâ€¦,
+GenomeBiology: Bin Xiong, Ji-Ping Wang and co present DegNorm, an RNA-seq analysis method that models transcript degradation to improveâ€¦,
+strnr: https://t.co/BmcGBUQTY2: Community curated #bioinformatics pipelines https://t.co/9RVh0pwiSW https://t.co/e3sKxt9qvP,
+biorxiv_genetic: The more the merrier? Multivariate approaches to genome-wide association analysis  https://t.co/IrSFxCU6c3 #biorxiv_geâ€¦,
+biorxiv_genomic: Extensive impact of low-frequency variants on the phenotypic landscape at population-scale  https://t.co/0ufkoITSjE #bâ€¦,
+biorxiv_genetic: Evaluation of mitochondrial DNA copy number estimation techniques  https://t.co/PvnVjPe1pa #biorxiv_genetic,
+GWAS_lit: U-PASS: unified power analysis and forensics for qualitative traits in genetic association studies https://t.co/mrbRUzwD9O htâ€¦,
+dr_appie: Peter M. Visscher and Michael E. Goddard discuss R.A. Fisher's 1918 landmark paper, which reconciled the \Mendelians\ and \biâ€¦,
+cecilejanssens: \The performance of risk stratification is strongly determined by the frequency of the high-risk group relative to theâ€¦,
+YWientjes: Interested in knowing what the requirements are of a marker set to be able to unbiasedly estimate the genetic correlation beâ€¦,
+symbioticworld: In PLoS Computational Biology\nEvolutionary footprint of epistasis\nhttps://t.co/UNlKjHePty,
+dermitzakis: Integrative haplotype estimation with sub-linear complexity https://t.co/PzjO1JF0YJ,
+GWAS_lit: Association Analysis of Common and Rare SNVs using Adaptive Fisher Method to Detect Dense and Sparse Signals https://t.co/fKMâ€¦,
+bxv_bioinf: svtools: population-scale analysis of structural variation https://t.co/Zw8szlEsNQ,
+RogerRosFreix: Our paper about impact of errors and biases on genotype and allele concordances of #lowcoverage data, plus our proposedâ€¦,
+Graham_Coop: Updated preprint: Reduced signal for polygenic adaptation of height in UK Biobank. @JeremyJBerg, @arbelharpak, Nasa Sinnotâ€¦,
+seandavis12: CALISTA: Clustering And Lineage Inference in Single-Cell Transcriptional Analysis https://t.co/C7yWl0J26s https://t.co/zBqâ€¦,
+AlexTISYoung: Important results on stratification and its effects on both measures of selection and LD-score regression. LD-scores andâ€¦,
+iAmphioxus: Glad to introduce simuG (https://t.co/PjmidvYlOt), our newly developed tool for simulating genomes with both pre-defined anâ€¦,
+biorxiv_genetic: Joint Estimation of Pedigrees and Effective Population Size Using Markov Chain Monte Carlo  https://t.co/VLMAnvPQua #bâ€¦,
+biorxiv_genetic: A non-Lamarckian model for the inheritance of the epigenetically-coded phenotypic characteristics: a new paradigm forâ€¦,
+biorxivpreprint: Reference trait analysis reveals correlations between gene expression and quantitative traits in disjoint samples  httâ€¦,
+apragsdale: Excited to share this preprint of work with @SFGravel. There's a bit for everyone. It's got some really nice theory, expandâ€¦,
+hheydarii: For those interested in the use of mixed models (Gaussian Processes) in genetics. There is a new trend. 2 examples: 1. Thisâ€¦,
+biorxivpreprint: Genome-wide recombination map construction from single individuals using linked-read sequencing  https://t.co/WsXIw18mâ€¦,
+biorxivpreprint: Uncovering missed indels by leveraging unmapped reads  https://t.co/q0Pye22jxo #bioRxiv,
+biorxiv_genetic: Subset selection of markers for genome-enabled prediction of genetic val-ues using radial basis function neural networâ€¦,
+GWAS_lit: Ancestry-specific association mapping in admixed populations https://t.co/qeJ6fGoFWC https://t.co/XnIgzLIyiJ,
+biorxiv_bioinfo: New methods to calculate concordance factors for phylogenomic datasets  https://t.co/hvePnLXrOU #biorxiv_bioinfo,
+dougthespeed: Using SumHer, our new software for interrogating genetic architecture from GWAS summary statistics, we show that previousâ€¦,
+genomic_pred: OCMA: Fast, Memory-Efficient Factorization of Prohibitively Large Relationship Matrices. https://t.co/bGvKjnLuGd,
+GWAS_lit: Novel Insight into the Aetiology of Autism Spectrum Disorder Gained by Integrating Expression Data with Genome-wide Associatiâ€¦,
+full_text : Genome-wide association study results for educational attainment aid in identifying genetic heterogeneity ofâ€¦ https://t.co/KkMHP8URJI,
+biorxivpreprint: Genome-wide by environment interaction studies (GWEIS) of depressive symptoms and psychosocial stress in UK Biobank anâ€¦,
+GWAS_lit: Bivariate causal mixture model quantifies polygenic overlap between complex traits beyond genetic correlation https://t.co/sAâ€¦,
+genomic_pred: Increased prediction ability in Norway spruce trials using a marker x environment interaction and non-additive genomic seâ€¦,
+Mendelian_lit: Bayesian Weighted Mendelian Randomization for Causal Inference based on Summary Statistics. (arXiv:1811.10223v1 [https:/â€¦,
+NatureGenet: Flexible statistical methods for estimating and testing effects in genomic studies with multiple conditions (Urbut et al.)â€¦,
+robo_gwas: Expanded Genome-Wide Association Study Meta-Analysis of Psoriasis Expands the Catalog of Common Psoriasis-Associated Variantâ€¦,
+genomic_pred: Efficient &amp; accurate computation of base generation allele frequencies. https://t.co/LMosVvBCYq,
+full_text : GenEpi: Gene-based Epistasis Discovery Using Machine Learning https://t.co/OWI6FSrMDh,
+GWAS_lit: Distinguishing correlation from causation using genome-wide association studies https://t.co/Cze2D7y6xM https://t.co/Utk7NyY3â€¦,
+biorxiv_genetic: Powerful statistical method to detect disease associated genes using publicly available GWAS summary data  https://t.câ€¦,
+biorxiv_evobio: Two linked loci under mutation-selection balance and Muller's ratchet  https://t.co/AFKa72db6F #biorxiv_evobio,
+biorxiv_genetic: Bayesian meta-analysis across genome-wide association studies of diverse phenotypes  https://t.co/U3XWDS5rgQ #biorxiv_â€¦,
+halperineran: Our new paper in @NatureComms about an efficient non-parametric test for heritability. \FEATHER eliminated 47% of methylaâ€¦,
+StevenSalzberg1: The new paper led by my PhD student @rshermanjhu describes the African pan-genome and nearly 300 megabases of \missingâ€¦,
+Joni_Coleman: Interesting paper suggesting (among other things) we should be investing heavily in African GWAS to yield cross-ancestryâ€¦,
+shihuwenbo: Reconciling S-LDSC and LDAK models and functional enrichment estimates https://t.co/3LUWno6lNZ,
+biorxiv_genetic: Genome-wide analysis reveals signatures of selection for gait traits in Yili horse  https://t.co/DZG1pLRBzS #biorxiv_gâ€¦,
+biorxivpreprint: The Medical Genome Reference Bank: Whole genomes and phenotype of 2,570 healthy elderly  https://t.co/x7luGK5V3I #bioRâ€¦,
+biorxiv_genetic: Imputed gene associations identify replicable trans-acting genes enriched in transcription pathways and complex traitsâ€¦,
+biorxiv_genetic: Comprehensive genetic analysis by whole exome sequencing in 352 Korean pediatric patients with unknown neurodevelopmenâ€¦,
+full_text : A formal theory of the selfish gene - GARDNER - 2011 - Journal of Evolutionary Biology - Wiley Online Library https://t.co/ZXw5h4yd4E,
+AsherLeeks: Nice primer on selfish genetic elements by @arvidagren &amp; andrew clark. Useful teaching tool. \n\nhttps://t.co/cSkdZPp4C4,
+Graham_Coop: .@DocEdge85's paper on reconstructing evolutionary time course of polygenic scores using the coalescent out in @GeneticsGSâ€¦,
+AlexTISYoung: Heritability of longevity could be lower than believed on the basis of twin studies and analysis of pedigrees (https://t.â€¦,
+GWAS_lit: Scaling computational genomics to millions of individuals with GPUs https://t.co/f4fFAb28gu \nhttps://t.co/v0jq24o9ru https://â€¦,
+bxv_genetics: A platform for case-control matching enables association studies without genotype sharing https://t.co/oSK9cAsPYj,
+robo_gwas: A fast and agnostic method for bacterial genome-wide association studies: Bridging the gap between k-mers and genetic eventsâ€¦,
+robo_gwas: Bayesian statistical methods in genetic association studies: Empirical examination of statistically non-significant Genome Wâ€¦,
+ZYilmazPhD: An atlas of polygenic risk score associations to highlight putative causal relationships across the human phenome https://tâ€¦,
+ras_nielsen: I am shook by this paper. I wonder what similar analyses would do for heritability estimates of other traits such as educaâ€¦,
+jorsmo: Polygenic risk scores and large effect #CNVs show additive &amp; interactive effects on genetic risk for #schizophrenia: balance ofâ€¦,
+Graham_Coop: This week in #coopon quantgen journal club \Epistasis Is a Major Determinant of the Additive Genetic Variance in Mimulus gâ€¦,
+shajoezhu: fastls by @gertonlunter  \a new, exact algorithm (â€˜fastLSâ€™) that implements the Li and Stephens model and achieves runtimesâ€¦,
+bxv_bioinf: AIM-SNPtag: a computationally efficient approach for developing ancestry-informative SNP panels https://t.co/DXVMzb8kzS,
+jcbarret: The latest paper from the Deciphering Developmental Disorders project is published today! https://t.co/P3NEUTH3T4 Led by @ma_â€¦,
+biorxiv_bioinfo: A multi-omics data simulator for complex disease studies and its application to evaluate multi-omics data analysis metâ€¦,
+GWAS_lit: Shared and distinct genetic risk factors for childhood onset and adult onset asthma https://t.co/8PvZAzquTU #asthma https://tâ€¦,
+bxv_genomics: Pathway analysis of GWAS loci identifies novel drug targets and repurposing opportunities https://t.co/U5O56TfB21,
+biorxiv_genetic: Trans effects on gene expression can drive omnigenic inheritance  https://t.co/4d8sLF0kx5 #biorxiv_genetic,
+Y_Gilad: We tried to map variance QTLs...\nhttps://t.co/Xc6RvRuDX5,
+biorxivpreprint: Covariate Assisted Principal Regression for Covariance Matrix Outcomes  https://t.co/GcBRRYLd9l #bioRxiv,
+bxv_bioinf: Parliament2: Fast Structural Variant Calling Using Optimized Combinations of Callers https://t.co/F5Cm3iOtCX,
+MGoGuo: Our review on what studies of the genetics of height has shown us and why these studies have important clinical implications #hâ€¦,
+GWAS_lit: Flexible statistical methods for estimating and testing effects in genomic studies with multiple conditions https://t.co/4uCVâ€¦,
+robo_gwas: Meta-analysis of genome-wide association studies for body fat distribution in 694,649 individuals of European ancestry. httpâ€¦,
+robo_gwas: Type 2 diabetes genetic loci informed by multi-trait associations point to disease mechanisms and subtypes: A soft clusterinâ€¦,
+tuuliel: Cool paper. Anyone remember those early SNP chip PCAs os Europeans with Finns as outliers? It was just because our eastern neiâ€¦,
+genomic_pred: Genomic Prediction of Complex Phenotypes Using Genic Similarity Based Relatedness Matrix. https://t.co/w03sb2h8W2,
+bxv_bioinf: MOSim: Multi-Omics Simulation in R https://t.co/HJhOZmkAEU,
+bxv_bioinf: GenEpi: Gene-based Epistasis Discovery Using Machine Learning https://t.co/ArMjuPXD3R,
+GWAS_lit: Quantifying Heterogeneity in the Genetic Architecture of Complex Traits Between Ethnically Diverse Groups using Random Effectâ€¦,
+moorejh: An Introduction to Epigenetic Mechanisms https://t.co/gPtqFepvly #genomics #epigenomics,
+biorxiv_genetic: Penetrance and pleiotropy of polygenic risk scores for schizophrenia in 90,000 patients across three healthcare systemâ€¦,
+biorxiv_genetic: Polygenicity of complex traits is explained by negative selection  https://t.co/3iURSnfWGm #biorxiv_genetic,
+bxv_bioinf: A new statistic for efficient detection of repetitive sequences https://t.co/FDwo0QYPP8,
+biorxiv_genetic: Disease heritability enrichment of regulatory elements is concentrated in elements with ancient sequence age and conseâ€¦,
+biorxivpreprint: Euplotid: A quantized geometric model of the eukaryotic cell  https://t.co/oBbHPyAApl #bioRxiv,
+GWAS_lit: A guide to performing Polygenic Risk Score analyses https://t.co/IsODNwaZwh https://t.co/tMRhYJ5svv,
+genomic_pred: Polygenic Prediction via Bayesian Regression and Continuous Shrinkage Priors https://t.co/JlTpNxzyYI,
+biorxivpreprint: FirstSV: Fast and Accurate Approach of Structural Variations Detection for Short DNA fragments  https://t.co/3XoUg89J3â€¦,
+AlexTISYoung: Interesting work from Patrick @pkalbers and Gil @gil_mcvean on dating the ages of alleles and shared ancestry: https://t.â€¦,
+robo_gwas: Epistasis regulates the developmental stability of the mouse craniofacial shape. https://t.co/TxF6SRDXmd,
+robo_gwas: Multivariate analysis of genome-wide data to identify potential pleiotropic genes for five major psychiatric disorders usingâ€¦,
+AlexTISYoung: As part of a forthcoming publication, I have written software for detecting genetic variants that affect phenotypic variaâ€¦,
+biorxiv_genetic: Analysis of a large data set reveals haplotypes carrying putatively recessive lethal alleles with pleiotropic effectsâ€¦,
+GWAS_lit: simGWAS: a fast method for simulation of large scale case-control GWAS summary statistics https://t.co/MIkbeavBAU https://t.câ€¦,
+biorxiv_genetic: Linkage analysis and haplotype phasing in experimental autopolyploid populations with high ploidy level using hidden Mâ€¦,
+genomic_pred: The impact of different sources of heterogeneity on loss of accuracy from genomic prediction models. https://t.co/qrBJPYYâ€¦,
+alexeidrummond: From @biorxivpreprint: Marin et al \The genomic view of diversification\\nhttps://t.co/X04qb5hwmM,
+bxv_bioinf: Integrated Analysis Revealed Hub Genes in Breast Cancer https://t.co/jMVLUEOzTE,
+genomic_pred: Machine Learning to Predict Osteoporotic Fracture Risk from Genotypes https://t.co/9xz5LcSNPR,
+smgaynor: Dissertation work making its way out-- Mediation analysis for common binary outcomes https://t.co/wVJpQzlzSI,
+robo_gwas: Transethnic and race-stratified genome-wide association study of fibroid characteristics in African American and European Amâ€¦,
+aaronquinlan: Thank you @joe_pickrell for publishing this method for  defining approximately independent LD blocks and sharing the resuâ€¦,
+ijuric_TLDR: Our new paper about detecting long-range chromatin interactions is on biorxiv. Yay! https://t.co/0S1Xt4rg6p,
+d__vuckovic: Another exciting pre-print (https://t.co/Io8R8AmT51) from @teamSoranzo, @bloodgenes team and many others from the Blood Ceâ€¦,
+GWAS_lit: MetaPhat: Detecting and decomposing multivariate associations from univariate genome-wide association statistics https://t.coâ€¦,
+Eric_Fauman: Really is there anything more exciting than a new metabolite GWAS. \nSo thrilled for the opportunity to work with this awesâ€¦,
+jorsmo: Calibrated rare variant genetic risk scores for complex disease prediction using large exome sequence repositories https://t.coâ€¦,
+bxv_genetics: Calibrated rare variant genetic risk scores for complex disease prediction using large exome sequence repositories https:â€¦,
+bxv_genomics: Identifying Longevity Associated Genes by Integrating Gene Expression and Curated Annotations https://t.co/7ZISmhwtER,
+GWAS_lit: Generalizability of \GWAS hits\ in clinical populations: Lessons from childhood cancer survivors https://t.co/9vxfiIAuDF dataâ€¦,
+GWAS_lit: Scalable generalized linear mixed model for region-based association tests in large biobanks and cohorts https://t.co/Sm12HbGâ€¦,
+frapaport: A highly sensitive and specific workflow for detecting rare copy-number variants from exome sequencing data\n\nhttps://t.co/btâ€¦,
+biorxiv_genetic: Slope-Hunter: A robust method for index-event bias correction in genome-wide association studies of subsequent traitsâ€¦,
+Mendelian_lit: E-values for Mendelian Randomization. https://t.co/RVFwFnxc8X,
+kerimovOn: Happy to share our manuscript on #bioRxiv https://t.co/SKb4xk7Kz6\n\nThanks to great team behind this work: @kauralasoo,  \n@dzâ€¦,
+dr_appie: Our study on the geographic distribution of human DNA in Great Britain is out in @NatureHumBehav. \n\nYou can download a generaâ€¦,
+GWAS_lit: Lab-wide association scan of polygenic scores identifies biomarkers of complex disease https://t.co/H6hPJczncv https://t.co/bâ€¦,
+zkutalik: This is how we married LD score regression &amp; MR to learn about genetic architecture and causality at the same time via harnesâ€¦,
+dr_appie: In 2015, Nelson et al estimate that drug targets with support from GWAS studies are twice as likely to succeed: https://t.co/â€¦,
+hanna_julienne: Our #openaccess paper describing the JASS (https://t.co/ca0HjNUcE4) tool suite  to perform #multivariate #GWAS is out iâ€¦,
+DiabetologiaJnl: Large epidemiological study in China found that higher intake of red meat and fish were both related to higher risk ofâ€¦,
+bxv_genetics: A Grain of Salt https://t.co/qfpWlA7FSw,
+biorxiv_genetic: Cancer PRSweb - an Online Repository with Polygenic Risk Scores (PRS) for Major Cancer Traits and Their Phenome-wide Eâ€¦,
+Eric_Fauman: When I see a new paper on SNP-&gt;gene I first look for how they validated their results.\nThis paper on the PICCOLO colocalizâ€¦,
+GWAS_lit: Medical data and machine learning improve power of stroke genome-wide association studies https://t.co/CSwKBndJY2 https://t.câ€¦,
+GWAS_lit: Genome-wide scale analyses identify novel BMI genotype-environment interactions using a conditional false discovery rate httpâ€¦,
+biorxiv_bioinfo: Interpretable Convolution Methods for Learning Genomic Sequence Motifs  https://t.co/DWgDe4ljXZ #biorxiv_bioinfo,
+genomic_pred: Genomic Prediction Using Multi-trait Weighted GBLUP Accounting for Heterogeneous Variances &amp; Covariances Across the Genomâ€¦,
+TheorApplGenet: Efficient QTL detection of flowering date in a soybean RIL population using the novel restricted two-stage multi-locusâ€¦,
+biorxiv_genetic: Beyond Bonferroni Revisited: Concerns over inflated false positives in conservation genetics, genetics, and neuroscienâ€¦,
+biorxiv_genetic: Genome-Wide Control of Population Structure and Relatedness in Genetic Association Studies via Linear Mixed Models witâ€¦,
+dariyasydykova: New paper with @ClausWilke, where we explain what physical quantities are being measured by site-wise evolutionary rateâ€¦,
+GWAS_lit: Genome-wide interaction study of a proxy for stress-sensitivity and its prediction of major depressive disorder https://t.co/â€¦,
+NatureGenet: Online @nature Extensive sex differences at the initiation of genetic recombination https://t.co/5zIPIR5sV0 https://t.co/Sâ€¦,
+biorxivpreprint: A General Framework for Variable Selection in Linear Mixed Models with Applications to Genetic Studies with Structuredâ€¦,
+biorxiv_genetic: The genetic architecture of the human cerebral cortex  https://t.co/Jxy4CnJ43r #biorxiv_genetic,
+genomic_pred: Can Deep Learning Improve Genomic Prediction of Complex Human Traits? https://t.co/Vyy4EvwWuP,
+moorejh: Analysis of #Epistasis in Natural Traits Using Model Organisms https://t.co/UsJlY1uPci,
+biorxiv_bioinfo: Overcoming systematic errors caused by log-transformation of normalized single-cell RNA sequencing data  https://t.co/â€¦,
+biorxiv_genetic: A sex-stratified genome-wide association study of tuberculosis using a multi-ethnic genotyping array  https://t.co/56qâ€¦,
+robo_gwas: Polygenic risk score for schizophrenia is more strongly associated with ancestry than with schizophrenia. https://t.co/MmvQ4â€¦,
+robo_gwas: Violence exposure in an urban city: A GxE interaction with aggressive and impulsive behaviors. https://t.co/BfsSxSYrey,
+Mendelian_lit: Robust instrumental variable methods using multiple candidate instruments with application to Mendelian randomization. (â€¦,
+GWAS_lit: Efficient implementation of penalized regression for genetic risk prediction https://t.co/iThvrtdjqi https://t.co/3tCQmmQOjk,
+mariocalus: Interested in genomic prediction using summary statistics from multiple populations instead of exchanging genotypes? Checkâ€¦,
+NilsEling: I'm happy to announce that our paper on correcting the mean-variability relationship and subsequent differential variabilityâ€¦,
+bxv_genetics: Efficient implementation of penalized regression for genetic risk prediction https://t.co/pPXo7a4p4V,
+genomic_pred: Accurate Genomic Prediction Of Human Height. https://t.co/7rvUbgeKmJ,
+genomestake: PolyQTL: Bayesian Multiple eQTL Detection with Control for Population Structure and Sample Relatedness | Bioinformatics |â€¦,
+bxv_bioinf: IsoformSwitchAnalyzeR: Analysis of changes in genome-wide patterns of alternative splicing and its functional consequencesâ€¦,
+genomic_pred: The impact of genomic relatedness between populations on the genomic estimated breeding values. https://t.co/bN4Vaq3IY2,
+NatureComms: Joint analysis of germline variants and somatic mutations identifies substantial germline contribution to variation in canâ€¦,
+bxv_bioinf: A new insight into underlying disease mechanism through semi-parametric latent differential network model https://t.co/iDOLâ€¦,
+bxv_bioinf: LOTUS: a Single- and Multitask Machine Learning Algorithm for the Prediction of Cancer Driver Genes https://t.co/q7NsxNZVwv,
+joe_pickrell: \Deep-coverage whole genome sequences and blood lipids among 16,324 individuals\ https://t.co/krAAXb6qx3,
+GWAS_lit: How genetic disease risks can be misestimated across global populations https://t.co/PiNn6Hh7U1 https://t.co/MgKvtvBbVE,
+biorxiv_genetic: Kinpute: Using identity by descent to improve genotype imputation  https://t.co/G3ZLg9nESw #biorxiv_genetic,
+bxv_bioinf: Integrative pathway enrichment analysis of multivariate omics data https://t.co/qw9UHpLG9P,
+genandgenes: Our work developing a better tag SNP scaffold for multi-ethnic GWAS with @illumina MEGA is out as early access in @Geneticâ€¦,
+biorxiv_genetic: Analysis of Polygenic Score Usage and Performance across Diverse Human Populations  https://t.co/aLmAGsTUnx #biorxiv_gâ€¦,
+biorxiv_genetic: GxEMM: Extending linear mixed models to general gene-environment interactions  https://t.co/ZTsK46Cu9C #biorxiv_genetic,
+XihongLin: Our new paper on SMMAT:  Efficient rare variant set linear and logistic mixed model association tests for continuous and binâ€¦,
+biorxiv_evobio: The Evolution of Phenotypic Plasticity when Environments Fluctuate in Time and Space  https://t.co/jfq6p4UEBx #biorxiv_â€¦,
+bxv_genetics: Efficient variant set mixed model association tests for continuous and binary traits in large-scale whole genome sequenciâ€¦,
+XuanyaoLiu: Excited to share our manuscript describing GBAT, a gene-based association test for trans-gene regulation. We carefully desiâ€¦,
+genetix22: Our latest work, led by @LuSci_geek, â€œGenetic architecture of gene expression traits across diverse populationsâ€ has been puâ€¦,
+NatureGenet: Modified penetrance of coding variants by cis-regulatory variation contributes to disease risk (Castel et al.) https://t.câ€¦,
+biorxiv_genetic: SNP Variable Selection by Generalized Graph Domination  https://t.co/I98yith5bT #biorxiv_genetic,
+_MiguelHernan: Check out the latest updates to our #CausalInferenceBookâ€”still free online!\n\nPart I has been thoroughly revised. Updatedâ€¦,
+magnusnordborg: OK, so there is massive variation in centromere content in humans, including centromere-spanning haplotypes. Fascinatinâ€¦,
+cathrynlewis: New @biorxiv_genetic preprint from @stats_bonkers @VangelisVassos &amp; me developing method to convert logit to liability scâ€¦,
+genomic_pred: A singular value decomposition Bayesian multiple-trait &amp; multiple-environment genomic model. https://t.co/VNU1EoZGWs,
+genomic_pred: Incorporating Prior Knowledge of Principal Components in Genomic Prediction. https://t.co/NexLKwswG4,
+GWAS_lit: Efficient Multivariate Analysis Algorithms for Longitudinal Genome-wide Association Studies https://t.co/8Pj3NYFAK3 https://tâ€¦,
+bxv_bioinf: New Statistical Methods for Constructing Robust Differential Correlation Networks https://t.co/oRe2oPvz69,
+biorxiv_genetic: Integrating Mendelian randomization and multiple-trait colocalization to uncover cell-specific inflammatory drivers ofâ€¦,
+mitchiela: Our study of 223,338 men from the @uk_biobank finds evidence #mosaic chromosome #Y_loss is associated with several health reâ€¦,
+bxv_genomics: Genome-wide DNA methylation profiling identifies convergent molecular signatures associated with idiopathic and syndromicâ€¦,
+segal_eran: Our new work on understanding the rules of alternative splicing using &gt;30,000 designed sequences. Our model predicts isoforâ€¦,
+strnr: Ultra-fast and accurate motif finding in large ChIP-seq datasets reveals transcription factor binding patterns https://t.co/LNhWâ€¦,
+robo_gwas: Incorporating prior knowledge about genetic variants into the analysis of genetic association data: An empirical Bayes approâ€¦,
+NatureComms: Fast and powerful genome wide association of dense genetic data with high dimensional imaging phenotypes\nhttps://t.co/gwCnâ€¦,
+jessicaagking: If you want to know more about this pre-print, stop by Poster P-0873 (symposium S-59) at #evol2018. It's pretty excitingâ€¦,
+strnr: Effective principal components analysis of SNP data https://t.co/JDdyZRnE6F,
+robo_gwas: A Large Multi-ethnic Genome-Wide Association Study of Adult Body Mass Index Identifies Novel Loci. https://t.co/w1URnrgTNi,
+GWAS_lit: Genome-Wide Association Studies: Information Theoretic Limits of Reliable Learning https://t.co/GPYY8v6v3V https://t.co/oNHVqâ€¦,
+EvolLetters: Coadapted genomes and selection on hybrids: Fisher's geometric model explains a variety of empirical patterns https://t.coâ€¦,
+robo_gwas: Correcting for Population Stratification Reduces False Positive and False Negative Results in Joint Analyses of Host and Patâ€¦,
+CornilleAmand: Nice piece of work from my ancient lab colleague @ETH\nhttps://t.co/UymR7LRNU1\n\Our finding has striking resemblance to tâ€¦,
+strnr: #Bioc2018 This 2012 paper gives a good overview of 1st/2nd/3rd generation functional enrichment analyses: \Ten Years of Pathwayâ€¦,
+strnr: The R package Rsubread is easier, faster, cheaper and better for alignment and quantification of RNA-seq reads https://t.co/aX6Câ€¦,
+biorxivpreprint: Moving beyond P values: Everyday data analysis with estimation plots  https://t.co/vQ4z72llbg #bioRxiv,
+bxv_genetics: Genotype-covariate correlation and interaction disentangled by a whole-genome multivariate reaction norm model https://t.â€¦,
+biorxiv_genetic: Mendelian Randomization integrating GWAS and eQTL data reveals genetic determinants of complex and clinical traits  htâ€¦,
+bxv_genetics: Genetics &amp; the Geography of Health, Behavior, and Attainment https://t.co/SdsLBYWGYG,
+biorxiv_genetic: A subfunctionalization epistasis model to evaluate homeologous gene interactions in allopolyploid wheat  https://t.co/â€¦,
+Mendelian_lit: Mendelian randomization with a binary exposure variable: interpretation and presentation of causal estimates. https://t.â€¦,
+robo_gwas: The genetic architecture of socially-affected traits: a GWAS for direct and indirect genetic effects on survival time in layâ€¦,
+biorxiv_genetic: Improving the diagnostic yield of exome-sequencing, by predicting gene-phenotype associations using large-scale gene eâ€¦,
+biorxivpreprint: PathwayMatcher: multi-omics pathway mapping and proteoform network generation  https://t.co/Df0u1chnoN #bioRxiv,
+biorxiv_genetic: Modeling functional enrichment improves polygenic prediction accuracy in UK Biobank and 23andMe data sets  https://t.câ€¦,
+strnr: Cryfa: a secure encryption tool for genomic data https://t.co/eUl4acj8Pg https://t.co/KO6RAoML9n https://t.co/77HacQlmQT,
+michelnivard: Working with relatively accessible tissues as proxy for cis-eQTL discovery is sensible: Characterizing the Relation Betweâ€¦,
+jplotkin: Inferring the shape of global epistasis. https://t.co/xCEKiPWbUA https://t.co/L237G9IRn9,
+bxv_bioinf: PathwayMatcher: multi-omics pathway mapping and proteoform network generation https://t.co/0O3zL7t3wb,
+biorxiv_genetic: Perspective: Genomic inference using diffusion models and the allele frequency spectrum  https://t.co/tjhIGKJkfw #biorâ€¦,
+biorxivpreprint: Fast and general-purpose linear mixed models for genome-wide genetics  https://t.co/iLNykp9ba3 #bioRxiv,
+biorxiv_genetic: Gene based Analysis in HRC Imputed Genome Wide Association Data Identifies Three Novel Genes for Alzheimer's Diseaseâ€¦,
+biorxiv_genetic: Genome-wide Marginal Epistatic Association Mapping in Case-Control Studies  https://t.co/KjRDqd9yAD #biorxiv_genetic,
+biorxiv_genetic: How many individuals share a mitochondrial genome?  https://t.co/NT8IzzSCsp #biorxiv_genetic,
+strnr: Beagle 5.0. A one penny imputed genome from next generation reference panels https://t.co/IqjuZ71Zzo\nhttps://t.co/rp8VGyLJdd httâ€¦,
+genomic_pred: Prediction of subgenome additive and interaction effects in allohexaploid wheat https://t.co/xInc3ltJKA,
+GWAS_lit: Systematic classification of shared components of genetic risk for common human diseases https://t.co/PqQw8J6ObJ https://t.coâ€¦,
+genomic_pred: The impact of different sources of heterogeneity on loss of accuracy from genomic prediction models https://t.co/NuXDgUMfâ€¦,
+AysuOkbay: \Gene discovery and polygenic prediction from a genome-wide association study of educational attainment in 1.1 million indivâ€¦,
+cshperspectives: \claims of polygenic differences between populations should be treated with cautionâ€œ &lt;- two interesting papers revealiâ€¦,
+biorxiv_genetic: Software update: Moving the R package sommer to multivariate mixed models for genome-assisted prediction  https://t.coâ€¦,
+biorxivpreprint: Deep SNP: An End-to-end Deep Neural Network with Attention-based Localization for Break-point Detection in SNP Array Gâ€¦,
+Docwarren: CNVs account for about 10% of P/LP variants. 5' Exon partial CNVs more likely P. Majority of CNVs in disease causing genes aâ€¦,
+broadinstitute: In @naturemethods: GeNets: a unified web platform for network-based genomic analyses https://t.co/e70D21ZjjJ,
+robo_gwas: GWASinlps: Nonlocal prior based iterative SNP selection tool for genome-wide association studies. https://t.co/oUNYyJ5hkx,
+zkutalik: Happy to share with you our review on the genetic heterogeneity in obesity https://t.co/HQ09WnyHuo Exciting years of researchâ€¦,
+biorxivpreprint: Visualization and normalization of drift effect across batches in metabolome-wide association studies  https://t.co/2Vâ€¦,
+biorxivpreprint: Post-prediction inference  https://t.co/aP7NEXyg5q #bioRxiv,
+ASNAmNat: Just Accepted: Sewall Wright Award Address\n\nâ€œHow long does it take to fix a favorable mutation, and why should we care?â€\n\nBriâ€¦,
+okada_yukinori: Eating is surviving!! Biobank-scale and phenome-wide natural selection scans identified dietary habits as population-spâ€¦,
+Mendelian_lit: Genetic instruments with too many strings: acknowledging pleiotropy and population structure in Mendelian randomizationâ€¦,
+oliviefr: New work on machine learning for demographic inference in popgen https://t.co/MxeCReTgC8,
+manuelrivascruz: Thrilled to share our pre-print \Fast Lasso method for Large-scale and Ultrahigh-dimensional\nCox Model with applicatioâ€¦,
+cschlebu: Our review about genetic inferences on African history just came out in the Early Online version :)\n\Tales of Human Migrationâ€¦,
+GWAS_lit: Evidence for stabilizing selection at pleiotropic loci for human complex traits https://t.co/DI3p6kRQuB https://t.co/8yDd2y7Oâ€¦,
+robo_gwas: A Mixed-Effects Model for Powerful Association Tests in Integrative Functional Genomics. https://t.co/NESTg9O48t,
+bxv_bioinf: HiCAGE: an R package for large-scale annotation and visualization of 3C-based genomic data https://t.co/vQ6YtQWTUH,
+ksamuk: Genetic architecture and selective sweeps after polygenic adaptation to distant trait optima https://t.co/aobW7ND8l2,
+SciReports: Incorporating #geneticinformation into risk assessment for prevention among #minority subjects proven useful https://t.co/0â€¦,
+GWAS_lit: REMI: Regression with marginal information and its application in genome-wide association studies https://t.co/pq5zfbrVdb httâ€¦,
+genomic_pred: Genomic prediction using individual-level data and summary statistics from multiple populations https://t.co/la8K9hInLi,
+bxv_bioinf: SQuIRE: Software for Quantifying Interspersed Repeat Elements https://t.co/zublYqSRlP,
+biorxiv_genetic: Haplotype-based eQTL mapping finds evidence for complex gene regulatory regions poorly tagged by marginal SNPs  https:â€¦,
+AJHGNews: Are you looking for a new tool to predict functional effects of noncoding variants? Would you like some cell &amp; tissue-specifiâ€¦,
+moorejh: A nice review from @alicechenp on the post #GWAS era  https://t.co/DmKgaE000S #genomics HT @EricTopol,
+NatureGenet: Sizing up whole-genome sequencing studies of common diseases (Wray &amp; Grotten) #NatGenNV https://t.co/93kTlNuyhM https://t.â€¦,
+GWAS_lit: On The Number Of Siblings And p-th Cousins In A Large Population Sample https://t.co/k6ZWa5zfqZ https://t.co/B8rh1U0NaD,
+biorxivpreprint: crisprQTL mapping as a genome-wide association framework for cellular genetic screens  https://t.co/dZvL4BVLMO #bioRxiv,
+bxv_bioinf: Nonparametric analysis of contributions to variance in genomics and epigenomics data https://t.co/sGm1vrnc02,
+genomic_pred: Tools for Genetic Studies in Experimental Populations of Polyploids. https://t.co/o8NI8KV0kF,
+genomic_pred: AlphaMate: a program for optimising selection, maintenance of diversity, &amp; mate allocation in breeding programs. https://â€¦,
+robo_gwas: Genome-wide copy number variant analysis reveals variants associated with 10 diverse production traits in Holstein cattle. hâ€¦,
+NatureRevGenet: Prions, prionoids and protein misfolding disorders https://t.co/F4N4BLFti9 #Review https://t.co/VGXgzwM19v,
+full_text : simGWAS: a fast method for simulation of large scale case-control GWAS summary statistics https://t.co/wH5acaQzgZ,
+bxv_bioinf: DeepPVP: phenotype-based prioritization of causative variants using deep learning https://t.co/MJDQZ3ZJRZ,
+robo_gwas: Inferring Causal Relationships Between Risk Factors and Outcomes from Genome-Wide Association Study Data. https://t.co/fQfWBâ€¦,
+genomic_pred: Genomic selection using principal component regression. https://t.co/RSdedest4P,
+robo_gwas: Multiplex Confounding Factor Correction for Genomic Association Mapping with Squared Sparse Linear Mixed Model. https://t.coâ€¦,
+GWAS_lit: Joint Analysis of Individual-level and Summary-level GWAS Data by Leveraging Pleiotropy https://t.co/Xnt5nWlxZw https://t.co/â€¦,
+full_text : Variable Selection in Heterogeneous Datasets: A Truncated-rank Sparse Linear Mixed Model with Applications to Genome-wide Association Studies. - PubMed - NCBI https://t.co/c3DjmOwLai,
+genomic_pred: Genotype imputation from various low-density SNP panels &amp; its impact on accuracy of genomic breeding values in pigs. httpâ€¦,
+bxv_bioinf: Skyhawk: An Artificial Neural Network-based discriminator for reviewing clinically significant genomic variants https://t.câ€¦,
+biorxiv_bioinfo: FORGe: prioritizing variants for graph genomes  https://t.co/eDpZap4t0x #biorxiv_bioinfo,
+biorxiv_genetic: The landscape of pervasive horizontal pleiotropy in human genetic variation is driven by extreme polygenicity of humanâ€¦,
+nresearchnews: A global study of 135,000 people with depression and 345,000 controls has mapped out the genetic basis of the condition,â€¦,
+genomic_pred: [Estimating genomic breed composition of individual animals using selected SNPs]. https://t.co/ZgkHt2t0f8,
+strnr: PRESTO, a new tool for integrating large-scale -omics data and discovering disease-specific signatures https://t.co/OsznSh34Dv hâ€¦,
+full_text : A Monte Carlo method for in silico modeling and visualization of Waddington's epigenetic landscape with intermediate details https://t.co/OIRKU77vmQ,
+bxv_bioinf: BGEN: a binary file format for imputed genotype and haplotype data https://t.co/UwRycT8YfC,
+genomic_pred: Optimizing the identification of causal variants across varying genetic architectures in crops https://t.co/5HkuCyz8k7,
+TheorApplGenet: REVIEW: Efficient genome-wide genotyping strategies and data integration in crop plants https://t.co/yx4wUxNwPF https:/â€¦,
+biorxiv_genetic: Expectation of the intercept from bivariate LD score regression in the presence of population stratification  https://â€¦,
+bxv_bioinf: Fast and global detection of periodic sequence repeats in large genomic resources https://t.co/dI4f4mq39o,
+NatureGenet: Detection of widespread horizontal pleiotropy in causal relationships inferred from Mendelian randomization between compleâ€¦,
+Mendelian_lit: An examination of multivariable Mendelian randomization in the single sample and two-sample summary data settings. httpsâ€¦,
+biorxiv_genetic: Inferring the ancestry of parents and grandparents from genetic data  https://t.co/35ojHWxnCm #biorxiv_genetic,
+genomic_pred: Insights into population genetics &amp; evolution of polyploids &amp; their ancestors. https://t.co/s9tvwdisb3,
+shihuwenbo: Estimation of genetic correlation using linkage disequilibrium score regression and genomic restricted maximum likelihood hâ€¦,
+full_text : Detecting and correcting for bias in Mendelian randomization analyses using gene-by-environment interactions https://t.co/jbCDdvE17S,
+NatureGenet: Comparison of methods that use whole genome data to estimate the heritability and genetic architecture of complex traits (â€¦,
+bxv_genomics: Distinctive types of postzygotic single-nucleotide mosaicisms in healthy individuals revealed by genome-wide profiling ofâ€¦,
+strnr: Indel detection from DNA and RNA sequencing data with transIndel https://t.co/AquMccM3bV https://t.co/uEYZ4T4Va2 https://t.co/LBâ€¦,
+beryl_bbc: In one of the patients, they still missed 3 structural vars. due to lack of coverage (10x). Imagine spending 7,000â‚¬ on one pâ€¦,
+GWAS_lit: Including phenotypic causal networks in genome-wide association studies using mixed effects structural equation models https:â€¦,
+PLOSBiology: Can the principles of #MeasurementScience improve our confidence in the results of #biological #research? #metrology #PLOSâ€¦,
+bxv_bioinf: HaploJuice : Accurate haplotype assembly from a pool of sequences with known relative concentrations https://t.co/sT7EX2Gq8b,
+GWAS_lit: Efficiently controlling for case-control imbalance and sample relatedness in large-scale genetic association studies https://â€¦,
+NatureRevGenet: Structural variation in the 3D genome https://t.co/swe1FuFuCy #Review https://t.co/Y8r05SpBuR,
+robo_gwas: One for all and all for One: Improving replication of genetic studies through network diffusion. https://t.co/AL0aDrjpzV,
+PKoellinger: Our GIV regression paper just came out in PNAS: a nice, new way to control for genetic confounds in multiple regression anâ€¦,
+biorxiv_genetic: A study of analytical strategies to include X-chromosome in variance heterogeneity analysis: evidence for trait-specifâ€¦,
+biorxiv_genetic: A weighted burden test using logistic regression for integrated analysis of sequence variants, copy number variants anâ€¦,
+Mendelian_lit: A genome-wide design and an empirical partially Bayes approach to increase the power of Mendelian randomization, with apâ€¦,
+biorxiv_genetic: Interference hypothesis for recombination suppression in chromosomal inversion heterozygotes: A formal genetics analysâ€¦,
+full_text : Genomic SEM Provides Insights into the Multivariate Genetic Architecture of Complex Traits https://t.co/k8830vEcnX,
+full_text : Genome-wide association analyses of chronotype in 697,828 individuals provides new insights into circadian rhythms in humans and links to disease https://t.co/i3McNIw9qN,
+full_text : GWAS in 446,118 European adults identifies 78 genetic loci for self-reported habitual sleep duration supported by accelerometer-derived estimates https://t.co/qG34BHYufl,
+biorxiv_genetic: Meta-analysis of genome-wide association studies for body fat distribution in 694,649 individuals of European ancestryâ€¦,
+biorxiv_genetic: An optimal kernel-based method for gene set association analysis  https://t.co/UwALpn7R2J #biorxiv_genetic,
+genomic_pred: Accounting for Genotype-by-Environment Interactions &amp; Residual Genetic Variation in Genomic Selection for Water-Soluble Câ€¦,
+bxv_genomics: Analysis of copy number variation from germline DNA can predict individual cancer risk https://t.co/spCPZzkNfT,
+GWAS_lit: Distinguishing genetic correlation from causation across 52 diseases and complex traits https://t.co/Ntnl6o9xWH https://t.co/â€¦,
+bxv_genetics: Inferring Population Structure and Admixture Proportions in Low Depth Next-Generation Sequencing Data https://t.co/C0YkkBâ€¦,
+Mendelian_lit: Mendelian randomization with a binary exposure variable: interpretation and presentation of causal estimates. (arXiv:180â€¦,
+jyang1981: Assuming that most mutations are deleterious to fitness, mutations with larger effects on fitness are more likely to be keptâ€¦,
+bxv_genetics: Phenomic selection: a low-cost and high-throughput alternative to genomic selection https://t.co/H0eFXaTAY6,
+bxv_bioinf: emeraLD: Rapid Linkage Disequilibrium Estimation with Massive Data Sets https://t.co/WdXljGGToK,
+bxv_genetics: Required marker properties for unbiased estimates of the genetic correlation between populations https://t.co/Pb9J3rgnsL,
+bxv_bioinf: CAMISIM: Simulating metagenomes and microbial communities https://t.co/FbcboVmoxW,
+bxv_bioinf: Tensorial Blind Source Separation for Improved Analysis of Multi-Omic Data https://t.co/gXzUSciWfa,
+biorxiv_genetic: Imprint of Assortative Mating on the Human Genome  https://t.co/Tai5nTrRaF #biorxiv_genetic,
+biorxiv_genetic: Common genetic variants and health outcomes appear geographically structured in the UK Biobank sample: Old concerns reâ€¦,
+bxv_bioinf: Reproducible genomics analysis pipelines with GNU Guix https://t.co/cbcs4uCwtn,
+biorxivpreprint: Who is this gene and what does it do? A toolkit for munging transcriptomics data in python  https://t.co/dg9pxS3XoH #bâ€¦,
+StevenGazi: Excited to share our work linking GWAS results to negative selection patterns in coding and non-coding annotations thanks tâ€¦,
+bpasaniuc: LDAK vs LDSC in the supp note from @StevenGazi \n\nhttps://t.co/EGTLgYHb3S,
+NatureRevGenet: High-throughput mouse phenomics for characterizing mammalian gene function https://t.co/8UUr8z9pXQ #Review https://t.coâ€¦,
+NatureGenet: Heritability enrichment of specifically expressed genes identifies disease-relevant tissues and cell types (Finucane et alâ€¦,
+bxv_genetics: Multidimensional Scaling and Relatedness Research https://t.co/DBZCOd5VjN,
+genomic_pred: Effect of selection on bias and accuracy in genomic prediction of breeding values https://t.co/D1HVdno3S0,
+bxv_genetics: Leveraging DNA methylation quantitative trait loci to characterize the relationship between methylomic variation, gene exâ€¦,
+full_text : #PLOSBiology: What exactly is â€˜Nâ€™ in cell culture and animal experiments? https://t.co/a2apEXsC9J,
+atelentia: The optimal phasing approaches in our publication in PLoS Genetics https://t.co/xbKpEeL2MO,
+hernanaburbano: Our new paper: estimating ploidy using NGS. Another project led by Clemens Weiss and another collaboration with @Kamounâ€¦,
+brandonscooper: Neutral variation in the context of selection from the Charlesworths. https://t.co/SKcn3H1YLs,
+biorxivpreprint: WASABI: a dynamic iterative framework for gene regulatory network inference  https://t.co/E4iI43TFO3 #bioRxiv,
+GWAS_lit: A unifying framework for joint trait analysis under a non-infinitesimal model https://t.co/7QP70DkOJw https://t.co/vNxNI74sbs,
+bxv_bioinf: Accurate prediction of orthologs in the presence of divergence after duplication https://t.co/J5dG96jbgU,
+biorxivpreprint: Interdependence of linkage disequilibrium, chromatin architecture and compositional genome organization of mammals  htâ€¦,
+biorxivpreprint: A scalable estimator of SNP heritability for Biobank-scale data  https://t.co/Ov5UOyki85 #bioRxiv,
+jorsmo: Epigenetic DNA methylation does fairly well at predicting alcohol use and smoking status https://t.co/uhufSA6rDf,
+genomic_pred: Including gene networks to predict calving difficulty in Holstein, Brown Swiss &amp; Jersey cattle. https://t.co/HQmxBVz9US,
+biorxivpreprint: Haplotype-aware genotyping from noisy long reads  https://t.co/aCS3Pa1fHf #bioRxiv,
+biorxiv_pubd: Polygenic prediction of the phenome, across ancestry, in emerging adulthood published as: https://t.co/CRpjG82mAs #Psychoâ€¦,
+bxv_bioinf: Development of a joint evolutionary model for the genome and the epigenome https://t.co/se4qaWv1Hk,
+full_text : https://t.co/xTujFUUHj5 Modelling the co-evolution of indirect genetic effects and inherited variability,
+casey6r0wn: Multi tissue prediction, the next phase of TWAS https://t.co/9TW09Dwgb4,
+GWAS_lit: The accuracy of LD Score regression as an estimator of confounding and genetic correlations in genome-wide association studieâ€¦,
+biorxiv_genetic: Comparison of Genotypic and Phenotypic Correlations: Cheveruds Conjecture in Humans  https://t.co/u2eubNbHRM #biorxiv_â€¦,
+biorxiv_genetic: Relationships between estimated autozygosity and complex traits in the UK Biobank  https://t.co/YBCT4HQKxf #biorxiv_geâ€¦,
+robo_gwas: Feature selection with interactions in logistic regression models using multivariate synergies for a GWAS application. httpsâ€¦,
+robo_gwas: A method combining a random forest-based technique with the modeling of linkage disequilibrium through latent variables, toâ€¦,
+genomic_pred: A Bayesian Genomic Regression Model with Skew Normal Random Errors. https://t.co/JONjVIdj9d,
+genomic_pred: Considering dominance in reduced single-step genomic evaluations. https://t.co/utmRv3vJ1Q,
+biorxiv_genetic: G2P: Using machine learning to understand and predict genes causing rare neurological disorders  https://t.co/58mdkDBnâ€¦,
+full_text : Exposing flaws in S-LDSC; reply to Gazal et al. https://t.co/GCyWG6LlJi,
+mstephens999: new from my lab, methods for genotyping polyploids from sequence data https://t.co/sIehC6BVFO,
+GWAS_lit: SPADIS: An Algorithm for Selecting Predictive and Diverse SNPs in GWAS https://t.co/DWeC09x5JH https://t.co/9FbKhuMEqN,
+genomic_pred: A comparison between genotyping-by-sequencing &amp; array-based scoring of SNPs for genomic prediction accuracy in winter wheâ€¦,
+full_text : #PLOSBiology: Population genetics and GWAS: A primer https://t.co/LVoHjkH4Wl,
+genomic_pred: A multi-trait Bayesian method for mapping QTL &amp; genomic prediction. https://t.co/3cchUB8luA,
+full_text : Human Demographic History Impacts Genetic Risk Prediction across Diverse Populations https://t.co/NEDGkcEf4p,
+GWAS_lit: Polygenic risk score for schizophrenia is more strongly associated with ancestry than w/SZ https://t.co/LVKs3ficMZ https://t.â€¦,
+bxv_bioinf: TETyper: a bioinformatic pipeline for classifying variation and genetic contexts of transposable elements from short-read wâ€¦,
+EricTopol: P &lt; 0.005?\nhttps://t.co/Sc8rwDWpKS\nby John Ioannidis @JAMA_current https://t.co/qR4UBn7PeT,
+genomic_pred: Non-additive Effects in Genomic Selection. https://t.co/dhUtHBGGh1,
+GWAS_lit: Reconstructing Genotypes in Private Genomic Databases from Genetic Risk Scores https://t.co/U3koXDku5G #dogs https://t.co/917â€¦,
+GWAS_lit: Investigating the Genetic Architecture of Non-Cognitive Skills Using GWAS-by-Subtraction https://t.co/Fq9i8OCrQH https://t.coâ€¦,
+dr_appie: Which part of the genetics of educational attainment is due to IQ and what is the rest? Check out our new \GWAS-by-Substractiâ€¦,
+moorejh: \Understanding the interplay between genes and environmental factors is important, as genes do not operate in isolation but raâ€¦,
+StuartJRitchie: Really beautiful preprint on which traits people think are genetic and which they think are environmental. Women with mâ€¦,
+full_text : GTFtools: a Python package for analyzing various modes of gene models https://t.co/uYT22loeqx,
+full_text : A Meta-Analytic Framework for Detection of Genetic Interactions https://t.co/epcy4VBH6a,
+full_text : Improved imputation of summary statistics for realistic settings https://t.co/SPpNkYvnb2,
+GWAS_lit: A robust method to estimate regional polygenic correlation identifies heterogeneity in the shared heritability between compleâ€¦,
+biorxiv_genetic: Estimating Heritability and Genetic Correlation in Case Control Studies Directly and with Summary Statistics  https://â€¦,
+NatureRevGenet: Runs of homozygosity: windows into population history and trait architecture https://t.co/D17pTMIR9K #review https://t.â€¦,
+bxv_genetics: Genomic prediction accounting for genotype by environment interaction offers an effective framework for breeding simultanâ€¦,
+biorxiv_genetic: Leveraging allele-specific expression to refine fine-mapping for eQTL studies  https://t.co/efgPb9Z5KD #biorxiv_genetic,
+GWAS_lit: SPADIS: An Algorithm for Selecting Predictive and Diverse SNPs in GWAS https://t.co/vEaa02d0qF https://t.co/CTLD1WJxSu,
+full_text : ANIMA: Association Network Integration for Multiscale Analysis https://t.co/dKTTqlJzuq,
+bxv_bioinf: Pleiotropic Mapping and Annotation Selection in Genome-wide Association Studies with Pe-nalized Gaussian Mixture Models httâ€¦,
+bxv_genetics: Bayesian model comparison for rare variant association studies of multiple phenotypes https://t.co/bz5PExM7o0 #genetics,
+GWAS_lit: Genome-wide Analysis of Insomnia (N=1,331,010) Identifies Novel Loci and Functional Pathways https://t.co/ycM76ptRDJ #insomniâ€¦,
+GWAS_lit: LiMMBo: a simple, scalable approach for linear mixed models in high-dimensional genetic association studies https://t.co/YTS6â€¦,
+GWAS_lit: Reconciling S-LDSC and LDAK functional enrichment estimates https://t.co/EcpZlbFcts https://t.co/CukVVHwoyW,
+biorxivpreprint: LFMM 2.0: Latent factor models for confounder adjustment in genome and epigenome-wide association studies  https://t.câ€¦,
+biorxivpreprint: Imputation of posterior linkage probability relations reveals a significant influence of structural 3D constraints onâ€¦,
+tomhouslay: Another new paper from Pierre de Villemereuil, here on doing QG with non-Gaussian traits (including examples in R with multâ€¦,
+GWAS_lit: SciLMM: Computing heritability with millions of individuals  https://t.co/NvFYWmzLE7 https://t.co/DkDWDyfvt8,
+Mendelian_lit: Statistical inference in two-sample summary-data Mendelian randomization using robust adjusted profile score. (arXiv:180â€¦,
+GWAS_lit: FastSKAT: Sequence kernel association tests for very large sets of markers \nhttps://t.co/oJFyKJXBtp https://t.co/UeHoQV6Tu9,
+seandavis12: Beyond synthetic lethality: multiple gene interaction types play a key functional role in cancer https://t.co/bCki6NoaFr,
+jmkreinz: First direct examination and evidence for the importance of ploidy on the mutational spectrum - diploids more prone to largeâ€¦,
+GWAS_lit: Polygenic scores without external summary statistics https://t.co/0A2NgGJHF3 https://t.co/KsBEGmS52z,
+biorxiv_genetic: Including phenotypic causal networks in genome-wide association studies using mixed effects structural equation modelsâ€¦,
+tomhouslay: Looks to be a really useful new  paper from Pierre de Villemereuil et al on including fixed effects variance in heritabilitâ€¦,
+biorxivpreprint: Efficient pedigree recording for fast population genetics simulation  https://t.co/bupT2kzMK0 #bioRxiv,
+wc_ratcliff: I teach a class on how to give a great scientific talk. The core idea is that humans absorb information effortlessly if itâ€¦,
+genomic_pred: Use &amp; optimization of different sources of information for genomic prediction. https://t.co/xkzEzPGtmq,
+biorxiv_genetic: Genomic heritability estimates in sweet cherry reveal non-additive genetic variance is ...  https://t.co/B1zaifQGt2 #bâ€¦,
+robo_gwas: Bayesian and frequentist analysis of an Austrian genome-wide association study of colorectal cancer and advanced adenomas. hâ€¦,
+bxv_genetics: On negative heritability and negative estimates of heritability https://t.co/m0rV1aTWyt #genetics,
+full_text : Genetic landscapes reveal how human genetic diversity aligns with geography https://t.co/yQJ5h5BtWr,
+NatureRevGenet: Genetic architecture: the shape of the genetic contribution to human traits and disease https://t.co/yXO6tYkzCH #reviewâ€¦,
+bxv_genetics: Multi-SKAT: General framework to test multiple phenotype associations of rare variants https://t.co/wOPTNfM3Jk #genetics,
+GWAS_lit: Multiplex Confounding Factor Correction for Genomic Association Mapping with Squared Sparse Linear Mixed Model https://t.co/1â€¦,
+GWAS_lit: Variable Selection in Heterogeneous Datasets: A Truncated-rank Sparse Linear Mixed Model with Applications to GWASs https://tâ€¦,
+GWAS_lit: Family-based association analysis identifies variance-controlling loci without confounding by genotype-environment correlatioâ€¦,
+full_text : BLINK: A Package for Next Level of Genome Wide Association Studies with Both Individuals and Markers in Millions https://t.co/GG2TqJHFNq,
+AJHGNews: New! Ning et al. introduce SOJO, selection operator for jointly analyzing multiple variants, a tool to assess allelic heterogâ€¦,
+full_text : Five ways to fix statistics\nhttps://t.co/pzzIv4MzlD,
+full_text : VarExp: Estimating variance explained by Genome-Wide GxE summary statistics https://t.co/DiBrKQsoJ1,
+robo_gwas: A Review of Pathway-Based Analysis Tools That Visualize Genetic Variants. https://t.co/XidBtPq0bY,
+biorxiv_genetic: Epigenome-wide association in adipose tissue from the METSIM cohort identifies novel loci ...  https://t.co/68S2Qrt67oâ€¦,
+michaelhoffman: \Using predictive specificity to determine when gene set analysis is biologically meaningful\ @SaraBallouz @paulpavlidiâ€¦,
+GWAS_lit: Assessing the genetic effect mediated through gene expression from summary eQTL and GWAS data https://t.co/Ww0uS5jPpI https:/â€¦,
+full_text : Widespread Genotype-Phenotype Correlations in Intellectual Disability https://t.co/wuKctHPUUb,
+full_text : A map of constrained coding regions in the human genome. https://t.co/NGfqG3eEBs,
+full_text : Method to estimate the approximate samples size that yield a certain number of significant GWAS signals in polygenic traits https://t.co/Sn6rtD8426,
+JohnBorghi: I get this question a lot: â€œHow can I share my code so that people (including me) can cite it?â€\n\nHereâ€™s my answer: â€œUploadâ€¦,
+full_text : Machine Learning for Population Genetics: A New Paradigm https://t.co/jhJRVxuJ9n,
+full_text : Singleton Variants Dominate the Genetic Architecture of Human Gene Expression https://t.co/oBtBEzigSW,
+dataandme: â­ï¸ step-by-step: \How to convert a Google Doc to RMarkdown â‡¨ Github pages\ by @aleszubajak https://t.co/BqZxAStKix via @storâ€¦,
+full_text : Estimating heritability without environmental bias https://t.co/3hOGFcSJNq,
+full_text : PRS-on-Spark: a novel, efficient and flexible approach for generating polygenic risk scores https://t.co/abc63qJVy9,
+full_text : Phenome-wide association studies (PheWAS) across large \real-world data\ population cohorts support drug target validation https://t.co/xtK2vEkLLm,
+full_text : Multi-ethnic polygenic risk scores improve risk prediction in diverse populations. https://t.co/OHIdM003hd,
+cj_battey: New lab for our molecular ecology &amp; genetics class using driftR (https://t.co/k5KVEfim8O), now w migration-selection equilibâ€¦,
+POhukainen: Evidence for a \healthy volunteer\ selection bias in the UK Biobank |Â https://t.co/0EaGZs0dNW https://t.co/mCSsPIj88k,
+full_text : The Reproducibility Of Research And The Misinterpretation Of P Values https://t.co/XRqB4Rc40k,
+full_text : Finite-sample genome-wide regression p-values (GWRPV) with a non-normally distributed phenotype https://t.co/Ay8MDaPOuQ,
+robo_gwas: Statistical methods to detect pleiotropy in human complex traits. https://t.co/4n5TXXc0Ty,
+AJHGNews: New today! @bpasaniuc &amp; co present a technique to estimate local genetic correlation between complex traits\nhttps://t.co/yKvnâ€¦,
+full_text : Proteome-wide analysis of phospho-regulated PDZ domain interactions through phosphomimetic proteomic peptide phage https://t.co/3kFO3KtFGW,
+GWAS_lit: Equivalence of LD-Score Regression and Individual-Level-Data Methods https://t.co/HT1u64ZCq1 https://t.co/aDkTO8zbBp,
+nature: Data from 60,000 generations of E. coli shed new light on the processes governing molecular evolution https://t.co/OyDzPKodrM hâ€¦,
+AJHGNews: New! @jkpritch &amp; co present RolyPoly, a tool to prioritize cell types &amp; genes from GWAS summ stats &amp; RNA-seq data: https://t.â€¦,
+full_text : Power, false discovery rate and Winner's Curse in eQTL studies https://t.co/RthCKfmLSE,
+moorejh: The dynamics of molecular #evolution over 60,000 generations https://t.co/We5lpDPqZe #microbiology,
+robo_gwas: Is the Effect of Parental Education on Offspring Biased or Moderated by Genotype? https://t.co/10L7qF8S0E,
+full_text : Finite-sample genome-wide regression p-values (GWRPV) with a non-normally distributed phenotype https://t.co/pFFYtBYNWw,
+biorxiv_genetic: Distinguishing genetic correlation from causation across 52 diseases and complex traits  https://t.co/TIOV6ehBr9 #biorâ€¦,
+robo_gwas: Current Challenges and New Opportunities for Gene-Environment Interaction Studies of Complex Diseases. https://t.co/WWvZJFg4â€¦,
+robo_gwas: cophesim: a comprehensive phenotype simulator for testing novel association methods. https://t.co/7xmFvMJLeK,
+robo_gwas: OPATs: Omnibus P-value association tests. https://t.co/YJenSZfrBH,
+robo_gwas: Proper joint analysis of summary association statistics requires the adjustment of heterogeneity in SNP coverageâ€¦ https://t.â€¦,
+bxv_genetics: Bayesian multiple logistic regression for meta-analyses of GWAS https://t.co/7Tk5rRNrmA #genetics,
+jorsmo: Genetic correlation bake-off:  LDSC vs. GREML  https://t.co/YL5bPnA2rP,
+bxv_genetics: Mixed model association for biobank-scale data sets https://t.co/ghup0W6QC0 #genetics,
+mendel_random: the heritability explainers from @bmneale lab highly recommended https://t.co/ZSzCRsFYMd\nhttps://t.co/uaVvkFwR4n\nhttps:/â€¦,
+full_text : Efficient management and analysis of large-scale genome-wide data with two R packages: bigstatsr and bigsnpr https://t.co/F0KfBo4R40,
+full_text : Accurate Genomic Prediction Of Human Height https://t.co/RFc8KlX3GU,
+robo_gwas: Advances in genome-wide association studies for important traits in sheep and goats. https://t.co/1ZbjuyH6v0,
+moorejh: Data-driven Advice for Applying #MachineLearning to #Bioinformatics Problems https://t.co/YPXzxa9nEr #datascience HT @randal_oâ€¦,
+NatureEcoEvo: The evolution of vertebrate sex determination systems - new review in @NatureRevGenet https://t.co/NKcLyf0bAy https://t.câ€¦,
+joe_pickrell: Blog post: it is time to replace genotyping arrays with sequencing https://t.co/p4MX2tI7wm https://t.co/aLILaVNcYY,
+minouye271: If u want to learn statistics in bite-sized chunks, check out the excellent fiveMinuteStats from @mstephens999 &amp; co https:/â€¦,
+GWAS_lit: Estimation of complex effect-size distributions using summary-level statistics from GWAS across 32 complex traits https://t.câ€¦,
+Rbloggers: RStudio v1.1 Preview: Terminal https://t.co/nrfEnactcQ #rstats #DataScience,
+jyang1981: GCTA 1.90.0beta. With this new version, we computed the GRM for 456,426 individuals in ~6 hours using 1250 CPUs. https://t.câ€¦,
+EvaKrapohl: Our new Multi-polygenic score approach to trait prediction https://t.co/b0etjYBPIy with @paul_f_oreilly @s_j_newhouse @psycâ€¦,
+moorejh: #Visualization of statistical distribution relationships https://t.co/qBBIScTgwM #datascience #statistics https://t.co/EHN7B1vâ€¦,
+HarvardBiostats: Chair Xihong Lin receives pretigious FN David Award from COPSS &amp; the Caucus for Women in Statistics! #womeninSTEM httpâ€¦,
+Mendelian_lit: Extending the MR-Egger method for multivariable Mendelian randomization to correct for both measured and unmeasuredâ€¦ httâ€¦,
+GeneticsGSA: Motoo Kimura and Jim Crow's lifelong intellectual partnership paved the way for the molecular study of evolution.  https:/â€¦,
+moorejh: Discovery &amp; replication of SNP-SNP interactions for lipid traits in over 60k individuals https://t.co/V6xVKUKP9M #GWAS #epistaâ€¦,
+CaughtCctv: Meanwhile in Brazil. https://t.co/dLz2xXIS02,
+GWAS_lit: DiGeST: Distributed Computing for Scalable Gene and Variant Ranking with Hadoop/Spark https://t.co/6jD15CZQGI https://t.co/M3â€¦,
+patrickaturley: Proposal to use a p-value threshold of 0.005 rather than 0.05. Interesting. https://t.co/Cl7XijO1yP,
+moorejh: An information-gain approach to detecting 3-way epistatic interactions in genetic association studies https://t.co/qtOWoBKAKxâ€¦,
+rafalab: Links to videos and R code for over 230 lectures on data analysis for life sciences and genomics now available here: https://tâ€¦,
+sbmontgom: .@MarylynRitchie and I coordinated this one focused on integrating bio knowledge in GxE https://t.co/aZnHyBnOrs,
+sbmontgom: Series of reviews on GxE coordinated by @NIEHS are online at AJE. https://t.co/V0pyKMflCy,
+PGCgenetics: New sex-specific ADHD GWAS: higher SNP burden in M &amp; F cases compared to controls but no difference in cases by sex https:â€¦,
+PGCgenetics: The implications of shared genetics of psychiatric disorders. Great review by @MRCcardiff Profs Oâ€™Donovan &amp; Owen https://tâ€¦,
+GWAS_lit: Integrative Genetic and Epigenetic Analysis Uncovers Regulatory Mechanisms of Autoimmune Disease https://t.co/YbmK61CUzn httpâ€¦,
+GWAS_lit: 10 Years of GWAS Discovery: Biology, Function, and Translation\nhttps://t.co/ImAQAxHGvm https://t.co/h4l8YEmtjz,
+moorejh: Efficient strategies for screening large-scale genetic interaction networks https://t.co/fDW6aywFvL #genomics #complexity #epiâ€¦,
+full_text : MTAG: Multi-Trait Analysis of GWAS https://t.co/iRv6E6pwQi,
+full_text : Fixed effect variance and the estimation of the heritability: Issues and solutions https://t.co/5ZhOqgXsiO,
+GWAS_lit: Joint genotype- and ancestry-based GWAS in admixed populations https://t.co/RJqUY3na9z https://t.co/tpuEf0AqY0,
+GWAS_lit: Joint genotype- and ancestry-based GWAS in admixed populations https://t.co/RJqUY3na9z https://t.co/tpuEf0AqY0,
+bxv_genomics: A Bayesian Framework for Multiple Trait Colocalization from Summary Association Statistics https://t.co/y1HYh8vQAq #genomâ€¦,
+GWAS_lit: Estimating phenotypic polygenicity &amp; causal effect size variance from GWAS summary statistics with cryptic relatedne https://â€¦,
+full_text : Stratified LDSC reveals enrichment of eQTL effects on complex traits is not tissue specific https://t.co/950jx6rNVk,
+gephebase: \Beavis Effect\: % variance explnd by QTL inflated wh sample size is small. Formlly dscrbd in Dmel mapping panels https://t.â€¦,
+biorxivpreprint: Parent of Origin Effects on Quantitative Phenotypes in a Founder Population  https://t.co/wI4Ly6duL0 #bioRxiv,
+PGCgenetics: BGENIE: new software from @marchini for analysis of multiple quantitative traits. Ready for @uk_biobank data format https:â€¦,
+full_text : SNP-based heritability estimation: measurement noise, population stratification, and stability https://t.co/txjNHmBnVu,
+full_text : Statistical Correction of the Winner's Curse Explains Replication Variability in Quantitative Trait GWAS https://t.co/NctBDQNjxr,
+full_text : A performance assessment of relatedness inference methods using genome-wide data from thousands of relatives https://t.co/VQGHS7Q18m,
+full_text : RL-SKAT: An exact and efficient score test for heritability and set tests https://t.co/S9Fr2w6u6R â€¦ https://t.co/YHWSe5yjFa â€¦ https://t.co/2zeV6WACr1,
+full_text : FUMA: Functional mapping and annotation of genetic associations https://t.co/kmYDIcMvb7,
+full_text : update: correlated chromatin states across individuals recapitulate the 3D organization of the genome: https://t.co/qWWvWoyHXq â€¦ https://t.co/i4EwOzjxmt,
+full_text : Mating can cause transgenerational gene silencing in Caenorhabditis elegans https://t.co/vyTbq324n6  #genetics https://t.co/E2Vzs8R9qd,
+full_text : PhenoSpD: an atlas of phenotypic correlations and a multiple testing correction for the human phenome  https://t.co/ujAIIH7het â€¦ #bioRxiv https://t.co/pfA6yu1BLY,
+dataandme: A fave R viz resource, examples w/ code: â€œA Compendium of Clean Graphs in Râ€ https://t.co/Ww2J7NhVvP #rstats #dataviz #SoDS1â€¦,
+jpsenescence: Why are some genes longer than others? We found that longer genes are linked with the development of neurons, cancer, heaâ€¦,
+stevesphd: Our paper on polygenic response scores is out on medRxiv: https://t.co/tHLrfp4K9C. The idea is to combine multiple genetic vâ€¦,
+EricTopol: Human disease genomics and genetics: a \brief\ (25 year) review! @nature \nIf you wondered if there has been progress, that câ€¦,
+genomic_pred: Accurate Genomic Prediction of Human Height. https://t.co/MCbWFHK49i,
+robo_gwas: PAST: The Pathway Association Studies Tool to Infer Biological Meaning from GWAS Datasets. https://t.co/JUiVJ1W6GU,
+cathrynlewis: Making progress in psychiatric genetics: two new #Anxiety GWAS published\n1) Million Veterans https://t.co/wPxPAlxzdj \n2)â€¦,
+NatureGenet: Fine-mapping of 150 breast cancer risk regions identifies 191 likely target genes (Fachal et al.) https://t.co/Pil5xkwRUlâ€¦,
+biorxiv_genetic: Measuring genetic variation in the multi-ethnic Million Veteran Program (MVP)  https://t.co/jszVRlg8iS #biorxiv_genetic,
+GWAS_lit: Efficient toolkit implementing best practices for principal component analysis of population genetic data https://t.co/88B9wcâ€¦,
+Jack_Kosmicki: Nice work in @biorxivpreprint by @samsungilkim and co. assessing missense pathogenicity scores in common diseases.  Realâ€¦,
+Eric_Fauman: Congrats @ksuhre.  Always like to see new metabolite QTLs! https://t.co/UO5ro8A6gH,
+GWAS_lit: Empirical decomposition of the explained variation in the variance components form of the mixed model https://t.co/2tqzOYbf1Dâ€¦,
+bxv_genomics: LocusFocus: A web-based colocalization tool for the annotation and functional follow-up of GWAS https://t.co/KWVG5jzVLk,
+GregorGorjanc: A multivariate analysis with direct additive and inbreeding depression load effects https://t.co/WqtU5dbn9K,
+biorxiv_evobio: The history of measles: from a 1912 genome to an antique origin  https://t.co/epVctzJeyZ #biorxiv_evobio,
+Mendelian_lit: Mendelian randomization using semiparametric linear transformation models. https://t.co/YD4gyACKTT,
+genomic_pred: ICGRM: integrative construction of genomic relationship matrix combining multiple genomic regions for big dataset. https:â€¦,
+genomic_pred: A Multiple-Trait Bayesian Lasso for Genome-Enabled Analysis &amp; Prediction of Complex Traits. https://t.co/I44IYqmkpp,
+qichen_lab: Wow! @lab_ost found human #sperm acutely respond to sugar diet in terms of motility and sperm tsRNA &amp; rsRNA @PLOSBiology Thâ€¦,
+strnr: VariantStore: Large-Scale Genomic Variant Search Index https://t.co/xQdi6gmFPV\nEfficiently store millions of variants across thoâ€¦,
+robo_gwas: wtest: an integrated R package for genetic epistasis testing. https://t.co/zugwTWKhGj,
+IanJMackay: A pleasant surprise to read this comment in a medical journal: \nâ€œlet us also mention an applied paper on plant breeding â€¦ pâ€¦,
+biorxivpreprint: MGMM: an R package for fitting Gaussian Mixture Models on Incomplete Genomics Data  https://t.co/WX7xwm9Yib #bioRxiv,
+biorxiv_evobio: A community-maintained standard library of population genetic models  https://t.co/ByOoE6KGry #biorxiv_evobio,
+robo_gwas: Genetic nature or genetic nurture? Introducing social genetic parameters to quantify bias in polygenic score analyses. httpsâ€¦,
+genomic_pred: The Impact of Non-additive Effects on the Genetic Correlation Between Populations. https://t.co/nIMkhZs3v2,
+biorxiv_genetic: Personalized genealogical history inferred from biobank-scale IBD segments  https://t.co/fVIBF6OWZJ #biorxiv_genetic,
+biorxiv_genomic: Genome-wide survey of tandem repeats by nanopore sequencing shows that disease-associated repeats are more polymorphicâ€¦,
+biorxivpreprint: Inferring the Demographic History of Inbred Species from Genome-Wide SNP Frequency Data  https://t.co/PAcJSI0VxO #bioRâ€¦,
+biorxiv_evobio: The spatial Muller's ratchet: surfing of deleterious mutations during range expansion  https://t.co/1YLHRLmGAr #biorxivâ€¦,
+GWAS_lit: Genome-wide association meta-analysis for early age-related macular degeneration highlights novel loci and insights for advanâ€¦,
+pascalduenk2: How do #dominance and #epistasis affect genetic correlations between populations? Find out in our latest paper publishedâ€¦,
+Mendelian_lit: MR-Clust: Clustering of genetic variants in Mendelian randomization with similar causal estimates https://t.co/Qi6auHxTQN,
+ewanbirney: Oh, this paper from the legend @mendel_random is great about epidemiology - reflective about what has worked and more imporâ€¦,
+ShaiCarmi: Wondering why Mendelian Randomization is needed to show a causal effect of anorexia on body fat.\n\nOr is there a level of comâ€¦,
+DavidEnard: Extremely thorough review on methods to estimate rates of adaptation:\n\nhttps://t.co/k0S8ccoYn7,
+GWAS_lit: Estimating the effective sample size in association studies of quantitative traits https://t.co/5QM7M6MvyM https://t.co/oUSOPâ€¦,
+bxv_genomics: On the Order of Gene Distribution on Chromosomes Across the Animal Kingdom https://t.co/qOY2nUaElv,
+SamurSciCop: New preprint where I simulate background selection matching actual genomic regions' recombination maps and locations of geâ€¦,
+Mendelian_lit: Proxy gene-by-environment Mendelian randomization study confirms a causal effect of maternal smoking on offspring birthwâ€¦,
+GWAS_lit: Simultaneous SNP selection and adjustment for population structure in high dimensional prediction models https://t.co/HmE70RNâ€¦,
+GENES_PK: Okay #epitwitter and #genepitwitter, letâ€™s talk about how statistical and biological gene-environment interactions relate toâ€¦,
+biorxivpreprint: A fast and simple method for detecting identity by descent segments in large-scale data  https://t.co/hn8KGSNzNs #bioRâ€¦,
+GWAS_lit: Evaluating and improving heritability models using summary statistics https://t.co/aWSVgY0ONb https://t.co/IvvWaptlkW,
+GWAS_lit: Localizing components of shared transethnic genetic architecture of complex traits from GWAS summary data https://t.co/PSi1VWâ€¦,
+moorejh: Regulation of gene expression by cis-acting long non-coding RNAs - Nature Reviews  https://t.co/lDsbyMmpEe #genomics #complexiâ€¦,
+EricTopol: So many common genomic threads across 8 neuropsychiatric conditions from this analysis of &gt; 725,000 people https://t.co/Fsyrâ€¦,
+bxv_genomics: Examining the relationships between phenotypic plasticity and local environments with genomic structural equation modelsâ€¦,
+biorxiv_genetic: Predicting Geographic Location From Genetic Variation with Deep Neural Networks  https://t.co/rws3xPoWfV #biorxiv_geneâ€¦,
+jorsmo: Remarkable team effort with 100s of collaborators: cross-disorder genetics across 8 psych disorders (N = 727K) @PGCgenetics Anaâ€¦,
+joe_pickrell: \Mendelian randomization offers a simple way to distinguish causation from correlation. But are scientists overusing it?\â€¦,
+mendel_random: What is the role of within-family studies in Mendelian randomization?  Thread on a paper by @nm_davies @evans1_d  @alexhâ€¦,
+genomic_pred: Weighted Genomic Best Linear Unbiased Prediction for Carcass Traits in Hanwoo Cattle. https://t.co/YLRFTpHz0c,
+bxv_genomics: UniPath: A uniform approach for pathway and gene-set based analysis of heterogeneity in single-cell epigenome and transcrâ€¦,
+genomic_pred: Bias in estimates of variance components in populations undergoing genomic selection: a simulation study. https://t.co/8sâ€¦,
+John_B_Cole: This could be useful for those of us who still do GWAS: Manhattan++.\n\nhttps://t.co/MBsRNdATPt,
+GWAS_lit: Chances and challenges of machine learning based disease classification in genetic association studies illustrated on age-relâ€¦,
+jorsmo: Interesting and carefully done phenome-wide MR and colocalization to identify protein effects on disease and possible druggableâ€¦,
+pille_hallast: Our systematic analysis of more than 2300 complete modern Y-chromosomal sequences and available ancient data offers noveâ€¦,
+biorxivpreprint: How much does Ne vary among species?  https://t.co/6BhyMCaNRJ #bioRxiv,
+GWAS_lit: An expanded analysis framework for multivariate GWAS connects inflammatory biomarkers to functional variants and disease httpâ€¦,
+biorxiv_genetic: Genome-wide association study identifies 143 loci associated with 25 hydroxyvitamin D concentration.  https://t.co/FtJâ€¦,
+biorxiv_genetic: Multivariable G-E interplay in the prediction of educational achievement  https://t.co/iFHMp6jMqK #biorxiv_genetic,
+MuinJKhoury: An excellent genomic medicine 2019 year in review by Teri Manolio, @NHGRI_Director and others.  Via @AJHGNews https://t.coâ€¦,
+GWAS_lit: Understanding the genetic risks of complex diseases using the additive epistatic interaction model: a simulation study https:â€¦,
+biorxivpreprint: GO: A functional reporter system to identify and enrich base editing activity  https://t.co/eEDfLRXGam #bioRxiv,
+seandavis12: CNVScope: Visually Exploring Copy Number Aberrations in #cancer Genomes\nhttps://t.co/oZze63NmEg\nShiny App: https://t.co/ABâ€¦,
+bxv_genomics: Demand for Multiplatform and Meta-analytic Approaches in Transcriptome Profiling https://t.co/CDUFT8yvao,
+GWAS_lit: Accurate modeling of replication rates in genome-wide association studies by accounting for winner's curse and study-specificâ€¦,
+moorejh: Population Genetics in the Human Microbiome https://t.co/O6ky6E4Ioc #microbiome #microbiology #genetics #popgen,
+GWAS_lit: Class-Conditional VAE-GAN for Local-Ancestry Simulation https://t.co/A290gd5hHJ https://t.co/J6tAeCHDoM,
+

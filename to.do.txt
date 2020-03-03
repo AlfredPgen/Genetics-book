@@ -1,0 +1,32 @@
+Work:
+ReproGen GWAS
+SAIGE reverse 0, 1/AFB/whole cohort CL/SNPTEST/Poisson or not, that is the question
+Age at menarche/menopause summary
+Blood pressure CQR
+
+Work extra:
+CKB reading
+Papers from titles.txt (2-5) to github
+Pipeline development
+New project analysis plan
+List of software/authors
+Presentation slides
+
+Jez:
+avMSE vQTL
+AOSW CQR
+avMSE CREAM 2df
+avMSE prediction
+
+Home:
+Mixed models 
+Optimization methods for large scale data
+Linear algebra + Calculus + Probability
+Python
+C++ programming
+
+Leisure:
+Gym
+Music album
+
+
