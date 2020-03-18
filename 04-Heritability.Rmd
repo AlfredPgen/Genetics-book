@@ -36,5 +36,11 @@ Attenuation ratios vary among traits (as expected, given that different traits h
 
 ## LDAK
 
+## SumHer
+
 ## Heritability by chromosome, MAF bin, or functional category
+
+## Correction of heritability in presence of environmental effects
+
+
 
