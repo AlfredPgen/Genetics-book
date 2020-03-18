@@ -8,16 +8,16 @@ https://www.bioconductor.org/packages/devel/bioc/vignettes/GWASTools/inst/doc/Da
 
 The overall goal of this step is to check the quality of the sample batches. Substantial quality control is done by the genotyping centers prior to releasing the genotype data. However, it is possible that quality control for batches is still lower than desired. If a lower quality batch is detected then it may be necessary to re-run the genotyping for that batch. We can check the batch quality by comparing the missing call rates between batches and looking for significant allele frequency differences between batches.
 
-### Calculation of missing call rate for samples and SNPs
+### Missing call rate for samples and SNPs
 
 The ﬁrst step is to calculate the missing call rates for each SNP and for each sample. A high missing call rate for a sample is often indicative of a poorly performing sample. It has been seen that samples from DNA that has undergone whole-genome ampliﬁcation (WGA) have a relatively higher missing call rate. Similarly a high missing call rate for a SNP is indicative of a problem SNP. Experience from the GENEVA studies has shown that there seem to be a subset of SNPs from which genotype calls are more diﬃcult to make than others. We calculate the missing call rates in a two step process: ﬁrst the missing call rates over all samples and SNPs are calculated, then the missing call rates are calculated again, ﬁltering out SNPs and samples that have an initial missing call rate greater than 0.05. The initial SNP missing call rate over all samples is saved in the SNP annotation data ﬁle as missing.n1. The analogous idea is applied to the samples: missing.e1 is saved in the sample annotation ﬁle and corresponds to the missing call rate per sample over all SNPs, excluding those SNPs with all calls missing. The missing.n2 is calculated as the call rate per SNP over all samples whose missing.e1 is less than 0.05. Again, similarly for the samples, missing.e2 is calculated for each sample over all SNPs with missing.n2 values less than 0.05. It is important to remember that the Y chromosome values should be calculated for males only, since we expect females to have no genotype values for the Y chromosome, although an occasional probe on the Y chromosome is called in a female.
 If any samples have a high missing rate, we recommend further investigation of what may be causing the missing calls; the samples with a missing call rate greater than 0.05 should be ﬁltered out due to low sample quality.
 
-### Calculation of missing call rates by batch
+### Missing call rates by batch
 
 The missing call rate by batch is calculated to check that there are no batches with comparatively lower call rates. Usually a“batch”is a plate containing samples that were processed together through the genotyping chemistry. In this case all samples were run on diﬀerent plates (as controls for another dataset).
 
-### Testing for allele frequency differences in batches
+### Allele frequency differences across batches
 
 In this step, the chi-square test for diﬀerences in allelic frequency is performed between each batch individually and a pool of all the other batches in the study. We then look at the mean χ<sup>2</sup> statistic over all SNPs for each batch as a function of the ethnic composition of samples in a batch.
 Next we test for association between batches and population groups, using a χ<sup>2</sup> contingency test. Then we look at the relationship between the ethnic composition of each batch and the previously calculated χ<sup>2</sup> test of allelic frequency between each batch and a pool of the other batches. The point is to look for batches that diﬀer from others of similar ethnic composition, which might indicate a batch eﬀect due to genotyping artifact. In this experiment, there are only a few batches and wide variations in race among batches, so it is diﬃcult to interpret the results. In larger GWAS experiments, we generally observe a U-shaped curve of allelic frequency test statistic as a function of ethnic composition.
@@ -266,6 +266,8 @@ When using mixed models for association analysis, care must be taken to consider
 ### BOLT-LMM
 
 When BOLT-LMM was used on very large sample sizes, analyses revealed subtleties in the interpretation of LD score regression intercepts as a means of differentiating polygenicity from confounding; the attenuation ratio was proposed to be possibly a more suitable metric as sample sizes increase.
+
+## SAIGE
 
 ### Caveats
 
