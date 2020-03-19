@@ -1,6 +1,6 @@
 Work:
 ReproGen GWAS
-SAIGE reverse 0-1/AFB/whole cohort CL/SNPTEST/Poisson or not, that is the question
+SNPTEST/Poisson or not, that is the question
 Age at menarche/menopause summary
 Blood pressure CQR
 SOP
