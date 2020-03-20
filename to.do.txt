@@ -5,6 +5,8 @@ Age at menarche/menopause summary
 Blood pressure CQR
 SOP
 Twins and mortality GWAS
+LD score update
+PhD formatting
 
 Work extra:
 CKB reading
