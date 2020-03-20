@@ -4,7 +4,46 @@ The first step in any genetic analysis is to map sequence reads, callibrate base
 
 Prior to mapping, evaluate base composition along reads. Calculate the proportion of A, C, G, T bases along each read. Flag runs with evidence of unusual patterns of base composition compared to the target genome.
 Evaluate machine quality scores along reads. Calculate average quality scores per position. Flag runs with evidence of unusual quality score distributions.
-Calculate the input number of reads and number of bases for each sequenced sample
+Calculate the input number of reads and number of bases for each sequenced sample.
+
+## While whole genome sequencing and re-sequencing represent ~90% of all DNA based sequencing applications, it’s important to not lose sight of the myriad of new protocols available to count or detect epi-genomic features. These include genotyping, measuring DNA-protein interactions and epigenetic markers. Several examples of these protocols are listed below:
+
+### DNA-protein interactions
+DNAse-Seq
+MNAse-Seq
+X-ChIP
+ChIP-Seq
+FAIRE-Seq
+ATAC-Seq
+Chia-PET
+Hi-C
+3-C, 4-C, 5-C
+Capture-C
+HiTS-FLIP
+
+### Epigenetics
+Bisulfite-Seq
+Methyl-Seq
+RRBS
+PBAT
+Me-DIP
+oxBS-Seq
+TAB-Seq
+MBDCap-Seq
+BisChIP-Seq
+
+### Genotyping
+RAD-Seq
+ddRAD-Seq
+nextRAD
+Capture-Seq
+ezRAD
+Low input DNA-Seq
+MDA
+DOP-PCR
+Os-Seq
+MALBAC
+Nuc-Seq
 
 ## Genotype calling algorithms
 
