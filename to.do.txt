@@ -1,11 +1,10 @@
 Work:
 ReproGen GWAS
-SNPTEST/Poisson or not, that is the question
+SNPTEST/Poisson or not, that is the question simulation
 Age at menarche/menopause summary
 Blood pressure CQR
 SOP
 Twins and mortality GWAS
-LD score update
 PhD formatting
 
 Work extra:
@@ -15,6 +14,8 @@ Pipeline development
 New project analysis plan
 List of software/authors
 Presentation slides
+LD score update
+categorical LMM
 
 Jez:
 avMSE vQTL
