@@ -1,5 +1,11 @@
 # Additional points of interest
 
+## Phenotype transformation
+
+### logs
+
+### RINT
+
 ## Kinship matrix
 
 ### Path coefficients
