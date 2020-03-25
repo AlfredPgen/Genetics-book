@@ -36,7 +36,7 @@ Attenuation ratios vary among traits (as expected, given that different traits h
 
 ## LDAK
 
-## SumHer
+### SumHer
 
 ## Heritability by chromosome, MAF bin, or functional category
 
