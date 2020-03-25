@@ -295,6 +295,8 @@ One type of adjustment for winer's curse (using empirical Bayes), depends on the
 
 ## Adjustment for attenuation bias
 
+LD score regression
+
 ## Enrichment in candidate genes
 
 Atwell et al. (2010) introduced a method for evaluating the enrichment of strong, but not necessarily genome-wide significant, signals for SNPs in candidate genes. An enrichment of such signals indicates that the analysis identifies true signals rather than random noise.

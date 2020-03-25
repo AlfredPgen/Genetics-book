@@ -40,6 +40,10 @@
 
 ### Selection
 
+## Correction for biases
+
+Heckman correction
+
 ## Family studies
 
 ### Transmission disequilibrium tests

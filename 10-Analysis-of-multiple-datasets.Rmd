@@ -1,5 +1,9 @@
 # Combining multiple datasets
 
+## Colocalization
+
+
+
 ## Meta-analysis
 
 ### Meta-analysis of gene-level associations (common)?
