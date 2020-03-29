@@ -1,11 +1,9 @@
 Work:
-ReproGen GWAS
-SNPTEST/Poisson or not, that is the question simulation
+ReproGen GWAS, Poisson or not, that is the question simulation
 Age at menarche/menopause summary
 Blood pressure CQR
-SOP
 Twins and mortality GWAS
-PhD formatting
+Cluster betas
 
 Work extra:
 CKB reading
