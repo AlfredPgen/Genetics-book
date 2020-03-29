@@ -19,12 +19,11 @@ categorical/cox LMM
 
 Jez:
 avMSE vQTL
-AOSW CQR
-avMSE CREAM 2df
+avMSE CQR
 avMSE prediction
 
 Home:
-Mixed models 
+Mixed models
 Optimization methods for large scale data
 Linear algebra + Calculus + Probability
 Python
