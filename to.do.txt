@@ -18,7 +18,6 @@ categorical/cox LMM
 Jez:
 avMSE vQTL
 avMSE CQR
-avMSE prediction
 
 Home:
 Mixed models
