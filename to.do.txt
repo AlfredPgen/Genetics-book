@@ -9,7 +9,6 @@ Work extra:
 CKB reading
 Papers from titles.txt (2-5) to github
 Pipeline development
-New project analysis plan
 List of software/authors
 Presentation slides
 LD score update
