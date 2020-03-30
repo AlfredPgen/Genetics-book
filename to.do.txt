@@ -13,7 +13,7 @@ New project analysis plan
 List of software/authors
 Presentation slides
 LD score update
-categorical/cox LMM
+Categorical/Cox LMM
 
 Jez:
 avMSE vQTL
