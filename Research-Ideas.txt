@@ -1,0 +1,9 @@
+Evolutionary theory that extends to model the MAF distribution of GxE effects
+Speed up computational efficiency of GxE software in the spirit of LEMMA or alike
+Heritability of GxE stratified by annotation
+Specification of the kinship matrix
+Gene-based CQR
+CQR prediction/causality/low MAF/by CKB region/metabolites
+Transferability of polygenic risk scores across different populations
+Extensions to mixed effect models (ordinal, nominal phenotypes)
+Extension of LD score regression to variance effects and GxE
