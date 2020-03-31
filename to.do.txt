@@ -2,7 +2,7 @@ Work:
 ReproGen GWAS, Poisson or not, that is the question simulation
 Age at menarche/menopause summary
 Blood pressure CQR
-Twins and mortality GWAS
+HLMM twins and mortality GWAS
 Cluster betas
 
 Work extra:
