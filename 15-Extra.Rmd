@@ -10,6 +10,23 @@
 
 Frisch–Waugh–Lovell theorem
 
+set.seed(12345)
+n <- 5000
+e <- rnorm(n)
+cov <- rnorm(n) + rbinom(n,1,0.3)
+snp <- rbinom(n,2,0.1)
+
+y <- cov + snp + e
+
+Fit model with OLS:
+summary(lm(y ~ cov + snp))
+summary(lm(y ~ cov + snp))$coefficients[3,4]
+
+Regression on residuals:
+residuals = residuals(lm(y ~ cov))
+summary(lm(residuals~snp))
+summary(lm(residuals~snp))$coefficients[2,4]
+
 ## Kinship matrix
 
 ### Path coefficients
