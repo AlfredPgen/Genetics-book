@@ -6,6 +6,10 @@
 
 ### RINT
 
+### Regression on residuals
+
+Frisch–Waugh–Lovell theorem
+
 ## Kinship matrix
 
 ### Path coefficients
