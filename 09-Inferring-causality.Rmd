@@ -26,6 +26,16 @@ These assumptions imply that the genetic variants (IVs) have a causal effect on 
 
 Cochran’s Q test can be used in order to test for the presence of pleiotropy.
 
+### Two-sample MR
+
+### MR-Egger
+
+### Bidirectional MR
+
+### Weighted median
+
+### Mode based estimator
+
 ### Summary data-based MR (SMR)
 
 SMR can be used to test whether the effects of genetic variants on a phenotype are mediated by gene expression. The method is based on a single genetic variant.
@@ -55,4 +65,8 @@ Because the study requires summary statistics and LD pattern, it is possible to 
 ### Tissue-specific MR
 
 Since many traits manifest themselves only in certain tissues, it is important to integrate data from the tissue of interest for the studied phenotype when trying to interpret GWAS results using gene expression as an intermediate phenotype. 
+
+### Latent causal variable model
+
+Inference of causality across traits.
 
