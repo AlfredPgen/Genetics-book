@@ -12,10 +12,12 @@
 
 RAREMETAL and RAREMETALWORKER
 
+## Reverse meta-analysis
+
 ## Mega-analysis
 
 
-## Z-statistic to estimated SNP effect
+## Convert Z-statistic to estimated SNP effect
 
 After sample-size-weighted meta-analysis, Z-statistics can be transformed into unstandardized regression coefficinets using the following equation:
 
