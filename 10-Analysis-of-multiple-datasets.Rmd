@@ -19,7 +19,7 @@ RAREMETAL and RAREMETALWORKER
 
 ## Convert Z-statistic to estimated SNP effect
 
-After sample-size-weighted meta-analysis, Z-statistics can be transformed into unstandardized regression coefficinets using the following equation:
+After sample-size-weighted meta-analysis, Z-statistics can be transformed into unstandardized regression coefficients using the following equation:
 
 $$\LARGE \hat{\beta_j} = Z_j\frac{\hat{\sigma_Y}}{\sqrt{2N_j MAF_j(1-MAF_j)}}$$
 for SNP *j* with minor allele frequency MAF*j*, sample size N*j*, Z-statistic Z*j*𝑍𝑗, and standard deviation of the phenotype $\hat{\sigma_Y}$𝑌. 
