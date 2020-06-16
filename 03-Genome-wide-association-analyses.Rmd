@@ -229,6 +229,8 @@ https://www.omicsonline.org/open-access/literature-reviews-on-methods-for-rare-v
 
 ## Analysis of multi-ethnic samples
 
+The overwhelming majority of participants in current genetic studies are of European ancestry. Due to differential genetic architectures, transferability of genetic findings between populations is generally limited. Diversifying the ancestry of participants is important for the discovery of novel disease etiology. Even in large-scale European studies, causal variants might be missed if they have low frequencies or are monomorphic in European populations.
+
 ## Analysis of indirect genetic effects
 
 ## Exome analysis
