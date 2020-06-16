@@ -71,7 +71,7 @@ Allele Frequency Plots (AF Plots): looking for errors in allele frequencies and 
 P value vs Z-statistic Plots (PZ Plots): looking for the consistency between the reported P values and the P values implied by the coefficient estimates and standard errors in
 individual cohort.
 Quantile-Quantile Plots (QQ Plots): looking for the cohort-level QQ plots to look for evidence of unaccounted-for stratification.
-Predicted vs Reported Standard-Error Plots (PRS Plots): maaking sure that the standard errors reported in individuals cohorts are approximately consistent with the reported sample size, allele frequency, and phenotype distribution. 
+Predicted vs Reported Standard-Error Plots (PRS Plots): making sure that the standard errors reported in individuals cohorts are approximately consistent with the reported sample size, allele frequency, and phenotype distribution. 
 Use of bivariate LD score regression to verify that the estimated genetic correlations between all large cohorts (defined as N > 10,000) are large and positive.
 
 ## X-chromosome quality control
@@ -237,8 +237,8 @@ https://www.omicsonline.org/open-access/literature-reviews-on-methods-for-rare-v
 
 ### Deep whole genome sequencing
 
-Can only be applied to limited numbers of samples
-Most complete ascertainment of variation
+Currently is applied to limited numbers of samples.
+Provides most complete ascertainment of variation.
 
 ### Low coverage whole genome sequencing
 
@@ -276,6 +276,14 @@ First, chi-squared-based tests (such as BOLT-LMM) can incur inflated type I erro
 2) Use saddlepoint approximation (SAIGE software).
 
 Second, conditioning on genome-wide signal can produce loss of power under case–control ascertainment.
+
+## Extension to unusual phenotypes
+
+### Multinomial GWAS
+
+### Ordinal GWAS
+
+### Survival GWAS
 
 ## Penalized regression GWAS
 
