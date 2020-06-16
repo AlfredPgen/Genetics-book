@@ -1,5 +1,25 @@
 # Additional points of interest
 
+## Defining novel locus
+
+1. Summarise GWAS associations
+(a) Clump associations to define bp-range for each locus (use LD from cohort used to run GWAS).
+(b) Identify conditionally independent associations within each locus.
+
+2. Check for locus novelty (“Has this locus previously been associated with this phenotype?”), i.e. does any variant within the locus bp-range have a genome-wide significant association in any previous relevant GWAS?
+(a) No – the locus and signal are novel.
+(b) Yes – the locus is not novel (but signal may be).
+(c) Yes, but previously reported lead variant lies outside locus – probably novel but requires checking.
+
+3. If the locus is not novel, check for novelty of signal (“Has this precise association signal been observed previously?”).
+(a) Is there a direct look-up for the variant in previous sets of summary stats? If so, use that.
+(b) If there is no direct look-up, select a proxy in the ancestry of the previous GWAS. We are seeking to get the best possible measure of the association in that ancestry.
+Using that ancestry, look-up the LD between the lead variant(s) and all possible variants within the locus. Identify the variant with the highest LD r<sup>2</sup> that is present in the previously reported summary statistics, and use that as the proxy:
+(i) If the variant is not present (or has very low MAF), so that no good proxy is possible, report this;
+(ii) otherwise, report the summary statistics for the proxy;
+(c) If the look-up is not genome-wide significant (i.e. possibly novel), check the LD of the signal with the lead SNP in the previous GWAS (using the LD for the ancestry of the previous GWAS).
+
+
 ## Phenotype transformation
 
 ### logs
