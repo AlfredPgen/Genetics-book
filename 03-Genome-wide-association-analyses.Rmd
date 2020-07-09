@@ -74,8 +74,7 @@ When there is a non-ambiguous mismatch in allele coding between the data sets, s
 ### Quality control prior to meta-analysis
 
 Allele Frequency Plots (AF Plots): looking for errors in allele frequencies and strand orientations by visually inspecting a plot of the sample allele frequency of filtered SNPs against the frequency in the 1000 Genomes phase 1 version 3 European panel3 for example.
-P value vs Z-statistic Plots (PZ Plots): looking for the consistency between the reported P values and the P values implied by the coefficient estimates and standard errors in
-individual cohort.
+P value vs Z-statistic Plots (PZ Plots): looking for the consistency between the reported P values and the P values implied by the coefficient estimates and standard errors in individual cohort.
 Quantile-Quantile Plots (QQ Plots): looking for the cohort-level QQ plots to look for evidence of unaccounted-for stratification.
 Predicted vs Reported Standard-Error Plots (PRS Plots): making sure that the standard errors reported in individuals cohorts are approximately consistent with the reported sample size, allele frequency, and phenotype distribution. 
 Use of bivariate LD score regression to verify that the estimated genetic correlations between all large cohorts (defined as N > 10,000) are large and positive.
@@ -94,7 +93,7 @@ $$\LARGE \hat{\beta_j} = \left(X^T_jX_j\right)^{-1}X^T_jy\approx\frac{X^T_jy}{N}
 
 and its variance
 
-$$\LARGE \sigma^2_\hat{\beta_j} = \sigma^2_r\left(X^T_jX_j\right)^{-1}\approx\frac{1}{N}$$
+$$\LARGE \sigma^2_{\hat\beta_j} = \sigma^2_r\left(X^T_jX_j\right)^{-1}\approx\frac{1}{N}$$
 
 where $\sigma^2_r$ is the residual variance.
 

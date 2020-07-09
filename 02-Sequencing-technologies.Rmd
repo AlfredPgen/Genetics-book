@@ -6,7 +6,7 @@ Prior to mapping, evaluate base composition along reads. Calculate the proportio
 Evaluate machine quality scores along reads. Calculate average quality scores per position. Flag runs with evidence of unusual quality score distributions.
 Calculate the input number of reads and number of bases for each sequenced sample.
 
-## While whole genome sequencing and re-sequencing represent ~90% of all DNA based sequencing applications, it’s important to not lose sight of the myriad of new protocols available to count or detect epi-genomic features. These include genotyping, measuring DNA-protein interactions and epigenetic markers. Several examples of these protocols are listed below:
+While whole genome sequencing and re-sequencing represent ~90% of all DNA based sequencing applications, it’s important to not lose sight of the myriad of new protocols available to count or detect epi-genomic features. These include genotyping, measuring DNA-protein interactions and epigenetic markers. Several examples of these protocols are listed below:
 
 ### DNA-protein interactions
 DNAse-Seq
