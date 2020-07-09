@@ -1,0 +1,1601 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={A handbook for Computational Genetics},
+  pdfauthor={Alfred Pozarickij},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{A handbook for Computational Genetics}
+\author{Alfred Pozarickij}
+\date{2020-07-09}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{preface}{%
+\chapter*{Preface}\label{preface}}
+\addcontentsline{toc}{chapter}{Preface}
+
+The scope of this book is to provide an outline of computational methods available for the analysis of genetic data.
+
+First chapter introduces methods to infer population parameters.
+
+Next X chapters focus on population genetics.
+
+In this book, the amount of mathematics and statistics is kept to a minimum. Only methods designed specifically to address issues in genetics are shown. I have produced another book {[}insert link here{]}, which is intended to familiarise the reader with commonly used approaches and develop some intuition behind them. By no means the list is comprehensive and only serves as a quick guide. The internet provides much more information regarding this topic.
+
+Rather than providing references at the end of each chapter, I decided to combine them into supplementary text {[}insert link here{]}. References are arranged according to different topics discussed in this book. I tried to do my best to cause as little confusion as possible.
+
+Finally, don't hesitate to contact me if I have not included your favorite method (\href{mailto:apozarickij@gmail.com}{\nolinkurl{apozarickij@gmail.com}}). I would be more than happy to hear about it.
+
+\hypertarget{part-quantitative-genetics}{%
+\part{Quantitative Genetics}\label{part-quantitative-genetics}}
+
+\hypertarget{population-parameters}{%
+\chapter{Population parameters}\label{population-parameters}}
+
+\hypertarget{mean}{%
+\section{Mean}\label{mean}}
+
+\hypertarget{variance}{%
+\section{Variance}\label{variance}}
+
+\hypertarget{covariance}{%
+\section{Covariance}\label{covariance}}
+
+\hypertarget{genetic-correlation}{%
+\section{Genetic correlation}\label{genetic-correlation}}
+
+\hypertarget{additivity}{%
+\section{Additivity}\label{additivity}}
+
+\hypertarget{dominancerecesivness}{%
+\section{Dominance/Recesivness}\label{dominancerecesivness}}
+
+\hypertarget{codominance}{%
+\section{Codominance}\label{codominance}}
+
+\hypertarget{infinitesimal-model}{%
+\section{Infinitesimal model}\label{infinitesimal-model}}
+
+\hypertarget{omnigenic-model}{%
+\subsection{Omnigenic model}\label{omnigenic-model}}
+
+\hypertarget{henetic-relationships-by-malecot}{%
+\section{Henetic relationships by Malecot}\label{henetic-relationships-by-malecot}}
+
+\hypertarget{genotype-simulations}{%
+\section{Genotype simulations}\label{genotype-simulations}}
+
+\hypertarget{phenotype-simulations}{%
+\section{Phenotype simulations}\label{phenotype-simulations}}
+
+\hypertarget{sequencing-technologies}{%
+\chapter{Sequencing technologies}\label{sequencing-technologies}}
+
+The first step in any genetic analysis is to map sequence reads, callibrate base qualities, and call variants.
+
+Prior to mapping, evaluate base composition along reads. Calculate the proportion of A, C, G, T bases along each read. Flag runs with evidence of unusual patterns of base composition compared to the target genome.
+Evaluate machine quality scores along reads. Calculate average quality scores per position. Flag runs with evidence of unusual quality score distributions.
+Calculate the input number of reads and number of bases for each sequenced sample.
+
+\hypertarget{while-whole-genome-sequencing-and-re-sequencing-represent-90-of-all-dna-based-sequencing-applications-its-important-to-not-lose-sight-of-the-myriad-of-new-protocols-available-to-count-or-detect-epi-genomic-features.-these-include-genotyping-measuring-dna-protein-interactions-and-epigenetic-markers.-several-examples-of-these-protocols-are-listed-below}{%
+\section{While whole genome sequencing and re-sequencing represent \textasciitilde90\% of all DNA based sequencing applications, it's important to not lose sight of the myriad of new protocols available to count or detect epi-genomic features. These include genotyping, measuring DNA-protein interactions and epigenetic markers. Several examples of these protocols are listed below:}\label{while-whole-genome-sequencing-and-re-sequencing-represent-90-of-all-dna-based-sequencing-applications-its-important-to-not-lose-sight-of-the-myriad-of-new-protocols-available-to-count-or-detect-epi-genomic-features.-these-include-genotyping-measuring-dna-protein-interactions-and-epigenetic-markers.-several-examples-of-these-protocols-are-listed-below}}
+
+\hypertarget{dna-protein-interactions}{%
+\subsection{DNA-protein interactions}\label{dna-protein-interactions}}
+
+DNAse-Seq
+MNAse-Seq
+X-ChIP
+ChIP-Seq
+FAIRE-Seq
+ATAC-Seq
+Chia-PET
+Hi-C
+3-C, 4-C, 5-C
+Capture-C
+HiTS-FLIP
+
+\hypertarget{epigenetics}{%
+\subsection{Epigenetics}\label{epigenetics}}
+
+Bisulfite-Seq
+Methyl-Seq
+RRBS
+PBAT
+Me-DIP
+oxBS-Seq
+TAB-Seq
+MBDCap-Seq
+BisChIP-Seq
+
+\hypertarget{genotyping}{%
+\subsection{Genotyping}\label{genotyping}}
+
+RAD-Seq
+ddRAD-Seq
+nextRAD
+Capture-Seq
+ezRAD
+Low input DNA-Seq
+MDA
+DOP-PCR
+Os-Seq
+MALBAC
+Nuc-Seq
+
+\hypertarget{genotype-calling-algorithms}{%
+\section{Genotype calling algorithms}\label{genotype-calling-algorithms}}
+
+\hypertarget{sequence-alignment}{%
+\section{Sequence alignment}\label{sequence-alignment}}
+
+Sequence alignment is a method of arranging sequences of DNA, RNA, or protein to identify regions of similarity. The similarity being identified, may be a result of functional, structural, or evolutionary relationships between the sequences.
+
+If we compare two sequences, it is known as pairwise sequence alignment. If we compare more than two sequences, it is known as multiple sequence alignment.
+
+\hypertarget{sequence-assembly}{%
+\section{Sequence assembly}\label{sequence-assembly}}
+
+\hypertarget{snp-annotation}{%
+\section{SNP annotation}\label{snp-annotation}}
+
+\hypertarget{cnv-annotation}{%
+\subsection{CNV annotation}\label{cnv-annotation}}
+
+\hypertarget{gene-prediction}{%
+\section{Gene prediction}\label{gene-prediction}}
+
+\hypertarget{genome-wide-association-analysis}{%
+\chapter{Genome-wide association analysis}\label{genome-wide-association-analysis}}
+
+\hypertarget{dna-processing-quality-control}{%
+\section{DNA processing quality control}\label{dna-processing-quality-control}}
+
+\hypertarget{batch-effects}{%
+\section{Batch effects}\label{batch-effects}}
+
+\url{https://www.bioconductor.org/packages/devel/bioc/vignettes/GWASTools/inst/doc/DataCleaning.pdf}
+
+The overall goal of this step is to check the quality of the sample batches. Substantial quality control is done by the genotyping centers prior to releasing the genotype data. However, it is possible that quality control for batches is still lower than desired. If a lower quality batch is detected then it may be necessary to re-run the genotyping for that batch. We can check the batch quality by comparing the missing call rates between batches and looking for significant allele frequency differences between batches.
+
+\hypertarget{missing-call-rate-for-samples-and-snps}{%
+\subsection{Missing call rate for samples and SNPs}\label{missing-call-rate-for-samples-and-snps}}
+
+The ﬁrst step is to calculate the missing call rates for each SNP and for each sample. A high missing call rate for a sample is often indicative of a poorly performing sample. It has been seen that samples from DNA that has undergone whole-genome ampliﬁcation (WGA) have a relatively higher missing call rate. Similarly a high missing call rate for a SNP is indicative of a problem SNP. Experience from the GENEVA studies has shown that there seem to be a subset of SNPs from which genotype calls are more diﬃcult to make than others. We calculate the missing call rates in a two step process: ﬁrst the missing call rates over all samples and SNPs are calculated, then the missing call rates are calculated again, ﬁltering out SNPs and samples that have an initial missing call rate greater than 0.05. The initial SNP missing call rate over all samples is saved in the SNP annotation data ﬁle as missing.n1. The analogous idea is applied to the samples: missing.e1 is saved in the sample annotation ﬁle and corresponds to the missing call rate per sample over all SNPs, excluding those SNPs with all calls missing. The missing.n2 is calculated as the call rate per SNP over all samples whose missing.e1 is less than 0.05. Again, similarly for the samples, missing.e2 is calculated for each sample over all SNPs with missing.n2 values less than 0.05. It is important to remember that the Y chromosome values should be calculated for males only, since we expect females to have no genotype values for the Y chromosome, although an occasional probe on the Y chromosome is called in a female.
+If any samples have a high missing rate, we recommend further investigation of what may be causing the missing calls; the samples with a missing call rate greater than 0.05 should be ﬁltered out due to low sample quality.
+
+\hypertarget{missing-call-rates-by-batch}{%
+\subsection{Missing call rates by batch}\label{missing-call-rates-by-batch}}
+
+The missing call rate by batch is calculated to check that there are no batches with comparatively lower call rates. Usually a``batch''is a plate containing samples that were processed together through the genotyping chemistry. In this case all samples were run on diﬀerent plates (as controls for another dataset).
+
+\hypertarget{allele-frequency-differences-across-batches}{%
+\subsection{Allele frequency differences across batches}\label{allele-frequency-differences-across-batches}}
+
+In this step, the chi-square test for diﬀerences in allelic frequency is performed between each batch individually and a pool of all the other batches in the study. We then look at the mean χ2 statistic over all SNPs for each batch as a function of the ethnic composition of samples in a batch.
+Next we test for association between batches and population groups, using a χ2 contingency test. Then we look at the relationship between the ethnic composition of each batch and the previously calculated χ2 test of allelic frequency between each batch and a pool of the other batches. The point is to look for batches that diﬀer from others of similar ethnic composition, which might indicate a batch eﬀect due to genotyping artifact. In this experiment, there are only a few batches and wide variations in race among batches, so it is diﬃcult to interpret the results. In larger GWAS experiments, we generally observe a U-shaped curve of allelic frequency test statistic as a function of ethnic composition.
+The χ2 test is not suitable when the 2×2 tables for each SNP have very small values. For arrays in which many SNPs have very low minor allele frequency, Fisher's exact test is more appropriate.
+
+\hypertarget{sample-quality-control}{%
+\section{Sample quality control}\label{sample-quality-control}}
+
+\hypertarget{cryptic-relatedness}{%
+\subsection{Cryptic relatedness}\label{cryptic-relatedness}}
+
+\hypertarget{population-stratification}{%
+\subsection{Population stratification}\label{population-stratification}}
+
+Sometimes finding an association can be confounded by population stratification. This is because a condition may be more prevalent in one group of people than in a different group, resulting in a spurious association between the condition or trait being tested for and any genetic characteristics which vary between the two different groups of people.
+
+While it is good practice for studies to be based on as homogeneous a group of test subjects as possible, it has been noted in {[}Price, 2006{]} that even the mild variation in genetic characteristics among those who classify themselves as belonging to one ethnic group or another can be problematic enough to confound a study done over thousands of genetic markers.
+
+Hidden population stratification may be thought of as a non-zero Fst between unknown groupings of samples.
+
+\hypertarget{heterozygosity-and-missingness-outliers}{%
+\subsection{Heterozygosity and missingness outliers}\label{heterozygosity-and-missingness-outliers}}
+
+\hypertarget{differential-missingness}{%
+\subsection{Differential missingness}\label{differential-missingness}}
+
+\hypertarget{sex-chromosome-anomalies}{%
+\subsection{Sex chromosome anomalies}\label{sex-chromosome-anomalies}}
+
+\hypertarget{marker-quality-control}{%
+\section{Marker quality control}\label{marker-quality-control}}
+
+\hypertarget{genotyping-concordance}{%
+\subsection{Genotyping concordance}\label{genotyping-concordance}}
+
+In genotyping studies where DNA is directly assayed for positions of variance, concordance is a measure of the percentage of SNPs that are measured as identical. Samples from the same individual or identical twins theoretically have a concordance of 100\%, but due to assaying errors and somatic mutations, they are usually found in the range of 99\% to 99.95\%. Concordance can therefore be used as a method of assessing the accuracy of a genotyping assay platform.
+
+\hypertarget{mendelian-errors}{%
+\subsection{Mendelian errors}\label{mendelian-errors}}
+
+\hypertarget{genotype-call-rate}{%
+\subsection{Genotype call rate}\label{genotype-call-rate}}
+
+\hypertarget{minor-allele-frequency}{%
+\subsection{Minor allele frequency}\label{minor-allele-frequency}}
+
+\hypertarget{hardy-weinberg-equilibrium-outliers}{%
+\subsection{Hardy-Weinberg equilibrium outliers}\label{hardy-weinberg-equilibrium-outliers}}
+
+\hypertarget{additional-qc-for-regions-like-mhc}{%
+\subsection{Additional QC for regions like MHC}\label{additional-qc-for-regions-like-mhc}}
+
+\hypertarget{ambigious-nucleotides}{%
+\subsection{Ambigious nucleotides}\label{ambigious-nucleotides}}
+
+If the base and target data were generated using different genotyping chips and the chromosome strand (+/-) for either is unknown, then it is not possible to match ambiguous SNPs (i.e.~those with complementary alleles, either C/G or A/T) across the data sets, because it will be unknown whether the base and target data are referring to the same allele or not. While allele frequencies can be used to infer which alleles match, it is recommended to remove all ambiguous SNPs since the allele frequencies provided in base GWAS are often those from resources such as the 1000G project, and so aligning alleles according to their frequency could lead to systematic biases.
+
+\hypertarget{non-matching-nucleotides}{%
+\subsection{Non-matching nucleotides}\label{non-matching-nucleotides}}
+
+When there is a non-ambiguous mismatch in allele coding between the data sets, such as A/C in the base and G/T in the target data, then this can be resolved by `flipping' the alleles in the target data to their complementary alleles.
+
+\hypertarget{quality-control-prior-to-meta-analysis}{%
+\subsection{Quality control prior to meta-analysis}\label{quality-control-prior-to-meta-analysis}}
+
+Allele Frequency Plots (AF Plots): looking for errors in allele frequencies and strand orientations by visually inspecting a plot of the sample allele frequency of filtered SNPs against the frequency in the 1000 Genomes phase 1 version 3 European panel3 for example.
+P value vs Z-statistic Plots (PZ Plots): looking for the consistency between the reported P values and the P values implied by the coefficient estimates and standard errors in
+individual cohort.
+Quantile-Quantile Plots (QQ Plots): looking for the cohort-level QQ plots to look for evidence of unaccounted-for stratification.
+Predicted vs Reported Standard-Error Plots (PRS Plots): making sure that the standard errors reported in individuals cohorts are approximately consistent with the reported sample size, allele frequency, and phenotype distribution.
+Use of bivariate LD score regression to verify that the estimated genetic correlations between all large cohorts (defined as N \textgreater{} 10,000) are large and positive.
+
+\hypertarget{x-chromosome-quality-control}{%
+\section{X-chromosome quality control}\label{x-chromosome-quality-control}}
+
+The X chromosome plays an important role in complex human traits and diseases, especially those with sexually dimorphic characteristics. Special attention needs to be given to the analysis of X due to its unique inheritance pattern and X-inactivation. These analytical complications have resulted in exclusion or mishandling of the X chromosome in the majority of genome-wide association studies (GWAS) to date.
+
+\hypertarget{single-marker-regression}{%
+\section{Single marker regression}\label{single-marker-regression}}
+
+Summary statistics can be obtained using one of the following tests: Correlation/Trend Test, Armitage Trend Test, Exact Form of Armitage Test, (Pearson) Chi-Squared Test, (Pearson) Chi-Squared Test with Yates' Correction, Fisher's Exact Test, Odds Ratio with Confidence Limits, Analysis of Deviance (e.g.~different variance heterogeneity tests), F-Test, Logistic Regression, Linear Regression.
+
+The estimated marginal SNP effect is
+
+\[\LARGE \hat{\beta_j} = \left(X^T_jX_j\right)^{-1}X^T_jy\approx\frac{X^Ty}{N}\]
+
+and its variance
+
+\[\LARGE \sigma^2_\hat{\beta_j} = \sigma^2_r\left(X^T_jX_j\right)^{-1}\approx\frac{1}{N}\]
+
+where \(\sigma^2_r\) is the residual variance.
+
+\hypertarget{allelic-test}{%
+\subsection{Allelic test}\label{allelic-test}}
+
+\hypertarget{genotypic-test}{%
+\subsection{Genotypic test}\label{genotypic-test}}
+
+\hypertarget{additive-model}{%
+\subsection{Additive model}\label{additive-model}}
+
+Here, the genotype is coded in terms of the number of specific allele at a given locus.
+
+\hypertarget{dominant-model}{%
+\subsection{Dominant model}\label{dominant-model}}
+
+Here, the genotype with at least 1 copy of a specific allele at a given locus is coded as 1 and other genotypes as 0.
+
+\hypertarget{recessive-model}{%
+\subsection{Recessive model}\label{recessive-model}}
+
+Here, the genotype with at least 2 copies of a specific allele at a given locus is coded as 1 and other genotypes as 0.
+
+\hypertarget{categorical-phenotype}{%
+\subsection{Categorical phenotype}\label{categorical-phenotype}}
+
+\hypertarget{multi-allelic-gwas}{%
+\subsection{Multi-allelic GWAS}\label{multi-allelic-gwas}}
+
+\hypertarget{two-stage-approach}{%
+\section{Two-stage approach}\label{two-stage-approach}}
+
+\hypertarget{haplotype-gwas-design}{%
+\section{Haplotype GWAs design}\label{haplotype-gwas-design}}
+
+\hypertarget{joint-analysis-all-independent-markers}{%
+\section{Joint analysis (all independent markers)}\label{joint-analysis-all-independent-markers}}
+
+\hypertarget{genomic-control}{%
+\subsection{Genomic control}\label{genomic-control}}
+
+In an ordinary GWAS, genomic control (GC) is used to shrink any existing inflation of the test scores (-log10 \emph{p}-values). When testing for the single genetic effect in the GWAS, the null distribution of the test statistic for the nominal p-values is χ2 with 1 degree of freedom. Since most of the SNPs are not expected to be associated with the trait, the sample distribution of the chi-squares across the genome should resemble the null distribution. If there is inflation, the chi-squares are adjusted using λ, i.e.~the inflation factor estimated by comparing the distribution of the sample χ2's and χ2 distribution with 1 degree of freedom.
+
+\hypertarget{ux3bb1000}{%
+\subsubsection{λ1000}\label{ux3bb1000}}
+
+Since λ scales with sample size, some have found it informative to report λ1000. This is equivalent to a study of 1000 cases and 1000 controls and can be calculated by rescaling λ with 1 + (λ - 1) x (1/case + 1/control) x 500, where case and control refers to the number of cases and controls respectively.
+
+\hypertarget{stratified-ux3bbgc}{%
+\paragraph{Stratified λGC}\label{stratified-ux3bbgc}}
+
+Because the strength of λGC deviation depends on allele frequency and very large sample sizes become available, it could be useful to report λGC values based on certain MAF bins.
+
+\hypertarget{multimarker-single-gene-based-approaches}{%
+\section{Multimarker single gene-based approaches}\label{multimarker-single-gene-based-approaches}}
+
+\url{https://cran.r-project.org/web/packages/aSPU/aSPU.pdf}
+
+\hypertarget{vegas}{%
+\section{VEGAS}\label{vegas}}
+
+\hypertarget{multimarker-gene-set-approaches-a.k.a.-pathway-analysis}{%
+\section{Multimarker gene-set approaches (a.k.a. pathway analysis)}\label{multimarker-gene-set-approaches-a.k.a.-pathway-analysis}}
+
+\hypertarget{fastbat}{%
+\section{fastBAT}\label{fastbat}}
+
+\hypertarget{magma}{%
+\section{MAGMA}\label{magma}}
+
+\hypertarget{vega}{%
+\section{VEGA}\label{vega}}
+
+\hypertarget{extensions-to-binary-and-categorical-phenotypes}{%
+\section{Extensions to binary and categorical phenotypes}\label{extensions-to-binary-and-categorical-phenotypes}}
+
+\hypertarget{threshold-model}{%
+\subsection{Threshold model}\label{threshold-model}}
+
+\hypertarget{analysis-of-rare-variants}{%
+\section{Analysis of rare variants}\label{analysis-of-rare-variants}}
+
+Check Lee et al (2014) for a review
+
+Due to the low frequencies of rare variants, classical single marker tests commonly used in genome-wide association studies (GWAS) for studying common variants effects are not applicable.
+In view of the lack of power of single marker analysis of rare variants, methods investigating rare variation are typically region-based tests where one tests for the cumulative effects of the rare variants in a region. These region-based methods can be broadly classified into three classes: burden tests, non-burden tests and hybrid of the two. The key difference between burden and non-burden tests is how the cumulative effects of the rare variants are combined for association testing. For the commonly used simple burden tests, one summarizes the rare variants within a region as a single summary genetic burden variable, e.g.~the total number of rare variants in a region, and tests its association with a trait. Burden tests implicitly assume all the rare variants in the region under consideration are causal and are associated with the phenotype in the same direction and magnitude. Hence, they all share the limitation of substantial power loss when there are many non-causal genetic variants in a region and/or when there are both protective and harmful variants.
+Several region-based non-burden tests have been proposed by aggregating marginal test statistics (Neale et al., 2011; Basu and Pan, 2011; Lin and Tang, 2011). One such test is the sequence kernel association test (SKAT) (Wu et al., 2011), where one summarizes the rare variants in the region using a kernel function, and then test for association with the trait of interest using a variance component score test. SKAT is robust to the signs and magnitudes of the associations of rare variants with a trait. It is more powerful than the burden tests when the effects are in different directions or the majority of variants in a region are null, but is less powerful than burden tests when most variants in a region are causal and the effects are in the same direction. Several hybrids of the two methods have been proposed to improve test power and robustness (Lee et al., 2012; Derkach et al., 2013; Sun et al., 2013).
+
+\hypertarget{collapsing-methods-based-on-pooling-multiple-rare-variants-burden-or-adaptive-burden-tests}{%
+\subsection{Collapsing methods based on pooling multiple rare variants (burden or adaptive burden tests)}\label{collapsing-methods-based-on-pooling-multiple-rare-variants-burden-or-adaptive-burden-tests}}
+
+\hypertarget{sum-test}{%
+\subsubsection{Sum test}\label{sum-test}}
+
+The most powerful multi-marker test when there are no causal variants with effects in opposite directions and when there are few or no non-causal RVs. Otherwise, it suffers from substantial loss of power.
+
+\hypertarget{cohort-allelic-sums-test-cast}{%
+\subsubsection{Cohort Allelic Sums test (CAST)}\label{cohort-allelic-sums-test-cast}}
+
+\hypertarget{combined-multivariate-collapsing-cmc}{%
+\subsubsection{Combined Multivariate Collapsing (CMC)}\label{combined-multivariate-collapsing-cmc}}
+
+\hypertarget{weighted-sum-test-wss}{%
+\subsubsection{Weighted Sum test (WSS)}\label{weighted-sum-test-wss}}
+
+\hypertarget{kernel-based-adaptive-cluster-kbac}{%
+\subsubsection{Kernel Based Adaptive Cluster (KBAC)}\label{kernel-based-adaptive-cluster-kbac}}
+
+\hypertarget{replication-based-test-rbt}{%
+\subsubsection{Replication Based Test (RBT)}\label{replication-based-test-rbt}}
+
+\hypertarget{ariel-test}{%
+\subsubsection{ARIEL test}\label{ariel-test}}
+
+\hypertarget{the-erec-test}{%
+\subsubsection{The EREC test}\label{the-erec-test}}
+
+\hypertarget{methods-treating-rare-variant-effects-as-random-variance-component-tests}{%
+\subsection{Methods treating rare variant effects as random (Variance-component tests)}\label{methods-treating-rare-variant-effects-as-random-variance-component-tests}}
+
+\hypertarget{the-ssu-approach}{%
+\subsubsection{The SSU approach}\label{the-ssu-approach}}
+
+Has good power in the presence of opposite association directions and small fraction of causal RVs.
+
+\hypertarget{c-alpha-test}{%
+\subsubsection{C-alpha test}\label{c-alpha-test}}
+
+\hypertarget{skat}{%
+\subsubsection{SKAT}\label{skat}}
+
+Has good power in the presence of opposite association directions and non-causal RVs.
+It was recently suggested that using SKAT in the presence of RVs and common variants (CVs) may be less optimal because RVs are weighted to have much more importance than CVs (Ionita-Laza et al., 2013).
+
+\hypertarget{methods-based-on-model-selection}{%
+\subsection{Methods based on model selection}\label{methods-based-on-model-selection}}
+
+The model-selection approaches perform in the middle of random eﬀect and collapsing methods. One issue common to model-selection methods is that model selection approaches use dimension-reduction strategies to substantially reduce the number of parameters one would require to ﬁt these large number of RVs. Hence, any model we can construct will never be the true model that generated the data we observe. In other words, the set of models is clearly misspeciﬁed, and model selection is best seen as a way of approximating, rather than identifying, full reality (Burnham and Anderson (2002), pp.~20-23).
+
+\hypertarget{seq-asum}{%
+\subsubsection{Seq-aSum}\label{seq-asum}}
+
+\hypertarget{seq-asum-vs}{%
+\subsubsection{Seq-aSum-VS}\label{seq-asum-vs}}
+
+The Seq-aSum-VS approach classiﬁes RVs based on the direction of association (`+1' for positive association, `-1' for negative association and `0' for no association) and implements a sequential variable selection scheme to select the best model for association between the SNP-set and the disease. The only diﬀerence between the Seq-aSum approach and the Seq-aSum-VS approach is that the variable selection (`0' allocation for a variant) is not implemented in the former. The Seq-aSum-VS approach starts with putting all the RVs in the `+1' group and proceeds by moving each RV sequentially to the other two groups and ﬁnally chooses the allocation (`+1',`-1', or `0' ) with highest likelihood to the RV. The process of choosing the best model in Basu and Pan (2011)'s method can be compared to a stepwise regression, where one may not always ﬁnd the best model due to this selection scheme. This is especially true if a particular allocation results in a slightly higher likelihood than the other two allocations. In this case, choosing the allocation with highest likelihood for a SNP might not be optimal, rather it might be more eﬃcient to allow multiple allocations for a RV and construct a test that takes into account multiple plausible models for the disease-RV association. Moreover, the performance of the sequential search often depends on the ordering of the variants in this search mechanism. A model-averaging approach could potentially reduce the dependency on the ordering of the variants in this sequential search.
+
+\hypertarget{variable-threshold-test-vt}{%
+\subsubsection{Variable Threshold Test (VT)}\label{variable-threshold-test-vt}}
+
+\hypertarget{rarecover}{%
+\subsubsection{RARECOVER}\label{rarecover}}
+
+\hypertarget{selective-grouping-method}{%
+\subsubsection{Selective grouping method}\label{selective-grouping-method}}
+
+\hypertarget{step-up}{%
+\subsubsection{Step-Up}\label{step-up}}
+
+\hypertarget{combination-of-collapsing-and-random-effects-methods}{%
+\subsection{Combination of collapsing and random effects methods}\label{combination-of-collapsing-and-random-effects-methods}}
+
+According to Basu and Pan (2011), the model selection methods, especially Seq-aSum-VS approach, performed very well when there were both protective and deleterious causal RVs and very few non-causal RVs, but the performance of the Seq-aSum-VS approach was not very impressive in the presence of a moderate or large number of non-causal RVs. These and other ﬁndings (Basu and Pan, 2011) have led to combining the strengths of collapsing and random eﬀect methods.
+
+\hypertarget{skat-o}{%
+\subsubsection{SKAT-O}\label{skat-o}}
+
+\hypertarget{skat-c}{%
+\subsubsection{SKAT-C}\label{skat-c}}
+
+\hypertarget{fisher-method}{%
+\subsubsection{Fisher method}\label{fisher-method}}
+
+\hypertarget{mist}{%
+\subsubsection{MiST}\label{mist}}
+
+\hypertarget{ec-test}{%
+\subsection{EC test}\label{ec-test}}
+
+Exponentially combines score statistics. Powerful when a very small proportion of variants are causal.
+
+\hypertarget{family-based-tests}{%
+\subsection{Family-based tests}\label{family-based-tests}}
+
+\url{https://www.omicsonline.org/open-access/literature-reviews-on-methods-for-rare-variant-association-studies-2161-0436-1000133.pdf}
+
+\hypertarget{analysis-of-x-y-and-mitochondrial-chromosomes}{%
+\section{Analysis of X, Y and mitochondrial chromosomes}\label{analysis-of-x-y-and-mitochondrial-chromosomes}}
+
+\hypertarget{dosage-compensation}{%
+\subsection{Dosage compensation}\label{dosage-compensation}}
+
+\hypertarget{analysis-of-copy-number-variants}{%
+\section{Analysis of copy number variants}\label{analysis-of-copy-number-variants}}
+
+\hypertarget{common-variation}{%
+\subsection{Common variation}\label{common-variation}}
+
+\hypertarget{analysis-of-rare-variants-1}{%
+\subsection{Analysis of rare variants}\label{analysis-of-rare-variants-1}}
+
+\hypertarget{analysis-of-multi-ethnic-samples}{%
+\section{Analysis of multi-ethnic samples}\label{analysis-of-multi-ethnic-samples}}
+
+The overwhelming majority of participants in current genetic studies are of European ancestry. Due to differential genetic architectures, transferability of genetic findings between populations is generally limited. Diversifying the ancestry of participants is important for the discovery of novel disease etiology. Even in large-scale European studies, causal variants might be missed if they have low frequencies or are monomorphic in European populations.
+
+\hypertarget{analysis-of-indirect-genetic-effects}{%
+\section{Analysis of indirect genetic effects}\label{analysis-of-indirect-genetic-effects}}
+
+\hypertarget{exome-analysis}{%
+\section{Exome analysis}\label{exome-analysis}}
+
+\hypertarget{whole-genome-analysis}{%
+\section{Whole-genome analysis}\label{whole-genome-analysis}}
+
+\hypertarget{deep-whole-genome-sequencing}{%
+\subsection{Deep whole genome sequencing}\label{deep-whole-genome-sequencing}}
+
+Currently is applied to limited numbers of samples.
+Provides most complete ascertainment of variation.
+
+\hypertarget{low-coverage-whole-genome-sequencing}{%
+\subsection{Low coverage whole genome sequencing}\label{low-coverage-whole-genome-sequencing}}
+
+Can be applied to moderate numbers of samples
+Very complete ascertainment of shared variation
+Less complete ascertainment of rare variants
+
+\hypertarget{analysis-of-multiple-traits}{%
+\section{Analysis of multiple traits}\label{analysis-of-multiple-traits}}
+
+\hypertarget{mixed-model-association-analysis}{%
+\section{Mixed-model association analysis}\label{mixed-model-association-analysis}}
+
+GWAS using mixed models is appealing for several reasons:
+1) More powerful in very large GWAS
+2) Reduces the need for sample exclusion
+3) Amplifies effective sample sizes via conditioning on polygenic predictions from genome-wide SNPs.
+
+When using mixed models for association analysis, care must be taken to consider non-additive effects when retaining related individuals.
+
+\hypertarget{emmax}{%
+\subsection{EMMAX}\label{emmax}}
+
+\hypertarget{fast-lmm}{%
+\subsection{Fast-LMM}\label{fast-lmm}}
+
+\hypertarget{gemma}{%
+\subsection{GEMMA}\label{gemma}}
+
+\hypertarget{bolt-lmm}{%
+\subsection{BOLT-LMM}\label{bolt-lmm}}
+
+When BOLT-LMM was used on very large sample sizes, analyses revealed subtleties in the interpretation of LD score regression intercepts as a means of differentiating polygenicity from confounding; the attenuation ratio was proposed to be possibly a more suitable metric as sample sizes increase.
+
+\hypertarget{saige}{%
+\section{SAIGE}\label{saige}}
+
+\hypertarget{caveats}{%
+\subsection{Caveats}\label{caveats}}
+
+First, chi-squared-based tests (such as BOLT-LMM) can incur inflated type I error rates when used to analyze highly unbalanced case--control traits (case fractions \textless10\%). There are two solutions for this.
+1) Increase MAF.
+2) Use saddlepoint approximation (SAIGE software).
+
+Second, conditioning on genome-wide signal can produce loss of power under case--control ascertainment.
+
+\hypertarget{extension-to-unusual-phenotypes}{%
+\section{Extension to unusual phenotypes}\label{extension-to-unusual-phenotypes}}
+
+\hypertarget{multinomial-gwas}{%
+\subsection{Multinomial GWAS}\label{multinomial-gwas}}
+
+\hypertarget{ordinal-gwas}{%
+\subsection{Ordinal GWAS}\label{ordinal-gwas}}
+
+\hypertarget{survival-gwas}{%
+\subsection{Survival GWAS}\label{survival-gwas}}
+
+\hypertarget{penalized-regression-gwas}{%
+\section{Penalized regression GWAS}\label{penalized-regression-gwas}}
+
+\hypertarget{bayesian-gwas}{%
+\section{Bayesian GWAS}\label{bayesian-gwas}}
+
+\hypertarget{machine-learning-for-gwas}{%
+\section{Machine learning for GWAS}\label{machine-learning-for-gwas}}
+
+\hypertarget{expected-increase-in-gwas-loci-with-sample-size}{%
+\section{Expected increase in GWAS loci with sample size}\label{expected-increase-in-gwas-loci-with-sample-size}}
+
+\hypertarget{the-joint-effect-of-genotypes-over-all-traits}{%
+\section{The joint effect of genotypes over all traits}\label{the-joint-effect-of-genotypes-over-all-traits}}
+
+\hypertarget{adjustment-for-winners-curse}{%
+\section{Adjustment for winner's curse}\label{adjustment-for-winners-curse}}
+
+One type of adjustment for winer's curse (using empirical Bayes), depends on the assumption that SNP effects are drawn randomly from the following mixture distribution
+
+\hypertarget{adjustment-for-assortative-mating}{%
+\section{Adjustment for assortative mating}\label{adjustment-for-assortative-mating}}
+
+\hypertarget{adjustment-for-attenuation-bias}{%
+\section{Adjustment for attenuation bias}\label{adjustment-for-attenuation-bias}}
+
+LD score regression
+
+\hypertarget{enrichment-in-candidate-genes}{%
+\section{Enrichment in candidate genes}\label{enrichment-in-candidate-genes}}
+
+Atwell et al.~(2010) introduced a method for evaluating the enrichment of strong, but not necessarily genome-wide significant, signals for SNPs in candidate genes. An enrichment of such signals indicates that the analysis identifies true signals rather than random noise.
+
+\hypertarget{gwas-resources}{%
+\section{GWAS resources}\label{gwas-resources}}
+
+GWASATLAS - \url{https://atlas.ctglab.nl/}, a database of publicly available GWAS summary statistics. Each GWAS can be browsed with the manhattan plot, risk loci, MAGMA (i.e.~gene-based) results, SNP heritability and genetic correlations with other GWAS in the database. 600 GWAS were performed in this project based on UK Biobank release 2 data under application ID 16406. Full summary statistics can be downloaded from the original source following the provided links.
+
+GWAS Catalog - \url{https://www.ebi.ac.uk/gwas/docs}, the NHGRI-EBI Catalog of human genome-wide association studies.
+
+\hypertarget{reproducibility-of-gwas}{%
+\section{Reproducibility of GWAS}\label{reproducibility-of-gwas}}
+
+An open question is whether SNPs identified with genome-wide significance in earlier genome-wide association studies (GWAS) are replicated also in later GWAS conducted in biobanks. To address this question, O'Sullivan and Ioannidis examined a publicly available GWAS database and identified two, independent GWAS on the same phenotype (an earlier, ``discovery'' GWAS and a later, replication GWAS done in the UK biobank). The analysis evaluated 136,318,924 SNPs (of which 6,289 had reached p\textless5e-8 in the discovery GWAS) from 4,397,962 participants across nine phenotypes.
+
+Thus a trait was eligible if there were two independent GWAS available for it; one not using UKBB data (hereafter referred to as: discovery GWAS) and one using UKBB data (hereafter: replication GWAS). All discovery GWAS occurred before the replication GWAS. Further inclusion criteria was GWAS conducted in European subjects (or results available for exclusively Europeans) and GWAS with more than 50 genome-wide significant SNPs, so as to allow having a meaningful number of discoveries to be assessed for replication.
+
+To determine the reproducibility of SNPs in the discovery and replication GWAS they performed three broad steps: 1. Determined overlap of SNPs between discovery and replication GWAS (via rsID) and only included SNPs shared between two GWAS cohorts. They then identified the SNPs that reached genome-wide significance (defined consistently as P\textless5e-8, regardless of the threshold that the original authors might have used) in the discovery GWAS. 2. Aligned the effect allele between the discovery and replication GWAS, and consequently inverted the effect size if effect alleles did not originally match and 3. Classified SNPs as replicated if they reached genome-wide significance (p\textless5e-8) in both discovery and replication GWAS and had congruent effect directions in both GWAS (e.g.~odds ratio (OR) above 1 in both GWAS). All SNP effect sizes were converted to OR before reproducibility was determined via the Chinn formula (Stat. Med. 2000;19(22):3127--3131). Thus, SNP effect sizes that were originally produced from linear models for quantitative (continuous) traits were converted to OR.
+
+They calculated the replication rate for each included trait individually, for all traits collectively, and for binary (e.g.~coronary artery disease) and quantitative (e.g.~diastolic blood pressure) traits separately. To calculate replication rate for each individual trait they calculated a simple proportion (e.g.~{[}number of SNPs replicated{]} / {[}number of SNPs shared between discovery and replication GWAS{]}). To calculate the replication rate for all traits collectively they constructed a inverse-variance meta-analysis using fixed-effects. Further, they constructed similar inverse-variance meta-analysis to determine the replication rate for binary and quantitative traits; including only traits recorded in a binary fashion (yes/no) or on a continuous scale, respectively. To explore the replication rate across p-values and odd ratios, they also performed meta-analysis assessing the replication of SNPs with certain P-value and OR characteristics (from the discovery GWAS). They calculated the reproducibility of SNPs across the following discovery GWAS P-value categories: 5e-8 to 5e-9, 5e-9 to 5e-10, 5e-10 to 5e-11, and \textless5e-11. They calculated the reproducibility of SNPs across the following discovery GWAS OR categories: 1-1.05, 1.05-1.1, 1.1-1.15, 1.15-1.2, 1.2-1.3, 1.3-1.4, \textgreater1.4.
+
+To determine if a change in SNP effect size occurred between the earlier, discovery GWAS and the later, replication GWAS in the UKBB they constructed a single variate linear model, with the discovery OR as the predictor variable and replication OR as the outcome variable. Then, to help interpret the output from this model, they converted all OR values to above 1 (using the formula 1/OR if the original SNP OR was \textless1) Finally they combined SNPs across all traits for the model. From the regression model, they determined the regression coefficient for the discovery OR and interpreted this coefficient as the change in OR between GWAS (e.g.~a regression coefficient of 0.80 would imply that 20\% decrease in OR between discovery and replication GWAS). They only quantified the change in effect size of SNPs that were replicated, and also for all SNPs that had reached genome-wide significance in the discovery GWAS, regardless of whether they were replicated or not in the replication GWAS.
+
+They constructed a multivariate logistic regression model to examine the association of predictors (odds ratio, p-value, p-value category (as above), and trait characteristic (binary vs.~quantitative) on replication. They initially split data into test and train sets (split, randomly, by half). Using the train set, they constructed logistic regression model using the following predictors: odds ratio (numeric, not category), p-value category, and trait characteristic (binary vs.~quantitative). They then tested the constructed model on the test set.They report the model's predictive accuracy via the following metrics: sensitivity, specificity, and area under the curve (AUC) all with 95\% confidence intervals. They further assessed model fit via McFadden's R2.
+
+The overall replication rate was 85.0\% (95\% Confidence Interval (CI): 84.1\% to 85.8\%) and it was lower for binary than for quantitative phenotypes (58.1\% (95\%CI: 55.7\% to 60.4\%) versus 94.8\% (95\%CI: 94.2\% to 95.4\%) respectively). The replication rate varied across the included phenotypes from 52.7\% to 99.6\%. There was a 18.0\% decrease in SNP effect size for binary phenotypes, but a 12.0\% increase for quantitative phenotypes. Using the discovery SNP effect size, phenotype trait (binary or quantitative), and discovery p-value, they created a model that predicted SNP replication with area under the Receiver Operator Curve = 0.90 (95\% CI: 0.89 to 0.91) corresponding to a sensitivity and specificity of 70.9\% (95\% CI: 69.2\% to 84.5\%) and 93.6\% (95\% CI: 80.0\% to 95.6\%) respectively. They found a McFadden's R2 of 0.33.
+
+While non-replication may often reflect lack of power rather than genuine false-positive findings, these results provide insights about which discovered associations are likely to be seen again across subsequent GWAS. First, the SNP replication rate for quantitative phenotypes is very high; implying that quantitative GWAS in the UKBB had likely reached sufficient power to accurately detect all SNPs that were truly associated with a phenotype and that had been discovered by earlier GWAS efforts. The high replication rate observed for quantitative traits may also reflect the precision and relative ease in which quantitative traits can be measured. The converse of this, the likely measurement error and ultimate definition heterogeneity of binary phenotypes, may be one explanation for the relatively low rate of replication in binary phenotypes. For instance, binary phenotypes often represent complex clinical diseases that can have a) broad diagnostic criteria (e.g.~angina, and myocardial infarction are often captured under ``Coronary Artery Disease'') and b) are defined via an array of data sources, of varying quality. The UKBB, for instance, defines their phenotypes with ICD codes based on linked electronic health records (EHR). While this probably represents the best current method to define phenotypes in large cohorts, EHR data is ``messy'' and likely to include some ``administrative and clinical error''.
+
+\hypertarget{heritability}{%
+\chapter{Heritability}\label{heritability}}
+
+If you have an outcome that is the sum of effects from independent sources (like, say, genes and environment) the variance of the effects from each source add up to the variance of the outcome.
+
+Talking about variance implicitly means we're talking about a group or population of individuals.
+
+When we say ``the proportion of variation in a trait explained by'', by explained we refer to the variance that could be predicted based on genetic data if we had perfect information about the effects of all genetic variants.
+
+\hypertarget{realized-heritability}{%
+\section{Realized heritability}\label{realized-heritability}}
+
+\hypertarget{liability-vs-observed-scale}{%
+\section{Liability vs observed scale}\label{liability-vs-observed-scale}}
+
+\hypertarget{evolvability}{%
+\subsection{Evolvability}\label{evolvability}}
+
+\hypertarget{reliability}{%
+\subsection{Reliability}\label{reliability}}
+
+\hypertarget{twin-studies}{%
+\section{Twin studies}\label{twin-studies}}
+
+\hypertarget{haseman-elston-regression}{%
+\section{Haseman-Elston regression}\label{haseman-elston-regression}}
+
+\hypertarget{greml}{%
+\section{GREML}\label{greml}}
+
+\hypertarget{greml-in-family-data}{%
+\section{GREML in family data}\label{greml-in-family-data}}
+
+\hypertarget{greml-in-wgs-or-imputed-data}{%
+\section{GREML in WGS or imputed data}\label{greml-in-wgs-or-imputed-data}}
+
+\hypertarget{gremld}{%
+\subsection{GREMLd}\label{gremld}}
+
+\hypertarget{bivariate-greml}{%
+\subsection{Bivariate GREML}\label{bivariate-greml}}
+
+\hypertarget{ld-score-regression-ldsc}{%
+\section{LD-score regression (LDSC)}\label{ld-score-regression-ldsc}}
+
+Attenuation bias in LDSC analyses is essentially a measure of model misspecification: the basic assumption of LD score regression is that association chisquare statistics should (on average) increase linearly with the extent to which a SNP tags other potentially causal SNPs---i.e., the LD score of the SNP. If this model holds perfectly, then the regression has an intercept of 1 and an attenuation ratio of 0; on the other extreme, if LD scores are completely non-informative, the regression becomes flat with an intercept equal to the mean chi-square statistic and an attenuation ratio of 1. In general, most LDSC analyses exhibit modest nonzero attenuation ratios.
+
+Attenuation ratios vary among traits (as expected, given that different traits have genetic architectures with different levels of agreement to the LDSC model); however, for a given trait, attenuation ratios are largely consistent between analyses of N=337K unrelated individuals vs.~N=459K related individuals (also as expected, given that increasing sample size or relatedness does not affect the underlying genetic architecture of a trait). We also observe that attenuation ratios under the original LDSC model are generally larger than attenuation ratios under the baselineLD model, consistent with improved model fit upon augmenting the LDSC model with information about genomic annotations.
+
+\hypertarget{ldak}{%
+\section{LDAK}\label{ldak}}
+
+\hypertarget{sumher}{%
+\subsection{SumHer}\label{sumher}}
+
+\hypertarget{heritability-by-chromosome-maf-bin-or-functional-category}{%
+\section{Heritability by chromosome, MAF bin, or functional category}\label{heritability-by-chromosome-maf-bin-or-functional-category}}
+
+\hypertarget{correction-of-heritability-in-presence-of-environmental-effects}{%
+\section{Correction of heritability in presence of environmental effects}\label{correction-of-heritability-in-presence-of-environmental-effects}}
+
+\hypertarget{genomic-prediction}{%
+\chapter{Genomic prediction}\label{genomic-prediction}}
+
+\hypertarget{unweighted-sum-of-risk-alleles}{%
+\section{Unweighted sum of risk alleles}\label{unweighted-sum-of-risk-alleles}}
+
+\hypertarget{polygenic-risk-scores}{%
+\section{Polygenic risk scores}\label{polygenic-risk-scores}}
+
+Among a range of applications, PRS are exploited to assess shared aetiology between phenotypes, to evaluate the predictive power of genetic data for use in clinical settings, and as part of experimental studies in which, for example, experiments are performed on individuals, or their biological samples (eg. tissues, cells), at the tails of the PRS distribution and contrasted.
+As well as identifying shared aetiology among traits, PRS have been used to test for genome-wide GxE and GxG interactions, to perform Mendelian Randomization studies to infer causal relationships, and for patient stratification and sub-phenotyping.
+
+If the population-level effects of the SNPs were estimated from the GWAS without error, then the PRS could predict the phenotype of individuals in the target data with variance explained equal to the ``chip-heritability'' (h2) of the trait (i.e.~PRS provides an upper bound estimate of heritability). However, due to error in the effect size estimates and inevitable differences in the base and target samples, the predictive power of PRS are typically substantially lower than h2 but tend towards h2 as GWAS sample sizes increase.
+
+Important challenges in the construction of PRS are the selection of SNPs for inclusion in the score and what, if any, shrinkage to apply to the GWAS effect size estimates.
+
+\hypertarget{gene-based-polygenic-score-polaris}{%
+\section{Gene-based polygenic score (POLARIS)}\label{gene-based-polygenic-score-polaris}}
+
+\hypertarget{pathway-based-polygenic-risk-score}{%
+\section{Pathway-based polygenic risk score}\label{pathway-based-polygenic-risk-score}}
+
+\hypertarget{ld-adjusted-prs}{%
+\section{LD adjusted PRS}\label{ld-adjusted-prs}}
+
+\hypertarget{ldpred-with-functional-annotation}{%
+\subsection{LDpred with functional annotation}\label{ldpred-with-functional-annotation}}
+
+\hypertarget{annopred}{%
+\section{Annopred}\label{annopred}}
+
+\hypertarget{pleiopred}{%
+\section{Pleiopred}\label{pleiopred}}
+
+\hypertarget{prediction-including-gxe}{%
+\section{Prediction including GxE}\label{prediction-including-gxe}}
+
+\hypertarget{blup}{%
+\section{BLUP}\label{blup}}
+
+\hypertarget{gblup}{%
+\subsection{GBLUP}\label{gblup}}
+
+\hypertarget{sblup}{%
+\subsection{sBLUP}\label{sblup}}
+
+\hypertarget{bayesian-zoo}{%
+\section{Bayesian Zoo}\label{bayesian-zoo}}
+
+\hypertarget{b}{%
+\subsection{B}\label{b}}
+
+\hypertarget{c}{%
+\subsection{C}\label{c}}
+
+\hypertarget{s}{%
+\subsection{S}\label{s}}
+
+\hypertarget{n}{%
+\subsection{N}\label{n}}
+
+\hypertarget{ns}{%
+\subsection{NS}\label{ns}}
+
+\hypertarget{r}{%
+\subsection{R}\label{r}}
+
+\hypertarget{reproducing-kernel-hilbert-space}{%
+\section{Reproducing kernel Hilbert space}\label{reproducing-kernel-hilbert-space}}
+
+\hypertarget{machine-learning-methods}{%
+\section{Machine learning methods}\label{machine-learning-methods}}
+
+\hypertarget{pleiotropy}{%
+\chapter{Pleiotropy}\label{pleiotropy}}
+
+\hypertarget{fishers-geometric-model}{%
+\section{Fisher's geometric model}\label{fishers-geometric-model}}
+
+\hypertarget{direct}{%
+\section{Direct}\label{direct}}
+
+\hypertarget{indirect}{%
+\section{Indirect}\label{indirect}}
+
+\hypertarget{gene-set-analysis}{%
+\chapter{Gene-set analysis}\label{gene-set-analysis}}
+
+\hypertarget{gene-set-conditional-analysis}{%
+\section{Gene-set conditional analysis}\label{gene-set-conditional-analysis}}
+
+\hypertarget{gene-set-interaction-analysis}{%
+\section{Gene-set interaction analysis}\label{gene-set-interaction-analysis}}
+
+\hypertarget{functional-annotation}{%
+\chapter{Functional annotation}\label{functional-annotation}}
+
+\hypertarget{causal-inference}{%
+\chapter{Causal inference}\label{causal-inference}}
+
+\hypertarget{gene-knockout}{%
+\section{Gene-knockout}\label{gene-knockout}}
+
+\hypertarget{conditioning}{%
+\section{Conditioning}\label{conditioning}}
+
+Adding additional SNPs as covariates
+
+\hypertarget{cojo}{%
+\section{COJO}\label{cojo}}
+
+\hypertarget{mtcojo}{%
+\section{mtCOJO}\label{mtcojo}}
+
+\hypertarget{finemapping}{%
+\section{Finemapping}\label{finemapping}}
+
+\hypertarget{mendelian-randomization}{%
+\section{Mendelian Randomization}\label{mendelian-randomization}}
+
+Mendelian Randomization relies on three assumptions about the instruments:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  They must be sufficiently strongly associated with the exposure.
+\item
+  They should not be associated with any confounder of the exposure-outcome relationship.
+\item
+  They should be associated with the outcome only through the exposure.
+\end{enumerate}
+
+Violation of any ofthese assumptions often through pleiotropy would lead to biased estimates of the causal effect and potential false positives. The second assumption is the most difficult to verify because confounding factors are often unknown, whereas the last assumption can only be partially verified at best if SNPs, exposures and outcome data are available from the same (large) sample, a condition not fulfilled for two-sample MR.
+
+These assumptions imply that the genetic variants (IVs) have a causal effect on the outcome only via the risk factor. While the first assumption can be easily verified, the second one is impossible to confirm as not all confounders are known, and the third requires instrument-exposure-outcome data measured in the same sample and is often violated by pleiotropy. One (ideal) way to guard against the violation of the third assumption is to use as many IVs possible, as the pleiotropic effect of each marker will cancel each other out under the INSIDE assumption (instrument strength independent of the strength of the pleiotropy).
+
+Cochran's Q test can be used in order to test for the presence of pleiotropy.
+
+\hypertarget{two-sample-mr}{%
+\subsection{Two-sample MR}\label{two-sample-mr}}
+
+\hypertarget{mr-egger}{%
+\subsection{MR-Egger}\label{mr-egger}}
+
+\hypertarget{bidirectional-mr}{%
+\subsection{Bidirectional MR}\label{bidirectional-mr}}
+
+\hypertarget{weighted-median}{%
+\subsection{Weighted median}\label{weighted-median}}
+
+\hypertarget{mode-based-estimator}{%
+\subsection{Mode based estimator}\label{mode-based-estimator}}
+
+\hypertarget{summary-data-based-mr-smr}{%
+\subsection{Summary data-based MR (SMR)}\label{summary-data-based-mr-smr}}
+
+SMR can be used to test whether the effects of genetic variants on a phenotype are mediated by gene expression. The method is based on a single genetic variant.
+
+\hypertarget{generalised-summary-data-based-mr-gsmr-and-heidi}{%
+\subsection{Generalised summary-data-based MR (GSMR) and HEIDI}\label{generalised-summary-data-based-mr-gsmr-and-heidi}}
+
+GSMR was developed to overcome the issue of unaccounted pleiotropy in SMR method. This method performs a MR analysis with multiple independent SNPs as instrumental variables.
+
+\hypertarget{joint-analysis-of-gwas-and-eqtl-data}{%
+\subsection{Joint analysis of GWAS and eQTL data}\label{joint-analysis-of-gwas-and-eqtl-data}}
+
+It is common in GWAS studies to identify variants that are located in genomic regions thought to be involved in regulation of gene expression. In order to improve power from GWAS studies, a method involving joint analysis of GWAS and eQTL data was proposed. This approach superceeds previous TWAS methods by allowing to account for pleiotropy in a Mendelian Randomization framework.
+
+Two things are needed in order to carry out this test: summary-level data and pair-wise SNP LD information.
+
+The method was developed after realisation that many pleiotropic effects are mediated through the expression levels of neighbouring genes; hence including other genes as exposures should reduce MR assumption violation, while improving power. Furthermore, such approach might be able to better distinguish the causal effects of genes with correlated expression levels.
+
+As any other method, this approach suffers from several limitations:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\item
+  The putative causal associations reported in this study are not definitive. They provide a prioritized list of candidate genes for future follow-up studies and also shed light on possible biological mechanisms of complex traits.
+\item
+  Currently, eQTL data is available for 15K egenes, which substantially decreases power to detect enrichment of prioritized gene-set in relevant pathways and regulatory networks.
+\item
+  Violations of MR assumptions. In particular, horizontal pleiotropy and indirect effects of the instruments on the exposures can substantially bias causal effect estimates.
+\end{enumerate}
+
+Because the study requires summary statistics and LD pattern, it is possible to extend the method to include other omics information.
+
+\hypertarget{tissue-specific-mr}{%
+\subsection{Tissue-specific MR}\label{tissue-specific-mr}}
+
+Since many traits manifest themselves only in certain tissues, it is important to integrate data from the tissue of interest for the studied phenotype when trying to interpret GWAS results using gene expression as an intermediate phenotype.
+
+\hypertarget{latent-causal-variable-model}{%
+\subsection{Latent causal variable model}\label{latent-causal-variable-model}}
+
+Inference of causality across traits.
+
+\hypertarget{combining-multiple-datasets}{%
+\chapter{Combining multiple datasets}\label{combining-multiple-datasets}}
+
+\hypertarget{colocalization}{%
+\section{Colocalization}\label{colocalization}}
+
+\hypertarget{meta-analysis}{%
+\section{Meta-analysis}\label{meta-analysis}}
+
+\hypertarget{meta-analysis-of-gene-level-associations-common}{%
+\subsection{Meta-analysis of gene-level associations (common)?}\label{meta-analysis-of-gene-level-associations-common}}
+
+\hypertarget{meta-analysis-of-rare-variants}{%
+\subsection{Meta-analysis of rare variants}\label{meta-analysis-of-rare-variants}}
+
+RAREMETAL and RAREMETALWORKER
+
+\hypertarget{reverse-meta-analysis}{%
+\section{Reverse meta-analysis}\label{reverse-meta-analysis}}
+
+\hypertarget{mega-analysis}{%
+\section{Mega-analysis}\label{mega-analysis}}
+
+\hypertarget{convert-z-statistic-to-estimated-snp-effect}{%
+\section{Convert Z-statistic to estimated SNP effect}\label{convert-z-statistic-to-estimated-snp-effect}}
+
+After sample-size-weighted meta-analysis, Z-statistics can be transformed into unstandardized regression coefficients using the following equation:
+
+\[\LARGE \hat{\beta_j} = Z_j\frac{\hat{\sigma_Y}}{\sqrt{2N_j MAF_j(1-MAF_j)}}\]
+for SNP \emph{j} with minor allele frequency MAF\emph{j}, sample size N\emph{j}, Z-statistic Z\emph{j}𝑍𝑗, and standard deviation of the phenotype \(\hat{\sigma_Y}\)𝑌.
+
+\hypertarget{gene-environment-interaction}{%
+\chapter{Gene-environment interaction}\label{gene-environment-interaction}}
+
+It is generally accepted that complex diseases are caused by an interplay of genetic and environmental factors, creating a challenge for understanding the disease mechanisms. Understanding the interplay between genes and environmental factors is important, as genes do not operate in isolation but rather in complex networks and pathways influenced by environmental factors.
+Identification of gene-environment interactions has important implications for understanding underlying disease etiology and developing disease prevention and intervention strategies.
+In addition to providing insights into disease etiology, exploiting gene-environment (G-E) interaction can help discover novel susceptibility loci for complex diseases, where genetic effects are modified and masked by the effects of environmental factors.
+From a public health perspective, G-E interaction is useful because findings based on interactions can help develop strategies for targeted intervention; conducting an intervention focusing on a subset of the population identified by G-E interactions can provide efficiency in disease prevention.
+There are several challenges of G-E interaction analysis that include replication issues. While more powerful statistical methods for detecting interactions are helpful, ultimately studies with larger sample sizes are needed to identify interactions through consortium-based studies to achieve adequate power for G-E analysis.
+
+This chapter aims to describe methods that extend single marker regression by taking into consideration the effect of gene-environment interaction.
+
+\hypertarget{single-step-methods}{%
+\section{Single step methods}\label{single-step-methods}}
+
+There are several disease risk models for the joint effects of G and E, and interpretations of G-E interactions depend on the underlying disease risk models.
+
+\hypertarget{case-control}{%
+\subsection{Case-control}\label{case-control}}
+
+\hypertarget{prospective-likelihood-based-approach}{%
+\subsection{Prospective likelihood-based approach}\label{prospective-likelihood-based-approach}}
+
+\hypertarget{retrospective-likelihood-approach}{%
+\subsection{Retrospective likelihood approach}\label{retrospective-likelihood-approach}}
+
+To address the limitations of case-only approaches that can only test for multiplicative interactions (not for the main effects of G and E), Umbach and Weinberg (1997) generalized the case-only design idea to use a log-linear model based on case-control data. They showed the maximum-likelihood estimates for all parameters of a logistic regression model can be obtained using a log-linear model. Along the same line, Chatterjee and Carroll developed a general method using a retrospective likelihood that exploits the G-E independence assumption to test for multiplicative interaction, but can use both cases and controls to estimate all of the parameters in a general logistic regression model. Basically, this method employs a retrospective likelihood that explicitly models the conditional probability of G given E mediated by an association parameter θ that can be constrained to be zero when the G-E independence assumption holds. This likelihood can be used for testing both multiplicative and additive interactions; recently, Han et al.~developed a likelihood ratio test that exploits the G-E independence assumption using a retrospective likelihood. Their numerical investigation of power suggests that the incorporation of the independence assumption can enhance the efficiency of the test for additive interaction by 2- to 2.5-fold.
+
+\hypertarget{multiplicative-scale}{%
+\subsubsection{Multiplicative scale}\label{multiplicative-scale}}
+
+A multiplicative model incorporating GxE effects is one of the most commonly used models via logistic regression: logit(Pr(\emph{D} = 1\textbar{}\emph{G},\emph{E})) = \emph{βo} + \emph{βgG} + \emph{βeE} + \emph{βgeGE}, where \emph{G} is a genotype of a SNP, \emph{E} is an environmental risk factor, and \emph{D} is the disease status.
+
+Assuming binary factors for both G and E, a 2 × 2 table for a disease risk for each combination of G and E values can be constructed based on this model (Table X).
+
+\hypertarget{additive-scale}{%
+\subsubsection{Additive scale}\label{additive-scale}}
+
+An additive model is shown as logit(Pr(\emph{D} = 1\textbar{}\emph{G},\emph{E})) = \emph{bo} + \emph{bgG} + \emph{beE} + \emph{bgeGE}, where the effects of G and E are additive on the disease risk scale, but not on the logit scale.
+
+\hypertarget{case-only}{%
+\subsection{Case-only}\label{case-only}}
+
+This design depends on an assumption of G--E independence in the underlying population. Under the assumption of G-E independence in the underlying population (i.e., controls), a multiplicative interaction test statistic becomes equivalent to testing the association between G and E among cases. One major limitation of the case-only design is that while the case-only method has improved power over the traditional methods when G and E are independent in the underlying population, this method has an increased type I error if the independence assumption is violated. In addition, the regression parameters for the main effects of G and E cannot be estimated using this method because the case-only test is only for evaluating a multiplicative interaction.
+
+\hypertarget{empirical-bayes-and-bayesian-model-averaging}{%
+\subsection{Empirical Bayes and Bayesian Model Averaging}\label{empirical-bayes-and-bayesian-model-averaging}}
+
+\hypertarget{other-bayesian-approaches}{%
+\subsection{Other Bayesian approaches}\label{other-bayesian-approaches}}
+
+\hypertarget{interactions-using-haplotypes}{%
+\subsubsection{Interactions using haplotypes}\label{interactions-using-haplotypes}}
+
+First, haplotypes are biologically relevant. There is strong evidence that several mutations within a gene may interact ( cis-interaction) to cause a disease. Second, the power of single-marker-based methods in association studies depends on LD between the tested marker and the disease susceptibility locus. LD information contained in flanking markers is generally not incorporated, which can result in a reduction in power. In addition, haplotype-based methods can be more powerful when multiple disease susceptibility alleles occur within a single gene.
+
+Lake et al.~{[}21{]} proposed a likelihood-based method in the generalized linear model framework, which has been commonly employed in haplotype-based association studies, because it is publicly available and easy to implement with its R package. This approach, however, is limited by ignoring the interacting effects between haplotype blocks. Subsequently, several methods have been developed to study haplotype-related interactions, but these methods do not consider all potential haplotypes and interactions simultaneously {[}22--27{]} . Recently, Guo and Lin {[}15{]} proposed a generalized linear model with regularization to detect interacting haplotype effects. However, their method applies an omnibus test and consequently does not provide inference on the effects of specific haplotypes and their interactions. Another concern for haplotype-based methods is that large numbers of haplotypes inferred from genotype data {[}28--30{]} often lead to high degrees of freedom for corresponding statistical tests and thus reduce power {[}14, 15, 31--34{]}. If interacting effects are considered, such problems become severer. Unfortunately, few statistical methods have been developed to tackle these farreaching problems in the study of haplotype interactions. One challenge in haplotype-based association studies is that for haplotypes comprising multiple markers, there might be many rare haplotypes. Because of their low frequencies, the parameter estimates related to rare haplotypes will have large variances, leading to unstable models. Schaid {[}6{]} described several approaches to handle rare haplotypes. One approach is to combine all rare haplotypes into one group or rare haplotypes with common ancestral haplotypes, and another is to exclude them from the model, which is equivalent to including them in the baseline group. However, both approaches yield results that may be difficult to interpret. In addition, it has been argued that rare haplotypes may account for a substantial fraction of the multifactorial inheritance of common diseases {[}35--39{]}, thus the aforementioned approaches may miss the rare haplotypes having true effects. Another approach is to include the effects of each rare haplotype in the model but shrink their effects towards the common mean or towards the effect of a similar haplotype {[}6, 15, 40{]}. Recently, Guo and Lin {[}15{]} adopted a lasso penalty in their generalized linear model to allow assessment of the effects of rare haplotypes by decreasing the coefficients of unassociated haplotypes to zero so that the associated ones, especially those that are rare, can be estimated.
+
+The estimate of haplotype dosage is the estimate of the number of copies of a specific haplotype for a subject. For the haplotypes that can be unambiguously resolved based on the observed genotype data, the values of haplotype dosage of a haplotype for a subject can be 0, 1, or 2. But for the haplotypes that cannot be unambiguously resolved, the values of haplotype dosage of a haplotype for a subject would be non-integer, ranging from zero to two, reflecting the possibility that haplotypes are based on the subject's genotypes. For each subject, the sum of haplotype dosage across all haplotypes is equal to two.
+
+\hypertarget{gxe-in-the-context-of-family-studies}{%
+\section{GxE in the context of family studies}\label{gxe-in-the-context-of-family-studies}}
+
+\hypertarget{multi-stage-methods}{%
+\section{Multi stage methods}\label{multi-stage-methods}}
+
+Several approaches exist. In general, these methods suggest selecting a subset of SNPs based on the marginal effects of SNPs or G-E correlation tests in the first stage and conducting standard G-E interaction tests in the second stage, where the independence between the test statistics used in the two stages is required to provide a valid screening procedure.
+
+For calculating power for G-E interactions, the powerGWASinteraction R package is available (\url{https://cran.r-project.org/web/packages/powerGWASinteraction/index.html}), which includes a power calculation tool for four two-stage screening and testing procedures.
+
+\hypertarget{joint-tests}{%
+\section{Joint tests}\label{joint-tests}}
+
+\hypertarget{gene-based}{%
+\subsection{Gene-based}\label{gene-based}}
+
+\hypertarget{set-based-interaction-tests}{%
+\section{Set-based interaction tests}\label{set-based-interaction-tests}}
+
+There are multiple reasons for using set-based gene-environment interaction tests.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Multiple comparison adjustments for a large number of markers across the genome could result in power loss.
+\item
+  Closely located SNPs are correlated because of linkage disequilibrium. Multiple tests for GxE in these single-marker-based GxE models are even more dependent, as interaction terms in these models share the same environmental variable. Dependence among multiple tests can result in incorrect Type 1 error rates and causes bias in standard multiple comparison adjustments and this bias is often difficult to correct.
+\item
+  The single-marker GxE test does not interrogate the joint effects of multiple SNPs that have similar biological functions. When the main effects of multiple SNPs in a set are associated with a disease/trait, the classical single marker regression interaction test can be biased.
+\end{enumerate}
+
+Lin et al.~(2013) developed a method to analyse GxE for a set of markers using generalized linear mixed models. The method tests for SNP-set by environment interactions using a variance component test, and because a set of variants will likely be correlated, the main SNP effect estimates under the null hypothesis are obtained using ridge regression.
+Their software is called GESAT. Here, they model GxE effects as random, as opposed to the classical approach of treating \emph{βj}'s as fixed effects followed by a test with \emph{p} degrees of freedom. The latter approach can suffer from power loss when \emph{p} is moderate/large, and numerical difficulties when some genetic markers in the set are in high LD.
+The model allows to adjust for the main effects of all SNPs while simultaneously testing for the interactions between the SNPs in the region and environmental variable. For unbalanced designs when a binary environmental exposure has a low frequency in one category, GESAT is most advantageous over single marker regression GxE test. Such unbalanced designs can occur due to case--control sampling and the strong association of an environmental factor with disease. When the effect size is modest, GESAT performs better that single marker regression GxE test, but when the effect size is strong, the opposite is true.
+Their simulations suggest that the power of GESAT seems fairly robust to the dependence between G and E.
+
+The same approach can be applied to investigating various other biological problems. For example, we can test for the interactions between gene expressions in a pathway or network and an environmental variable by simply replacing G by gene expressions in a gene-set.
+
+Existing methods for assessing common variants by environment interactions such as Gene-Environment Set Association Test (GESAT) (Lin et al., 2013) have several limitations when applied for rare variants. GESAT estimates the main effects of the common variants by applying a L2 penalty on the genotypes scaled to unit variance; this assumes that the main effects of the scaled genotypes are comparable in magnitudes, which may not hold in the case of rare variants. GESAT also assumes that the regression coefficients of the rare variants by environment interactions are independent of each other, and suffers from power loss when most rare variants in a gene interact with the environmental factor and the interaction effects have the same direction.
+
+Similar idea from GESAT was later extended and applied to analyse rare variants. GESAT have several limitations when applied for rare variants. GESAT estimates the main effects of the common variants by applying a L2 penalty on the genotypes scaled to unit variance; this assumes that the main effects of the scaled genotypes are comparable in magnitudes, which may not hold in the case of rare variants. GESAT also assumes that the regression coefficients of the rare variants by environment interactions are independent of each other, and suffers from power loss when most rare variants in a gene interact with the environmental factor and the interaction effects have the same direction. The new proposed test iSKAT is optimal in a class of variance component tests and is powerful and robust to the proportion of variants in a gene that interact with environment and the signs of the effects. This test properly controls for the main effects of the rare variants using weighted ridge regression while adjusting for covariates.
+
+A naive approach to assess rare variants by environment interactions is to extend the burden test by fitting a model with both the summary genetic burden variable, environment, and their interaction, and performing a one degree of freedom test for the interaction. However, when there are multiple causal variants with their main effects having different magnitudes and/or signs, such a burden rare variant by environment test fails, and may lead to inflated Type 1 error rates. This is because adjusting for the main effects of the multiple causal variants using a single summary genetic burden variable is inappropriate. Likewise, a naive approach to assess rare variants by environment interactions using SKAT by including the main effects of rare variants as part of covariates and applying SKAT to the interaction terms is problematic. This is because SKAT only allows adjustment of a small number of covariates and cannot handle the presence of a large number of rare variants in a region. Furthermore since the rare variants are observed in low frequency, a model with all the rare variants as main effects will be highly unstable and may not even converge.
+
+Both GESAT and iSKAT are able to incorporate multiple environmental variables.
+
+No gene-based GxE test exists for the analysis of the sex chromosomes as of writing this text.
+
+The rareGE R package (\url{https://www.hsph.harvard.edu/han-chen/software/}) provides various functions for detecting G-E interaction as well as for testing the joint effect of a gene and G-E interaction under a set-based framework.
+The SIMreg R package (\url{http://www4.stat.ncsu.edu/~jytzeng/software_simreg.php}) offers functions for testing a set-based G-E interaction by using genetic similarity to aggregate information across SNPs, and incorporating adaptive weights depending on allele frequencies to accommodate rare and common variants.
+
+\url{https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.12428}
+
+\url{https://academic.oup.com/biostatistics/article-abstract/18/1/119/2555344?redirectedFrom=fulltext}
+
+\hypertarget{combining-multiple-environmental-factors}{%
+\subsection{Combining multiple environmental factors}\label{combining-multiple-environmental-factors}}
+
+\hypertarget{multi-trait-multi-gxe-tests}{%
+\subsection{Multi-trait multi-GxE tests}\label{multi-trait-multi-gxe-tests}}
+
+\hypertarget{variance-heterogeneity}{%
+\subsection{Variance heterogeneity}\label{variance-heterogeneity}}
+
+All methods described in this chapter so far conduct a location (mean) based test. In other words, the main concern is whether there is a difference in the mean effect between genotypes. Testing for scale (variance) heterogeneity could be used to identify novel variants involved in the control of the phenotype possibly through interactions with other genetic variants or environmental factors. This is advantageous when the interacting variable was not collected and the interaction term may not be directly modeled or when a phenotype was transformed. Therefore, the analysis of variances of the trait is based on SNP information only. The presence of interaction between a genotype and certain factor is expected to alter the trait's variance in the group of subjects carrying such genotype.
+
+Yang et al.~(2012) noticed that the mapping of variance-controlling loci is prone to inflated test statistics when the minor allele frequency (MAF) is small.
+
+One way of interpreting an increase in variability is as a decrease in stability. Waddington (1942) described the concept of canalization, whereby natural selection favors the relative constancy of some attributes, for example, well-formed organs and limbs, and thereby leads to the evolution of heritable architectures that buffer the impact of environmental or background genetic variation that would otherwise cause development to go astray. These architectures create virtual ``canals'' down which developmental programs flow. For a canalized phenotype, which modern usage expands to include nondevelopmental traits, the ``zone of canalization'' is the range of underlying liability over which potentially disruptive variation may be absorbed without serious consequence to the expressed trait value (Lynch and Walsh 1998). A well-studied example of a stabilizing architecture is that provided by heat-shock protein 90 (Hsp90), which buffers genetic and stochastic variation in the development of plants and flies (Rutherford and Lindquist 1998; Queitsch et al.~2002; Sangster et al.~2008).
+
+But in absorbing variation, such stabilizing architectures also hide it from view, and a sensitizing change in the stabilizer that shifts liability outside the zone of canalization can have a dramatic effect on the phenotype. Such shifts release the combined effects of previously ``cryptic'' genetic variation: now decanalized, the phenotype is more sensitive to internal (including genetic) and external environment, and as a result varies more greatly between individuals (Dworkin 2005; Hornstein and Shomron 2006). In this vein, decanalization has been proposed to explain why the genetic architectures of some diseases in human populations seem more amenable than others to genetic dissection through genome-wide association (Gibson and Goldstein 2007). Specifically, whereas some disease phenotypes in homogeneous populations may be heavily canalized and thereby harder to dissect, others may have been decanalized by modern living conditions (e.g., inflammatory diseases) or modern admixture, while yet others are simply too recent in evolutionary history for buffering networks to have evolved (e.g., response to HIV). Increased variability can also be adaptive. In natural populations disruptive selection favors diversity, with increased ``capacitance'' (Rice 2008) or ``bet-hedging'' (Beaumont et al.~2009) spreading risk over a variable fitness landscape. Feinberg and Irizarry (2010) recently proposed a heritable and selectable mechanism for this based on stochastic epigenetic variation. In controlled populations, variability can be increased through directional selection. For example, in a Drosophila selection experiment Clayton and Robertson (1957) reported increased bristle number variance, which is consistent with the idea that genotypes associated with higher environmental variance have a greater chance of being selected under directional selection (Hill and Zhang 2004). Moreover, genetic differences have been observed for phenotypic variability in body weight for chickens (Rowe et al.~2006) and snails (Ros et al.~2004) and litter size in rabbits (Ibanez-Escriche et al.~2008), sheep (Sancristobal-Gaudy et al.~1998), and pigs (Sorensen and Waagepetersen 2003). In natural populations with stabilizing selection we should expect to find alleles minimizing variance for fitness traits (Lande 1980; Houle 1992), whereas directional selection during domestication will favor alleles that increase variance. One may therefore expect to find vQTL in experimental crosses between wild and domestic animals (see Andersson 2001). Nonetheless, genetic buffering that leads to phenotypic robustness need not require an evolutionary explanation to be observed, nor to be useful in medicine and agriculture. Plainly, detecting vQTL and inferring how they arose are separate questions; here we concentrate on the first.
+
+Given that a genotypic effect at one locus may be affected by the genotype at an adjunct locus or some environmental factor, the genotypic effect at that locus is a composite of multiple distributions with different means, resulting in an inflated variance for that genotype (Struchalin et al., 2010; Deng and Par´e, 2011). In addition, it has been shown that vQTL can be induced by linkage disequilibrium with nearby functional locus with mean effects only (Cao et al., 2014).
+
+\hypertarget{levenes-test}{%
+\subsection{Levene's test}\label{levenes-test}}
+
+Levene's test (Levene, 1960) is known for its simplicity and robustness to modeling assumptions, and it is perhaps the most popular method for evaluating variance heterogeneity between \emph{k} groups. It's performance is best when the genetic loci have only variance effects on quantitative traits (Hong et al., 2016). More recently it has been employed as an indirect test for interaction effects.
+
+\hypertarget{brown-forsythe-test-also-known-as-levenes-median-test}{%
+\subsection{Brown-Forsythe test (also known as Levene's median test)}\label{brown-forsythe-test-also-known-as-levenes-median-test}}
+
+\[\LARGE T^2 = \frac{(N-k) \sum_{j=0}^{k-1} n_j(Z_j.-Z_..)^2}{(k-1)\sum_{i=1}^{N}(Z_i-Z_gi.)}\]
+
+The Brown-Forsythe is a statistical test for the equality of group variances and is based on
+an ANOVA of the absolute deviation from the median. It has earlier been shown to be robust to deviations from normality of the phenotypic distribution in GWAS applications.
+
+\hypertarget{bartletts-test}{%
+\subsection{Bartlett's test}\label{bartletts-test}}
+
+\[\LARGE T^2 = \frac{(N-k)ln(\sigma_P^2)- \sum_{j=0}^{k-1} (n_j-1)ln(\sigma_j^2)}{1+\frac{1}{3(k-1)}(\sum_{j=0}^{k-1}(\frac{1}{n_j-1}-\frac{1}{N-k}))}\]
+where \emph{k} is the number of genotypes tested,
+
+\hypertarget{bartletts-test-with-prior-rank-transformation-to-normality}{%
+\subsection{Bartlett's test with prior rank transformation to normality}\label{bartletts-test-with-prior-rank-transformation-to-normality}}
+
+\hypertarget{generalized-levenes-scale-tests}{%
+\subsection{Generalized Levene's scale tests}\label{generalized-levenes-scale-tests}}
+
+The Levene's test for variance heterogeneity was expanded to include sample correlation and group membership uncertainty (genotype imputation probabilities). Following a two-stage regression framework, it was shown that the least absolute deviation regression must be used in the stage 1 analysis to ensure a correct asymptotic χ2k−1/(k−1) distribution of the generalized scale (gS) test statistic.
+gS has good type 1 error control in the presence of sample correlation, small samples, unbalanced group sizes, and non-symmetric outcome data.
+
+Same study showed that the least absolute deviation (LAD) regression approach to obtain group-median-adjusted residuals is needed to ensure robust performance of gS (and possibly LAD should be used in all scale dependent tests).
+
+Several improvements including adjustment for covariates could be further explored (check original paper)
+
+\hypertarget{the-lepage-test}{%
+\subsection{The Lepage test}\label{the-lepage-test}}
+
+The Lepage test is a rank-based non-parametric test for either mean or variance difference, which combines the Kruskal--Wallis test statistic for mean difference and the Fligner--Killeen test statistics for variance difference, and has been shown to be powerful and robust when the locus has both mean and variance effects (Lepage, 1971; Hollander and Wolfe, 1999).
+
+\hypertarget{the-d-test}{%
+\subsection{\texorpdfstring{The \emph{D}-test}{The D-test}}\label{the-d-test}}
+
+Aschard et al.~(2013) introduced a general distribution-based test or \emph{D}-test, which can be thought as an extension of the classical Kolmogorov--Smirnov test (Brittain, 1987). There are two versions of \emph{D}-test, namely, the constrained \emph{D}-test (\emph{D}c) and the unconstrained \emph{D}-test (\emph{D}u). The \emph{D}c test is designed for the situation when the effect of the variant is monotonic, while the \emph{D}u test has the ability to detect genetic effects in a broader range of situations (Aschard et al., 2013).
+
+\hypertarget{regression-using-the-squared-z-score}{%
+\subsection{Regression using the squared Z-score}\label{regression-using-the-squared-z-score}}
+
+\hypertarget{gamma-regression-models}{%
+\subsection{Gamma regression models}\label{gamma-regression-models}}
+
+\hypertarget{two-step-screening-on-residual-variance-heterogeneity}{%
+\subsection{Two-step screening on residual variance heterogeneity}\label{two-step-screening-on-residual-variance-heterogeneity}}
+
+\hypertarget{ygvh}{%
+\subsubsection{YGVH}\label{ygvh}}
+
+One caviet involving VH tests is that the absence of VH for a SNP can not be interpreted as the absence of the SNP involvment of the SNP in the interaction network.
+
+When there are only two genotype classes, the type I error rate can be very large if the number of minor genotypes contains fewer than 100 observations when using regression on the squared Z-score, and this cannot be overcome by increasing the total sample-size. The Levene and Brown--Forsythe tests also show such an inflation of false positives, but use of a Gamma regression model, which accounts for the fact that the squared Z-score follows a chi-square distribution, overcomes this problem. Populations with three genotypes will, in practice, be more robust when the allele substitution model implemented in most GWAS-software is used (i.e., when regression on all three genotypes is used to estimate the additive effect). Inflated type I error rates are then observed only when the intermediate-size genotype class (i.e., in practice most often the heterozygotes) contains fewer than 100 individuals.
+
+\hypertarget{mean-variance-qtl-joint-test}{%
+\section{Mean-variance QTL (joint test)}\label{mean-variance-qtl-joint-test}}
+
+It has been suggested that many loci have both mean and variance effects, while some of the mean or variance effects alone would not be strong enough to be detected (Shen et al., 2012; Cao et al., 2014).
+
+One approach to detect both mean and variance effects includes double generalized linear model (DGLM). DGLM can be used to model effects of the mean and variance simultaneously, thus enhacing the power to detect variants associated with the trait. This approach is able to not only incorporate genetic and covariate effects for the mean but also set of such effects for the residual variance.
+
+Extensions to family-based data have been developed (Cao et al., 2014).
+
+\hypertarget{conditional-quantile-regression}{%
+\subsection{Conditional quantile regression}\label{conditional-quantile-regression}}
+
+In contrast to OLS regression, quantile regression tests for the effect differences across the range of quantiles. More specifically, conditional quantile regression (CQR), can be used to model effect size changes across the sample distribution. This method is similar to other varaince heterogeneity methods in a way that does not require interacting effects to be known and hence included in the model. The downside of this is that further investigation is required to identify environmental factors causing statistical interactions.
+
+If the marginal and interaction effects are in opposite directions, then the power to detect potential interactions is reduced. Hence, failure to identify differences in variance by genotype effects does not rule out interactions effects.
+
+Tests for variance heterogeneity detect variance inconsistency rather than variance structure (i.e.~direction of change). Therefore, variance heterogeneity is not specific to interaction signals, but includes conditions where no consistent direction for increasing or decreasing variance per genotype is observed. Modeling relationship between variance and genotypes assuming a structure (i.e.~linear trend) could help improve power to detect variants with potential interactions if the assumtions are met.
+
+\hypertarget{sliced-inverse-regression}{%
+\subsection{Sliced inverse regression}\label{sliced-inverse-regression}}
+
+Jiang and Liu, 2014
+
+\hypertarget{semiparametric-model-for-vqtl-mapping}{%
+\subsection{Semiparametric model for vQTL mapping}\label{semiparametric-model-for-vqtl-mapping}}
+
+The semiparametric model is designed to identify the combined differences in higher moments among genotypic groups. The pairwise likelihood is constructed based on conditioning procedure, where the unknown reference distribution is eliminated.
+
+\hypertarget{squared-residual-value-linear-modeling-svlm}{%
+\subsection{Squared residual value linear modeling (SVLM)}\label{squared-residual-value-linear-modeling-svlm}}
+
+SVLM consists of two steps. First, a regression analysis is applied where the trait is adjusted for a possible SNP effect and other covariates. Second, a regression analysis is applied to the squared values of residuals obtained from the first stage, using the SNP as the predictor.
+
+\hypertarget{relief-and-other-machine-learning-tools}{%
+\section{RELIEF and other machine learning tools}\label{relief-and-other-machine-learning-tools}}
+
+\hypertarget{multidimensionality-reduction}{%
+\subsection{Multidimensionality reduction}\label{multidimensionality-reduction}}
+
+\hypertarget{meta-analytic-gxe-approaches}{%
+\section{Meta-analytic GxE approaches}\label{meta-analytic-gxe-approaches}}
+
+\hypertarget{gene-environment-correlation}{%
+\section{Gene-environment correlation}\label{gene-environment-correlation}}
+
+\hypertarget{other-challenges}{%
+\section{Other challenges}\label{other-challenges}}
+
+There are several challenges of G-E interaction analysis. One main challenge is replication issues. While various GWAS findings of the main effects of SNPs have been replicated by independent studies for many complex diseases (\url{http://www.ebi.ac.uk/gwas/}), relatively few interactions have been reproduced. It is likely that the sample sizes of GWAS that have required measurements on environmental exposures are not yet adequate to reliably identify G-E interactions of modest magnitude. In addition, differences in the underlying distribution of environmental exposures across various studies as well as difficulties in accurately measuring environmental exposures can also lead to reduced power of detecting G-E interactions. While more powerful statistical methods for detecting interactions are helpful, ultimately studies with larger sample sizes are needed to identify interactions (e.g., through consortium-based studies) to achieve adequate power for G-E analysis. A reasonable goal for the future will be to at least identify parsimonious models that adequately describe the risks of diseases associated with a combination of genetic and environmental risk factors. The lack of reporting of interaction in current studies so far indicates that linear logistic models, i.e., multiplicative models, in general may be a good starting point for building models for evaluating the joint effects of genetic and environmental factors.
+
+When using a test designed to detect variance heterogeneity, it is of vital importance to ensure that phenotype transformations do not lead to false positive associations. For an autosomal diallelic SNP in particular, it is difficult to make valid biological inferences about a quantitative trait on the basis of variance heterogeneity among the genotype-specific distributions unless the locations (in particular, the means) of the three distributions are equal. When the means are not all equal, the variance heterogeneity might in fact be explained by a distribution in which the variance is a function of the mean. There exists a transformation of the data that will tend to make the variances equal and there is a method that will at a minimum decrease the variance heterogeneity.
+
+GWAS analyses to detect variance heterogeneity is inherently sensitive to unbalanced data. The major reason for this is that the distribution of the variance often deviates from normality as it:
+1) is bounded at zero
+2) has a distribution skewed to the right
+3) has a variance depending on its mean
+Such deviations lead to violations of, e.g., the Gauss--Markov assumptions in a regression model.
+
+One disadvantage of using variance heterogeneity methods is that the underlying interacting factors are unknown. Given that shifts in variance could be caused by the incomplete LD between the causal polymorphism and the tested marker, multiple functional alleles, gene-gene or gene-by-environment interactions, it could be difficult to identify the root cause of phenotypic variability. Transformations on a phenotype can also result in variance heterogeneity (Sun et al., 2013). This transformation can occur knowingly for statistical purposes, for example, log(Y), or unknowingly, for example, choosing a phenotype measurement that does not directly represent the true underlying biological outcome of a gene.
+
+\hypertarget{controlling-for-covariate-interactions}{%
+\subsection{Controlling for covariate interactions}\label{controlling-for-covariate-interactions}}
+
+In order to eliminate potential confounders, it is common to add covariates such as sex and ethnicity in the model. While this provides control for their potentially confounding influences on the main effects of the genotype and the environment, in the case of GxE studies, this practice does not control for the effects these variables might have on the G×E interaction. Rather, to properly control for confounders, researchers need to enter the covariate-by-environment and the covariate-by-gene interaction terms in the same model that tests the G×E term.
+
+The GxE interaction will be biased in the model without the covariate-by-environment and the covariate-by-gene interaction terms if:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  The covariate is related to the genetic variable and the covariate-by-environment interaction coefficient is nonzero.
+\item
+  The covariate is related to emvironmental variable and the covariate-by-gene interaction coefficient is nonzero.
+\end{enumerate}
+
+Finally, it should be noted that even if a G×E result `disappears' after properly controlling for covariates, this does not necessarily mean that the original G×E hypothesis was wrong. For example, the genetic polymorphism might cause changes in the covariate which in turn moderates the environmental variable, in which case the covariate is a mediating mechanism by which the gene moderates the environmental variable. That said, this possibility applies to all models that statistically control for covariates in regression, and the traditional interpretation of `disappearing' effects after controlling for a covariate is that the true causal pathway is ambiguous and alternative (confounding) explanations cannot be ruled out. That said, in some cases, a particular causal pathway can be discarded as impossible or unlikely. In such cases, investigators can be more definitive about ruling out certain hypotheses. For example, changes at a genetic polymorphism will not lead to changes in ethnicity, and so a G×E hypothesis can be safely discarded if it is mediated by an ethnicity-by-environment interaction.
+
+\hypertarget{candidate-gene-by-environment-interaction-studies}{%
+\section{Candidate gene-by-environment interaction studies}\label{candidate-gene-by-environment-interaction-studies}}
+
+This research area has been a hot topic in genetics, with hundreds of publications reporting positive G×E discoveries over the last 15 years, but there has been increasing skepticism about the validity of many of these findings. This skepticism is based on a number of substantive and statistical concerns:
+t
+1) A low replication rate among attempted direct replications of GxE findings.
+2) The possibility that GxE findings capitalized on chance from among many unreported analyses.
+3) A publication bias toward positive findings.
+4) Small sample sizes that exacerbate the already low statistical power for detecting interactions.
+5) The low prior probability that a specified environmental variable interacts with a specified candidate gene polymorphism.
+
+\hypertarget{higher-order-interactions}{%
+\section{Higher order interactions}\label{higher-order-interactions}}
+
+It is difficult and potentially misleading to interpret two-way interactions in the presence of three-way interactions. In such a model, the lower-order two-way interactions become conditional interactions, and the regression betas and p-values are interpreted as the predicted two-way interactions when the other (omitted) variable is coded as 0.
+
+Add more
+
+\hypertarget{gene-gene-interaction}{%
+\chapter{Gene-gene interaction}\label{gene-gene-interaction}}
+
+When the combined phenotypic effect of alleles at two or more loci deviates from the sum of their individual effects, this is referred to as a genetic interaction, or epistasis.
+There are some situations where data and theory have suggested that it might be particularly important to account for genetic interactions. One is when the aim is to predict the phenotypes of individuals on the basis of their genotype. If interactions lead to extreme phenotypes for some genotypes, these phenotypes are unlikely to be captured by additive models, particularly if they are rare. Another case is the prediction of long-term selection response. Under an additive model, both the additive variance and the response are expected to be nearly constant over the first few generations. As generations proceed, allele frequencies change to alter the additive variance and, consequently, the response to selection. This change is more rapid for traits regulated by fewer loci with larger effects than for traits regulated by many loci with smaller effects. It is known that genetic interactions can contribute to the additive genetic variance in a population. The contribution, however, varies depending on the joint allele frequencies across all the interacting loci as well as on the types and strengths of the genetic interactions. The changes in the additive variance, and hence the response, during ongoing selection are therefore more complex in the presence of genetic interactions.
+
+Most genetic variance in a population is expected to be additive even in the presence of extensive epistasis. The lack of empirical knowledge about the pervasiveness and strength of epistasis in the genetic architectures of complex traits makes it largely unknown how much of the observed additive genetic variance in quantitative genetics studies is due to genetic interactions.
+
+Epistatic gene action, namely when the effect of an allele at one locus varies depending on the genotype at another locus, is therefore not directly proportional to the level of epistatic variance in a population. This is because it will usually contribute to both the additive and epistatic genetic variances (Goodnight, 1988; Cheverud and Routman, 1995; Mackay, 2014). To what extent epistatic gene action will contribute additive genetic variance is determined by allele frequencies, the type of genetic interactions, and how the genetic models used are parameterized (Cheverud and Routman, 1995; Hill et al., 2008; Huang and Mackay, 2016).
+
+\hypertarget{single-step-methods-1}{%
+\section{Single step methods}\label{single-step-methods-1}}
+
+\hypertarget{multi-stage-methods-1}{%
+\section{Multi stage methods}\label{multi-stage-methods-1}}
+
+\hypertarget{machine-learning-methods-1}{%
+\section{Machine learning methods}\label{machine-learning-methods-1}}
+
+\hypertarget{variance-heterogeneity-1}{%
+\section{Variance heterogeneity}\label{variance-heterogeneity-1}}
+
+The details for this method have been described in the previous chapter.
+
+To identify an individual locus that makes direct contributions to the trait variance, a statistical test is used to identify significant differences in the phenotypic variance between the groups of individuals that carry alternative alleles at the locus. When such a variance difference exists between the genotypes at a locus, the locus displays a genetic variance-heterogeneity.
+
+The concept that the trait variability could also be under direct genetic control was introduced already in the 1940s when Waddington presented the idea of canalization, where he suggested that natural selection could act to produce traits that are robust to environmental and genetic perturbations (Waddington, 1942). He partly based his ideas on the observation that natural populations often are less variable than artificial populations of the same species. More recently, Hill and Mulder (2010) proposed that `the environmental variation' can be regarded as a phenotype in its own right. One can then invoke much of the quantitative genetics methodology to search for genetic determinants of this phenotype. They consequently called this phenomenon `genetic control of the environmental variation', a terminology which implies that it is the randomness, or instability, of the trait that is genetically controlled. Several studies have recently mapped individual loci where the different alleles affect not only the mean, but also the variance of traits (Hill and Mulder, 2010; Rönnegård and Valdar, 2012; Shen et al., 2012). These loci can be detected since the variability of the measured trait differs between groups of individuals that carry alternative alleles at the locus. A simple example would be two groups of humans, where the group of individuals homozygote for a certain allele include both very short and very tall individuals, while the second group that is homozygote for the alternative allele include individuals of similar height. This would lead to genetic variance heterogeneity between the two groups of individuals. Note that the mean height does not have to be different between the groups in order for this to occur.
+
+\hypertarget{other-omics}{%
+\chapter{Other omics}\label{other-omics}}
+
+\hypertarget{transcriptome-wide-association-studies}{%
+\section{Transcriptome-wide association studies}\label{transcriptome-wide-association-studies}}
+
+\hypertarget{cis-eqtls}{%
+\subsection{cis eQTLs}\label{cis-eqtls}}
+
+\hypertarget{trans-eqtls}{%
+\subsection{trans eQTLs}\label{trans-eqtls}}
+
+\hypertarget{d-structure-of-the-genome}{%
+\subsection{3-D structure of the genome}\label{d-structure-of-the-genome}}
+
+\hypertarget{phenome-wide-association-studies}{%
+\section{Phenome-wide association studies}\label{phenome-wide-association-studies}}
+
+\hypertarget{metabolomics}{%
+\section{Metabolomics}\label{metabolomics}}
+
+\hypertarget{epigenomics}{%
+\section{Epigenomics}\label{epigenomics}}
+
+\hypertarget{quantitative-trait-loci-mapping}{%
+\chapter{Quantitative trait loci mapping}\label{quantitative-trait-loci-mapping}}
+
+\hypertarget{additional-points-of-interest}{%
+\chapter{Additional points of interest}\label{additional-points-of-interest}}
+
+\hypertarget{defining-novel-locus}{%
+\section{Defining novel locus}\label{defining-novel-locus}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Summarise GWAS associations
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\tightlist
+\item
+  Clump associations to define bp-range for each locus (use LD from cohort used to run GWAS).
+\item
+  Identify conditionally independent associations within each locus.
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Check for locus novelty (``Has this locus previously been associated with this phenotype?''), i.e.~does any variant within the locus bp-range have a genome-wide significant association in any previous relevant GWAS?
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\tightlist
+\item
+  No -- the locus and signal are novel.
+\item
+  Yes -- the locus is not novel (but signal may be).
+\item
+  Yes, but previously reported lead variant lies outside locus -- probably novel but requires checking.
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  If the locus is not novel, check for novelty of signal (``Has this precise association signal been observed previously?'').
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\tightlist
+\item
+  Is there a direct look-up for the variant in previous sets of summary stats? If so, use that.
+\item
+  If there is no direct look-up, select a proxy in the ancestry of the previous GWAS. We are seeking to get the best possible measure of the association in that ancestry.
+  Using that ancestry, look-up the LD between the lead variant(s) and all possible variants within the locus. Identify the variant with the highest LD r2 that is present in the previously reported summary statistics, and use that as the proxy:
+\item
+  If the variant is not present (or has very low MAF), so that no good proxy is possible, report this;
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  otherwise, report the summary statistics for the proxy;
+\item
+  If the look-up is not genome-wide significant (i.e.~possibly novel), check the LD of the signal with the lead SNP in the previous GWAS (using the LD for the ancestry of the previous GWAS).
+\end{enumerate}
+
+\hypertarget{phenotype-transformation}{%
+\section{Phenotype transformation}\label{phenotype-transformation}}
+
+\hypertarget{logs}{%
+\subsection{logs}\label{logs}}
+
+\hypertarget{rint}{%
+\subsection{RINT}\label{rint}}
+
+\hypertarget{regression-on-residuals}{%
+\subsection{Regression on residuals}\label{regression-on-residuals}}
+
+Frisch--Waugh--Lovell theorem
+
+set.seed(12345)
+n \textless- 5000
+e \textless- rnorm(n)
+cov \textless- rnorm(n) + rbinom(n,1,0.3)
+snp \textless- rbinom(n,2,0.1)
+
+y \textless- cov + snp + e
+
+Fit model with OLS:
+summary(lm(y \textasciitilde{} cov + snp))
+summary(lm(y \textasciitilde{} cov + snp))\$coefficients{[}3,4{]}
+
+Regression on residuals:
+residuals = residuals(lm(y \textasciitilde{} cov))
+summary(lm(residuals\textsubscript{snp))
+summary(lm(residuals}snp))\$coefficients{[}2,4{]}
+
+\hypertarget{kinship-matrix}{%
+\section{Kinship matrix}\label{kinship-matrix}}
+
+\hypertarget{path-coefficients}{%
+\subsection{Path coefficients}\label{path-coefficients}}
+
+\hypertarget{genetic-relationship-matrix}{%
+\section{Genetic relationship matrix}\label{genetic-relationship-matrix}}
+
+\hypertarget{animal-models}{%
+\section{Animal models}\label{animal-models}}
+
+\hypertarget{phasing}{%
+\section{Phasing}\label{phasing}}
+
+\hypertarget{switch-rate}{%
+\subsection{Switch rate}\label{switch-rate}}
+
+\hypertarget{haplotyping}{%
+\section{Haplotyping}\label{haplotyping}}
+
+\hypertarget{statistical-power}{%
+\section{Statistical power}\label{statistical-power}}
+
+\hypertarget{quanto}{%
+\subsection{Quanto}\label{quanto}}
+
+\hypertarget{gcta-greml}{%
+\subsection{GCTA-GREML}\label{gcta-greml}}
+
+\hypertarget{mendelian-randomisation}{%
+\subsection{Mendelian Randomisation}\label{mendelian-randomisation}}
+
+\hypertarget{twin-design}{%
+\subsection{Twin design}\label{twin-design}}
+
+\hypertarget{when-marker-is-a-disease-susceptibility-locus}{%
+\subsection{When marker is a disease susceptibility locus}\label{when-marker-is-a-disease-susceptibility-locus}}
+
+\hypertarget{when-marker-is-not-disease-susceptability-locus}{%
+\subsection{When marker is not disease susceptability locus}\label{when-marker-is-not-disease-susceptability-locus}}
+
+\hypertarget{multiple-comparisons}{%
+\section{Multiple comparisons}\label{multiple-comparisons}}
+
+\hypertarget{effective-number-of-independant-variants}{%
+\subsection{Effective number of independant variants}\label{effective-number-of-independant-variants}}
+
+\hypertarget{biases}{%
+\section{Biases}\label{biases}}
+
+\hypertarget{ascertainment}{%
+\subsection{Ascertainment}\label{ascertainment}}
+
+\hypertarget{attenuation}{%
+\subsection{Attenuation}\label{attenuation}}
+
+\hypertarget{selection}{%
+\subsection{Selection}\label{selection}}
+
+\hypertarget{correction-for-biases}{%
+\section{Correction for biases}\label{correction-for-biases}}
+
+Heckman correction
+
+\hypertarget{family-studies}{%
+\section{Family studies}\label{family-studies}}
+
+\hypertarget{transmission-disequilibrium-tests}{%
+\subsection{Transmission disequilibrium tests}\label{transmission-disequilibrium-tests}}
+
+\hypertarget{twin-studies-1}{%
+\section{Twin studies}\label{twin-studies-1}}
+
+\hypertarget{adoption-studies}{%
+\section{Adoption studies}\label{adoption-studies}}
+
+\hypertarget{equifinality-many-genes-give-same-trait}{%
+\section{Equifinality (many genes give same trait)}\label{equifinality-many-genes-give-same-trait}}
+
+\hypertarget{gene-dosage}{%
+\section{Gene dosage}\label{gene-dosage}}
+
+\hypertarget{allelic-dosage}{%
+\subsection{Allelic dosage}\label{allelic-dosage}}
+
+\hypertarget{allelic-heterogeneity}{%
+\section{Allelic heterogeneity}\label{allelic-heterogeneity}}
+
+\hypertarget{genetic-heterogeneity}{%
+\section{Genetic heterogeneity}\label{genetic-heterogeneity}}
+
+\hypertarget{genomic-imprinting}{%
+\section{Genomic imprinting}\label{genomic-imprinting}}
+
+\hypertarget{penetrancephenocopy}{%
+\section{Penetrance/phenocopy}\label{penetrancephenocopy}}
+
+\hypertarget{endophenotypes}{%
+\section{Endophenotypes}\label{endophenotypes}}
+
+\hypertarget{ploidy}{%
+\section{Ploidy}\label{ploidy}}
+
+\hypertarget{extended-phenotype}{%
+\section{Extended phenotype}\label{extended-phenotype}}
+
+\hypertarget{genome-sizes}{%
+\section{Genome sizes}\label{genome-sizes}}
+
+\hypertarget{cis-eqtl-vs-trans-eqtl}{%
+\section{cis-eQTL vs trans-eQTL}\label{cis-eqtl-vs-trans-eqtl}}
+
+Compared to cis-eQTLs, trans-eQTLs typically have weaker effect size and less direct effect. As a result, they are more prone to violate assumptions in MR studies.
+
+\hypertarget{part-population-genetics}{%
+\part{Population Genetics}\label{part-population-genetics}}
+
+\hypertarget{genetic-drift}{%
+\chapter{Genetic drift}\label{genetic-drift}}
+
+\hypertarget{mutation}{%
+\chapter{Mutation}\label{mutation}}
+
+\hypertarget{mutation-age}{%
+\section{Mutation age}\label{mutation-age}}
+
+\hypertarget{selection-1}{%
+\chapter{Selection}\label{selection-1}}
+
+\hypertarget{directional}{%
+\section{Directional}\label{directional}}
+
+\hypertarget{balancing}{%
+\section{Balancing}\label{balancing}}
+
+\hypertarget{frequency-dependent-selection-1}{%
+\subsection{Frequency-dependent selection 1}\label{frequency-dependent-selection-1}}
+
+\hypertarget{frequency-dependent-selection-2}{%
+\subsection{Frequency dependent selection 2}\label{frequency-dependent-selection-2}}
+
+\hypertarget{background-selection}{%
+\section{Background selection}\label{background-selection}}
+
+\hypertarget{migration}{%
+\chapter{Migration}\label{migration}}
+
+\hypertarget{diversity}{%
+\chapter{Diversity}\label{diversity}}
+
+\hypertarget{admixture}{%
+\chapter{Admixture}\label{admixture}}
+
+\hypertarget{linkage-disequilibrium}{%
+\chapter{Linkage disequilibrium}\label{linkage-disequilibrium}}
+
+\hypertarget{in-breeding-and-heterosis}{%
+\chapter{In breeding and heterosis}\label{in-breeding-and-heterosis}}
+
+\hypertarget{assortative-mating}{%
+\chapter{Assortative mating}\label{assortative-mating}}
+
+\hypertarget{identity}{%
+\chapter{Identity}\label{identity}}
+
+\hypertarget{ibs}{%
+\section{IBS}\label{ibs}}
+
+\hypertarget{long-runs-of-ibt}{%
+\subsection{Long runs of IBT}\label{long-runs-of-ibt}}
+
+\hypertarget{ibd}{%
+\section{IBD}\label{ibd}}
+
+\hypertarget{ibt}{%
+\section{IBT}\label{ibt}}
+
+\hypertarget{neutral-theory-of-molecular-evolution}{%
+\chapter{Neutral theory of molecular evolution}\label{neutral-theory-of-molecular-evolution}}
+
+\hypertarget{nearly-neutral-theory-of-molecular-evolution}{%
+\section{Nearly neutral theory of molecular evolution}\label{nearly-neutral-theory-of-molecular-evolution}}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}
