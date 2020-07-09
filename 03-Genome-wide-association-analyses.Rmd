@@ -86,6 +86,12 @@ The estimated marginal SNP effect is
 
 $$\LARGE \hat{\beta_j} = \left(X^T_jX_j\right)^{-1}X^T_jy\approx\frac{X^Ty}{N}$$
 
+and its variance
+
+$$\LARGE \sigma^2_\hat{\beta_j} = \sigma^2_r\left(X^T_jX_j\right)^{-1}\approx\frac{1}{N}$$
+
+where \sigma<sup>2</sup><sub>r</sub> is the residual variance.
+
 ### Allelic test
 
 ### Genotypic test
