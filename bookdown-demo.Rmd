@@ -132,6 +132,12 @@ If we compare two sequences, it is known as pairwise sequence alignment. If we c
 
 <!--chapter:end:02-Sequencing-technologies.Rmd-->
 
+---
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
 # Genome-wide association analysis
 
 ## DNA processing quality control

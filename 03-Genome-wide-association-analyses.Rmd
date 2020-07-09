@@ -1,3 +1,9 @@
+---
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
 # Genome-wide association analysis
 
 ## DNA processing quality control
@@ -84,7 +90,7 @@ Summary statistics can be obtained using one of the following tests: Correlation
 
 The estimated marginal SNP effect is
 
-$$\LARGE \hat{\beta_j} = \left(X^T_jX_j\right)^{-1}X^T_jy\approx\frac{X^Ty}{N}$$
+$$\LARGE \hat{\beta_j} = \left(X^T_jX_j\right)^{-1}X^T_jy\approx\frac{X^T_jy}{N}$$
 
 and its variance
 
