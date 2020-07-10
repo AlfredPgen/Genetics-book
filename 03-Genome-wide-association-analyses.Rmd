@@ -88,14 +88,11 @@ The X chromosome plays an important role in complex human traits and diseases, e
 Summary statistics can be obtained using one of the following tests: Correlation/Trend Test, Armitage Trend Test, Exact Form of Armitage Test, (Pearson) Chi-Squared Test, (Pearson) Chi-Squared Test with Yates’ Correction, Fisher’s Exact Test, Odds Ratio with Confidence Limits, Analysis of Deviance (e.g. different variance heterogeneity tests), F-Test, Logistic Regression, Linear Regression.
 
 The estimated marginal SNP effect is
-
 $$\LARGE \hat{\beta_j} = \left(X^T_jX_j\right)^{-1}X^T_jy\approx\frac{X^T_jy}{N}$$
-
 and its variance
-
 $$\LARGE \sigma^2_{\hat\beta_j} = \sigma^2_r\left(X^T_jX_j\right)^{-1}\approx\frac{1}{N}$$
 
-where $\sigma^2_r$ is the residual variance.
+where $\sigma^2_r$ is the residual variance. As the variance explained by single variant is usually small, $\sigma^2_r$ can be approximated by phenotypic variance (which is assumed to be 1 here).
 
 ### Allelic test
 
@@ -269,7 +266,7 @@ Less complete ascertainment of rare variants
 
 GWAS using mixed models is appealing for several reasons:
 1) More powerful in very large GWAS
-2) Reduces the need for sample exclusion
+2) Reduces the need for sample exclusion (allows inclusion of related individuals)
 3) Amplifies effective sample sizes via conditioning on polygenic predictions from genome-wide SNPs.
 
 When using mixed models for association analysis, care must be taken to consider non-additive effects when retaining related individuals.
