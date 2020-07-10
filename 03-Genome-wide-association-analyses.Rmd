@@ -273,11 +273,17 @@ When using mixed models for association analysis, care must be taken to consider
 
 Helps to account for confounding by population structure, family structure and cryptic relatedness in GWAS. In contrast to other correction methods, LMMs can capture all of these confounders simultaneously, without knowledge of which are present and without the need to tease them apart.
 
-### EMMAX
+### Efficient mixed model association (EMMA)
+
+Relies on the fact that REML of an LMM can be rewritten as a function of only a single parameter, $\delta$, the ratio of the genetic variance to the residual variance. This approach requires a new spectral decomposition for each SNP tested (a cubic operation).
+
+### EMMA expedited (EMMAX) and P3D
+
+Provide additional computational savings by assuming that variance parameters for each tested SNP are the same.
 
 ### Factored spectrally transformed linear mixed model (FaST-LMM)
 
-
+Requires only a single spectral decomposition (SD) to test all SNPs, even without assuming variance parameters to be the same across all SNPs. A key insight behind this approach is that the SD of the GRM makes it possible to transform the phenotypes, SNPs and covariates in a way that makes the data uncorrelated.
 
 ### GEMMA
 
