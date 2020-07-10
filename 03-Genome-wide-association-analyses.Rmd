@@ -265,15 +265,19 @@ Less complete ascertainment of rare variants
 ## Mixed-model association analysis
 
 GWAS using mixed models is appealing for several reasons:
-1) More powerful in very large GWAS
-2) Reduces the need for sample exclusion (allows inclusion of related individuals)
+1) More powerful in very large GWAS.
+2) Reduces the need for sample exclusion (allows inclusion of related individuals).
 3) Amplifies effective sample sizes via conditioning on polygenic predictions from genome-wide SNPs.
 
 When using mixed models for association analysis, care must be taken to consider non-additive effects when retaining related individuals.
 
+Helps to account for confounding by population structure, family structure and cryptic relatedness in GWAS. In contrast to other correction methods, LMMs can capture all of these confounders simultaneously, without knowledge of which are present and without the need to tease them apart.
+
 ### EMMAX
 
-### Fast-LMM
+### Factored spectrally transformed linear mixed model (FaST-LMM)
+
+
 
 ### GEMMA
 
