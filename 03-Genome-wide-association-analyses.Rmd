@@ -285,6 +285,7 @@ Provide additional computational savings by assuming that variance parameters fo
 
 Requires only a single spectral decomposition (SD) to test all SNPs, even without assuming variance parameters to be the same across all SNPs. A key insight behind this approach is that the SD of the GRM makes it possible to transform the phenotypes, SNPs and covariates in a way that makes the data uncorrelated.
 $$\LARGE LL{(\sigma^2_e,\sigma^2_g,\beta)} = logN{(y|X\beta;\sigma^2_gK+\sigma^2_eI)}$$
+Here, ML estimation of parameters $\sigma^2_e$, $\sigma^2_g$ and $\beta$ is based on the assumption that $y$ follows a normal distribution with mean $X\beta$ and variance $\sigma^2_gK+\sigma^2_eI$, where $K$ is the GRM and $I$ is the identity matrix; $\sigma^2_e$ is the residual variance and $\sigma^2_g$ is genetic variance.
 
 ### GEMMA
 
