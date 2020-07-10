@@ -284,6 +284,7 @@ Provide additional computational savings by assuming that variance parameters fo
 ### Factored spectrally transformed linear mixed model (FaST-LMM)
 
 Requires only a single spectral decomposition (SD) to test all SNPs, even without assuming variance parameters to be the same across all SNPs. A key insight behind this approach is that the SD of the GRM makes it possible to transform the phenotypes, SNPs and covariates in a way that makes the data uncorrelated.
+$$\LARGE LL{(\sigma^2_e,\sigma^2_g,\beta)} = logN{(y|X\beta;\sigma^2_gK+\sigma^2_eI)}$$
 
 ### GEMMA
 
