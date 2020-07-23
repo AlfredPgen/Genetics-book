@@ -11,7 +11,6 @@ If the population-level effects of the SNPs were estimated from the GWAS without
 
 Important challenges in the construction of PRS are the selection of SNPs for inclusion in the score and what, if any, shrinkage to apply to the GWAS effect size estimates.
 
-
 ## Gene-based polygenic score (POLARIS)
 
 ## Pathway-based polygenic risk score
@@ -19,6 +18,11 @@ Important challenges in the construction of PRS are the selection of SNPs for in
 ## LD adjusted PRS
 
 ### LDpred with functional annotation
+
+### Partitioning-based non-parametrik shrinkage (NPS)
+
+Removes LD correlation structure across summary statistics. Without specifying a parametric model
+of underlying genetic architecture, NPS estimates the conditional mean effects directly from the data. This technique accounts for correlations due to LD as well as correlations due to sampling error. The approach partitions SNPs into groups and determines the relative weights based on predictive value of each partition estimated in the training data. When there is no LD between SNPs, a partition dominated by non-causal variants will have low power to distinguish case subjects from control subjects, whereas the partition enriched with strong signals will be more informative for predicting the phenotype. This is equivalent to approximating the conditional mean effect curve by piecewise linear interpolation. Because of LD, however, we cannot apply the partitioning method directly to GWAS effect sizes. True genetic effects as well as sampling noise are correlated between adjacent SNPs. To prevent estimated genetic signals smearing across partitions, the method first transforms GWAS data into an orthogonal domain. Specifically, it uses a decorrelating linear transformation obtained by eigenvalue decomposition of the local LD matrix. Both genotypes and sampling errors are uncorrelated in the eigenlocus representation. In this representation, however, true genetic effects do not follow analytically tractable distributions except under infinitesimal and extremely polygenic architectures. Therefore, it applies partitioning-based non-parametric shrinkage to the estimated effect sizes in the eigenlocus, and then restore them back to the original per-SNP effects.
 
 ## Annopred
 
