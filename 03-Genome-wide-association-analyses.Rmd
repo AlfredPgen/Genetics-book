@@ -1,9 +1,3 @@
----
-output:
-  word_document: default
-  html_document: default
-  pdf_document: default
----
 # Genome-wide association analysis
 
 ## DNA processing quality control
@@ -69,7 +63,8 @@ If the base and target data were generated using different genotyping chips and 
 
 ### Non-matching nucleotides
 
-When there is a non-ambiguous mismatch in allele coding between the data sets, such as A/C in the base and G/T in the target data, then this can be resolved by ‘flipping’ the alleles in the target data to their complementary alleles. 
+When there is a non-ambiguous mismatch in allele coding between the data sets, such as A/C in the base and G/T in the target data, then this can be resolved by ‘flipping’ the alleles in the target data to their complementary alleles. Most software perform strand-flipping automatically for SNPs that are resolvable (SNP with A/C in the base data and G/T in the target), and remove non-resolvable mismatching SNPs
+(SNP with C/G in the base and C/T in the target).
 
 ### Quality control prior to meta-analysis
 
